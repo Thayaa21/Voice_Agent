@@ -36,6 +36,22 @@ graph_rag.py            ← CLI entry point
 
 ## Quick Start
 
+### 0. Build the graph snapshot (FIRST TIME ONLY — do this before starting the server)
+
+The `graph_snapshot.pkl` is **not included in the repo** (large binary, in `.gitignore`).
+Without it, the server starts but returns empty results for all queries.
+
+```bash
+cd graph_rag_backend
+cp .env.example .env
+# Edit .env: set LLM_PROVIDER=ollama and start Ollama locally
+# OR set LLM_PROVIDER=openai and add OPENAI_API_KEY
+
+python dataset_prep/build_snapshot.py
+# Takes ~5-10 minutes on first run
+# Ingests all 45 people's JSON + PDF files and saves graph_snapshot.pkl
+```
+
 ### 1. Install dependencies
 
 ```bash
