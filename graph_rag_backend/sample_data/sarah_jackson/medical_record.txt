@@ -1,0 +1,14 @@
+MEDICAL RECORD
+Saskatoon General Hospital
+
+Patient Name: Sarah M. Jackson
+Date of Birth: November 20, 1978
+Date of Visit: April 30, 2022
+Attending Physician: Dr. Maria Santos
+Department: General Practice
+
+Diagnosis: Hypertension
+Medications Prescribed: Lisinopril 10mg daily, dietary sodium restriction
+Follow-up: 3 months
+
+Emergency Contact: Sarah Jackson — 641-555-4282

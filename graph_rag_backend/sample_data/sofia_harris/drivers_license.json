@@ -1,0 +1,84 @@
+{
+  "document_type": "DRIVERS_LICENSE",
+  "confidence": 0.97,
+  "source_file": "drivers_license.txt",
+  "fields": {
+    "name": {
+      "value": "Sofia Harris",
+      "confidence": 0.99,
+      "page": 1,
+      "bounding_box": [
+        72,
+        100,
+        452,
+        120
+      ]
+    },
+    "dob": {
+      "value": "1982-06-24",
+      "confidence": 0.99,
+      "page": 1,
+      "bounding_box": [
+        72,
+        125,
+        452,
+        145
+      ]
+    },
+    "license_number": {
+      "value": "BC-8844149",
+      "confidence": 0.98,
+      "page": 1,
+      "bounding_box": [
+        72,
+        150,
+        452,
+        170
+      ]
+    },
+    "address": {
+      "value": "589 Maple Street, Vancouver, BC, V6B 9W9",
+      "confidence": 0.96,
+      "page": 1,
+      "bounding_box": [
+        72,
+        175,
+        552,
+        195
+      ]
+    },
+    "vehicle_class": {
+      "value": "Class 3 (Truck)",
+      "confidence": 0.97,
+      "page": 1,
+      "bounding_box": [
+        72,
+        200,
+        452,
+        220
+      ]
+    },
+    "issue_date": {
+      "value": "2014-10-08",
+      "confidence": 0.98,
+      "page": 1,
+      "bounding_box": [
+        72,
+        225,
+        452,
+        245
+      ]
+    },
+    "expiry_date": {
+      "value": "2031-06-24",
+      "confidence": 0.98,
+      "page": 1,
+      "bounding_box": [
+        72,
+        250,
+        452,
+        270
+      ]
+    }
+  }
+}

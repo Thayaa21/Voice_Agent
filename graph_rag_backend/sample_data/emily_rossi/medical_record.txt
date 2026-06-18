@@ -1,0 +1,14 @@
+MEDICAL RECORD
+Vancouver General Hospital
+
+Patient Name: Emily C. Rossi
+Date of Birth: February 13, 1973
+Date of Visit: December 16, 2024
+Attending Physician: Dr. James Patel
+Department: General Practice
+
+Diagnosis: Migraine
+Medications Prescribed: Sumatriptan 50mg as needed, Topiramate 25mg nightly
+Follow-up: 3 months
+
+Emergency Contact: Liam Rossi — 590-555-5076

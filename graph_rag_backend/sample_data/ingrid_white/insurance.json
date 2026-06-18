@@ -1,0 +1,84 @@
+{
+  "document_type": "INSURANCE",
+  "confidence": 0.96,
+  "source_file": "insurance.txt",
+  "fields": {
+    "name": {
+      "value": "Ingrid White",
+      "confidence": 0.99,
+      "page": 1,
+      "bounding_box": [
+        72,
+        100,
+        452,
+        120
+      ]
+    },
+    "dob": {
+      "value": "1984-04-26",
+      "confidence": 0.94,
+      "page": 1,
+      "bounding_box": [
+        72,
+        125,
+        452,
+        145
+      ]
+    },
+    "policy_number": {
+      "value": "INS-2023-862187",
+      "confidence": 0.99,
+      "page": 1,
+      "bounding_box": [
+        72,
+        80,
+        452,
+        100
+      ]
+    },
+    "coverage_type": {
+      "value": "Life and Disability Insurance",
+      "confidence": 0.97,
+      "page": 1,
+      "bounding_box": [
+        72,
+        150,
+        552,
+        170
+      ]
+    },
+    "premium": {
+      "value": "$340.00 per month",
+      "confidence": 0.98,
+      "page": 1,
+      "bounding_box": [
+        72,
+        175,
+        452,
+        195
+      ]
+    },
+    "start_date": {
+      "value": "2015-06-17",
+      "confidence": 0.99,
+      "page": 1,
+      "bounding_box": [
+        72,
+        200,
+        452,
+        220
+      ]
+    },
+    "beneficiary": {
+      "value": "David White",
+      "confidence": 0.95,
+      "page": 1,
+      "bounding_box": [
+        72,
+        225,
+        492,
+        245
+      ]
+    }
+  }
+}

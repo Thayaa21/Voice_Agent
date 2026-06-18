@@ -1,0 +1,14 @@
+MEDICAL RECORD
+Calgary General Hospital
+
+Patient Name: Emily N. Patel
+Date of Birth: September 13, 1990
+Date of Visit: May 28, 2022
+Attending Physician: Dr. Sarah Nguyen
+Department: General Practice
+
+Diagnosis: Type 2 diabetes mellitus
+Medications Prescribed: Metformin 500mg twice daily
+Follow-up: 3 months
+
+Emergency Contact: Ingrid Patel — 463-555-2929

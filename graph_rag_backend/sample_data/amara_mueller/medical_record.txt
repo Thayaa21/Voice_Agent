@@ -1,0 +1,14 @@
+MEDICAL RECORD
+Winnipeg General Hospital
+
+Patient Name: Amara G. Mueller
+Date of Birth: February 28, 1977
+Date of Visit: June 22, 2021
+Attending Physician: Dr. David Wilson
+Department: General Practice
+
+Diagnosis: Anxiety disorder
+Medications Prescribed: Sertraline 50mg daily, cognitive behavioural therapy
+Follow-up: 3 months
+
+Emergency Contact: Chloe Mueller — 558-555-1934

@@ -1,0 +1,84 @@
+{
+  "document_type": "DRIVERS_LICENSE",
+  "confidence": 0.97,
+  "source_file": "drivers_license.txt",
+  "fields": {
+    "name": {
+      "value": "Sarah Brown",
+      "confidence": 0.99,
+      "page": 1,
+      "bounding_box": [
+        72,
+        100,
+        452,
+        120
+      ]
+    },
+    "dob": {
+      "value": "1997-09-11",
+      "confidence": 0.99,
+      "page": 1,
+      "bounding_box": [
+        72,
+        125,
+        452,
+        145
+      ]
+    },
+    "license_number": {
+      "value": "BC-3826641",
+      "confidence": 0.98,
+      "page": 1,
+      "bounding_box": [
+        72,
+        150,
+        452,
+        170
+      ]
+    },
+    "address": {
+      "value": "133 Park Boulevard, Vancouver, BC, V6B 4I4",
+      "confidence": 0.96,
+      "page": 1,
+      "bounding_box": [
+        72,
+        175,
+        552,
+        195
+      ]
+    },
+    "vehicle_class": {
+      "value": "Class 5 (Passenger Vehicle)",
+      "confidence": 0.97,
+      "page": 1,
+      "bounding_box": [
+        72,
+        200,
+        452,
+        220
+      ]
+    },
+    "issue_date": {
+      "value": "2014-08-08",
+      "confidence": 0.98,
+      "page": 1,
+      "bounding_box": [
+        72,
+        225,
+        452,
+        245
+      ]
+    },
+    "expiry_date": {
+      "value": "2040-09-11",
+      "confidence": 0.98,
+      "page": 1,
+      "bounding_box": [
+        72,
+        250,
+        452,
+        270
+      ]
+    }
+  }
+}

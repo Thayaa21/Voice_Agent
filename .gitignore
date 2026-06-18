@@ -1,0 +1,17 @@
+# Environment
+.env
+*.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Large files
+graph_rag_backend/graph_snapshot.pkl
+graph_rag_backend/dataset_prep/mtsamples.csv
+
+# Node
+node_modules/

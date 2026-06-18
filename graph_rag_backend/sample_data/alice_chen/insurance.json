@@ -1,0 +1,14 @@
+{
+  "document_type": "INSURANCE",
+  "confidence": 0.96,
+  "source_file": "insurance.txt",
+  "fields": {
+    "name":           { "value": "Alice Chen",                     "confidence": 0.99, "page": 1, "bounding_box": [72, 100, 400, 120] },
+    "dob":            { "value": "1992-03-22",                     "confidence": 0.94, "page": 1, "bounding_box": [72, 125, 400, 145] },
+    "policy_number":  { "value": "INS-2019-887341",                "confidence": 0.99, "page": 1, "bounding_box": [72, 80, 350, 100] },
+    "coverage_type":  { "value": "Comprehensive Health Insurance", "confidence": 0.97, "page": 1, "bounding_box": [72, 150, 500, 170] },
+    "premium":        { "value": "$210.00 per month",              "confidence": 0.98, "page": 1, "bounding_box": [72, 175, 400, 195] },
+    "start_date":     { "value": "2019-01-01",                     "confidence": 0.99, "page": 1, "bounding_box": [72, 200, 350, 220] },
+    "beneficiary":    { "value": "Wei Chen (Father)",              "confidence": 0.95, "page": 1, "bounding_box": [72, 225, 450, 245] }
+  }
+}

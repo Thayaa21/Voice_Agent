@@ -1,0 +1,14 @@
+MEDICAL RECORD
+Toronto General Hospital
+
+Patient Name: Amara K. Singh
+Date of Birth: August 02, 1974
+Date of Visit: October 12, 2023
+Attending Physician: Dr. Robert Kim
+Department: General Practice
+
+Diagnosis: Type 2 diabetes mellitus
+Medications Prescribed: Metformin 500mg twice daily
+Follow-up: 3 months
+
+Emergency Contact: Michael Singh — 612-555-5695

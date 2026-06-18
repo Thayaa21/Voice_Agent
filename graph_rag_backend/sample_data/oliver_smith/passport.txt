@@ -1,0 +1,12 @@
+PASSPORT
+Government of Canada / Gouvernement du Canada
+
+Surname: Smith
+Given Names: Oliver J.
+Date of Birth: December 24, 1986
+Place of Birth: Toronto, Ontario, Canada
+Nationality: Canadian
+Passport Number: CA-17524246
+Date of Issue: August 30, 2018
+Date of Expiry: August 30, 2028
+Place of Issue: Ottawa Passport Office

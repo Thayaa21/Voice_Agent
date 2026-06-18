@@ -1,0 +1,15 @@
+MEDICAL RECORD
+Toronto General Hospital
+
+Patient Name: James R. Lee
+Date of Birth: July 4, 1988
+Date of Visit: September 3, 2023
+Attending Physician: Dr. Sarah Nguyen
+Department: General Practice
+
+Diagnosis: Seasonal allergic rhinitis
+Medications Prescribed: Cetirizine 10mg daily, Fluticasone nasal spray
+Follow-up: 3 months
+
+Insurance Policy: INS-2021-554902
+Emergency Contact: Susan Lee (Mother) — 416-555-0192

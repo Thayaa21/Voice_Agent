@@ -1,0 +1,14 @@
+MEDICAL RECORD
+Ottawa General Hospital
+
+Patient Name: Nathan B. Walker
+Date of Birth: June 26, 1992
+Date of Visit: August 19, 2022
+Attending Physician: Dr. Priya Sharma
+Department: General Practice
+
+Diagnosis: Migraine
+Medications Prescribed: Sumatriptan 50mg as needed, Topiramate 25mg nightly
+Follow-up: 3 months
+
+Emergency Contact: David Walker — 444-555-1443

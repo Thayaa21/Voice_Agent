@@ -1,0 +1,14 @@
+MEDICAL RECORD
+Calgary General Hospital
+
+Patient Name: Zara T. Thomas
+Date of Birth: July 03, 1972
+Date of Visit: March 06, 2021
+Attending Physician: Dr. James Patel
+Department: General Practice
+
+Diagnosis: Asthma
+Medications Prescribed: Salbutamol inhaler as needed, Budesonide inhaler twice daily
+Follow-up: 3 months
+
+Emergency Contact: Liam Thomas — 637-555-6139

@@ -1,0 +1,14 @@
+MEDICAL RECORD
+Edmonton General Hospital
+
+Patient Name: Emily T. Martinez
+Date of Birth: November 26, 1987
+Date of Visit: March 26, 2021
+Attending Physician: Dr. James Patel
+Department: General Practice
+
+Diagnosis: Anxiety disorder
+Medications Prescribed: Sertraline 50mg daily, cognitive behavioural therapy
+Follow-up: 3 months
+
+Emergency Contact: Oliver Martinez — 469-555-8274

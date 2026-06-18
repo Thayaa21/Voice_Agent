@@ -1,0 +1,84 @@
+{
+  "document_type": "DRIVERS_LICENSE",
+  "confidence": 0.97,
+  "source_file": "drivers_license.txt",
+  "fields": {
+    "name": {
+      "value": "Yuki Patel",
+      "confidence": 0.99,
+      "page": 1,
+      "bounding_box": [
+        72,
+        100,
+        452,
+        120
+      ]
+    },
+    "dob": {
+      "value": "1974-08-07",
+      "confidence": 0.99,
+      "page": 1,
+      "bounding_box": [
+        72,
+        125,
+        452,
+        145
+      ]
+    },
+    "license_number": {
+      "value": "BC-0013389",
+      "confidence": 0.98,
+      "page": 1,
+      "bounding_box": [
+        72,
+        150,
+        452,
+        170
+      ]
+    },
+    "address": {
+      "value": "664 Oak Avenue, Victoria, BC, V8W 1X4",
+      "confidence": 0.96,
+      "page": 1,
+      "bounding_box": [
+        72,
+        175,
+        552,
+        195
+      ]
+    },
+    "vehicle_class": {
+      "value": "Class 5 (Passenger Vehicle)",
+      "confidence": 0.97,
+      "page": 1,
+      "bounding_box": [
+        72,
+        200,
+        452,
+        220
+      ]
+    },
+    "issue_date": {
+      "value": "2007-04-18",
+      "confidence": 0.98,
+      "page": 1,
+      "bounding_box": [
+        72,
+        225,
+        452,
+        245
+      ]
+    },
+    "expiry_date": {
+      "value": "2020-08-07",
+      "confidence": 0.98,
+      "page": 1,
+      "bounding_box": [
+        72,
+        250,
+        452,
+        270
+      ]
+    }
+  }
+}

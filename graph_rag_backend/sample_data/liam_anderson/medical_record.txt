@@ -1,0 +1,14 @@
+MEDICAL RECORD
+Toronto General Hospital
+
+Patient Name: Liam G. Anderson
+Date of Birth: July 31, 1975
+Date of Visit: August 25, 2022
+Attending Physician: Dr. James Patel
+Department: General Practice
+
+Diagnosis: Asthma
+Medications Prescribed: Salbutamol inhaler as needed, Budesonide inhaler twice daily
+Follow-up: 3 months
+
+Emergency Contact: Fatima Anderson — 524-555-5529

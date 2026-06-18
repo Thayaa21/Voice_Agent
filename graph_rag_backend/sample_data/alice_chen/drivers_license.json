@@ -1,0 +1,14 @@
+{
+  "document_type": "DRIVERS_LICENSE",
+  "confidence": 0.97,
+  "source_file": "drivers_license.txt",
+  "fields": {
+    "name":           { "value": "Alice Chen",                          "confidence": 0.99, "page": 1, "bounding_box": [72, 100, 400, 120] },
+    "dob":            { "value": "1992-03-15",                          "confidence": 0.99, "page": 1, "bounding_box": [72, 125, 400, 145] },
+    "license_number": { "value": "BC-7745291",                          "confidence": 0.98, "page": 1, "bounding_box": [72, 150, 350, 170] },
+    "address":        { "value": "204 Maple Street, Vancouver, BC, V6B 2W9", "confidence": 0.96, "page": 1, "bounding_box": [72, 175, 520, 195] },
+    "vehicle_class":  { "value": "Class 5 (Passenger Vehicle)",         "confidence": 0.97, "page": 1, "bounding_box": [72, 200, 450, 220] },
+    "issue_date":     { "value": "2015-06-10",                          "confidence": 0.98, "page": 1, "bounding_box": [72, 225, 350, 245] },
+    "expiry_date":    { "value": "2027-03-15",                          "confidence": 0.98, "page": 1, "bounding_box": [72, 250, 350, 270] }
+  }
+}

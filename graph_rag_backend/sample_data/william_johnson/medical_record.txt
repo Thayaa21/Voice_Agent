@@ -1,0 +1,14 @@
+MEDICAL RECORD
+Saskatoon General Hospital
+
+Patient Name: William E. Johnson
+Date of Birth: November 30, 1988
+Date of Visit: October 24, 2020
+Attending Physician: Dr. Sarah Nguyen
+Department: General Practice
+
+Diagnosis: Migraine
+Medications Prescribed: Sumatriptan 50mg as needed, Topiramate 25mg nightly
+Follow-up: 3 months
+
+Emergency Contact: Nathan Johnson — 490-555-6934

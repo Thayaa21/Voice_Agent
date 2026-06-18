@@ -1,0 +1,14 @@
+MEDICAL RECORD
+Calgary General Hospital
+
+Patient Name: James P. Smith
+Date of Birth: January 17, 1971
+Date of Visit: September 12, 2023
+Attending Physician: Dr. Michael Brown
+Department: General Practice
+
+Diagnosis: Type 2 diabetes mellitus
+Medications Prescribed: Metformin 500mg twice daily
+Follow-up: 3 months
+
+Emergency Contact: Maria Smith — 717-555-7304

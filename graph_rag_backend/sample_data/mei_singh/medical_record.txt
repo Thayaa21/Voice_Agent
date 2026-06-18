@@ -1,0 +1,14 @@
+MEDICAL RECORD
+Victoria General Hospital
+
+Patient Name: Mei R. Singh
+Date of Birth: February 04, 1976
+Date of Visit: February 11, 2021
+Attending Physician: Dr. Maria Santos
+Department: General Practice
+
+Diagnosis: Anxiety disorder
+Medications Prescribed: Sertraline 50mg daily, cognitive behavioural therapy
+Follow-up: 3 months
+
+Emergency Contact: Hassan Singh — 699-555-2463

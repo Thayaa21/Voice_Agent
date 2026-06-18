@@ -1,0 +1,14 @@
+MEDICAL RECORD
+Montreal General Hospital
+
+Patient Name: Michael J. Anderson
+Date of Birth: July 12, 1976
+Date of Visit: April 04, 2021
+Attending Physician: Dr. Robert Kim
+Department: General Practice
+
+Diagnosis: Type 2 diabetes mellitus
+Medications Prescribed: Metformin 500mg twice daily
+Follow-up: 3 months
+
+Emergency Contact: Alice Anderson — 621-555-4036

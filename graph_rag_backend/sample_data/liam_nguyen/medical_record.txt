@@ -1,0 +1,14 @@
+MEDICAL RECORD
+Halifax General Hospital
+
+Patient Name: Liam N. Nguyen
+Date of Birth: December 13, 1971
+Date of Visit: June 27, 2024
+Attending Physician: Dr. Michael Brown
+Department: General Practice
+
+Diagnosis: Type 2 diabetes mellitus
+Medications Prescribed: Metformin 500mg twice daily
+Follow-up: 3 months
+
+Emergency Contact: William Nguyen — 649-555-9416

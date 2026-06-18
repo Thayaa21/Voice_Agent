@@ -1,0 +1,84 @@
+{
+  "document_type": "DRIVERS_LICENSE",
+  "confidence": 0.97,
+  "source_file": "drivers_license.txt",
+  "fields": {
+    "name": {
+      "value": "Lucas Ali",
+      "confidence": 0.99,
+      "page": 1,
+      "bounding_box": [
+        72,
+        100,
+        452,
+        120
+      ]
+    },
+    "dob": {
+      "value": "1986-10-11",
+      "confidence": 0.99,
+      "page": 1,
+      "bounding_box": [
+        72,
+        125,
+        452,
+        145
+      ]
+    },
+    "license_number": {
+      "value": "MB-4606846",
+      "confidence": 0.98,
+      "page": 1,
+      "bounding_box": [
+        72,
+        150,
+        452,
+        170
+      ]
+    },
+    "address": {
+      "value": "871 King Street, Winnipeg, MB, R3C 4M4",
+      "confidence": 0.96,
+      "page": 1,
+      "bounding_box": [
+        72,
+        175,
+        552,
+        195
+      ]
+    },
+    "vehicle_class": {
+      "value": "Class 5 (Passenger Vehicle)",
+      "confidence": 0.97,
+      "page": 1,
+      "bounding_box": [
+        72,
+        200,
+        452,
+        220
+      ]
+    },
+    "issue_date": {
+      "value": "2009-02-23",
+      "confidence": 0.98,
+      "page": 1,
+      "bounding_box": [
+        72,
+        225,
+        452,
+        245
+      ]
+    },
+    "expiry_date": {
+      "value": "2029-10-11",
+      "confidence": 0.98,
+      "page": 1,
+      "bounding_box": [
+        72,
+        250,
+        452,
+        270
+      ]
+    }
+  }
+}

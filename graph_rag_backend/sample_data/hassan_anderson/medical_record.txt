@@ -1,0 +1,14 @@
+MEDICAL RECORD
+Toronto General Hospital
+
+Patient Name: Hassan F. Anderson
+Date of Birth: May 08, 1998
+Date of Visit: August 07, 2024
+Attending Physician: Dr. James Patel
+Department: General Practice
+
+Diagnosis: Anxiety disorder
+Medications Prescribed: Sertraline 50mg daily, cognitive behavioural therapy
+Follow-up: 3 months
+
+Emergency Contact: Yuki Anderson — 584-555-9476

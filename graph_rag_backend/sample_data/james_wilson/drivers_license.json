@@ -1,0 +1,84 @@
+{
+  "document_type": "DRIVERS_LICENSE",
+  "confidence": 0.97,
+  "source_file": "drivers_license.txt",
+  "fields": {
+    "name": {
+      "value": "James Wilson",
+      "confidence": 0.99,
+      "page": 1,
+      "bounding_box": [
+        72,
+        100,
+        452,
+        120
+      ]
+    },
+    "dob": {
+      "value": "1975-10-17",
+      "confidence": 0.99,
+      "page": 1,
+      "bounding_box": [
+        72,
+        125,
+        452,
+        145
+      ]
+    },
+    "license_number": {
+      "value": "QC-1364667",
+      "confidence": 0.98,
+      "page": 1,
+      "bounding_box": [
+        72,
+        150,
+        452,
+        170
+      ]
+    },
+    "address": {
+      "value": "463 River Road, Montreal, QC, H3A 9N8",
+      "confidence": 0.96,
+      "page": 1,
+      "bounding_box": [
+        72,
+        175,
+        552,
+        195
+      ]
+    },
+    "vehicle_class": {
+      "value": "Class 3 (Truck)",
+      "confidence": 0.97,
+      "page": 1,
+      "bounding_box": [
+        72,
+        200,
+        452,
+        220
+      ]
+    },
+    "issue_date": {
+      "value": "2013-06-12",
+      "confidence": 0.98,
+      "page": 1,
+      "bounding_box": [
+        72,
+        225,
+        452,
+        245
+      ]
+    },
+    "expiry_date": {
+      "value": "2025-10-17",
+      "confidence": 0.98,
+      "page": 1,
+      "bounding_box": [
+        72,
+        250,
+        452,
+        270
+      ]
+    }
+  }
+}

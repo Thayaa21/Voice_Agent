@@ -1,0 +1,62 @@
+{
+  "document_type": "BIRTH_CERTIFICATE",
+  "confidence": 0.98,
+  "source_file": "birth_certificate.txt",
+  "fields": {
+    "name": {
+      "value": "William Johnson",
+      "confidence": 0.99,
+      "page": 1,
+      "bounding_box": [
+        72,
+        120,
+        452,
+        140
+      ]
+    },
+    "dob": {
+      "value": "1988-11-30",
+      "confidence": 0.99,
+      "page": 1,
+      "bounding_box": [
+        72,
+        145,
+        452,
+        165
+      ]
+    },
+    "place_of_birth": {
+      "value": "Saskatoon, Saskatchewan, Canada",
+      "confidence": 0.97,
+      "page": 1,
+      "bounding_box": [
+        72,
+        170,
+        552,
+        190
+      ]
+    },
+    "parents": {
+      "value": "Fatima Johnson, Nathan Johnson (nee Okonkwo)",
+      "confidence": 0.95,
+      "page": 1,
+      "bounding_box": [
+        72,
+        220,
+        552,
+        240
+      ]
+    },
+    "registration_number": {
+      "value": "BC-1988-7108914",
+      "confidence": 0.99,
+      "page": 1,
+      "bounding_box": [
+        72,
+        80,
+        452,
+        100
+      ]
+    }
+  }
+}

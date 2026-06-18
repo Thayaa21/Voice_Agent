@@ -1,0 +1,14 @@
+MEDICAL RECORD
+Vancouver General Hospital
+
+Patient Name: David D. Anderson
+Date of Birth: June 05, 1971
+Date of Visit: April 05, 2020
+Attending Physician: Dr. David Wilson
+Department: General Practice
+
+Diagnosis: Anxiety disorder
+Medications Prescribed: Sertraline 50mg daily, cognitive behavioural therapy
+Follow-up: 3 months
+
+Emergency Contact: Oliver Anderson — 429-555-8432

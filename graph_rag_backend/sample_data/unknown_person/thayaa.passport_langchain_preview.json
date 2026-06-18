@@ -1,0 +1,84 @@
+{
+  "document_type": "PASSPORT",
+  "confidence": 0.83,
+  "source_file": "Thayaa.passport.pdf",
+  "fields": {
+    "expiry_date": {
+      "value": "11/07/2032",
+      "confidence": 0.83,
+      "page": 1,
+      "bounding_box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "issue_date": {
+      "value": "12/07/2022",
+      "confidence": 0.83,
+      "page": 1,
+      "bounding_box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "name": {
+      "value": "Thayaananthan Kanagaraj",
+      "confidence": 0.83,
+      "page": 1,
+      "bounding_box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "nationality": {
+      "value": "Indian",
+      "confidence": 0.83,
+      "page": 1,
+      "bounding_box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "passport_number": {
+      "value": "WO462878",
+      "confidence": 0.83,
+      "page": 1,
+      "bounding_box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "dob": {
+      "value": "01/03/2003",
+      "confidence": 0.83,
+      "page": 1,
+      "bounding_box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "place_of_birth": {
+      "value": "Coimbatore, Tamil Nadu",
+      "confidence": 0.83,
+      "page": 1,
+      "bounding_box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  }
+}

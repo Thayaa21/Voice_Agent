@@ -1,0 +1,14 @@
+MEDICAL RECORD
+Saskatoon General Hospital
+
+Patient Name: Zara F. Kim
+Date of Birth: October 25, 1989
+Date of Visit: June 01, 2024
+Attending Physician: Dr. David Wilson
+Department: General Practice
+
+Diagnosis: Migraine
+Medications Prescribed: Sumatriptan 50mg as needed, Topiramate 25mg nightly
+Follow-up: 3 months
+
+Emergency Contact: Amara Kim — 476-555-7581

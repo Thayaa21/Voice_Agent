@@ -1,0 +1,14 @@
+MEDICAL RECORD
+Winnipeg General Hospital
+
+Patient Name: Sofia F. Nguyen
+Date of Birth: June 20, 1994
+Date of Visit: April 22, 2022
+Attending Physician: Dr. Sarah Nguyen
+Department: General Practice
+
+Diagnosis: Migraine
+Medications Prescribed: Sumatriptan 50mg as needed, Topiramate 25mg nightly
+Follow-up: 3 months
+
+Emergency Contact: Hannah Nguyen — 509-555-1952

@@ -1,0 +1,14 @@
+MEDICAL RECORD
+Victoria General Hospital
+
+Patient Name: Ethan P. Johnson
+Date of Birth: February 25, 1999
+Date of Visit: October 09, 2023
+Attending Physician: Dr. Robert Kim
+Department: General Practice
+
+Diagnosis: Seasonal allergic rhinitis
+Medications Prescribed: Cetirizine 10mg daily, Fluticasone nasal spray
+Follow-up: 3 months
+
+Emergency Contact: Aisha Johnson — 426-555-5386

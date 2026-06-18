@@ -1,0 +1,14 @@
+MEDICAL RECORD
+Saskatoon General Hospital
+
+Patient Name: Oliver G. Brown
+Date of Birth: March 14, 1998
+Date of Visit: May 31, 2022
+Attending Physician: Dr. Priya Sharma
+Department: General Practice
+
+Diagnosis: Seasonal allergic rhinitis
+Medications Prescribed: Cetirizine 10mg daily, Fluticasone nasal spray
+Follow-up: 3 months
+
+Emergency Contact: Hassan Brown — 537-555-8145

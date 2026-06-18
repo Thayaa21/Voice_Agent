@@ -1,0 +1,73 @@
+{
+  "document_type": "MEDICAL_RECORD",
+  "confidence": 0.95,
+  "source_file": "medical_record.txt",
+  "fields": {
+    "patient_name": {
+      "value": "William E. Johnson",
+      "confidence": 0.97,
+      "page": 1,
+      "bounding_box": [
+        72,
+        100,
+        452,
+        120
+      ]
+    },
+    "dob": {
+      "value": "1988-11-30",
+      "confidence": 0.99,
+      "page": 1,
+      "bounding_box": [
+        72,
+        125,
+        452,
+        145
+      ]
+    },
+    "diagnosis": {
+      "value": "Migraine",
+      "confidence": 0.95,
+      "page": 1,
+      "bounding_box": [
+        72,
+        175,
+        552,
+        195
+      ]
+    },
+    "doctor": {
+      "value": "Dr. Sarah Nguyen",
+      "confidence": 0.98,
+      "page": 1,
+      "bounding_box": [
+        72,
+        150,
+        452,
+        170
+      ]
+    },
+    "date": {
+      "value": "2020-10-24",
+      "confidence": 0.99,
+      "page": 1,
+      "bounding_box": [
+        72,
+        200,
+        452,
+        220
+      ]
+    },
+    "medications": {
+      "value": "Sumatriptan 50mg as needed, Topiramate 25mg nightly",
+      "confidence": 0.93,
+      "page": 1,
+      "bounding_box": [
+        72,
+        220,
+        592,
+        240
+      ]
+    }
+  }
+}

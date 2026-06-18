@@ -1,0 +1,14 @@
+MEDICAL RECORD
+Victoria General Hospital
+
+Patient Name: Mei N. Lee
+Date of Birth: January 31, 1982
+Date of Visit: September 16, 2020
+Attending Physician: Dr. Emily Chen
+Department: General Practice
+
+Diagnosis: Type 2 diabetes mellitus
+Medications Prescribed: Metformin 500mg twice daily
+Follow-up: 3 months
+
+Emergency Contact: David Lee — 628-555-8078

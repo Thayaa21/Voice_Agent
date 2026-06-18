@@ -1,0 +1,14 @@
+MEDICAL RECORD
+Toronto General Hospital
+
+Patient Name: Lucas H. Garcia
+Date of Birth: July 22, 1981
+Date of Visit: September 26, 2020
+Attending Physician: Dr. Robert Kim
+Department: General Practice
+
+Diagnosis: Type 2 diabetes mellitus
+Medications Prescribed: Metformin 500mg twice daily
+Follow-up: 3 months
+
+Emergency Contact: William Garcia — 577-555-1434
