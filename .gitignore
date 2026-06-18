@@ -13,5 +13,12 @@ venv/
 graph_rag_backend/graph_snapshot.pkl
 graph_rag_backend/dataset_prep/mtsamples.csv
 
+# Sensitive personal data
+graph_rag_backend/sample_data/unknown_person/
+
 # Node
 node_modules/
+
+# Local design and study docs (do not commit)
+design.md
+study.md
