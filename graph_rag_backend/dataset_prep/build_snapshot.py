@@ -56,6 +56,7 @@ def build(
     demo_dir:    Path,
     output_path: Path,
     include_pdf: bool = True,
+    skip_resolution: bool = False,
 ) -> None:
     from graph_rag.core.embeddings import EmbeddingEngine
     from graph_rag.core.graph_builder import KnowledgeGraphBuilder
@@ -222,12 +223,14 @@ def build(
         logger.info("PDF ingest skipped (--no-pdf)")
 
     # ---- 3. Entity resolution + contradiction + household ----
-    logger.info("Running entity resolution...")
     graph = graph_builder.get_graph()
     entity_count = len(graph_builder.get_entity_nodes())
-    logger.info("Total entities before resolution: %d", entity_count)
+    logger.info("Total entities: %d", entity_count)
 
-    if entity_count >= 2:
+    if skip_resolution:
+        logger.info("Entity resolution skipped (--skip-resolution)")
+    elif entity_count >= 2:
+        logger.info("Running entity resolution...")
         resolver = EntityResolver(llm, embedding_engine)
         import concurrent.futures
         with concurrent.futures.ThreadPoolExecutor() as pool:
@@ -295,14 +298,19 @@ def main():
         "--no-pdf", action="store_true",
         help="Skip PDF ingestion (faster, identity docs only)",
     )
+    parser.add_argument(
+        "--skip-resolution", action="store_true",
+        help="Skip entity resolution, contradiction, and household detection (fast mode for large datasets)",
+    )
     args = parser.parse_args()
 
     root = ROOT
     build(
-        people_dir  = root / args.people_dir,
-        demo_dir    = root / args.demo_dir,
-        output_path = root / args.out,
-        include_pdf = not args.no_pdf,
+        people_dir       = root / args.people_dir,
+        demo_dir         = root / args.demo_dir,
+        output_path      = root / args.out,
+        include_pdf      = not args.no_pdf,
+        skip_resolution  = args.skip_resolution,
     )
 
 
