@@ -1,194 +1,174 @@
 # Rishi — Voice Infrastructure
 
-## Your Job in One Sentence
-Get a phone call to forward speech to an endpoint and speak back the reply.
-
-That's it. No agent logic. No database. No graph. Just: voice in → text to Chetan → text back → voice out.
+## Your Role
+You own the entire real-time voice pipeline. This is the most latency-sensitive part of the system — every millisecond matters. A caller should never wait more than 2 seconds for a response.
 
 ---
 
-## Step 1 — Create Accounts (do this first, ~15 min)
+## Architecture You Need to Build
+
+```
+Caller (phone)
+    │
+    ▼ Twilio Media Stream (WebSocket, raw PCM audio)
+    │
+    ▼ Deepgram Nova-2 (real-time STT via WebSocket)
+    │ sub-100ms transcription
+    ▼
+FastAPI server (port 8001)
+    │
+    ▼ POST /agent on Chetan's service (port 9001)
+    │
+    ▼ ElevenLabs TTS (streaming audio generation)
+    │
+    ▼ Back to Twilio → Caller hears response
+```
+
+The key difference from a basic implementation: **WebSocket streaming throughout**, not request/response. You never buffer a full audio clip before processing.
+
+---
+
+## Accounts to Set Up
 
 1. **Twilio** — [twilio.com](https://twilio.com)
-   - Sign up for free
-   - Go to Console → Phone Numbers → Get a Number (pick any US number)
-   - Note down: Account SID, Auth Token, Phone Number
+   - Free trial account
+   - Get a US phone number
+   - Enable Media Streams on your number
 
 2. **Deepgram** — [deepgram.com](https://deepgram.com)
-   - Sign up for free ($200 free credit)
-   - Create a project → API Keys → Create a Key
-   - Note down: API Key
+   - Free account ($200 credit)
+   - Use **Nova-2** model — best accuracy for names and medical terms
+   - Use the WebSocket streaming API, not the REST API
 
-3. **ElevenLabs** — [elevenlabs.io](https://elevenlabs.io) *(optional — Twilio's built-in voice works fine for now)*
-   - Sign up for free
-   - Profile → API Keys
-   - Note down: API Key
+3. **ElevenLabs** — [elevenlabs.io](https://elevenlabs.io)
+   - Free account
+   - Pick a voice that sounds professional and calm (e.g. "Rachel" or "Bella")
+   - Use streaming TTS endpoint for low latency
 
 ---
 
-## Step 2 — Set Up Your Environment
+## What to Build
 
-```bash
-cd rishi
-pip install -r requirements.txt
+### 1. Twilio WebSocket Media Stream handler
 
-# Create your .env file
-cp ../.env.example .env
+When a call comes in, Twilio can stream raw PCM audio to your WebSocket endpoint in real time. This is much lower latency than the `<Gather>` approach.
+
+- `POST /incoming-call` → return TwiML that connects to your WebSocket
+- `WS /media-stream` → WebSocket endpoint that receives raw audio from Twilio
+
+Reference: [Twilio Media Streams docs](https://www.twilio.com/docs/voice/media-streams)
+
+### 2. Deepgram real-time transcription
+
+Pipe the raw PCM audio from Twilio directly into Deepgram's WebSocket STT. When Deepgram returns a `is_final: true` transcript, that's your trigger to send text to Chetan.
+
+Key settings to use:
+- `model=nova-2`
+- `language=en-US`
+- `punctuate=true`
+- `endpointing=300` (ms of silence before finalizing)
+
+Reference: [Deepgram streaming docs](https://developers.deepgram.com/docs/getting-started-with-live-streaming-audio)
+
+### 3. Call Chetan's agent
+
+When you have a final transcript:
+```python
+POST http://localhost:9001/agent
+{"text": "transcript text", "call_id": "twilio-call-sid"}
 ```
 
-Fill in `.env`:
+He returns:
+```json
+{"response": "text to speak", "end_call": false}
 ```
-TWILIO_ACCOUNT_SID=ACxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-TWILIO_AUTH_TOKEN=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-TWILIO_PHONE_NUMBER=+1xxxxxxxxxx
-DEEPGRAM_API_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-ELEVENLABS_API_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   # optional
+
+### 4. ElevenLabs streaming TTS
+
+Convert Chetan's text response to audio using ElevenLabs streaming endpoint. Stream the audio chunks back to Twilio as they arrive — don't wait for the full audio to generate.
+
+Reference: [ElevenLabs streaming TTS](https://elevenlabs.io/docs/api-reference/text-to-speech/convert-as-stream)
+
+### 5. Graceful error handling
+
+Handle these cases cleanly:
+- Chetan's service is down → say "I'm having technical difficulties, please hold"
+- STT returns empty or noise → don't forward to Chetan, prompt caller to repeat
+- Call drops mid-stream → clean up WebSocket connections, release session
+
+### 6. Test endpoint (no phone needed)
+
+```
+POST /test
+{"text": "Aiden Garcia March 15 1992"}
+```
+Calls Chetan directly and returns the spoken response text. Use this for development.
+
+### 7. Latency logging
+
+Log timestamps at each stage so you can measure:
+- Time from speech end to STT final transcript
+- Time from STT to Chetan response
+- Time from Chetan response to first TTS audio byte
+- Total round-trip time
+
+Target: under 2 seconds total.
+
+---
+
+## Environment Variables
+
+```
+TWILIO_ACCOUNT_SID=
+TWILIO_AUTH_TOKEN=
+TWILIO_PHONE_NUMBER=
+DEEPGRAM_API_KEY=
+ELEVENLABS_API_KEY=
+ELEVENLABS_VOICE_ID=    # get from ElevenLabs dashboard
 AGENT_URL=http://localhost:9001
 ```
 
 ---
 
-## Step 3 — Build Your Server
+## Stack
 
-Create a file called `server.py` in the `rishi/` folder.
-
-You need **two endpoints**:
-
-### `POST /incoming-call`
-Twilio calls this when someone dials your number.
-Return TwiML XML that greets the caller and listens for speech.
-
-```python
-from fastapi import FastAPI
-from fastapi.responses import Response
-
-app = FastAPI()
-
-@app.post("/incoming-call")
-async def incoming_call():
-    twiml = """<?xml version="1.0" encoding="UTF-8"?>
-    <Response>
-        <Gather input="speech" action="/process-speech" timeout="5" speechTimeout="auto">
-            <Say>Hello, thank you for calling. Please say your name and date of birth.</Say>
-        </Gather>
-    </Response>"""
-    return Response(content=twiml, media_type="application/xml")
 ```
-
-### `POST /process-speech`
-Twilio sends you what the caller said. Forward it to Chetan, speak the reply.
-
-```python
-import httpx
-from fastapi import Form
-
-@app.post("/process-speech")
-async def process_speech(SpeechResult: str = Form(""), CallSid: str = Form("")):
-    # Forward to Chetan's agent
-    async with httpx.AsyncClient() as client:
-        resp = await client.post(
-            "http://localhost:9001/agent",
-            json={"text": SpeechResult, "call_id": CallSid},
-            timeout=10.0
-        )
-    data = resp.json()
-    response_text = data.get("response", "I'm sorry, I didn't understand that.")
-    end_call = data.get("end_call", False)
-
-    # Speak the reply back
-    say_tag = f"<Say>{response_text}</Say>"
-    if end_call:
-        twiml = f"""<?xml version="1.0" encoding="UTF-8"?>
-        <Response>{say_tag}<Hangup/></Response>"""
-    else:
-        twiml = f"""<?xml version="1.0" encoding="UTF-8"?>
-        <Response>
-            <Gather input="speech" action="/process-speech" timeout="5" speechTimeout="auto">
-                {say_tag}
-            </Gather>
-        </Response>"""
-    return Response(content=twiml, media_type="application/xml")
+fastapi
+uvicorn
+twilio
+deepgram-sdk
+elevenlabs
+websockets
+httpx
+python-dotenv
 ```
-
-### `POST /test` *(optional but useful)*
-Test without a real phone call.
-
-```python
-@app.post("/test")
-async def test(body: dict):
-    async with httpx.AsyncClient() as client:
-        resp = await client.post(
-            "http://localhost:9001/agent",
-            json={"text": body.get("text", ""), "call_id": "test_001"},
-            timeout=10.0
-        )
-    return resp.json()
-```
-
----
-
-## Step 4 — Run Your Server
-
-```bash
-uvicorn server:app --port 8001 --reload
-```
-
----
-
-## Step 5 — Expose It to Twilio with ngrok
-
-```bash
-# Install ngrok: https://ngrok.com/download
-ngrok http 8001
-```
-
-Copy the HTTPS URL it gives you (looks like `https://abc123.ngrok.io`).
-
-Go to [Twilio Console](https://console.twilio.com) → Phone Numbers → Manage → your number → Voice webhook:
-- Set **"A call comes in"** to: `https://abc123.ngrok.io/incoming-call`
-- Method: HTTP POST
-- Save
-
----
-
-## Step 6 — Test It
-
-**Without a phone (test endpoint):**
-```bash
-curl -X POST http://localhost:8001/test \
-  -H "Content-Type: application/json" \
-  -d '{"text": "Aiden Garcia, March 15 1992"}'
-```
-
-**With a real phone:**
-- Call your Twilio number
-- Say "Aiden Garcia, March 15 1992"
-- You should hear a response about that patient
 
 ---
 
 ## Definition of Done
 
-- [ ] Twilio account set up, phone number obtained
-- [ ] Deepgram account set up
-- [ ] `server.py` running on port 8001
-- [ ] ngrok tunnel active, URL set in Twilio console
-- [ ] `/test` endpoint returns a real response from Chetan
-- [ ] Real phone call goes through end to end
+- [ ] Real phone call received by your server via Twilio Media Stream WebSocket
+- [ ] Audio streamed to Deepgram in real time, transcript returned under 500ms
+- [ ] Transcript sent to Chetan, response received
+- [ ] ElevenLabs TTS audio streamed back to caller
+- [ ] Full round-trip under 2 seconds
+- [ ] Latency logged at each stage
+- [ ] `/test` endpoint works without a real phone call
+- [ ] Handles dropped calls and service errors gracefully
 
 ---
 
-## How It Connects to Chetan
+## Interface Contract with Chetan
 
-You call his endpoint:
-```
-POST http://localhost:9001/agent
-{"text": "what caller said", "call_id": "twilio-call-sid"}
-```
-
-He gives you back:
+You send:
 ```json
-{"response": "text to speak", "end_call": false}
+POST http://localhost:9001/agent
+{"text": "caller's words", "call_id": "CA-twilio-sid"}
 ```
 
-That's all you need to know about his side. Don't touch his code.
+You receive:
+```json
+{"response": "text to speak back", "end_call": false}
+```
+
+If `end_call` is `true`, speak the response then hang up.
