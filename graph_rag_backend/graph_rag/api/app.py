@@ -1912,3 +1912,70 @@ def get_entity_detail(entity_id: str):
         "conflict_links":    conflict_links,
         "lives_with_links":  lives_with_links,
     }
+
+
+# ---------------------------------------------------------------------------
+# HOSPITAL VOICE AGENT ENDPOINTS
+# ---------------------------------------------------------------------------
+# Four dedicated endpoints for the 4 high-value hospital use cases.
+# These are designed to be called by Chetan's agent layer directly.
+# Each returns a spoken-ready natural language answer.
+
+class HospitalRequest(BaseModel):
+    patient_name: str
+
+
+@app.post("/hospital/claim-status")
+def hospital_claim_status(request: HospitalRequest):
+    """
+    Use case 1: Prior auth denials and claim status.
+    "Why was my surgery denied?" / "What's the status of my claim?"
+
+    Returns a spoken explanation of the patient's most critical claim status.
+    Handles: DENIED_NO_PA, PENDING_P2P, PARTIAL, PAID.
+    """
+    from .hospital_endpoints import get_claim_status
+    graph = _graph_builder.get_graph()
+    return get_claim_status(request.patient_name, graph)
+
+
+@app.post("/hospital/cost-estimate")
+def hospital_cost_estimate(request: HospitalRequest):
+    """
+    Use case 2: Out-of-pocket cost estimation.
+    "How much will I owe for my upcoming procedure?"
+
+    Returns a spoken breakdown of the patient's financial picture
+    based on their billing history with their insurer.
+    """
+    from .hospital_endpoints import get_cost_estimate
+    graph = _graph_builder.get_graph()
+    return get_cost_estimate(request.patient_name, graph)
+
+
+@app.post("/hospital/pre-procedure")
+def hospital_pre_procedure(request: HospitalRequest):
+    """
+    Use case 3: Pre-procedure preparation instructions.
+    "Do I need to stop my medication?" / "When should I start fasting?"
+
+    Returns spoken prep instructions based on the patient's most recent
+    encounter type (colonoscopy, surgery, cardiac, imaging, etc.).
+    """
+    from .hospital_endpoints import get_pre_procedure_prep
+    graph = _graph_builder.get_graph()
+    return get_pre_procedure_prep(request.patient_name, graph)
+
+
+@app.post("/hospital/bill-explanation")
+def hospital_bill_explanation(request: HospitalRequest):
+    """
+    Use case 4: Post-service bill explanation and dispute resolution.
+    "Why do I owe $1,500?" / "I thought this was covered!"
+
+    Returns a spoken breakdown of the patient's bill including
+    what insurance paid, what was denied, and payment options.
+    """
+    from .hospital_endpoints import get_bill_explanation
+    graph = _graph_builder.get_graph()
+    return get_bill_explanation(request.patient_name, graph)
