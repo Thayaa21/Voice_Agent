@@ -1,0 +1,355 @@
+{
+  "patient_id": "505609ce-7420-4cad-8c97-e1c42c4c79c7",
+  "display_name": "Sara Chen",
+  "dob": "1969-03-31",
+  "age": 57,
+  "gender": "M",
+  "city": "Hampden",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Humana",
+    "member_since": "1969",
+    "payer_id": "d47b3510-2895-3b70-9897-342d681c769d"
+  },
+  "active_conditions": [
+    {
+      "code": "82423001",
+      "description": "Chronic pain",
+      "onset": "1990-03-02"
+    },
+    {
+      "code": "124171000119105",
+      "description": "Chronic intractable migraine without aura",
+      "onset": "1991-02-05"
+    },
+    {
+      "code": "196416002",
+      "description": "Impacted molars",
+      "onset": "1991-07-03"
+    },
+    {
+      "code": "55680006",
+      "description": "Drug overdose",
+      "onset": "1995-01-06"
+    },
+    {
+      "code": "55822004",
+      "description": "Hyperlipidemia",
+      "onset": "2009-04-06"
+    },
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "2009-04-06"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "2013-04-15"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "2015-04-20"
+    },
+    {
+      "code": "68496003",
+      "description": "Polyp of colon",
+      "onset": "2019-04-01"
+    },
+    {
+      "code": "713197008",
+      "description": "Recurrent rectal polyp",
+      "onset": "2020-04-25"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "0fb8df9d-f2d5-44cc-a7dd-1d95db7ac07d",
+      "date": "2020-04-25",
+      "type": "ambulatory",
+      "description": "Encounter for 'check-up'",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Wayne Mertz",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "8ad8502a-1a02-4c02-840c-93b97f9d2bb8",
+      "date": "2020-04-24",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Wayne Mertz",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "a94550fe-11c7-4a20-b433-bcfc43a4cb53",
+      "date": "2020-04-06",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Jeffry Mohr",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "6c8d80a3-a66b-44e1-8d16-6b8434123d0d",
+      "date": "2019-04-25",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Wayne Mertz",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "c8320a16-46e5-4503-a0b6-7aaa62e317e4",
+      "date": "2019-04-18",
+      "type": "emergency",
+      "description": "Emergency Room Admission",
+      "reason": "Drug overdose",
+      "procedure_code": "50849002",
+      "provider": "Dr. Wayne Mertz",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "cfeab7b4-a474-4101-a634-65d7b752cddb",
+      "date": "2019-04-01",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Jeffry Mohr",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "314c264b-0af7-4a26-b860-224fee236291",
+      "date": "2019-04-01",
+      "type": "ambulatory",
+      "description": "Encounter for 'check-up'",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Wayne Mertz",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "7978892a-ccf3-4359-a6a2-29d25034a4bf",
+      "date": "2019-01-01",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Wayne Mertz",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "6a75f485-0197-462a-b3f0-05017da2faa4",
+      "date": "2018-12-02",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Wayne Mertz",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "7de2c292-9f7a-4c2a-bf04-e6f2d49f0b37",
+      "date": "2018-11-02",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Wayne Mertz",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "66d4772f-3ec8-4886-8dcd-a2aa88a3f596",
+      "date": "2018-10-03",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Wayne Mertz",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "632f1fde-f6c0-4429-8fe3-94c314988d6d",
+      "date": "2018-09-03",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Wayne Mertz",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "e2dcde12-a2d1-45ac-aec7-b0c0bee45a84",
+      "date": "2018-08-04",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Wayne Mertz",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "1a5c5fd7-8558-4fd7-8987-ae7773a4a82e",
+      "date": "2018-07-05",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Wayne Mertz",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "031aa4a6-9f38-4617-a0a1-367a514f18b4",
+      "date": "2018-06-05",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Wayne Mertz",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "1dfccad4-40e7-48a1-bd28-967532e4a6b7",
+      "date": "2018-04-30",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Wayne Mertz",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "4e303e6b-aec3-4c1a-94ea-91f97cf6b898",
+      "date": "2018-04-25",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Wayne Mertz",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "69d43886-bae2-48be-b1dc-bb5de7377331",
+      "date": "2018-04-23",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Wayne Mertz",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "40e80c70-07f1-4d67-abdb-547de385cdea",
+      "date": "2018-04-03",
+      "type": "inpatient",
+      "description": "Drug rehabilitation and detoxification",
+      "reason": "",
+      "procedure_code": "56876005",
+      "provider": "Dr. Mohammed Parisian",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "558d1afa-523b-42b9-9677-ff365bcd40bc",
+      "date": "2017-04-25",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Wayne Mertz",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 9144.51,
+    "total_covered": 2034.8,
+    "total_owed": 7109.71,
+    "denied_claims": 39,
+    "pending_claims": 0
+  }
+}

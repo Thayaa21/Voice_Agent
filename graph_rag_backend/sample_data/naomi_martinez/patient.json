@@ -1,0 +1,380 @@
+{
+  "patient_id": "13a3a783-ecc5-4ec5-b3dc-168b15cebb88",
+  "display_name": "Naomi Martinez",
+  "dob": "1951-07-20",
+  "age": 74,
+  "gender": "M",
+  "city": "Chicopee",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicare",
+    "member_since": "1970",
+    "payer_id": "7caa7254-5050-3b5e-9eae-bd5ea30e809c"
+  },
+  "active_conditions": [
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1964-08-14"
+    },
+    {
+      "code": "44054006",
+      "description": "Diabetes",
+      "onset": "1979-09-28"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "1979-09-28"
+    },
+    {
+      "code": "302870006",
+      "description": "Hypertriglyceridemia (disorder)",
+      "onset": "1982-10-01"
+    },
+    {
+      "code": "237602007",
+      "description": "Metabolic syndrome X (disorder)",
+      "onset": "1982-10-01"
+    },
+    {
+      "code": "5602001",
+      "description": "Opioid abuse (disorder)",
+      "onset": "1983-10-07"
+    },
+    {
+      "code": "80394007",
+      "description": "Hyperglycemia (disorder)",
+      "onset": "1983-10-07"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "1983-10-07"
+    },
+    {
+      "code": "431855005",
+      "description": "Chronic kidney disease stage 1 (disorder)",
+      "onset": "1985-10-18"
+    },
+    {
+      "code": "127013003",
+      "description": "Diabetic renal disease (disorder)",
+      "onset": "1985-10-18"
+    },
+    {
+      "code": "82423001",
+      "description": "Chronic pain",
+      "onset": "1990-05-05"
+    },
+    {
+      "code": "124171000119105",
+      "description": "Chronic intractable migraine without aura",
+      "onset": "1990-07-14"
+    },
+    {
+      "code": "196416002",
+      "description": "Impacted molars",
+      "onset": "1991-07-29"
+    },
+    {
+      "code": "55680006",
+      "description": "Drug overdose",
+      "onset": "1998-02-15"
+    },
+    {
+      "code": "55822004",
+      "description": "Hyperlipidemia",
+      "onset": "2018-08-24"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "7aa76a5b-24a6-4b14-89d2-c453a39790e0",
+      "date": "2020-04-17",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Judith Johns",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "efa6aae7-f7d3-493e-9079-0e2d85c77887",
+      "date": "2020-04-13",
+      "type": "inpatient",
+      "description": "Drug rehabilitation and detoxification",
+      "reason": "",
+      "procedure_code": "56876005",
+      "provider": "Dr. Wayne Mertz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "2dffd1c9-42c2-43fe-844f-f8a058bb3b1b",
+      "date": "2020-03-20",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Judith Johns",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "9405930f-efb5-40c8-b2b8-70ac3e7fa9d4",
+      "date": "2020-01-17",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Wayne Mertz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "0c424df9-43d2-432c-91c5-10cf2245f96b",
+      "date": "2019-12-20",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Wayne Mertz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "253bf0a0-3ace-4dda-9ef0-ca7692c637f2",
+      "date": "2019-11-22",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Judith Johns",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "8e8e25f4-7e8e-49ed-b0db-c9f02d190c0e",
+      "date": "2019-10-18",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Judith Johns",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "b0e8fbcc-cc9a-4be0-b099-1460a20de254",
+      "date": "2019-09-20",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Wayne Mertz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "1b5618da-5fa2-4c9f-8d9a-546135beaff3",
+      "date": "2019-09-14",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Wayne Mertz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "03091450-a6b0-4359-a905-00207184d203",
+      "date": "2019-08-23",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Judith Johns",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "8b9f1d9b-baf9-4ac9-b85a-bde0351fa47b",
+      "date": "2019-07-26",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Judith Johns",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "3e112160-5f2d-4c70-8d88-d16ca7bd2852",
+      "date": "2019-06-10",
+      "type": "emergency",
+      "description": "Emergency Room Admission",
+      "reason": "Drug overdose",
+      "procedure_code": "50849002",
+      "provider": "Dr. Garth Wyman",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "6bafc142-42fd-4447-bcf7-be4c42226700",
+      "date": "2019-05-24",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Wayne Mertz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "76294938-d5dc-414c-b2c4-561ca49b2c0b",
+      "date": "2019-05-03",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Judith Johns",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "3e71e2d7-1b9f-484f-b799-23bd30d3d5ef",
+      "date": "2019-04-26",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Wayne Mertz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "e62a24d2-99d8-4c5b-80e3-3124fbfeb4c5",
+      "date": "2019-02-22",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Wayne Mertz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "73788d4f-f64c-4c33-a2cd-aecc74297032",
+      "date": "2018-12-28",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Judith Johns",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "ac844630-37df-47cd-8955-064bb19f7901",
+      "date": "2018-12-14",
+      "type": "emergency",
+      "description": "Emergency Encounter",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Garth Wyman",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "d2613c6f-9ec9-437f-8dd9-2ff4952b77f2",
+      "date": "2018-12-06",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute bronchitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Wayne Mertz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "310605f0-9737-4bef-996b-c31e3bbe4496",
+      "date": "2018-11-23",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Judith Johns",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 38980.47,
+    "total_covered": 16207.47,
+    "total_owed": 22773.0,
+    "denied_claims": 50,
+    "pending_claims": 0
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "patient_id": "6d5c2529-b925-47e6-bb15-7ce2ce6320f3",
+  "display_name": "Layla Morris",
+  "dob": "1995-11-20",
+  "age": 30,
+  "gender": "M",
+  "city": "Fall River",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "NO_INSURANCE",
+    "member_since": "1995",
+    "payer_id": "b1c428d6-4f07-31e0-90f0-68ffa6ff8c76"
+  },
+  "active_conditions": [
+    {
+      "code": "40055000",
+      "description": "Chronic sinusitis (disorder)",
+      "onset": "2016-11-14"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "d24f6737-d057-4500-96a6-cbf4b54f1bf1",
+      "date": "2018-01-23",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute bronchitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Myong Heidenreich",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "965851ec-e6a6-42e3-a400-0834de752c22",
+      "date": "2018-01-22",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Michell Pfeffer",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "96195997-40f0-4856-b485-b041dbcaf911",
+      "date": "2016-11-14",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute bacterial sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Myong Heidenreich",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "8ad0fbd6-b045-41ca-94e7-7e022ed01508",
+      "date": "2016-10-10",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute bacterial sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Myong Heidenreich",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "d9fa7ddb-55e8-4bcb-b954-125096368efc",
+      "date": "2015-01-19",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Michell Pfeffer",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "ad5a3cf7-77a4-4e62-b0d1-87d760ef0504",
+      "date": "2014-01-13",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Michell Pfeffer",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "af3ea411-79f2-46d0-af53-0e45bd7bffcd",
+      "date": "2013-11-17",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute bronchitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Myong Heidenreich",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "d98d7672-1196-4fb5-99f4-7a15d3fdda6b",
+      "date": "2013-01-07",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Michell Pfeffer",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "ade95245-7d49-42c0-9a44-544426b16ba3",
+      "date": "2012-01-02",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Michell Pfeffer",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "7a5993e3-81e1-47cf-ba01-a65a48a6ab57",
+      "date": "2010-12-27",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Michell Pfeffer",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 1291.6,
+    "total_covered": 0.0,
+    "total_owed": 1291.6,
+    "denied_claims": 10,
+    "pending_claims": 0
+  }
+}

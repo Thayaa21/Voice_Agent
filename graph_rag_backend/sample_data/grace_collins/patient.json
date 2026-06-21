@@ -1,0 +1,395 @@
+{
+  "patient_id": "6ec18ddf-e9ee-421a-9033-456f558c7b4b",
+  "display_name": "Grace Collins",
+  "dob": "1937-02-10",
+  "age": 89,
+  "gender": "M",
+  "city": "Franklin",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicare",
+    "member_since": "2003",
+    "payer_id": "7caa7254-5050-3b5e-9eae-bd5ea30e809c"
+  },
+  "active_conditions": [
+    {
+      "code": "59621000",
+      "description": "Hypertension",
+      "onset": "1955-04-06"
+    },
+    {
+      "code": "40055000",
+      "description": "Chronic sinusitis (disorder)",
+      "onset": "1958-05-28"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "1975-07-30"
+    },
+    {
+      "code": "44054006",
+      "description": "Diabetes",
+      "onset": "1976-08-04"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "1976-08-04"
+    },
+    {
+      "code": "302870006",
+      "description": "Hypertriglyceridemia (disorder)",
+      "onset": "1977-08-10"
+    },
+    {
+      "code": "431855005",
+      "description": "Chronic kidney disease stage 1 (disorder)",
+      "onset": "1979-08-22"
+    },
+    {
+      "code": "127013003",
+      "description": "Diabetic renal disease (disorder)",
+      "onset": "1979-08-22"
+    },
+    {
+      "code": "422034002",
+      "description": "Diabetic retinopathy associated with type II diabetes mellitus (disorder)",
+      "onset": "1979-08-22"
+    },
+    {
+      "code": "237602007",
+      "description": "Metabolic syndrome X (disorder)",
+      "onset": "1980-08-27"
+    },
+    {
+      "code": "64859006",
+      "description": "Osteoporosis (disorder)",
+      "onset": "1997-01-26"
+    },
+    {
+      "code": "126906006",
+      "description": "Neoplasm of prostate",
+      "onset": "1999-01-26"
+    },
+    {
+      "code": "92691004",
+      "description": "Carcinoma in situ of prostate (disorder)",
+      "onset": "1999-01-26"
+    },
+    {
+      "code": "162573006",
+      "description": "Suspected lung cancer (situation)",
+      "onset": "2003-03-13"
+    },
+    {
+      "code": "254637007",
+      "description": "Non-small cell lung cancer (disorder)",
+      "onset": "2003-03-22"
+    },
+    {
+      "code": "424132000",
+      "description": "Non-small cell carcinoma of lung  TNM stage 1 (disorder)",
+      "onset": "2003-03-24"
+    },
+    {
+      "code": "55822004",
+      "description": "Hyperlipidemia",
+      "onset": "2004-04-28"
+    },
+    {
+      "code": "68496003",
+      "description": "Polyp of colon",
+      "onset": "2004-10-24"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "7e3c52c5-e3da-4167-be8a-a1144df3bb4b",
+      "date": "2005-03-23",
+      "type": "wellness",
+      "description": "Death Certification",
+      "reason": "",
+      "procedure_code": "308646001",
+      "provider": "Dr. Terry Wiegand",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "7eb27653-eb14-42f3-aabb-69f7e8978f16",
+      "date": "2005-03-07",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Terry Wiegand",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "39cbb749-1f8c-44a8-8167-28ff57fd0288",
+      "date": "2005-02-23",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Terry Wiegand",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "9376ef60-f4bd-41f7-9247-0afac68a92a2",
+      "date": "2005-02-16",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Mohammed Parisian",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "4d46ed55-b3d9-476c-b10c-97b1dec43f00",
+      "date": "2005-02-07",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Terry Wiegand",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "71fc47eb-30c2-47ad-98ea-aa17eff205c4",
+      "date": "2005-02-02",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Terry Wiegand",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "de935ad0-2341-4c83-a4ad-1975a9e9a02a",
+      "date": "2005-01-26",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Mohammed Parisian",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "29c2e656-d789-46e8-9bca-fec9dbc5beb3",
+      "date": "2005-01-19",
+      "type": "emergency",
+      "description": "Emergency Encounter",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "c0f880d4-d6ae-4b11-8774-cbf3889bab0f",
+      "date": "2005-01-12",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Terry Wiegand",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "bf108bdc-c1f7-4093-adda-d1e461ce1558",
+      "date": "2005-01-10",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Terry Wiegand",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "cd23968c-06fe-4cc5-bc13-d4439e4d47e8",
+      "date": "2004-12-29",
+      "type": "emergency",
+      "description": "Emergency Encounter",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "06a91f69-6423-4423-9553-8e3df447904b",
+      "date": "2004-12-22",
+      "type": "emergency",
+      "description": "Emergency Encounter",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "6ca23498-00ce-4246-9332-e76400b7a3db",
+      "date": "2004-12-15",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Streptococcal sore throat (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Terry Wiegand",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "5629d2b1-9d3a-4414-aa2d-f0dd2a5dd3dc",
+      "date": "2004-12-09",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Terry Wiegand",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "6a55f129-68a7-4594-867f-4e0dbe4e1c71",
+      "date": "2004-11-24",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Mohammed Parisian",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "31233147-b272-4280-bd79-93783aff4974",
+      "date": "2004-11-17",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Mohammed Parisian",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "c52ad150-4ca2-432a-af86-bf67149568a3",
+      "date": "2004-11-09",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Terry Wiegand",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "2fd15235-e3aa-496d-87fc-b3ff650ffecc",
+      "date": "2004-10-27",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Terry Wiegand",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "a720929e-2fe7-438d-a4b2-cb9377060337",
+      "date": "2004-10-24",
+      "type": "ambulatory",
+      "description": "Encounter for 'check-up'",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Terry Wiegand",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "99788df2-88f6-4c1c-afd3-58c90e4d30b0",
+      "date": "2004-10-20",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Mohammed Parisian",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 47401.72,
+    "total_covered": 10083.32,
+    "total_owed": 37318.4,
+    "denied_claims": 240,
+    "pending_claims": 0
+  }
+}

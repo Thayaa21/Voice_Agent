@@ -1,0 +1,203 @@
+{
+  "patient_id": "4cd6a8ff-8476-4af7-a2d5-60fc36f7df9a",
+  "display_name": "Oliver Lee",
+  "dob": "1947-03-12",
+  "age": 79,
+  "gender": "M",
+  "city": "Winchester",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicare",
+    "member_since": "1966",
+    "payer_id": "7caa7254-5050-3b5e-9eae-bd5ea30e809c"
+  },
+  "active_conditions": [
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1965-05-05"
+    },
+    {
+      "code": "275272006",
+      "description": "Brain damage - traumatic",
+      "onset": "1982-02-11"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "ca810d3a-f040-4e9a-903f-0810cd639b51",
+      "date": "2019-07-17",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Ronna Walker",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "9782de4a-28ef-4086-8e6f-989210a520d4",
+      "date": "2018-07-11",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Ronna Walker",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "292344b4-a1f5-47ab-ba09-22b8a16ed559",
+      "date": "2017-07-05",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Ronna Walker",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "9b17f344-5bec-47c8-a29e-9c2b255a4dec",
+      "date": "2016-06-29",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Ronna Walker",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "2efb85ab-46c7-4c68-86f5-652523d64bdc",
+      "date": "2015-06-24",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Ronna Walker",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "7489217f-3c1d-4717-9400-672c7a2557a9",
+      "date": "2014-06-18",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Ronna Walker",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "c0490675-bccb-43af-ba92-656ff17fb5db",
+      "date": "2013-06-12",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Ronna Walker",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "294c63f2-d8d2-4327-873f-b02b6021ed46",
+      "date": "2012-06-06",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Ronna Walker",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "140368f9-00fb-4f9b-8d3e-3a563e5d838e",
+      "date": "2011-06-01",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Ronna Walker",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "290a8642-4876-43d3-a391-fea520811141",
+      "date": "2010-05-26",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Ronna Walker",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "eaeaaa7b-9a5f-499a-97bf-0a606d206c0a",
+      "date": "1982-02-11",
+      "type": "emergency",
+      "description": "Emergency room admission (procedure)",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Vertie Towne",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "d36b9458-646d-41d8-ad9f-c6916409afe7",
+      "date": "1965-05-05",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Ronna Walker",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 1549.92,
+    "total_covered": 1429.92,
+    "total_owed": 120.0,
+    "denied_claims": 0,
+    "pending_claims": 0
+  }
+}

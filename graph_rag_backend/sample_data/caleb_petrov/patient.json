@@ -1,0 +1,350 @@
+{
+  "patient_id": "9394cb52-7d92-4577-976e-d017af06ed8f",
+  "display_name": "Caleb Petrov",
+  "dob": "1980-03-15",
+  "age": 46,
+  "gender": "F",
+  "city": "New Bedford",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicaid",
+    "member_since": "1981",
+    "payer_id": "7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a"
+  },
+  "active_conditions": [
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1999-05-15"
+    },
+    {
+      "code": "19169002",
+      "description": "Miscarriage in first trimester",
+      "onset": "2006-04-22"
+    },
+    {
+      "code": "44054006",
+      "description": "Diabetes",
+      "onset": "2017-06-03"
+    },
+    {
+      "code": "59621000",
+      "description": "Hypertension",
+      "onset": "2017-06-03"
+    },
+    {
+      "code": "80394007",
+      "description": "Hyperglycemia (disorder)",
+      "onset": "2018-06-09"
+    },
+    {
+      "code": "302870006",
+      "description": "Hypertriglyceridemia (disorder)",
+      "onset": "2018-06-09"
+    },
+    {
+      "code": "237602007",
+      "description": "Metabolic syndrome X (disorder)",
+      "onset": "2018-06-09"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "2019-06-15"
+    },
+    {
+      "code": "444814009",
+      "description": "Viral sinusitis (disorder)",
+      "onset": "2020-04-19"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "acd35901-6cb3-43a2-8707-4e88e49ccb2a",
+      "date": "2020-04-19",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Colby Schowalter",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "93b63ed5-04e9-40d0-903b-14ac96a27960",
+      "date": "2020-03-21",
+      "type": "outpatient",
+      "description": "Patient encounter procedure",
+      "reason": "",
+      "procedure_code": "308335008",
+      "provider": "Dr. Myong Heidenreich",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "a0b2029b-8f6c-4386-9d9d-b73c6410e71c",
+      "date": "2019-12-21",
+      "type": "outpatient",
+      "description": "Patient encounter procedure",
+      "reason": "",
+      "procedure_code": "308335008",
+      "provider": "Dr. Myong Heidenreich",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "11b7ec14-81d0-45c5-92f4-8e15061e89af",
+      "date": "2019-09-21",
+      "type": "outpatient",
+      "description": "Patient encounter procedure",
+      "reason": "",
+      "procedure_code": "308335008",
+      "provider": "Dr. Myong Heidenreich",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "7bc4b70c-a4dd-48d7-b042-039ef47d325e",
+      "date": "2019-09-06",
+      "type": "outpatient",
+      "description": "Consultation for treatment",
+      "reason": "",
+      "procedure_code": "698314001",
+      "provider": "Dr. Myong Heidenreich",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "12cf0d26-f120-4bb5-8576-beae685f2c62",
+      "date": "2019-06-22",
+      "type": "outpatient",
+      "description": "Patient encounter procedure",
+      "reason": "",
+      "procedure_code": "308335008",
+      "provider": "Dr. Myong Heidenreich",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "68442349-1de7-4705-94e2-a6af465009bd",
+      "date": "2019-06-15",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Mary Hirthe",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "d98dc9b0-c18a-4551-995c-71fd59cd5fc8",
+      "date": "2019-03-23",
+      "type": "outpatient",
+      "description": "Patient encounter procedure",
+      "reason": "",
+      "procedure_code": "308335008",
+      "provider": "Dr. Myong Heidenreich",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "c858ee2b-5604-4757-a629-169286237d65",
+      "date": "2018-12-22",
+      "type": "outpatient",
+      "description": "Patient encounter procedure",
+      "reason": "",
+      "procedure_code": "308335008",
+      "provider": "Dr. Myong Heidenreich",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "6dfed3e3-c110-4920-a086-8e77bc533f38",
+      "date": "2018-09-11",
+      "type": "outpatient",
+      "description": "Consultation for treatment",
+      "reason": "",
+      "procedure_code": "698314001",
+      "provider": "Dr. Myong Heidenreich",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "4bff77ab-b8f7-4942-97c1-1b61c323293e",
+      "date": "2018-07-30",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Colby Schowalter",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "5e19fa62-831e-46f4-8e33-7f6e5e4d6d5b",
+      "date": "2018-06-09",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Mary Hirthe",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "2cbc7e60-85ee-41ef-ae81-f16724163a64",
+      "date": "2017-09-16",
+      "type": "ambulatory",
+      "description": "Postnatal visit",
+      "reason": "",
+      "procedure_code": "169762003",
+      "provider": "Dr. Colby Schowalter",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "858fe0a7-8686-4ff9-8f5d-5b93b19c9271",
+      "date": "2017-09-01",
+      "type": "ambulatory",
+      "description": "Hypertension follow-up encounter",
+      "reason": "",
+      "procedure_code": "390906007",
+      "provider": "Dr. Colby Schowalter",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "74db9c64-f5e0-46aa-bea5-7d5a55b3d753",
+      "date": "2017-08-05",
+      "type": "emergency",
+      "description": "Obstetric emergency hospital admission",
+      "reason": "Normal pregnancy",
+      "procedure_code": "183460006",
+      "provider": "Dr. Colby Schowalter",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "d9be866e-1e62-43dc-a621-51f6cda10758",
+      "date": "2017-07-22",
+      "type": "ambulatory",
+      "description": "Prenatal visit",
+      "reason": "Normal pregnancy",
+      "procedure_code": "424619006",
+      "provider": "Dr. Colby Schowalter",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "73013a84-4001-4819-8e52-571e85e7715d",
+      "date": "2017-07-03",
+      "type": "ambulatory",
+      "description": "Hypertension follow-up encounter",
+      "reason": "",
+      "procedure_code": "390906007",
+      "provider": "Dr. Colby Schowalter",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "213b5054-3112-46ce-8992-8d2b2af88348",
+      "date": "2017-06-24",
+      "type": "ambulatory",
+      "description": "Prenatal visit",
+      "reason": "Normal pregnancy",
+      "procedure_code": "424619006",
+      "provider": "Dr. Colby Schowalter",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "b430fc7d-ffcc-4f5c-83ad-6e7b36681003",
+      "date": "2017-06-03",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Mary Hirthe",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "f13fe472-63da-4e2a-9ae5-bed49dccf6b6",
+      "date": "2017-05-27",
+      "type": "ambulatory",
+      "description": "Prenatal visit",
+      "reason": "Normal pregnancy",
+      "procedure_code": "424619006",
+      "provider": "Dr. Colby Schowalter",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 7491.28,
+    "total_covered": 3550.52,
+    "total_owed": 3940.76,
+    "denied_claims": 11,
+    "pending_claims": 0
+  }
+}

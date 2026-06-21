@@ -1,0 +1,375 @@
+{
+  "patient_id": "3acf9313-1874-4dff-ab2a-3187516d92d6",
+  "display_name": "Hannah Tanaka",
+  "dob": "1917-05-07",
+  "age": 109,
+  "gender": "M",
+  "city": "Newburyport",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicare",
+    "member_since": "1936",
+    "payer_id": "7caa7254-5050-3b5e-9eae-bd5ea30e809c"
+  },
+  "active_conditions": [
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1934-06-25"
+    },
+    {
+      "code": "59621000",
+      "description": "Hypertension",
+      "onset": "1935-07-01"
+    },
+    {
+      "code": "7200002",
+      "description": "Alcoholism",
+      "onset": "1951-10-01"
+    },
+    {
+      "code": "44054006",
+      "description": "Diabetes",
+      "onset": "1963-12-09"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "1963-12-09"
+    },
+    {
+      "code": "302870006",
+      "description": "Hypertriglyceridemia (disorder)",
+      "onset": "1964-01-06"
+    },
+    {
+      "code": "237602007",
+      "description": "Metabolic syndrome X (disorder)",
+      "onset": "1964-01-06"
+    },
+    {
+      "code": "431855005",
+      "description": "Chronic kidney disease stage 1 (disorder)",
+      "onset": "1972-01-24"
+    },
+    {
+      "code": "127013003",
+      "description": "Diabetic renal disease (disorder)",
+      "onset": "1972-01-24"
+    },
+    {
+      "code": "126906006",
+      "description": "Neoplasm of prostate",
+      "onset": "1992-05-12"
+    },
+    {
+      "code": "92691004",
+      "description": "Carcinoma in situ of prostate (disorder)",
+      "onset": "1992-05-12"
+    },
+    {
+      "code": "26929004",
+      "description": "Alzheimer's disease (disorder)",
+      "onset": "1994-10-10"
+    },
+    {
+      "code": "49436004",
+      "description": "Atrial Fibrillation",
+      "onset": "1996-08-19"
+    },
+    {
+      "code": "88805009",
+      "description": "Chronic congestive heart failure (disorder)",
+      "onset": "2013-05-02"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "e9f4ae60-38a4-4d45-ac3f-407f0c57c8f9",
+      "date": "2018-01-21",
+      "type": "emergency",
+      "description": "Encounter for Problem",
+      "reason": "Chronic congestive heart failure (disorder)",
+      "procedure_code": "185347001",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "7022a840-a692-4d77-8dbc-cd8e73561dac",
+      "date": "2018-01-21",
+      "type": "inpatient",
+      "description": "Inpatient stay (finding)",
+      "reason": "Chronic congestive heart failure (disorder)",
+      "procedure_code": "308540004",
+      "provider": "Dr. Garth Wyman",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "6cf11299-e88b-4d37-9215-0e2e7a106695",
+      "date": "2018-01-15",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Veda Pfeffer",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "e993bda1-ed01-4232-8ad8-69248f42322f",
+      "date": "2018-01-08",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Veda Pfeffer",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "158dd0e0-146d-461f-9d40-49d1c481e555",
+      "date": "2018-01-01",
+      "type": "emergency",
+      "description": "Emergency Encounter",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "50e343eb-847d-4637-9b41-d18d0fb0894c",
+      "date": "2017-12-25",
+      "type": "emergency",
+      "description": "Emergency Encounter",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "6deb0eac-169f-4f97-af9e-9efbbff51804",
+      "date": "2017-12-18",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Garth Wyman",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "22e5b709-d95e-43ad-9bd6-cb97e9444bfd",
+      "date": "2017-12-11",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Veda Pfeffer",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "4aea4e0c-15f4-4761-91a3-22eaf20c69d2",
+      "date": "2017-12-04",
+      "type": "emergency",
+      "description": "Emergency Encounter",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "3453b50f-2dde-4d2d-b22e-20b4ea25baf5",
+      "date": "2017-11-27",
+      "type": "emergency",
+      "description": "Emergency Encounter",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "bb56524b-6829-4d70-9964-3472c36b3fc0",
+      "date": "2017-11-20",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Veda Pfeffer",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "7bc2c3f0-330f-4341-bccb-5fc042783e7a",
+      "date": "2017-11-13",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Veda Pfeffer",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "f2064b8a-3f13-4b3b-863e-b80cd8e5eef7",
+      "date": "2017-11-06",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Veda Pfeffer",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "b3e4c71d-0d69-432b-b4eb-249d2d4dffc9",
+      "date": "2017-10-30",
+      "type": "emergency",
+      "description": "Emergency Encounter",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "222bcce0-e69e-4950-bd24-0b9d9451e866",
+      "date": "2017-10-23",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Garth Wyman",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "7ed94c0d-5fe9-43ba-9238-4f3caf068480",
+      "date": "2017-10-16",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Veda Pfeffer",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "84c000bb-709f-4b01-91c6-2d26664f21ca",
+      "date": "2017-10-09",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Garth Wyman",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "418c4340-6729-4229-8378-bc662241361b",
+      "date": "2017-10-02",
+      "type": "emergency",
+      "description": "Emergency Encounter",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "417c90ba-140a-4e94-94f1-e485d8bcee9f",
+      "date": "2017-09-11",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Veda Pfeffer",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "683e5788-cca7-4969-a2dd-f75b47d5f379",
+      "date": "2017-09-04",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Veda Pfeffer",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 106686.16,
+    "total_covered": 51955.24,
+    "total_owed": 54730.92,
+    "denied_claims": 237,
+    "pending_claims": 0
+  }
+}

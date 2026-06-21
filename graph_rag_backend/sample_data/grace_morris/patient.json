@@ -1,0 +1,355 @@
+{
+  "patient_id": "6d8fdec1-d77d-4175-b250-f1bac5472b48",
+  "display_name": "Grace Morris",
+  "dob": "1911-12-23",
+  "age": 114,
+  "gender": "M",
+  "city": "Chelmsford",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicare",
+    "member_since": "1912",
+    "payer_id": "7caa7254-5050-3b5e-9eae-bd5ea30e809c"
+  },
+  "active_conditions": [
+    {
+      "code": "128613002",
+      "description": "Seizure disorder",
+      "onset": "1944-12-15"
+    },
+    {
+      "code": "703151001",
+      "description": "History of single seizure (situation)",
+      "onset": "1944-12-15"
+    },
+    {
+      "code": "84757009",
+      "description": "Epilepsy",
+      "onset": "1944-12-15"
+    },
+    {
+      "code": "40055000",
+      "description": "Chronic sinusitis (disorder)",
+      "onset": "1966-01-13"
+    },
+    {
+      "code": "83664006",
+      "description": "Idiopathic atrophic hypothyroidism",
+      "onset": "1970-12-15"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "1970-12-15"
+    },
+    {
+      "code": "126906006",
+      "description": "Neoplasm of prostate",
+      "onset": "1981-04-05"
+    },
+    {
+      "code": "92691004",
+      "description": "Carcinoma in situ of prostate (disorder)",
+      "onset": "1981-04-05"
+    },
+    {
+      "code": "64859006",
+      "description": "Osteoporosis (disorder)",
+      "onset": "1992-06-08"
+    },
+    {
+      "code": "230690007",
+      "description": "Stroke",
+      "onset": "2004-07-25"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "7befafff-f0df-4c84-8b2a-7fe3e9afd07d",
+      "date": "2019-11-17",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Devora Sipes",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "02073372-05a2-4155-a49c-cd82a4d76634",
+      "date": "2019-09-08",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Garth Wyman",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "aa07e9ff-5a17-4bed-a493-d6e9549b583b",
+      "date": "2019-08-28",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute bronchitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Devora Sipes",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "8bb8c4e3-a123-411e-87da-4a575435d61e",
+      "date": "2019-04-15",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Devora Sipes",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "0b65bf08-4ba5-4026-a116-c35f55a150ce",
+      "date": "2019-04-14",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Guadalupe Valenzuela",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "900e15ca-3ca0-4783-a5cb-22c2e251dc8d",
+      "date": "2018-11-11",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Devora Sipes",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "2f3305d4-64e2-4c34-90e7-8052c127fe70",
+      "date": "2018-01-27",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Devora Sipes",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "f57b157f-19b7-42e5-bb62-a5e7094e9648",
+      "date": "2017-11-05",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Devora Sipes",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "ede96f7d-cf8c-4b6b-9dbc-fbc344333e57",
+      "date": "2017-10-01",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Garth Wyman",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "dfaf0e29-0abb-4fc8-85e5-706beaf0457a",
+      "date": "2017-09-20",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute bronchitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Devora Sipes",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "747907de-f8ff-4ad1-8319-6d1a8f75f844",
+      "date": "2016-10-30",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Devora Sipes",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "a7fc3a25-c98d-4cf3-9138-d8c87633c1fb",
+      "date": "2015-10-25",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Devora Sipes",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "702e35dc-7419-477c-bb98-9110961a537b",
+      "date": "2014-10-19",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Devora Sipes",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "865929b7-c607-4811-9337-4c6b0f4c5d3f",
+      "date": "2014-09-21",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Garth Wyman",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "aa0ef777-3834-4fc4-afee-d6117935726a",
+      "date": "2014-09-16",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Devora Sipes",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "4c988843-3f0e-42a5-934f-bdfc5d390394",
+      "date": "2013-10-13",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Devora Sipes",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "a414d6a6-bd92-42f5-bb9b-cfcfa74c2120",
+      "date": "2013-02-14",
+      "type": "ambulatory",
+      "description": "Encounter for 'check-up'",
+      "reason": "Fracture subluxation of wrist",
+      "procedure_code": "185349003",
+      "provider": "Dr. Devora Sipes",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "1b633767-4642-4450-b908-fce5774cb1ec",
+      "date": "2012-12-16",
+      "type": "emergency",
+      "description": "Emergency room admission (procedure)",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Veda Pfeffer",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "f355d593-dedd-45ba-b207-ac45668f8dd8",
+      "date": "2012-10-07",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Devora Sipes",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "fa774975-c366-4ac5-a1ae-0438b6013a4d",
+      "date": "2011-10-02",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Devora Sipes",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 3874.8,
+    "total_covered": 2450.68,
+    "total_owed": 1424.12,
+    "denied_claims": 7,
+    "pending_claims": 0
+  }
+}

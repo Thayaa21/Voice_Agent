@@ -1,0 +1,385 @@
+{
+  "patient_id": "cdef53d5-0537-4073-8874-79fa5e0346e6",
+  "display_name": "Casey Stewart",
+  "dob": "1940-04-05",
+  "age": 86,
+  "gender": "F",
+  "city": "Middleborough",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Aetna",
+    "member_since": "1978",
+    "payer_id": "4d71f845-a6a9-3c39-b242-14d25ef86a8d"
+  },
+  "active_conditions": [
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1953-05-01"
+    },
+    {
+      "code": "408512008",
+      "description": "Body mass index 40+ - severely obese (finding)",
+      "onset": "1958-05-30"
+    },
+    {
+      "code": "59621000",
+      "description": "Hypertension",
+      "onset": "1958-05-30"
+    },
+    {
+      "code": "44054006",
+      "description": "Diabetes",
+      "onset": "1967-07-21"
+    },
+    {
+      "code": "80394007",
+      "description": "Hyperglycemia (disorder)",
+      "onset": "1968-07-26"
+    },
+    {
+      "code": "302870006",
+      "description": "Hypertriglyceridemia (disorder)",
+      "onset": "1968-07-26"
+    },
+    {
+      "code": "237602007",
+      "description": "Metabolic syndrome X (disorder)",
+      "onset": "1968-07-26"
+    },
+    {
+      "code": "40055000",
+      "description": "Chronic sinusitis (disorder)",
+      "onset": "1969-11-16"
+    },
+    {
+      "code": "368581000119106",
+      "description": "Neuropathy due to type 2 diabetes mellitus (disorder)",
+      "onset": "1972-08-18"
+    },
+    {
+      "code": "422034002",
+      "description": "Diabetic retinopathy associated with type II diabetes mellitus (disorder)",
+      "onset": "1979-09-28"
+    },
+    {
+      "code": "19169002",
+      "description": "Miscarriage in first trimester",
+      "onset": "1980-07-11"
+    },
+    {
+      "code": "1551000119108",
+      "description": "Nonproliferative diabetic retinopathy due to type 2 diabetes mellitus (disorder)",
+      "onset": "1980-10-03"
+    },
+    {
+      "code": "254837009",
+      "description": "Malignant neoplasm of breast (disorder)",
+      "onset": "1984-03-25"
+    },
+    {
+      "code": "431855005",
+      "description": "Chronic kidney disease stage 1 (disorder)",
+      "onset": "1985-09-20"
+    },
+    {
+      "code": "127013003",
+      "description": "Diabetic renal disease (disorder)",
+      "onset": "1985-09-20"
+    },
+    {
+      "code": "201834006",
+      "description": "Localized  primary osteoarthritis of the hand",
+      "onset": "1987-03-25"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "28f925c6-e9a8-47b4-82d9-32c53b1fb085",
+      "date": "1987-03-25",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Localized  primary osteoarthritis of the hand",
+      "procedure_code": "185347001",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "0a29175d-9da7-4203-b6e4-ed3a0745966e",
+      "date": "1987-02-13",
+      "type": "ambulatory",
+      "description": "Postoperative follow-up visit (procedure)",
+      "reason": "Malignant neoplasm of breast (disorder)",
+      "procedure_code": "439740005",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "4723ea1b-816e-4294-89e0-26d0d7b33057",
+      "date": "1987-02-06",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "02677f38-7c07-4f6e-ac52-670073723e64",
+      "date": "1987-01-02",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "0bc2c43f-6d15-4e36-87ff-6de733792d18",
+      "date": "1986-12-12",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "33cb8cfa-0278-47ff-b8fd-5bde90c859f5",
+      "date": "1986-12-09",
+      "type": "outpatient",
+      "description": "Patient encounter procedure",
+      "reason": "",
+      "procedure_code": "308335008",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "63ec8db0-1bd0-4fab-9ac3-d9c57d108fcd",
+      "date": "1986-12-07",
+      "type": "outpatient",
+      "description": "Consultation for treatment",
+      "reason": "",
+      "procedure_code": "698314001",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "04eb1202-6fef-46d3-8229-c078f3ada303",
+      "date": "1986-12-05",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "6239b305-e5cc-4a70-9215-f2c8e28e1ce0",
+      "date": "1986-11-07",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Hung Sauer",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "73a2a176-d987-4c31-8530-94d428360a32",
+      "date": "1986-11-07",
+      "type": "ambulatory",
+      "description": "Postoperative follow-up visit (procedure)",
+      "reason": "Malignant neoplasm of breast (disorder)",
+      "procedure_code": "439740005",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "813c3d36-2b07-4918-be37-b4072cff3402",
+      "date": "1986-11-07",
+      "type": "inpatient",
+      "description": "Screening surveillance (regime/therapy)",
+      "reason": "Malignant neoplasm of breast (disorder)",
+      "procedure_code": "410410006",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "da4489f6-3780-4318-bba3-7d83dffa62b0",
+      "date": "1986-11-07",
+      "type": "inpatient",
+      "description": "Gynecology service (qualifier value)",
+      "reason": "Malignant neoplasm of breast (disorder)",
+      "procedure_code": "310061009",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "1208dd01-1359-44db-8af9-d39606c19b95",
+      "date": "1986-10-03",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "b129ebe0-3ac4-4496-b1a3-cf9a3c892adc",
+      "date": "1986-09-05",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "2ff296b8-4464-4cce-a87a-6bfe2208ed41",
+      "date": "1986-08-08",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "6a0cd478-27d5-4802-91a4-1d7578d64e50",
+      "date": "1986-08-01",
+      "type": "ambulatory",
+      "description": "Postoperative follow-up visit (procedure)",
+      "reason": "Malignant neoplasm of breast (disorder)",
+      "procedure_code": "439740005",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "c2df1463-5f22-4944-9d90-571398d248b0",
+      "date": "1986-07-18",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "3b3a2093-a2ff-495d-bea0-470f59171473",
+      "date": "1986-07-11",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "4d18f7d2-d7ed-4d24-b690-e352e287b86d",
+      "date": "1986-06-06",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "4295d795-1957-4e14-969f-7338fe4ca1c3",
+      "date": "1986-05-23",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 13949.28,
+    "total_covered": 5179.48,
+    "total_owed": 8769.8,
+    "denied_claims": 30,
+    "pending_claims": 0
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "patient_id": "7c18105e-5f61-44f5-b47a-c1a8b83f542b",
+  "display_name": "Layla Taylor",
+  "dob": "1992-10-09",
+  "age": 33,
+  "gender": "M",
+  "city": "Revere",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "UnitedHealthcare",
+    "member_since": "1992",
+    "payer_id": "5059a55e-5d6e-34d1-b6cb-d83d16e57bcf"
+  },
+  "active_conditions": [],
+  "encounters": [
+    {
+      "encounter_id": "d96c5662-b492-41fd-a572-83aa70d13979",
+      "date": "2017-12-15",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Sydney Roob",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "85ad94b1-8e58-4367-aad0-a70c24264a66",
+      "date": "2017-05-19",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Houston Osinski",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 59.16,
+      "patient_owes": 70.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "720435c1-35ef-42bc-a2ad-a0c32b2888c0",
+      "date": "2014-12-12",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Sydney Roob",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "05eda985-0a1d-4cc6-aa8a-29b005735e76",
+      "date": "2011-12-09",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Sydney Roob",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "f8e48d10-9e46-4ca2-a3e1-51819caa8121",
+      "date": "2011-11-13",
+      "type": "emergency",
+      "description": "Emergency room admission (procedure)",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Houston Osinski",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 59.16,
+      "patient_owes": 70.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "f537dc6d-e8f7-405c-8498-d0a97c92db04",
+      "date": "2010-12-03",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Sydney Roob",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 774.96,
+    "total_covered": 634.96,
+    "total_owed": 140.0,
+    "denied_claims": 0,
+    "pending_claims": 0
+  }
+}

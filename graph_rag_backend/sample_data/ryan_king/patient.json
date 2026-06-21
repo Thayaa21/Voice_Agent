@@ -1,0 +1,375 @@
+{
+  "patient_id": "9e081e53-a748-47c5-8e36-d9c858d23c14",
+  "display_name": "Ryan King",
+  "dob": "1939-06-11",
+  "age": 87,
+  "gender": "M",
+  "city": "Northbridge",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicare",
+    "member_since": "1958",
+    "payer_id": "7caa7254-5050-3b5e-9eae-bd5ea30e809c"
+  },
+  "active_conditions": [
+    {
+      "code": "59621000",
+      "description": "Hypertension",
+      "onset": "1957-08-04"
+    },
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1985-01-06"
+    },
+    {
+      "code": "40055000",
+      "description": "Chronic sinusitis (disorder)",
+      "onset": "1989-07-09"
+    },
+    {
+      "code": "44054006",
+      "description": "Diabetes",
+      "onset": "1991-02-10"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "1991-02-10"
+    },
+    {
+      "code": "80394007",
+      "description": "Hyperglycemia (disorder)",
+      "onset": "1992-02-16"
+    },
+    {
+      "code": "302870006",
+      "description": "Hypertriglyceridemia (disorder)",
+      "onset": "1992-02-16"
+    },
+    {
+      "code": "237602007",
+      "description": "Metabolic syndrome X (disorder)",
+      "onset": "1992-02-16"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "1992-02-16"
+    },
+    {
+      "code": "431855005",
+      "description": "Chronic kidney disease stage 1 (disorder)",
+      "onset": "1992-02-16"
+    },
+    {
+      "code": "127013003",
+      "description": "Diabetic renal disease (disorder)",
+      "onset": "1992-02-16"
+    },
+    {
+      "code": "368581000119106",
+      "description": "Neuropathy due to type 2 diabetes mellitus (disorder)",
+      "onset": "1992-02-16"
+    },
+    {
+      "code": "126906006",
+      "description": "Neoplasm of prostate",
+      "onset": "2003-04-20"
+    },
+    {
+      "code": "314994000",
+      "description": "Metastasis from malignant tumor of prostate (disorder)",
+      "onset": "2003-04-20"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "ca195fb4-a384-4d04-aaaa-dd7d60c3b13f",
+      "date": "2005-04-03",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Lon Lind",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "c551c8b9-9014-47ca-81fa-41a1443f346c",
+      "date": "2005-03-06",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Gertrudis Schaden",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "9001a35d-0a7c-4280-a7a4-69d7c84f1187",
+      "date": "2005-02-27",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Lon Lind",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "6801e399-a8fa-4853-b3d3-8e548b2bf992",
+      "date": "2005-01-30",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Gertrudis Schaden",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "dec72610-2c2f-4ef9-89c5-e6ca0d499fbf",
+      "date": "2005-01-02",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Lon Lind",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "eb563741-e1ca-4483-9ce6-fadff36eae14",
+      "date": "2004-12-05",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Gertrudis Schaden",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "bb536f08-987f-412c-9d50-b84420d40006",
+      "date": "2004-11-28",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Lon Lind",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "f96d150b-240e-4b85-aa0d-d79d1869223e",
+      "date": "2004-10-31",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Lon Lind",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "04c89736-41a9-4ff4-b86d-26834657318e",
+      "date": "2004-10-03",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Lon Lind",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "9d782a06-d690-4b1b-9ccc-cf2d424931cd",
+      "date": "2004-09-12",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Lon Lind",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "cd2daa43-99d4-4cea-a1d0-2f635060fc78",
+      "date": "2004-09-05",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Lon Lind",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "1c79836f-e5f5-47c4-b90f-789dc6a3136f",
+      "date": "2004-08-01",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Lon Lind",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "c193e4a7-d441-463d-95d7-daffbbf7df84",
+      "date": "2004-07-04",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Lon Lind",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "2ffc05f2-02c6-4cd2-91e5-add3ff8e1c48",
+      "date": "2004-06-07",
+      "type": "ambulatory",
+      "description": "Encounter for 'check-up'",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Gertrudis Schaden",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 59.16,
+      "patient_owes": 70.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "d83efccc-91e2-42ea-b32c-4fed8742daee",
+      "date": "2004-05-09",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Gertrudis Schaden",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "6784c878-b574-4de1-a975-4bb5fba9ab74",
+      "date": "2004-05-02",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Lon Lind",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "aea6a753-1ce8-4ed8-bafa-2cbac006128f",
+      "date": "2004-04-25",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Gertrudis Schaden",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 59.16,
+      "patient_owes": 70.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "d4726a3b-1ec1-49bf-a237-014f19ed9afc",
+      "date": "2004-04-11",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Gertrudis Schaden",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "d40ef321-1495-45bc-af29-d1f53d18bcac",
+      "date": "2004-04-04",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Lon Lind",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "7ae2c35d-49dd-4eb6-8faf-a37c5734c13a",
+      "date": "2004-03-07",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Lon Lind",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 18340.72,
+    "total_covered": 3876.24,
+    "total_owed": 14464.48,
+    "denied_claims": 78,
+    "pending_claims": 0
+  }
+}

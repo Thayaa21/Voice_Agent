@@ -1,0 +1,128 @@
+{
+  "patient_id": "5572d54e-4371-4e36-8069-53349880ce5b",
+  "display_name": "Taylor Evans",
+  "dob": "1974-06-03",
+  "age": 52,
+  "gender": "M",
+  "city": "Norwood",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Cigna Health",
+    "member_since": "1974",
+    "payer_id": "047f6ec3-6215-35eb-9608-f9dda363a44c"
+  },
+  "active_conditions": [
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "2016-06-13"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "dcf299d7-591e-429e-8428-35157a9b01cf",
+      "date": "2018-06-19",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Lesa Bednar",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "b8dc32ae-67aa-4554-8485-6f6ba57de1ad",
+      "date": "2016-08-30",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute viral pharyngitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Luke Rath",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "d1e85002-0933-4450-a595-9c2c3c853d30",
+      "date": "2016-06-14",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Lesa Bednar",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "9ee11bf4-7b2f-4107-a816-2a6e2ce1fb67",
+      "date": "2014-06-10",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Lesa Bednar",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "89a64ebf-a3ce-4fd0-b33a-3ed443a4390a",
+      "date": "2013-06-21",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Luke Rath",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "37089c17-eee9-4f65-8fa9-da96039e8afb",
+      "date": "2011-08-23",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Lesa Bednar",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "7cdf3d8e-d811-4d45-bbcc-eb5272ad44a3",
+      "date": "2010-03-06",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute bronchitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Luke Rath",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 904.12,
+    "total_covered": 724.12,
+    "total_owed": 180.0,
+    "denied_claims": 0,
+    "pending_claims": 0
+  }
+}

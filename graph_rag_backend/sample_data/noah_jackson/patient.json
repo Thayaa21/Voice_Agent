@@ -1,0 +1,365 @@
+{
+  "patient_id": "49303b96-1de5-4365-9ff3-bf960aea755b",
+  "display_name": "Noah Jackson",
+  "dob": "1937-08-20",
+  "age": 88,
+  "gender": "F",
+  "city": "Winchendon",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicare",
+    "member_since": "1972",
+    "payer_id": "7caa7254-5050-3b5e-9eae-bd5ea30e809c"
+  },
+  "active_conditions": [
+    {
+      "code": "59621000",
+      "description": "Hypertension",
+      "onset": "1955-10-14"
+    },
+    {
+      "code": "40055000",
+      "description": "Chronic sinusitis (disorder)",
+      "onset": "1963-12-12"
+    },
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1968-12-27"
+    },
+    {
+      "code": "19169002",
+      "description": "Miscarriage in first trimester",
+      "onset": "1971-01-22"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "1978-02-17"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "1978-02-17"
+    },
+    {
+      "code": "239872002",
+      "description": "Osteoarthritis of hip",
+      "onset": "1991-08-07"
+    },
+    {
+      "code": "47693006",
+      "description": "Rupture of appendix",
+      "onset": "1995-08-08"
+    },
+    {
+      "code": "74400008",
+      "description": "Appendicitis",
+      "onset": "1995-08-08"
+    },
+    {
+      "code": "428251008",
+      "description": "History of appendectomy",
+      "onset": "1995-08-08"
+    },
+    {
+      "code": "64859006",
+      "description": "Osteoporosis (disorder)",
+      "onset": "1998-06-12"
+    },
+    {
+      "code": "49436004",
+      "description": "Atrial Fibrillation",
+      "onset": "2000-06-23"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "772ff143-5c79-4951-a583-4882d5b0f9ee",
+      "date": "2019-10-11",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Deandre Langosh",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "dc95b8b6-af3c-4f5b-bf76-8a9eeca39e65",
+      "date": "2019-01-25",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Lon Lind",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "e134707c-579c-4d70-bea3-5c146333c8fe",
+      "date": "2019-01-18",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Wynell Wisozk",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "89a8709b-a549-43b3-8326-352b7831fa83",
+      "date": "2019-01-12",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute viral pharyngitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Lon Lind",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "2ac3b7a6-1c89-471d-894f-e9156bacd859",
+      "date": "2018-10-05",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Deandre Langosh",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "70e5a759-0db6-4c99-b7b6-1311d7090bcd",
+      "date": "2017-09-29",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Deandre Langosh",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "3d42d1c7-f211-4c0c-9b5c-12f2f9465a20",
+      "date": "2016-09-23",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Deandre Langosh",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "75a195a8-1816-4b24-8ead-3f8493370262",
+      "date": "2015-09-18",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Deandre Langosh",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "36bae6da-cebe-493a-bba6-a8a6a027f12d",
+      "date": "2014-09-12",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Deandre Langosh",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "b75472a1-3e58-439e-a882-043186d6d076",
+      "date": "2013-09-06",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Deandre Langosh",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "a84091ed-2956-46e1-919c-3231d0e09dd3",
+      "date": "2012-08-31",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Deandre Langosh",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "fda1c211-e13b-4e5f-9e76-92ee151d285f",
+      "date": "2012-08-03",
+      "type": "ambulatory",
+      "description": "Encounter for 'check-up'",
+      "reason": "Fracture of forearm",
+      "procedure_code": "185349003",
+      "provider": "Dr. Lon Lind",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "a3dd0e71-24e3-486b-be56-e48c5f224f3d",
+      "date": "2012-06-04",
+      "type": "emergency",
+      "description": "Emergency room admission (procedure)",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Lon Lind",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "5e6cdd90-3cb3-4020-9f6d-ce3b3b95728d",
+      "date": "2011-09-11",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Lon Lind",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "a54d8e49-4419-4749-8132-e930ddf06c55",
+      "date": "2011-08-26",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Deandre Langosh",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "3a71ebdd-ebc9-43ce-b122-177caf539b86",
+      "date": "2010-08-20",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Deandre Langosh",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "8a7c935f-811f-42a8-a4d7-63bc1b8ee3ef",
+      "date": "2009-08-14",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Deandre Langosh",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "266b289d-380a-4666-bd3d-19393da62a08",
+      "date": "2008-08-08",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Deandre Langosh",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "095968ee-111e-495e-8783-80162df89d42",
+      "date": "2007-08-03",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Deandre Langosh",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "03031d65-6295-4273-8d34-c8946cbefeac",
+      "date": "2006-07-28",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Deandre Langosh",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 10022.81,
+    "total_covered": 6011.17,
+    "total_owed": 4011.64,
+    "denied_claims": 4,
+    "pending_claims": 0
+  }
+}

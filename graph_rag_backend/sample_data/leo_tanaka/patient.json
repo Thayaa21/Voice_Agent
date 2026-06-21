@@ -1,0 +1,365 @@
+{
+  "patient_id": "09cbb3f1-c2ed-426c-8c53-ffda77efcb08",
+  "display_name": "Leo Tanaka",
+  "dob": "1950-02-26",
+  "age": 76,
+  "gender": "M",
+  "city": "Worcester",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Blue Cross Blue Shield",
+    "member_since": "1969",
+    "payer_id": "6e2f1a2d-27bd-3701-8d08-dae202c58632"
+  },
+  "active_conditions": [
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1975-05-04"
+    },
+    {
+      "code": "44054006",
+      "description": "Diabetes",
+      "onset": "1990-03-04"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "1990-03-04"
+    },
+    {
+      "code": "302870006",
+      "description": "Hypertriglyceridemia (disorder)",
+      "onset": "1991-12-15"
+    },
+    {
+      "code": "237602007",
+      "description": "Metabolic syndrome X (disorder)",
+      "onset": "1991-12-15"
+    },
+    {
+      "code": "431855005",
+      "description": "Chronic kidney disease stage 1 (disorder)",
+      "onset": "1991-12-15"
+    },
+    {
+      "code": "127013003",
+      "description": "Diabetic renal disease (disorder)",
+      "onset": "1991-12-15"
+    },
+    {
+      "code": "88805009",
+      "description": "Chronic congestive heart failure (disorder)",
+      "onset": "2006-03-03"
+    },
+    {
+      "code": "55822004",
+      "description": "Hyperlipidemia",
+      "onset": "2008-05-25"
+    },
+    {
+      "code": "68496003",
+      "description": "Polyp of colon",
+      "onset": "2010-02-24"
+    },
+    {
+      "code": "126906006",
+      "description": "Neoplasm of prostate",
+      "onset": "2010-03-14"
+    },
+    {
+      "code": "92691004",
+      "description": "Carcinoma in situ of prostate (disorder)",
+      "onset": "2010-03-14"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "3098bf99-8086-470c-b42a-1e2d8043dc8d",
+      "date": "2010-08-30",
+      "type": "emergency",
+      "description": "Encounter for Problem",
+      "reason": "Chronic congestive heart failure (disorder)",
+      "procedure_code": "185347001",
+      "provider": "Dr. Darlena Pfannerstill",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "1563ce8f-41ed-4321-b552-8134432b7dbf",
+      "date": "2010-08-30",
+      "type": "inpatient",
+      "description": "Inpatient stay (finding)",
+      "reason": "Chronic congestive heart failure (disorder)",
+      "procedure_code": "308540004",
+      "provider": "Dr. Gertrudis Schaden",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "a7b0c96e-c289-4ca0-a19c-fc4179bf7e93",
+      "date": "2010-08-08",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Gertrudis Schaden",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "67ee1326-d2c0-47b3-bc63-75cc708e1c4b",
+      "date": "2010-07-04",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Wynell Wisozk",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "d9e54be6-0ca1-4144-9620-627dfd6bee33",
+      "date": "2010-06-27",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute bronchitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Gertrudis Schaden",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "bac039d1-a605-4aa8-b7dc-380dcd67f11b",
+      "date": "2010-06-20",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Gertrudis Schaden",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "e42f31b7-b4a1-4955-a6d1-8b531cf39654",
+      "date": "2010-06-15",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Gertrudis Schaden",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "22c2c898-dc32-4530-8a1b-4bbeca9a6968",
+      "date": "2010-06-13",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Gertrudis Schaden",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "44b9670e-fd47-4f04-b75d-3346f2cef9e4",
+      "date": "2010-06-12",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Neoplasm of prostate",
+      "procedure_code": "185347001",
+      "provider": "Dr. Gertrudis Schaden",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "5907ce78-e695-4fff-97f6-66e68758172c",
+      "date": "2010-05-09",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Wynell Wisozk",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "799c2324-d60d-42ce-923c-426b25b78b9d",
+      "date": "2010-03-14",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Gertrudis Schaden",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "c9a36f82-a958-4f96-9319-aa19e30235f5",
+      "date": "2010-03-14",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "",
+      "procedure_code": "185345009",
+      "provider": "Dr. Gertrudis Schaden",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "234f3951-378e-415f-800c-62e39689a6cc",
+      "date": "2010-03-14",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Neoplasm of prostate",
+      "procedure_code": "185347001",
+      "provider": "Dr. Gertrudis Schaden",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "f418ff45-d304-404a-b952-06a0fd69ce6a",
+      "date": "2010-03-03",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Chronic congestive heart failure (disorder)",
+      "procedure_code": "185347001",
+      "provider": "Dr. Gertrudis Schaden",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "e4597b7c-6eb3-48a1-8d10-83db0a4fe144",
+      "date": "2010-02-24",
+      "type": "ambulatory",
+      "description": "Encounter for 'check-up'",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Gertrudis Schaden",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "4dec40af-4320-4996-b009-5eeb844ad3d8",
+      "date": "2010-01-10",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Gertrudis Schaden",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "d95ca567-3d0a-4bd3-8b77-3a33d45f7173",
+      "date": "2009-10-11",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Wynell Wisozk",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "53c4e23d-a22b-45e2-a176-70954513c458",
+      "date": "2009-08-16",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Gertrudis Schaden",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "e39bab62-ea65-4a8f-a12b-4ebdcc5e7fc0",
+      "date": "2009-06-21",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Gertrudis Schaden",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "75185646-f505-4eb1-b193-9c157860157b",
+      "date": "2009-06-15",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Gertrudis Schaden",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 11753.56,
+    "total_covered": 4491.16,
+    "total_owed": 7262.4,
+    "denied_claims": 15,
+    "pending_claims": 0
+  }
+}

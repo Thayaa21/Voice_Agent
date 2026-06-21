@@ -1,0 +1,350 @@
+{
+  "patient_id": "92b4bd25-f752-49fe-b248-a3e4b0e89d2a",
+  "display_name": "Nora Edwards",
+  "dob": "1918-02-16",
+  "age": 108,
+  "gender": "M",
+  "city": "North Brookfield",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicare",
+    "member_since": "1984",
+    "payer_id": "7caa7254-5050-3b5e-9eae-bd5ea30e809c"
+  },
+  "active_conditions": [
+    {
+      "code": "59621000",
+      "description": "Hypertension",
+      "onset": "1936-04-11"
+    },
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1960-08-27"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "1962-09-08"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "1963-09-14"
+    },
+    {
+      "code": "239872002",
+      "description": "Osteoarthritis of hip",
+      "onset": "1970-02-03"
+    },
+    {
+      "code": "49436004",
+      "description": "Atrial Fibrillation",
+      "onset": "1972-11-04"
+    },
+    {
+      "code": "230690007",
+      "description": "Stroke",
+      "onset": "1973-03-03"
+    },
+    {
+      "code": "230265002",
+      "description": "Familial Alzheimer's disease of early onset (disorder)",
+      "onset": "1981-12-26"
+    },
+    {
+      "code": "55822004",
+      "description": "Hyperlipidemia",
+      "onset": "1987-01-24"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "1464c8a5-2533-47b5-b5aa-8f0f73f14022",
+      "date": "1988-02-14",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Tiana Blick",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "614279b8-2a13-4c5f-ae64-b6420364f1a6",
+      "date": "1988-01-30",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Alphonse Price",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "f0550a88-4e7f-4b85-882c-0983a50fa9ec",
+      "date": "1987-10-26",
+      "type": "ambulatory",
+      "description": "Office Visit",
+      "reason": "Familial Alzheimer's disease of early onset (disorder)",
+      "procedure_code": "316744009",
+      "provider": "Dr. Tiana Blick",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "dbe9e6e2-0b91-4563-b351-97f7605b091c",
+      "date": "1987-02-14",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Tiana Blick",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "2c2110ba-6eda-43fa-bbfa-cfad5df66ed1",
+      "date": "1987-01-24",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Alphonse Price",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "b313510f-0e33-45ab-b079-8c87ca6128a1",
+      "date": "1986-01-18",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Alphonse Price",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "75d631f5-7363-4ee7-b1aa-eea11a97d5ad",
+      "date": "1985-01-12",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Alphonse Price",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "1f0737ef-30b2-4ff5-8ea2-ec13a57b9d90",
+      "date": "1984-09-11",
+      "type": "ambulatory",
+      "description": "Office Visit",
+      "reason": "Familial Alzheimer's disease of early onset (disorder)",
+      "procedure_code": "316744009",
+      "provider": "Dr. Tiana Blick",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "9d8f54f8-6fd6-4f40-8ec3-9c87cccf8680",
+      "date": "1984-01-07",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Alphonse Price",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "e482735b-fe89-44d3-99ca-25e881047a40",
+      "date": "1983-01-01",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Alphonse Price",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "82809ea6-1853-4ece-83ca-13edcd76741f",
+      "date": "1982-11-21",
+      "type": "ambulatory",
+      "description": "Office Visit",
+      "reason": "Familial Alzheimer's disease of early onset (disorder)",
+      "procedure_code": "316744009",
+      "provider": "Dr. Tiana Blick",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "b3044f22-bf1d-4f20-b919-e51da15ac3cf",
+      "date": "1981-12-26",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Alphonse Price",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "01b11828-e5bf-449b-9376-7fa8d2ed96c7",
+      "date": "1980-12-20",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Alphonse Price",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "0ab817ba-1c65-4df6-9525-33acd18ff5a2",
+      "date": "1979-12-15",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Alphonse Price",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "c8008c03-ac75-4f74-a7ae-71740da66958",
+      "date": "1978-12-09",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Alphonse Price",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "895085c8-8032-4fc1-9626-dc077636fa17",
+      "date": "1977-12-03",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Alphonse Price",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "3128efae-5d8e-44c3-8f8a-b30f227bcd0c",
+      "date": "1976-11-27",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Alphonse Price",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "3e2bf683-8dc2-4fd9-9d3a-732667ac0a6a",
+      "date": "1975-11-22",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Alphonse Price",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "befa2a92-eeb3-49ea-b30c-4792ed7475b2",
+      "date": "1974-11-16",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Alphonse Price",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "ec5c5a7b-b424-4cf7-83fe-8150101c613b",
+      "date": "1974-04-27",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Tiana Blick",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 8524.56,
+    "total_covered": 4606.24,
+    "total_owed": 3918.32,
+    "denied_claims": 2,
+    "pending_claims": 0
+  }
+}

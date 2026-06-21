@@ -1,0 +1,208 @@
+{
+  "patient_id": "851275c6-bc90-4e95-a9a7-6f42111be448",
+  "display_name": "Caleb Tanaka",
+  "dob": "1974-09-24",
+  "age": 51,
+  "gender": "M",
+  "city": "Agawam",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Humana",
+    "member_since": "1974",
+    "payer_id": "d47b3510-2895-3b70-9897-342d681c769d"
+  },
+  "active_conditions": [
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "2002-12-03"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "2008-12-09"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "2008-12-09"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "04473717-c600-46a9-a4dc-06b3f11fc930",
+      "date": "2018-10-09",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Sherril Marquardt",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "2f824564-adde-498d-b495-05d3bece2636",
+      "date": "2016-10-18",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "5701e9aa-1f94-4a33-bf7f-7a1c9297f25f",
+      "date": "2016-10-09",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Streptococcal sore throat (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "aad753e5-cb81-4e96-9afc-2c87b557b5ba",
+      "date": "2016-10-04",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Sherril Marquardt",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "01a30662-2dea-4b37-aa1b-65a3ce4901b9",
+      "date": "2014-09-30",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Sherril Marquardt",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "1700b112-670a-4d83-9551-79c6ee5e6949",
+      "date": "2012-01-26",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "bbc6e2c8-701c-43ce-8df2-e10b901e3be1",
+      "date": "2011-12-13",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Sherril Marquardt",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "d58ddadc-91ac-45ba-9be3-2458ac4c21e9",
+      "date": "2008-12-09",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Sherril Marquardt",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "de6335fe-cc99-4a04-8fd1-9a9a5b4c88af",
+      "date": "2002-12-03",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Sherril Marquardt",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "36ca2b0f-d8d1-4d08-9d09-29d19d501795",
+      "date": "1986-04-08",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "b101bbd3-c41f-4608-904c-1106adcf9a6a",
+      "date": "1978-10-18",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "f49d0998-1fce-44c0-8311-dfb5cee7ee41",
+      "date": "1978-09-30",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Perennial allergic rhinitis with seasonal variation",
+      "procedure_code": "185345009",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 1549.92,
+    "total_covered": 891.6,
+    "total_owed": 658.32,
+    "denied_claims": 2,
+    "pending_claims": 0
+  }
+}

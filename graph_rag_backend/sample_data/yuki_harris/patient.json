@@ -1,0 +1,156 @@
+{
+  "patient_id": "65fdd955-9b96-4faa-8b71-c29b8807f709",
+  "display_name": "Yuki Harris",
+  "dob": "1986-02-01",
+  "age": 40,
+  "gender": "M",
+  "city": "Boston",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "NO_INSURANCE",
+    "member_since": "1986",
+    "payer_id": "b1c428d6-4f07-31e0-90f0-68ffa6ff8c76"
+  },
+  "active_conditions": [
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "2001-03-10"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "24d13e0a-1ffe-4e69-9f0f-c1c9ad33a600",
+      "date": "2020-04-19",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Emanuel Dickinson",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "5ae5eb84-512e-471c-bcda-1309fd1e1f36",
+      "date": "2019-01-29",
+      "type": "emergency",
+      "description": "Emergency room admission (procedure)",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Sanford Gottlieb",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "973c0030-cbc9-4a52-b964-dac38bdfc0ac",
+      "date": "2017-04-16",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Emanuel Dickinson",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "9df45e14-5993-4f34-876f-4d85f388c504",
+      "date": "2017-02-26",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Sanford Gottlieb",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "d229512c-db27-421e-8d02-d4e84d670fe5",
+      "date": "2017-02-20",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute bronchitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Edie Howell",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "ee5bd44e-5742-4825-96f6-6c373fb3413b",
+      "date": "2014-04-13",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Emanuel Dickinson",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "5c51ca28-d606-433b-bd3d-eecf6cfa91ba",
+      "date": "2011-04-10",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Emanuel Dickinson",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "62abdd37-1b73-4664-adc4-4ddbfd6dd278",
+      "date": "2010-07-10",
+      "type": "emergency",
+      "description": "Emergency room admission (procedure)",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Sanford Gottlieb",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "41cc4b4e-021e-48f2-8d65-ec698a27c053",
+      "date": "2001-03-11",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Emanuel Dickinson",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 1162.44,
+    "total_covered": 0.0,
+    "total_owed": 1162.44,
+    "denied_claims": 9,
+    "pending_claims": 0
+  }
+}

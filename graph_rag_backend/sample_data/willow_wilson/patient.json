@@ -1,0 +1,161 @@
+{
+  "patient_id": "2c7af31a-7740-4f28-80f8-d5005ea9c6c0",
+  "display_name": "Willow Wilson",
+  "dob": "1965-11-23",
+  "age": 60,
+  "gender": "F",
+  "city": "Marblehead",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "UnitedHealthcare",
+    "member_since": "1988",
+    "payer_id": "5059a55e-5d6e-34d1-b6cb-d83d16e57bcf"
+  },
+  "active_conditions": [
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "2000-02-08"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "2000-02-08"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "4166c16e-b649-4e61-bec9-ddaf730422fe",
+      "date": "2019-12-17",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Phil Lakin",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "b98e75f0-7ccf-4056-97f0-4cd71990ec99",
+      "date": "2018-12-11",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Phil Lakin",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "be5e01c7-ac11-4435-9b7c-e819c1b99fac",
+      "date": "2017-12-05",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Phil Lakin",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "ca6f0a04-3a8d-4813-8886-e20afa8012f0",
+      "date": "2016-11-29",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Phil Lakin",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "2543f297-b05f-41b5-968e-d66dfb47d0d5",
+      "date": "2016-09-15",
+      "type": "emergency",
+      "description": "Emergency room admission (procedure)",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Houston Osinski",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 59.16,
+      "patient_owes": 70.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "bfb58da8-dc24-458d-8180-8369f26cb1f8",
+      "date": "2015-11-24",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Phil Lakin",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "b69eea79-bbc6-40e1-9ebb-02aaf8f9aeee",
+      "date": "2013-12-17",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Phil Lakin",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "94087b66-48e3-401f-a607-4387ab459ac1",
+      "date": "2011-12-13",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Phil Lakin",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "0b08af2b-d26a-4bde-84ab-6aefae7d57e7",
+      "date": "2000-02-08",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Phil Lakin",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 59.16,
+      "patient_owes": 70.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 1162.44,
+    "total_covered": 1022.44,
+    "total_owed": 140.0,
+    "denied_claims": 0,
+    "pending_claims": 0
+  }
+}

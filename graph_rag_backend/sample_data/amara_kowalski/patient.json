@@ -1,0 +1,355 @@
+{
+  "patient_id": "f95a8235-5c43-4926-84fb-391822847c30",
+  "display_name": "Amara Kowalski",
+  "dob": "1927-04-24",
+  "age": 99,
+  "gender": "F",
+  "city": "Melrose",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicare",
+    "member_since": "1959",
+    "payer_id": "7caa7254-5050-3b5e-9eae-bd5ea30e809c"
+  },
+  "active_conditions": [
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1945-06-17"
+    },
+    {
+      "code": "59621000",
+      "description": "Hypertension",
+      "onset": "1945-06-17"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "1957-08-25"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "1958-08-31"
+    },
+    {
+      "code": "55822004",
+      "description": "Hyperlipidemia",
+      "onset": "1982-01-10"
+    },
+    {
+      "code": "124171000119105",
+      "description": "Chronic intractable migraine without aura",
+      "onset": "1990-03-15"
+    },
+    {
+      "code": "196416002",
+      "description": "Impacted molars",
+      "onset": "1990-06-18"
+    },
+    {
+      "code": "55680006",
+      "description": "Drug overdose",
+      "onset": "1994-07-20"
+    },
+    {
+      "code": "64859006",
+      "description": "Osteoporosis (disorder)",
+      "onset": "1997-04-06"
+    },
+    {
+      "code": "49436004",
+      "description": "Atrial Fibrillation",
+      "onset": "2013-07-07"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "ee82bb4e-12c3-4e20-ad80-44b0f5372336",
+      "date": "2020-01-22",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "16fbaa27-3635-4869-8d38-7f522933d75d",
+      "date": "2019-08-11",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Werner Schaefer",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "87a60401-0059-4f5e-bf1c-062d1cfa9d34",
+      "date": "2019-05-29",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "74fdbc72-4a2f-488e-87ed-a75f28ef1950",
+      "date": "2019-04-29",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "4d4a3722-1a07-4e73-82af-1b5d903aaafb",
+      "date": "2019-01-22",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "9ddc7887-a1e3-468f-92cf-51a5ad231bcb",
+      "date": "2018-08-05",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Werner Schaefer",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "bf74b076-41bc-4f24-b6aa-3aa90fde5722",
+      "date": "2018-01-22",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "aea340cd-b87f-4d08-9312-39b290c31a17",
+      "date": "2017-12-02",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "a556a102-8dfd-4d42-b3a3-4898f1cb1dea",
+      "date": "2017-11-02",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "379f9318-cb9c-475b-8d8c-dd1413313dda",
+      "date": "2017-10-03",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "feaba949-dd73-4a8b-bee2-afb0b4377ffb",
+      "date": "2017-09-03",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "802c2e3a-75a0-422b-ae05-8d6be883b6ce",
+      "date": "2017-08-04",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "298bc30c-ac82-4c32-bec9-dbb794a260a8",
+      "date": "2017-07-30",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Werner Schaefer",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "001ed161-9b07-4296-8272-ea989f448b41",
+      "date": "2017-01-22",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "036dd18b-fca2-4ba9-a050-97070b21bc4a",
+      "date": "2016-07-24",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Werner Schaefer",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "53f095d9-1d27-4c4e-abff-f18ae2e2e213",
+      "date": "2016-05-11",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "a036bad0-bc8f-4fea-9692-58bb51c25985",
+      "date": "2016-04-11",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "c011a929-ec2e-4ded-bf75-3f9e33d5c011",
+      "date": "2016-01-23",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "5851829e-0e3e-4aa0-bc56-e2c3d4579dda",
+      "date": "2015-07-19",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Werner Schaefer",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "e7f4b0cb-d33b-4615-82cd-4a9c9278fb64",
+      "date": "2015-01-24",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 17462.42,
+    "total_covered": 7474.48,
+    "total_owed": 9987.94,
+    "denied_claims": 56,
+    "pending_claims": 0
+  }
+}

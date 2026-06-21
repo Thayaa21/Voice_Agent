@@ -1,0 +1,350 @@
+{
+  "patient_id": "cecb7ece-fb70-4a7f-b51d-6e8dd1506ad9",
+  "display_name": "Luna Kowalski",
+  "dob": "1951-01-06",
+  "age": 75,
+  "gender": "M",
+  "city": "Leyden",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicare",
+    "member_since": "1970",
+    "payer_id": "7caa7254-5050-3b5e-9eae-bd5ea30e809c"
+  },
+  "active_conditions": [
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1969-03-01"
+    },
+    {
+      "code": "44054006",
+      "description": "Diabetes",
+      "onset": "1976-03-13"
+    },
+    {
+      "code": "302870006",
+      "description": "Hypertriglyceridemia (disorder)",
+      "onset": "1977-03-19"
+    },
+    {
+      "code": "237602007",
+      "description": "Metabolic syndrome X (disorder)",
+      "onset": "1977-03-19"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "1977-03-19"
+    },
+    {
+      "code": "431855005",
+      "description": "Chronic kidney disease stage 1 (disorder)",
+      "onset": "1977-03-19"
+    },
+    {
+      "code": "127013003",
+      "description": "Diabetic renal disease (disorder)",
+      "onset": "1977-03-19"
+    },
+    {
+      "code": "431856006",
+      "description": "Chronic kidney disease stage 2 (disorder)",
+      "onset": "1977-12-31"
+    },
+    {
+      "code": "90781000119102",
+      "description": "Microalbuminuria due to type 2 diabetes mellitus (disorder)",
+      "onset": "1977-12-31"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "93ef5ebf-c5b8-4ff1-b4a1-f7a6af2b7a52",
+      "date": "2020-04-18",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Von Mraz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "3cd45429-af28-4e35-a6b2-4e7687485fa2",
+      "date": "2020-04-11",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Myong Heidenreich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "6bb6013a-3948-4b4b-bb09-51abede6271a",
+      "date": "2020-04-04",
+      "type": "emergency",
+      "description": "Emergency Encounter",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Von Mraz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "9b74f4f0-1aa9-4764-9df1-8029b02d4949",
+      "date": "2020-03-28",
+      "type": "emergency",
+      "description": "Emergency Encounter",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Von Mraz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "e50a8b38-82b8-4827-b7b7-f20dbbeafcba",
+      "date": "2020-03-21",
+      "type": "emergency",
+      "description": "Emergency Encounter",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Von Mraz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "1eef6d92-11fd-4a05-a745-4a2f07c6358b",
+      "date": "2020-03-17",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Von Mraz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "56261b54-4495-4295-b94b-6762e5fea8e7",
+      "date": "2020-02-22",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Myong Heidenreich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "8795cf1c-5566-4de7-a507-082f259a9e4e",
+      "date": "2020-02-15",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Myong Heidenreich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "0d400959-3c7c-4b96-b896-dd40de9c3438",
+      "date": "2020-01-25",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Von Mraz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "aa4a5272-7170-4127-9a9b-864c16beb72f",
+      "date": "2020-01-18",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Myong Heidenreich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "00838cfd-522a-4872-8764-c458ef6d16df",
+      "date": "2019-12-28",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Myong Heidenreich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "5eba743e-4d8d-4ce0-b79b-5d7c7f4c1738",
+      "date": "2019-12-21",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Myong Heidenreich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "ce03ea4d-92b0-407b-a1d3-4ec6319dbc77",
+      "date": "2019-11-30",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Von Mraz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "b366ed54-4a43-44dd-982a-13b3ac3fb683",
+      "date": "2019-11-23",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Myong Heidenreich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "ae493c5b-ea50-4a88-9635-de02390f0a86",
+      "date": "2019-11-16",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Silva Fahey",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "bec268f9-281e-475c-9c30-eba8587a9bde",
+      "date": "2019-10-26",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Myong Heidenreich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "9ae16854-7821-4e91-87b3-e8d4ca9fc32d",
+      "date": "2019-10-19",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Myong Heidenreich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "5de864ef-b23c-40fd-a76c-d406426d0de2",
+      "date": "2019-09-28",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Von Mraz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "1d570666-21c9-441f-af28-3baed51800eb",
+      "date": "2019-09-21",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Myong Heidenreich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "c8010121-de75-4db9-998a-b4582f50545d",
+      "date": "2019-08-31",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Myong Heidenreich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 58380.32,
+    "total_covered": 19758.72,
+    "total_owed": 38621.6,
+    "denied_claims": 135,
+    "pending_claims": 0
+  }
+}

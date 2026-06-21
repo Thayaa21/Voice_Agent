@@ -1,0 +1,256 @@
+{
+  "patient_id": "711d2093-5eb9-45a6-ad09-4b5c0371ad85",
+  "display_name": "Ella Johnson",
+  "dob": "1967-11-26",
+  "age": 58,
+  "gender": "M",
+  "city": "Bourne",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Humana",
+    "member_since": "1967",
+    "payer_id": "d47b3510-2895-3b70-9897-342d681c769d"
+  },
+  "active_conditions": [
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "2007-12-02"
+    },
+    {
+      "code": "44054006",
+      "description": "Diabetes",
+      "onset": "2013-12-15"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "2013-12-15"
+    },
+    {
+      "code": "302870006",
+      "description": "Hypertriglyceridemia (disorder)",
+      "onset": "2015-12-20"
+    },
+    {
+      "code": "237602007",
+      "description": "Metabolic syndrome X (disorder)",
+      "onset": "2015-12-20"
+    },
+    {
+      "code": "80394007",
+      "description": "Hyperglycemia (disorder)",
+      "onset": "2016-12-25"
+    },
+    {
+      "code": "53741008",
+      "description": "Coronary Heart Disease",
+      "onset": "2020-01-12"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "0b16538a-5314-478d-964c-fa5fb39dc711",
+      "date": "2020-01-12",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Chauncey Durgan",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "ecd7c5b8-c8b9-45ea-ba94-ab92b58451eb",
+      "date": "2019-01-06",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Chauncey Durgan",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "0a2eb6ee-fc5c-4539-bab6-765ec1b1a29d",
+      "date": "2017-12-31",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Chauncey Durgan",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "c04ea5b3-6230-4cd7-aa00-69131d2d53be",
+      "date": "2017-05-01",
+      "type": "ambulatory",
+      "description": "Encounter for 'check-up'",
+      "reason": "Concussion with no loss of consciousness",
+      "procedure_code": "185349003",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "8ea92ca4-f618-43e8-af2d-74fda6b09699",
+      "date": "2017-04-01",
+      "type": "emergency",
+      "description": "Emergency room admission (procedure)",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "10b4ad42-1e6d-4566-863b-37753bbbd397",
+      "date": "2017-01-16",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "c4eefe2a-e7a7-45ce-ad19-4860f8d9645b",
+      "date": "2017-01-02",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "4ef7998f-1344-4944-a244-056a610d667e",
+      "date": "2016-12-25",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Chauncey Durgan",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "16516507-9f5c-4560-9c16-227221886ab5",
+      "date": "2015-12-20",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Chauncey Durgan",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "df61aad7-1b3c-48e9-82f2-71fdab47290d",
+      "date": "2015-08-13",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "8d0f6aec-8c5d-4c13-bdff-1324237a9356",
+      "date": "2013-12-15",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Chauncey Durgan",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "1634acaa-1c83-4bc4-8ff6-fb639464dd4a",
+      "date": "2013-12-15",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Anemia (disorder)",
+      "procedure_code": "185347001",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "716f4e8e-9a1c-4588-b014-d5abde4ea381",
+      "date": "2011-12-11",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Chauncey Durgan",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "b2a889e8-6951-4023-804a-173b7d6afb59",
+      "date": "2007-12-02",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Chauncey Durgan",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 1808.24,
+    "total_covered": 1328.24,
+    "total_owed": 480.0,
+    "denied_claims": 0,
+    "pending_claims": 0
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "patient_id": "ed965dc3-2f77-4277-8684-b044a57a962b",
+  "display_name": "Caleb Wu",
+  "dob": "1984-09-14",
+  "age": 41,
+  "gender": "M",
+  "city": "Gloucester",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Humana",
+    "member_since": "1984",
+    "payer_id": "d47b3510-2895-3b70-9897-342d681c769d"
+  },
+  "active_conditions": [
+    {
+      "code": "74400008",
+      "description": "Appendicitis",
+      "onset": "1996-09-13"
+    },
+    {
+      "code": "428251008",
+      "description": "History of appendectomy",
+      "onset": "1996-09-13"
+    },
+    {
+      "code": "196416002",
+      "description": "Impacted molars",
+      "onset": "2005-04-14"
+    },
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "2009-11-20"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "2018-11-30"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "2018-11-30"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "10b1453c-bf00-4f77-959b-7392880d3e1f",
+      "date": "2018-11-30",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Blanch Bradtke",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "19788626-66f8-4d2c-b2ce-a1c031db3ef8",
+      "date": "2018-11-30",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Anemia (disorder)",
+      "procedure_code": "185347001",
+      "provider": "Dr. Mari Reynolds",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "c57f1488-a997-424f-bff2-e16252609f1f",
+      "date": "2015-11-27",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Blanch Bradtke",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "5719c05b-ae42-48a2-91b6-d943998f654a",
+      "date": "2015-01-10",
+      "type": "ambulatory",
+      "description": "Encounter for 'check-up'",
+      "reason": "Concussion with no loss of consciousness",
+      "procedure_code": "185349003",
+      "provider": "Dr. Mari Reynolds",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "d9eb5b26-a49e-4c0b-89ff-b81ee1f8f913",
+      "date": "2014-12-11",
+      "type": "emergency",
+      "description": "Emergency room admission (procedure)",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Mari Reynolds",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "30b68969-6489-42d7-a42e-0aaa54388f54",
+      "date": "2012-11-23",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Blanch Bradtke",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "6d46c315-4359-44e9-8fa5-58aa3a393a5a",
+      "date": "2010-02-11",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute bronchitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Mari Reynolds",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "cf4704e2-deaa-43f6-8173-dc43010cbd80",
+      "date": "2009-11-20",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Blanch Bradtke",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "79e6b210-3b84-41a7-8b07-12da1ec352a9",
+      "date": "2005-04-14",
+      "type": "inpatient",
+      "description": "Encounter Inpatient",
+      "reason": "Impacted molars",
+      "procedure_code": "183452005",
+      "provider": "Dr. Mari Reynolds",
+      "payer": "Humana",
+      "billed": 77.49,
+      "covered": 0.0,
+      "patient_owes": 77.49,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "ca6830a5-6031-4aa4-b83c-45060964d1bc",
+      "date": "1996-09-13",
+      "type": "emergency",
+      "description": "Emergency Room Admission",
+      "reason": "Appendicitis",
+      "procedure_code": "50849002",
+      "provider": "Dr. Mari Reynolds",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "f145aa39-4d6f-4e55-98c0-4a6e35d5a7d3",
+      "date": "1996-09-13",
+      "type": "inpatient",
+      "description": "Encounter Inpatient",
+      "reason": "Appendicitis",
+      "procedure_code": "183452005",
+      "provider": "Dr. Mari Reynolds",
+      "payer": "Humana",
+      "billed": 77.49,
+      "covered": 0.0,
+      "patient_owes": 77.49,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 1317.42,
+    "total_covered": 713.28,
+    "total_owed": 604.14,
+    "denied_claims": 1,
+    "pending_claims": 0
+  }
+}

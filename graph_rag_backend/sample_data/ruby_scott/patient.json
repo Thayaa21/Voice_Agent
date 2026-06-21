@@ -1,0 +1,133 @@
+{
+  "patient_id": "8fdd7aa6-b33c-429e-bcf9-b15fb189ee3c",
+  "display_name": "Ruby Scott",
+  "dob": "1981-09-09",
+  "age": 44,
+  "gender": "M",
+  "city": "Boston",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicaid",
+    "member_since": "1981",
+    "payer_id": "7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a"
+  },
+  "active_conditions": [
+    {
+      "code": "275272006",
+      "description": "Brain damage - traumatic",
+      "onset": "2017-10-30"
+    },
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "2018-11-28"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "15aed1c5-f487-4b45-b327-a500dede12a4",
+      "date": "2018-11-28",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Hobert D'amore",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "3b99f1a0-45e8-4a2f-a923-14bf390e0711",
+      "date": "2018-09-02",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Jeanmarie Beatty",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "b386693b-6937-4449-b7e0-2e3113e184ed",
+      "date": "2017-12-29",
+      "type": "ambulatory",
+      "description": "Encounter for 'check-up'",
+      "reason": "Concussion injury of brain",
+      "procedure_code": "185349003",
+      "provider": "Dr. Jeanmarie Beatty",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "46902e6f-b969-4c61-bbe6-d9951c7e5e15",
+      "date": "2017-10-30",
+      "type": "emergency",
+      "description": "Emergency room admission (procedure)",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Suzette Monahan",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "6db09472-6a91-4bcf-8e7c-d3539c6d35f8",
+      "date": "2015-11-25",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Hobert D'amore",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "abdfd599-569f-40e1-8534-5d758214dc98",
+      "date": "2015-01-02",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute viral pharyngitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Jeanmarie Beatty",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "b629e3bd-4f46-4f62-b4c8-b2bae29ac199",
+      "date": "2012-11-21",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Hobert D'amore",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 904.12,
+    "total_covered": 664.12,
+    "total_owed": 240.0,
+    "denied_claims": 0,
+    "pending_claims": 0
+  }
+}

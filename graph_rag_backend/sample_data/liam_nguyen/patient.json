@@ -1,0 +1,360 @@
+{
+  "patient_id": "b36658dd-cb89-41cf-b2e9-1d84894946d5",
+  "display_name": "Liam Nguyen",
+  "dob": "1911-11-19",
+  "age": 114,
+  "gender": "M",
+  "city": "West Tisbury",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicare",
+    "member_since": "1930",
+    "payer_id": "7caa7254-5050-3b5e-9eae-bd5ea30e809c"
+  },
+  "active_conditions": [
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1946-02-03"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "1959-12-13"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "1962-11-25"
+    },
+    {
+      "code": "5602001",
+      "description": "Opioid abuse (disorder)",
+      "onset": "1967-12-24"
+    },
+    {
+      "code": "449868002",
+      "description": "Smokes tobacco daily",
+      "onset": "1967-12-24"
+    },
+    {
+      "code": "126906006",
+      "description": "Neoplasm of prostate",
+      "onset": "1978-02-19"
+    },
+    {
+      "code": "92691004",
+      "description": "Carcinoma in situ of prostate (disorder)",
+      "onset": "1978-02-19"
+    },
+    {
+      "code": "53741008",
+      "description": "Coronary Heart Disease",
+      "onset": "1980-03-02"
+    },
+    {
+      "code": "49436004",
+      "description": "Atrial Fibrillation",
+      "onset": "1986-04-06"
+    },
+    {
+      "code": "22298006",
+      "description": "Myocardial Infarction",
+      "onset": "1987-07-05"
+    },
+    {
+      "code": "399211009",
+      "description": "History of myocardial infarction (situation)",
+      "onset": "1987-07-05"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "ab50cc48-0698-4d7c-be8e-91f7ec251912",
+      "date": "1987-07-05",
+      "type": "emergency",
+      "description": "Myocardial Infarction",
+      "reason": "",
+      "procedure_code": "22298006",
+      "provider": "Dr. Eunice Kertzmann",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "d76cf1ad-84e2-41a2-941e-52cd3f4379ca",
+      "date": "1987-04-12",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "72cef7d3-0904-49ef-94c2-f86d7b0138ba",
+      "date": "1986-04-06",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "b2d4b92d-d216-46ac-96c0-ad5c3dad6c13",
+      "date": "1985-03-31",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "73fd0d5f-1e50-42f3-8a8b-323a9b938552",
+      "date": "1984-03-25",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "d151d85a-c982-49e3-a033-62148c019292",
+      "date": "1983-03-20",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "e9a7ece8-f79d-4899-8817-aef8bcd8c840",
+      "date": "1982-08-07",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "d3585c1d-44f0-413f-8aa7-365ceedd415e",
+      "date": "1982-03-14",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "1609fa4b-7124-4a84-8cd3-cf28fd64da28",
+      "date": "1981-03-08",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "23425b0f-3f96-4a70-baf5-484b1d7549b5",
+      "date": "1980-03-02",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "560036c6-c6d2-4f59-a399-e926d5ede5bd",
+      "date": "1980-02-24",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute viral pharyngitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "8c1d61c2-5ec4-490a-b02f-57133903fe80",
+      "date": "1979-08-22",
+      "type": "emergency",
+      "description": "Emergency room admission (procedure)",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Eunice Kertzmann",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "25f5114f-154c-4fb2-b313-b9dc38cfd6bf",
+      "date": "1979-02-25",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "81166700-95b5-484c-9ef4-e7a6656232e7",
+      "date": "1978-05-20",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Neoplasm of prostate",
+      "procedure_code": "185347001",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "9c9a34ae-bb19-4135-9745-201e587b5461",
+      "date": "1978-02-19",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "cf36ca09-fdd2-40b2-ac97-3d3013b0dc7d",
+      "date": "1978-02-19",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "",
+      "procedure_code": "185345009",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "c2de137e-52ff-46a7-a818-066b48cfdeaa",
+      "date": "1978-02-19",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Neoplasm of prostate",
+      "procedure_code": "185347001",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "fc92def5-9638-4b49-aca9-55dbe6254b46",
+      "date": "1977-10-31",
+      "type": "ambulatory",
+      "description": "Encounter for 'check-up'",
+      "reason": "Fracture of ankle",
+      "procedure_code": "185349003",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "a0f4225b-e95c-47f2-b72f-c55ac54e62a0",
+      "date": "1977-08-02",
+      "type": "emergency",
+      "description": "Emergency room admission (procedure)",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Eunice Kertzmann",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "dda4f973-f23a-4251-a8e9-a942f698f38a",
+      "date": "1967-12-24",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 3229.0,
+    "total_covered": 2079.0,
+    "total_owed": 1150.0,
+    "denied_claims": 0,
+    "pending_claims": 0
+  }
+}

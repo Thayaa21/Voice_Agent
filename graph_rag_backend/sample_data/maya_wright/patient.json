@@ -1,0 +1,370 @@
+{
+  "patient_id": "7fef7a7d-0198-457f-8aad-267232321717",
+  "display_name": "Maya Wright",
+  "dob": "1939-06-22",
+  "age": 86,
+  "gender": "M",
+  "city": "Framingham",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicare",
+    "member_since": "1958",
+    "payer_id": "7caa7254-5050-3b5e-9eae-bd5ea30e809c"
+  },
+  "active_conditions": [
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "1976-09-09"
+    },
+    {
+      "code": "44054006",
+      "description": "Diabetes",
+      "onset": "1979-06-28"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "1979-06-28"
+    },
+    {
+      "code": "302870006",
+      "description": "Hypertriglyceridemia (disorder)",
+      "onset": "1981-07-02"
+    },
+    {
+      "code": "237602007",
+      "description": "Metabolic syndrome X (disorder)",
+      "onset": "1981-07-02"
+    },
+    {
+      "code": "368581000119106",
+      "description": "Neuropathy due to type 2 diabetes mellitus (disorder)",
+      "onset": "1983-07-07"
+    },
+    {
+      "code": "49436004",
+      "description": "Atrial Fibrillation",
+      "onset": "1992-05-28"
+    },
+    {
+      "code": "55822004",
+      "description": "Hyperlipidemia",
+      "onset": "1992-07-09"
+    },
+    {
+      "code": "422034002",
+      "description": "Diabetic retinopathy associated with type II diabetes mellitus (disorder)",
+      "onset": "2000-08-24"
+    },
+    {
+      "code": "1551000119108",
+      "description": "Nonproliferative diabetic retinopathy due to type 2 diabetes mellitus (disorder)",
+      "onset": "2005-09-22"
+    },
+    {
+      "code": "53741008",
+      "description": "Coronary Heart Disease",
+      "onset": "2006-09-28"
+    },
+    {
+      "code": "97331000119101",
+      "description": "Macular edema and retinopathy due to type 2 diabetes mellitus (disorder)",
+      "onset": "2006-09-28"
+    },
+    {
+      "code": "230690007",
+      "description": "Stroke",
+      "onset": "2013-12-26"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "16e524cb-2c4b-4921-9991-e1f9267924e9",
+      "date": "2019-12-12",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Elinor Donnelly",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "b908535b-b1ef-4bac-badd-41d9ea9d089c",
+      "date": "2019-07-24",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Keri Schmidt",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "7400ab78-7b4a-4627-b4fc-a3cace33d07d",
+      "date": "2019-06-15",
+      "type": "ambulatory",
+      "description": "Encounter for 'check-up'",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Keri Schmidt",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "3d42b9d3-135a-4b1e-b85d-36230d326634",
+      "date": "2019-05-23",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Keri Schmidt",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "a3c4635d-7f54-40ee-b46a-e42867b77b3d",
+      "date": "2019-05-14",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute viral pharyngitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Keri Schmidt",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "85eddb5f-cae1-4da6-8767-483075cfb46c",
+      "date": "2018-12-06",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Elinor Donnelly",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "fcd4a1eb-ed83-4f14-a41d-b244a1554962",
+      "date": "2018-07-24",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Keri Schmidt",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "5a3be01a-b208-4456-9d82-db817be432b5",
+      "date": "2017-11-30",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Elinor Donnelly",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "f14fc45d-e677-483c-b2cd-72a2920b656b",
+      "date": "2017-07-24",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Keri Schmidt",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "f1086aaf-dda6-46ad-ba81-7e60322cb2e3",
+      "date": "2016-11-24",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Elinor Donnelly",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "f2ba05fe-8f08-4a62-8ade-104cb62a4f8d",
+      "date": "2016-07-24",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Keri Schmidt",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "91753991-ec06-46c8-82ad-411dd1f4bd8b",
+      "date": "2015-11-19",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Elinor Donnelly",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "2c6cf633-1a45-489c-8a4f-e7b0faadf471",
+      "date": "2015-07-25",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Keri Schmidt",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "fdbcd02f-89c1-450c-9db5-7d7edbe40f69",
+      "date": "2014-11-13",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Elinor Donnelly",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "2a4ccb84-8de3-4111-b445-cd61cdd8349c",
+      "date": "2014-07-25",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Keri Schmidt",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "e7ea91f7-bbb0-4776-b582-89ab13108b5d",
+      "date": "2014-06-16",
+      "type": "ambulatory",
+      "description": "Encounter for 'check-up'",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Keri Schmidt",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "40ed8839-27f3-4109-a64b-ea535fab3a70",
+      "date": "2013-12-26",
+      "type": "emergency",
+      "description": "Stroke",
+      "reason": "",
+      "procedure_code": "230690007",
+      "provider": "Dr. Keri Schmidt",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "280d7fcd-63ec-4a7d-b79c-a875811748b5",
+      "date": "2013-11-07",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Elinor Donnelly",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "c52f728e-e2dc-4be8-868a-e9e704d4e591",
+      "date": "2013-07-25",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Keri Schmidt",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "12db7974-99e5-42d0-a669-db72ca8f7ab4",
+      "date": "2012-11-01",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Elinor Donnelly",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 8782.88,
+    "total_covered": 5515.4,
+    "total_owed": 3267.48,
+    "denied_claims": 3,
+    "pending_claims": 0
+  }
+}

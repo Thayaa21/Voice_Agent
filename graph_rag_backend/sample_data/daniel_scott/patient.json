@@ -1,0 +1,142 @@
+{
+  "patient_id": "a47e5737-065e-416f-8257-0c9f14382065",
+  "display_name": "Daniel Scott",
+  "dob": "1974-07-30",
+  "age": 51,
+  "gender": "M",
+  "city": "Plymouth",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Aetna",
+    "member_since": "1974",
+    "payer_id": "4d71f845-a6a9-3c39-b242-14d25ef86a8d"
+  },
+  "active_conditions": [
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "2002-10-08"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "7ed93636-9ee9-435f-9151-22a879ddf051",
+      "date": "2018-08-14",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Tobias Bechtelar",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "d70d30b0-0761-4751-9414-f048bcf63fd0",
+      "date": "2017-07-03",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Hassan Rath",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "6285545a-b365-4049-9ad6-60a937a88f2b",
+      "date": "2016-08-09",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Tobias Bechtelar",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "87ae30aa-2721-49fe-93ae-d990de19a7b6",
+      "date": "2014-08-05",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Tobias Bechtelar",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "8321e7a8-b41c-43b3-ae70-1e41c73bf178",
+      "date": "2013-10-13",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute viral pharyngitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Hassan Rath",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "18589093-9bab-4a7d-b12f-60acaed30bd7",
+      "date": "2012-10-13",
+      "type": "emergency",
+      "description": "Emergency room admission (procedure)",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Hassan Rath",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "33a2ccbf-b7d9-4b9c-87be-3809a4541191",
+      "date": "2011-10-18",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Tobias Bechtelar",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "217672e5-97d4-4e8e-bb8a-d01dc0ea82f0",
+      "date": "2002-10-08",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Tobias Bechtelar",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 1033.28,
+    "total_covered": 773.28,
+    "total_owed": 260.0,
+    "denied_claims": 0,
+    "pending_claims": 0
+  }
+}

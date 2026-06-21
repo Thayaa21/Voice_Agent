@@ -1,0 +1,161 @@
+{
+  "patient_id": "87be3f66-1feb-4a69-a5b1-71668f2e0baa",
+  "display_name": "Liam Wilson",
+  "dob": "1998-05-07",
+  "age": 28,
+  "gender": "M",
+  "city": "Boston",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "NO_INSURANCE",
+    "member_since": "1998",
+    "payer_id": "b1c428d6-4f07-31e0-90f0-68ffa6ff8c76"
+  },
+  "active_conditions": [
+    {
+      "code": "410429000",
+      "description": "Cardiac Arrest",
+      "onset": "2007-08-23"
+    },
+    {
+      "code": "429007001",
+      "description": "History of cardiac arrest (situation)",
+      "onset": "2007-08-23"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "373e6efb-ef6b-4612-af7a-70597e957d96",
+      "date": "2017-07-06",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Afton Homenick",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "3053369c-8470-4885-81a2-893413f66f5c",
+      "date": "2016-06-30",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Afton Homenick",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "437c26d0-ef1d-431c-8151-640f97025220",
+      "date": "2015-06-25",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Afton Homenick",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "b4f1da20-37b5-46fc-8f67-5dd7f290e797",
+      "date": "2014-06-19",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Afton Homenick",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "cca339f7-ce70-4cbf-9b90-e0db3d9ab524",
+      "date": "2013-06-13",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Afton Homenick",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "7a704ca4-37ca-47ac-a091-0781e6c31438",
+      "date": "2012-06-07",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Afton Homenick",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "b50d6c04-9512-4b24-8c8b-36a3888caad1",
+      "date": "2011-06-02",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Afton Homenick",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "4688b531-78d8-4e25-b029-60c3455baaa7",
+      "date": "2010-05-27",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Afton Homenick",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "00d8f4e4-191a-4c2f-94d1-843113c7b284",
+      "date": "2007-08-23",
+      "type": "emergency",
+      "description": "Cardiac Arrest",
+      "reason": "",
+      "procedure_code": "410429000",
+      "provider": "Dr. Lynwood Monahan",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 1162.44,
+    "total_covered": 0.0,
+    "total_owed": 1162.44,
+    "denied_claims": 9,
+    "pending_claims": 0
+  }
+}

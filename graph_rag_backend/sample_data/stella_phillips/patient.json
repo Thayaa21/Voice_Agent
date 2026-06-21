@@ -1,0 +1,166 @@
+{
+  "patient_id": "fcee8e43-b4dc-40c3-bb1e-836292c5b03f",
+  "display_name": "Stella Phillips",
+  "dob": "1973-10-26",
+  "age": 52,
+  "gender": "M",
+  "city": "Millis",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Anthem",
+    "member_since": "1973",
+    "payer_id": "42c4fca7-f8a9-3cd1-982a-dd9751bf3e2a"
+  },
+  "active_conditions": [
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "2011-01-14"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "2011-01-14"
+    },
+    {
+      "code": "55822004",
+      "description": "Hyperlipidemia",
+      "onset": "2019-11-15"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "a408b7c1-d287-4039-8a65-dd7866c3e9bd",
+      "date": "2019-12-06",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Luke Rath",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "4ddfdbfe-b2cd-454c-9f46-de5fd0b24886",
+      "date": "2019-11-15",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Carmina Carroll",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "08598ca5-abb1-4c0d-a3b9-3172119ab38b",
+      "date": "2017-11-10",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Carmina Carroll",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "3a6b6050-a79f-4687-a3c7-1745e77fbfa7",
+      "date": "2017-04-28",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Mohammed Parisian",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "7729a952-22e7-48bf-8af4-7a70e1000cdc",
+      "date": "2017-04-23",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute bronchitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Luke Rath",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "d0daa436-8347-4c01-852c-f4ad85249832",
+      "date": "2015-11-06",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Carmina Carroll",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "1ed61942-175c-470d-af58-8a423fa5c5db",
+      "date": "2013-11-01",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Carmina Carroll",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "95898271-5bf0-4199-b4c4-3b2142e31b98",
+      "date": "2011-01-14",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Carmina Carroll",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "c39a1266-4fd2-49e6-8a5c-e03669b3196f",
+      "date": "2011-01-14",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Anemia (disorder)",
+      "procedure_code": "185347001",
+      "provider": "Dr. Luke Rath",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 1162.44,
+    "total_covered": 645.8,
+    "total_owed": 516.64,
+    "denied_claims": 4,
+    "pending_claims": 0
+  }
+}

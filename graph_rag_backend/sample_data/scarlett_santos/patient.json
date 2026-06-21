@@ -1,0 +1,161 @@
+{
+  "patient_id": "5caf8d69-3d67-4264-9dc3-4dd69ddf327a",
+  "display_name": "Scarlett Santos",
+  "dob": "1983-06-21",
+  "age": 42,
+  "gender": "M",
+  "city": "Greenfield",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "UnitedHealthcare",
+    "member_since": "1983",
+    "payer_id": "5059a55e-5d6e-34d1-b6cb-d83d16e57bcf"
+  },
+  "active_conditions": [
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "2014-09-02"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "2017-09-05"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "2a2ad013-eb81-4be7-88dd-cddef1788126",
+      "date": "2017-11-24",
+      "type": "emergency",
+      "description": "Emergency room admission (procedure)",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Von Mraz",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 59.16,
+      "patient_owes": 70.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "7f643fa4-d452-4932-89f4-ab8714d83d4a",
+      "date": "2017-09-05",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Minh Schneider",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "0579baf6-e6d3-4420-a7a0-5b9471e7f2f5",
+      "date": "2017-09-05",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Anemia (disorder)",
+      "procedure_code": "185347001",
+      "provider": "Dr. Von Mraz",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 59.16,
+      "patient_owes": 70.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "b5005bf1-6ad0-4e66-ae91-6c2cdfa509c2",
+      "date": "2016-09-16",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Von Mraz",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 59.16,
+      "patient_owes": 70.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "6c2a681d-1bb9-40cf-8cc2-c5c6e5671fe0",
+      "date": "2014-09-02",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Minh Schneider",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "c1588013-d1e2-42fc-bffc-68c716a1d580",
+      "date": "2013-06-19",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Von Mraz",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 59.16,
+      "patient_owes": 70.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "410c15a5-3c16-41c3-9ab8-6a61f892a581",
+      "date": "2011-08-30",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Minh Schneider",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "748de9ea-2a2f-4af2-b15e-f40e8ed4a412",
+      "date": "2002-07-15",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Von Mraz",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 59.16,
+      "patient_owes": 70.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "08534032-412f-4b47-8629-f06973a105bd",
+      "date": "2002-06-26",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Von Mraz",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 59.16,
+      "patient_owes": 70.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 1162.44,
+    "total_covered": 742.44,
+    "total_owed": 420.0,
+    "denied_claims": 0,
+    "pending_claims": 0
+  }
+}

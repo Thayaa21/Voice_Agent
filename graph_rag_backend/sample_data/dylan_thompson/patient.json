@@ -1,0 +1,108 @@
+{
+  "patient_id": "32cd6f76-10ed-47e8-9547-0f6be517d213",
+  "display_name": "Dylan Thompson",
+  "dob": "1971-07-28",
+  "age": 54,
+  "gender": "F",
+  "city": "Rochester",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Cigna Health",
+    "member_since": "1994",
+    "payer_id": "047f6ec3-6215-35eb-9608-f9dda363a44c"
+  },
+  "active_conditions": [],
+  "encounters": [
+    {
+      "encounter_id": "bc8a950b-57f5-4afc-ac68-cd4966d4ae96",
+      "date": "2019-08-21",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Raguel Smitham",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "d66f2802-27a0-4288-b13c-bb2f18af23c7",
+      "date": "2017-08-16",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Raguel Smitham",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "621f3851-2362-4967-bf8d-219d948400b8",
+      "date": "2015-08-12",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Raguel Smitham",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "c97aebb3-28a9-407e-ad40-775148dbf21b",
+      "date": "2013-08-07",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Raguel Smitham",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "ae606ea7-d195-4ee7-b521-7a9479f9c138",
+      "date": "2011-08-03",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Raguel Smitham",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "c97e4ead-2b1b-4043-a61e-c0e5b485daff",
+      "date": "2011-03-10",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 774.96,
+    "total_covered": 714.96,
+    "total_owed": 60.0,
+    "denied_claims": 0,
+    "pending_claims": 0
+  }
+}

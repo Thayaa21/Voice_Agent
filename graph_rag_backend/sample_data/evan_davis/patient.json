@@ -1,0 +1,170 @@
+{
+  "patient_id": "b56f030d-acf4-4997-91ee-fb3d9c321bfb",
+  "display_name": "Evan Davis",
+  "dob": "1979-04-08",
+  "age": 47,
+  "gender": "M",
+  "city": "Boston",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Cigna Health",
+    "member_since": "1979",
+    "payer_id": "047f6ec3-6215-35eb-9608-f9dda363a44c"
+  },
+  "active_conditions": [
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "2010-06-20"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "a017c898-95f2-4bd5-b409-6877b0d5e391",
+      "date": "2019-04-14",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Mariano West",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "5cbe5123-7504-4ec6-99ba-3ebd705ea0b2",
+      "date": "2018-07-26",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute viral pharyngitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Edie Howell",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "63e9e4c1-72db-4df0-a1f4-4be522c34d0e",
+      "date": "2016-06-26",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Mariano West",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "bdfca784-646d-450b-9000-9cb4587601b7",
+      "date": "2015-11-18",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Edie Howell",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "cc44c661-485f-44ca-b790-37cc946e53de",
+      "date": "2013-06-30",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Sanford Gottlieb",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "e5f722ae-aec5-4607-b9ae-12f2965c81a7",
+      "date": "2013-06-23",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Mariano West",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "22e12b89-2cd3-4596-800e-baad47cee32d",
+      "date": "2013-06-18",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute bronchitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Edie Howell",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "859ebc08-f331-46c0-a144-cee3784f4425",
+      "date": "2011-05-30",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Edie Howell",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "9f294429-1e46-4f4e-ac95-49d3e6afedae",
+      "date": "2010-12-21",
+      "type": "emergency",
+      "description": "Emergency room admission (procedure)",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Sanford Gottlieb",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "f9554d83-d8a0-40e6-b23f-32cdcd166d08",
+      "date": "2010-06-20",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Mariano West",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 1291.6,
+    "total_covered": 862.44,
+    "total_owed": 429.16,
+    "denied_claims": 1,
+    "pending_claims": 0
+  }
+}

@@ -1,0 +1,350 @@
+{
+  "patient_id": "5666bbaf-828b-4fd1-a4f9-eeead450816d",
+  "display_name": "Hannah Davis",
+  "dob": "1953-04-25",
+  "age": 73,
+  "gender": "F",
+  "city": "Bellingham",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicare",
+    "member_since": "1992",
+    "payer_id": "7caa7254-5050-3b5e-9eae-bd5ea30e809c"
+  },
+  "active_conditions": [
+    {
+      "code": "197927001",
+      "description": "Recurrent urinary tract infection",
+      "onset": "1973-06-29"
+    },
+    {
+      "code": "19169002",
+      "description": "Miscarriage in first trimester",
+      "onset": "1981-06-13"
+    },
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1981-07-04"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "1990-07-14"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "1990-07-14"
+    },
+    {
+      "code": "201834006",
+      "description": "Localized  primary osteoarthritis of the hand",
+      "onset": "1991-04-16"
+    },
+    {
+      "code": "55822004",
+      "description": "Hyperlipidemia",
+      "onset": "2004-05-01"
+    },
+    {
+      "code": "40055000",
+      "description": "Chronic sinusitis (disorder)",
+      "onset": "2005-06-10"
+    },
+    {
+      "code": "185086009",
+      "description": "Chronic obstructive bronchitis (disorder)",
+      "onset": "2009-05-30"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "6ae23d33-bf71-4de6-acca-af219980d6bb",
+      "date": "2019-07-28",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Buster Hand",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "3857c762-2f84-4580-b048-6b8741950474",
+      "date": "2019-05-20",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "910bd122-4e15-460f-9094-a7407f287930",
+      "date": "2018-07-22",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Buster Hand",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "85d1742b-3bd5-43cd-ab2d-3bc5a1d095e2",
+      "date": "2018-05-20",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "447a53db-30c3-4bce-a6f2-b2e066a31f49",
+      "date": "2018-04-23",
+      "type": "ambulatory",
+      "description": "Encounter for 'check-up'",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "8f563e03-9942-4eef-9c88-7817e000160b",
+      "date": "2017-07-16",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Buster Hand",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "8a2fae15-1fb5-4a04-a4b0-e72740b155a2",
+      "date": "2017-05-20",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "5e8d6d4a-71b0-4650-a7ba-a974774daba0",
+      "date": "2016-07-10",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Buster Hand",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "78e068c2-6d02-40ae-bde5-d408068a8f68",
+      "date": "2016-05-20",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "0f82ad32-4f90-4718-b6bf-09c846a1dddd",
+      "date": "2015-07-05",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Buster Hand",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "e4e5b71d-7109-4e58-a03a-967004ba086a",
+      "date": "2015-05-21",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "18dfbaff-201c-4af9-b2d8-eb663bc6c74e",
+      "date": "2014-06-29",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Buster Hand",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "2aa90a22-f0fc-41a0-963b-e1c38bc792b8",
+      "date": "2014-05-21",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "124c8315-8816-4ac5-9a67-83657a115b0d",
+      "date": "2013-06-23",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Buster Hand",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "69994c33-d59b-4cf0-b775-bbfbd2597729",
+      "date": "2013-05-21",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "723bf545-9f0f-49d0-bd41-a2e3f04143f9",
+      "date": "2013-04-24",
+      "type": "ambulatory",
+      "description": "Encounter for 'check-up'",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "e0e1e412-6d10-4c37-80e5-f3c2ddd32571",
+      "date": "2012-06-17",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Buster Hand",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "665bebc6-63cd-4872-9a7c-dd9801e54659",
+      "date": "2012-05-21",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "861f3e34-7538-4b8e-9b94-9f344606d7b5",
+      "date": "2011-06-12",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Buster Hand",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "e0478d28-d2f4-4f64-b2ff-6f32d74cf413",
+      "date": "2011-05-22",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 4908.08,
+    "total_covered": 2928.08,
+    "total_owed": 1980.0,
+    "denied_claims": 0,
+    "pending_claims": 0
+  }
+}

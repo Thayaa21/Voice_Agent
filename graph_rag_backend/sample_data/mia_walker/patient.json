@@ -1,0 +1,380 @@
+{
+  "patient_id": "668ad49e-46d7-45ec-a4b4-dab0961d180b",
+  "display_name": "Mia Walker",
+  "dob": "1958-03-28",
+  "age": 68,
+  "gender": "M",
+  "city": "Dartmouth",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "NO_INSURANCE",
+    "member_since": "1958",
+    "payer_id": "b1c428d6-4f07-31e0-90f0-68ffa6ff8c76"
+  },
+  "active_conditions": [
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1968-07-19"
+    },
+    {
+      "code": "185086009",
+      "description": "Chronic obstructive bronchitis (disorder)",
+      "onset": "1989-06-09"
+    },
+    {
+      "code": "82423001",
+      "description": "Chronic pain",
+      "onset": "1990-04-19"
+    },
+    {
+      "code": "196416002",
+      "description": "Impacted molars",
+      "onset": "1990-06-02"
+    },
+    {
+      "code": "124171000119105",
+      "description": "Chronic intractable migraine without aura",
+      "onset": "1991-05-30"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "1996-07-05"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "1996-07-05"
+    },
+    {
+      "code": "53741008",
+      "description": "Coronary Heart Disease",
+      "onset": "1997-07-11"
+    },
+    {
+      "code": "40055000",
+      "description": "Chronic sinusitis (disorder)",
+      "onset": "1998-06-25"
+    },
+    {
+      "code": "55822004",
+      "description": "Hyperlipidemia",
+      "onset": "2006-09-01"
+    },
+    {
+      "code": "22298006",
+      "description": "Myocardial Infarction",
+      "onset": "2011-01-21"
+    },
+    {
+      "code": "399211009",
+      "description": "History of myocardial infarction (situation)",
+      "onset": "2011-01-21"
+    },
+    {
+      "code": "55680006",
+      "description": "Drug overdose",
+      "onset": "2011-08-23"
+    },
+    {
+      "code": "410429000",
+      "description": "Cardiac Arrest",
+      "onset": "2011-11-18"
+    },
+    {
+      "code": "429007001",
+      "description": "History of cardiac arrest (situation)",
+      "onset": "2011-11-18"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "0a3dc87f-a134-4aa6-9618-1a2dfab4baca",
+      "date": "2019-11-19",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Colby Schowalter",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "9734a68e-a1e2-4cd8-837a-fb086e941f44",
+      "date": "2019-11-15",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Florence Hagenes",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "9c3ed0f7-d7aa-4016-a135-10747b3213b8",
+      "date": "2019-10-20",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Colby Schowalter",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "28339bc8-0da5-4b42-b1b8-4ada34786f66",
+      "date": "2019-09-20",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Colby Schowalter",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "5b62783f-5236-40e3-9312-c8a113d8db7d",
+      "date": "2019-09-19",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Colby Schowalter",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "518e3e52-656f-40e8-9206-ac31b9d412c0",
+      "date": "2019-09-13",
+      "type": "emergency",
+      "description": "Emergency Room Admission",
+      "reason": "Drug overdose",
+      "procedure_code": "50849002",
+      "provider": "Dr. Colby Schowalter",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "d89f5175-537a-48c5-a4aa-ec9c4f0b04a1",
+      "date": "2018-11-09",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Florence Hagenes",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "f6f86156-29d7-488e-bdcf-a75bbce541e9",
+      "date": "2018-09-19",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Colby Schowalter",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "4789cea7-2301-4b44-8849-573765105faa",
+      "date": "2018-05-12",
+      "type": "emergency",
+      "description": "Emergency room admission (procedure)",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Colby Schowalter",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "570214a9-9950-4ea0-b5e6-943589e95014",
+      "date": "2018-03-26",
+      "type": "ambulatory",
+      "description": "Encounter for 'check-up'",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Colby Schowalter",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "f4c9f7b0-dc63-412b-aa2d-233a9fca798e",
+      "date": "2017-11-03",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Florence Hagenes",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "8bc5f325-be71-4ac6-b454-b2b46af39337",
+      "date": "2017-09-19",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Colby Schowalter",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "ed591b20-9426-48c7-851a-cf02bebacc92",
+      "date": "2017-03-10",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Jeanmarie Beatty",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "ca904b1c-b7d7-4ff5-96ed-36e6ff770fa9",
+      "date": "2017-03-03",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Jeanmarie Beatty",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "41c12794-9e5c-49ea-ade9-2d8bb47f2a66",
+      "date": "2017-02-25",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute bronchitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Colby Schowalter",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "f99510ad-5f7d-4de0-bbb8-df8906fc5349",
+      "date": "2016-12-21",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Colby Schowalter",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "0347eefa-861b-4655-8c9b-d98866fdb98d",
+      "date": "2016-10-28",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Florence Hagenes",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "de464b21-cb73-43e4-bc7f-da18bc288715",
+      "date": "2016-09-19",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Colby Schowalter",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "44118f14-a2d3-491a-ac10-24067687be3e",
+      "date": "2016-07-18",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Colby Schowalter",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "13a2005d-bf81-4049-887f-dc90ca988eed",
+      "date": "2016-06-18",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Colby Schowalter",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 10461.93,
+    "total_covered": 0.0,
+    "total_owed": 10461.93,
+    "denied_claims": 78,
+    "pending_claims": 0
+  }
+}

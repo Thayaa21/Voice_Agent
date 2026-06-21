@@ -1,0 +1,355 @@
+{
+  "patient_id": "899a4f9c-abc3-4a13-88e4-0f7862ee6ab5",
+  "display_name": "Cameron Okonkwo",
+  "dob": "1927-06-30",
+  "age": 98,
+  "gender": "F",
+  "city": "North Adams",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicare",
+    "member_since": "1971",
+    "payer_id": "7caa7254-5050-3b5e-9eae-bd5ea30e809c"
+  },
+  "active_conditions": [
+    {
+      "code": "410429000",
+      "description": "Cardiac Arrest",
+      "onset": "1927-12-15"
+    },
+    {
+      "code": "429007001",
+      "description": "History of cardiac arrest (situation)",
+      "onset": "1927-12-15"
+    },
+    {
+      "code": "19169002",
+      "description": "Miscarriage in first trimester",
+      "onset": "1949-06-23"
+    },
+    {
+      "code": "197927001",
+      "description": "Recurrent urinary tract infection",
+      "onset": "1949-10-06"
+    },
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1964-09-17"
+    },
+    {
+      "code": "40055000",
+      "description": "Chronic sinusitis (disorder)",
+      "onset": "1977-01-30"
+    },
+    {
+      "code": "55822004",
+      "description": "Hyperlipidemia",
+      "onset": "1985-08-15"
+    },
+    {
+      "code": "68496003",
+      "description": "Polyp of colon",
+      "onset": "1992-06-26"
+    },
+    {
+      "code": "713197008",
+      "description": "Recurrent rectal polyp",
+      "onset": "1993-06-21"
+    },
+    {
+      "code": "363406005",
+      "description": "Malignant tumor of colon",
+      "onset": "1993-06-24"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "d31c042b-66f7-4264-9f4c-41582cb3f2f7",
+      "date": "1995-05-13",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Jes\u00fas Quiroz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "ff19a741-46ef-4531-b369-08e78c148237",
+      "date": "1994-10-06",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Clemente Armend\u00e1riz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "71ed6e58-a3a0-45df-a2c5-514b80a30949",
+      "date": "1994-09-03",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Jes\u00fas Quiroz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "acaa1e59-8e31-4804-8fd3-dbe46a41bb32",
+      "date": "1993-12-12",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Malignant tumor of colon",
+      "procedure_code": "185347001",
+      "provider": "Dr. Jes\u00fas Quiroz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "56d15818-1f67-442c-bf42-948ec72929e3",
+      "date": "1993-11-12",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Malignant tumor of colon",
+      "procedure_code": "185347001",
+      "provider": "Dr. Jes\u00fas Quiroz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "8790e7a7-9bf5-4c2b-917c-99d3d2a9757a",
+      "date": "1993-10-13",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Malignant tumor of colon",
+      "procedure_code": "185347001",
+      "provider": "Dr. Jes\u00fas Quiroz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "560b3e33-c710-4e78-8f9c-37abc3ecd8f5",
+      "date": "1993-09-30",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Clemente Armend\u00e1riz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "388a6148-4e63-44eb-ab7e-b8fd65dd1b67",
+      "date": "1993-09-14",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Malignant tumor of colon",
+      "procedure_code": "185347001",
+      "provider": "Dr. Jes\u00fas Quiroz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "b5053fc3-d366-4424-b2d6-af76c944412d",
+      "date": "1993-09-03",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Jes\u00fas Quiroz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "93a6d820-cc8b-46dd-90d1-61b89794a2e4",
+      "date": "1993-08-15",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Malignant tumor of colon",
+      "procedure_code": "185347001",
+      "provider": "Dr. Jes\u00fas Quiroz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "4b6607de-6be6-416a-9ca4-f38a15294801",
+      "date": "1993-07-17",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Malignant tumor of colon",
+      "procedure_code": "185347001",
+      "provider": "Dr. Jes\u00fas Quiroz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "b6d67fb3-cadb-4029-b676-6f03a8c02cd1",
+      "date": "1993-07-01",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "Malignant tumor of colon",
+      "procedure_code": "185347001",
+      "provider": "Dr. Jes\u00fas Quiroz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "04b80b4d-0a3e-4117-a299-40f9283cfb03",
+      "date": "1993-06-24",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Malignant tumor of colon",
+      "procedure_code": "185347001",
+      "provider": "Dr. Jes\u00fas Quiroz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "5c8bed0e-1b5e-467b-a1c7-bf54fe24adcf",
+      "date": "1993-06-21",
+      "type": "ambulatory",
+      "description": "Encounter for 'check-up'",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Jes\u00fas Quiroz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "649b87f8-9636-473b-86ca-bbe1d30c0c7a",
+      "date": "1992-09-24",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Clemente Armend\u00e1riz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "20bb0601-0931-4885-9ca0-5a67374f975c",
+      "date": "1992-09-03",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Jes\u00fas Quiroz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "b205b21f-afc2-4973-9106-4fcdfa9681e4",
+      "date": "1992-06-26",
+      "type": "ambulatory",
+      "description": "Encounter for 'check-up'",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Jes\u00fas Quiroz",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "2a6aec10-6c92-45fb-99a1-579122c563f1",
+      "date": "1991-09-19",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Clemente Armend\u00e1riz",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "8996d99b-666e-472e-b9bc-59d5e961f1db",
+      "date": "1991-09-04",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Jes\u00fas Quiroz",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "f29bfc6c-1693-421a-8c54-e244806ae7ca",
+      "date": "1991-03-08",
+      "type": "emergency",
+      "description": "Emergency room admission (procedure)",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Jes\u00fas Quiroz",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 5037.24,
+    "total_covered": 2892.24,
+    "total_owed": 2145.0,
+    "denied_claims": 0,
+    "pending_claims": 0
+  }
+}

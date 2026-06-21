@@ -1,0 +1,380 @@
+{
+  "patient_id": "5c06120a-9af5-4204-951b-7a8bfc465df3",
+  "display_name": "Mei Wu",
+  "dob": "1960-01-27",
+  "age": 66,
+  "gender": "F",
+  "city": "Salisbury",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Humana",
+    "member_since": "1992",
+    "payer_id": "d47b3510-2895-3b70-9897-342d681c769d"
+  },
+  "active_conditions": [
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1992-10-14"
+    },
+    {
+      "code": "44054006",
+      "description": "Diabetes",
+      "onset": "1994-04-13"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "1994-04-13"
+    },
+    {
+      "code": "59621000",
+      "description": "Hypertension",
+      "onset": "1994-04-13"
+    },
+    {
+      "code": "368581000119106",
+      "description": "Neuropathy due to type 2 diabetes mellitus (disorder)",
+      "onset": "1994-04-20"
+    },
+    {
+      "code": "80394007",
+      "description": "Hyperglycemia (disorder)",
+      "onset": "1995-04-19"
+    },
+    {
+      "code": "302870006",
+      "description": "Hypertriglyceridemia (disorder)",
+      "onset": "1995-04-19"
+    },
+    {
+      "code": "237602007",
+      "description": "Metabolic syndrome X (disorder)",
+      "onset": "1995-04-19"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "1995-04-19"
+    },
+    {
+      "code": "239873007",
+      "description": "Osteoarthritis of knee",
+      "onset": "2003-01-16"
+    },
+    {
+      "code": "422034002",
+      "description": "Diabetic retinopathy associated with type II diabetes mellitus (disorder)",
+      "onset": "2007-06-27"
+    },
+    {
+      "code": "83664006",
+      "description": "Idiopathic atrophic hypothyroidism",
+      "onset": "2012-01-21"
+    },
+    {
+      "code": "6072007",
+      "description": "Bleeding from anus",
+      "onset": "2016-01-13"
+    },
+    {
+      "code": "236077008",
+      "description": "Protracted diarrhea",
+      "onset": "2016-01-13"
+    },
+    {
+      "code": "1551000119108",
+      "description": "Nonproliferative diabetic retinopathy due to type 2 diabetes mellitus (disorder)",
+      "onset": "2017-08-23"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "29fd31e4-07af-45c3-8817-9f401095db9e",
+      "date": "2019-09-05",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Abram Ebert",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "5d9f2fc7-97b4-45a0-9ed6-b93ef8a82a68",
+      "date": "2019-04-11",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "d17c1044-92a2-457a-b1c7-0f2d2ff3248e",
+      "date": "2019-04-04",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Veda Pfeffer",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "1fc29ecf-3a77-40f1-86ca-83b9f1fb123f",
+      "date": "2019-03-28",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Veda Pfeffer",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "a27dec87-5190-47af-a7b9-c5d687f955c2",
+      "date": "2019-03-21",
+      "type": "emergency",
+      "description": "Emergency Encounter",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "e7851580-4fb4-40fd-a238-39096c7bb24b",
+      "date": "2019-03-15",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "bff4b352-f058-449b-8984-df7c662fd4c5",
+      "date": "2019-03-07",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "56be8b3a-7e8d-4207-9b6c-e51c7c237321",
+      "date": "2018-10-25",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "8359778b-5928-4588-b550-639d95403233",
+      "date": "2018-08-30",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Abram Ebert",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "01537110-14f5-49c1-9bea-503c0d03004a",
+      "date": "2018-07-13",
+      "type": "ambulatory",
+      "description": "Encounter for 'check-up'",
+      "reason": "Malignant tumor of colon",
+      "procedure_code": "185349003",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "f13ec8b3-d0fe-4aca-8662-5d4f1af02f98",
+      "date": "2018-06-28",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Veda Pfeffer",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "f68db138-f0d1-4af7-83b6-f0b102cddc9f",
+      "date": "2018-05-31",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Veda Pfeffer",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "de36c330-e0c6-4805-a875-b794db735679",
+      "date": "2018-04-26",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "b181f424-7dd5-4190-85fb-7a510aee074b",
+      "date": "2018-03-29",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "443ca8cf-15e9-4d54-833f-2d15879f953b",
+      "date": "2018-03-01",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "94353796-4702-42b9-8222-706944df90ca",
+      "date": "2018-02-08",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Veda Pfeffer",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "e9c33b0f-cd0c-42e3-9002-30901506e286",
+      "date": "2017-08-24",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Abram Ebert",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "47ace28c-745b-4f72-b135-4a7ae1d57a91",
+      "date": "2016-10-20",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Veda Pfeffer",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "b1feab6f-095d-44b6-b4c5-b4f01b476ee2",
+      "date": "2016-10-13",
+      "type": "emergency",
+      "description": "Emergency Encounter",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "e48bc669-d6ac-41bc-ac0f-ac942fab6b3d",
+      "date": "2016-10-06",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 9557.84,
+    "total_covered": 3725.48,
+    "total_owed": 5832.36,
+    "denied_claims": 21,
+    "pending_claims": 0
+  }
+}

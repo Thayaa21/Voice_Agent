@@ -1,0 +1,203 @@
+{
+  "patient_id": "b320b49d-b456-48e6-b037-cadc249da07e",
+  "display_name": "Ivy Campbell",
+  "dob": "1974-05-10",
+  "age": 52,
+  "gender": "M",
+  "city": "Plainville",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "NO_INSURANCE",
+    "member_since": "1974",
+    "payer_id": "b1c428d6-4f07-31e0-90f0-68ffa6ff8c76"
+  },
+  "active_conditions": [
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1993-07-09"
+    },
+    {
+      "code": "87433001",
+      "description": "Pulmonary emphysema (disorder)",
+      "onset": "2012-12-21"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "48b012e3-3769-498a-ad6e-7bb4fe442e7f",
+      "date": "2019-06-14",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Antone Luettgen",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "4127fa9b-1b43-4171-8735-6c50820dfef5",
+      "date": "2018-06-08",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Antone Luettgen",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "083bdc6f-0620-48e0-8f12-ba429498bb01",
+      "date": "2017-06-02",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Antone Luettgen",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "cd594210-3b77-487a-8b02-0230d2067147",
+      "date": "2016-12-14",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Gaynell Streich",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "46cb30e9-5be4-466f-93de-43d0a6468e3b",
+      "date": "2016-05-27",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Antone Luettgen",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "7e1d2b06-fde5-4c7a-a0e2-9ce40e9b5a80",
+      "date": "2015-05-22",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Antone Luettgen",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "641a4a6f-0174-4152-b1bd-a32c87a17045",
+      "date": "2014-05-16",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Antone Luettgen",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "9f615f46-9077-41a1-afdc-d59595d9fef0",
+      "date": "2012-12-21",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Gaynell Streich",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "abd01cb9-be42-4fb2-aad6-1bd38f880889",
+      "date": "2012-12-14",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Mohammed Parisian",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "d39ce37e-51a1-4794-a951-d2063f3df7aa",
+      "date": "2012-12-09",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Gaynell Streich",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "e429cf26-33a0-4727-be86-3fae46220009",
+      "date": "2011-07-29",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Antone Luettgen",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "c6834570-5aca-467c-8ea2-bf3fc739d614",
+      "date": "1993-07-09",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Antone Luettgen",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 1549.92,
+    "total_covered": 0.0,
+    "total_owed": 1549.92,
+    "denied_claims": 12,
+    "pending_claims": 0
+  }
+}

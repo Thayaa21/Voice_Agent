@@ -1,0 +1,189 @@
+{
+  "patient_id": "9949467b-303f-4d3b-80e8-8db9aa1ed316",
+  "display_name": "Violet Parker",
+  "dob": "1977-10-02",
+  "age": 48,
+  "gender": "F",
+  "city": "Somerville",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicaid",
+    "member_since": "1977",
+    "payer_id": "7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a"
+  },
+  "active_conditions": [
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "2005-12-11"
+    },
+    {
+      "code": "201834006",
+      "description": "Localized  primary osteoarthritis of the hand",
+      "onset": "2008-09-24"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "25d41064-19e0-4a37-8f57-113cb0f37081",
+      "date": "2019-10-13",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Dolores Aguilera",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "1d684d55-e669-4ccd-99d7-5c9049208bed",
+      "date": "2017-10-08",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Dolores Aguilera",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "f1e8623d-3400-4a71-8284-a3cf78527df6",
+      "date": "2017-05-23",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Vertie Towne",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "5ef2df5b-6375-4d2a-a06f-3c8f73262586",
+      "date": "2014-12-21",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Dolores Aguilera",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "4572e104-a363-4459-b5e3-1cf2edf94f10",
+      "date": "2014-02-16",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Edie Howell",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "a8def44f-6e61-420a-83b3-38287b116565",
+      "date": "2014-02-06",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute bronchitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Vertie Towne",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "c2f99b39-fb2e-4951-a555-fa8662c08f1f",
+      "date": "2011-12-18",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Dolores Aguilera",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "539e7792-7766-4dcd-9591-8388e0e2959a",
+      "date": "2009-08-24",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute bronchitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Vertie Towne",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "4a232ab7-eb9b-42a7-a049-a10dbca8ad55",
+      "date": "2008-09-24",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Localized  primary osteoarthritis of the hand",
+      "procedure_code": "185347001",
+      "provider": "Dr. Vertie Towne",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "c8bd0235-7c42-4d44-83da-1bf20796c766",
+      "date": "2005-12-11",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Dolores Aguilera",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "9c1aa00a-6a2b-4769-9bc6-d2a4e912a0a1",
+      "date": "1995-01-01",
+      "type": "emergency",
+      "description": "Emergency room admission (procedure)",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Vertie Towne",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 1420.76,
+    "total_covered": 931.6,
+    "total_owed": 489.16,
+    "denied_claims": 1,
+    "pending_claims": 0
+  }
+}

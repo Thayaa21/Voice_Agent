@@ -1,0 +1,303 @@
+{
+  "patient_id": "eb17a151-7936-4b4b-a492-8c1ba9d1cc3b",
+  "display_name": "Caleb Ahmed",
+  "dob": "1950-02-28",
+  "age": 76,
+  "gender": "M",
+  "city": "Stow",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Humana",
+    "member_since": "1969",
+    "payer_id": "d47b3510-2895-3b70-9897-342d681c769d"
+  },
+  "active_conditions": [
+    {
+      "code": "128613002",
+      "description": "Seizure disorder",
+      "onset": "1955-02-27"
+    },
+    {
+      "code": "703151001",
+      "description": "History of single seizure (situation)",
+      "onset": "1955-02-27"
+    },
+    {
+      "code": "84757009",
+      "description": "Epilepsy",
+      "onset": "1955-02-27"
+    },
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1960-03-08"
+    },
+    {
+      "code": "40055000",
+      "description": "Chronic sinusitis (disorder)",
+      "onset": "1982-02-12"
+    },
+    {
+      "code": "53741008",
+      "description": "Coronary Heart Disease",
+      "onset": "1987-05-20"
+    },
+    {
+      "code": "22298006",
+      "description": "Myocardial Infarction",
+      "onset": "1996-10-02"
+    },
+    {
+      "code": "399211009",
+      "description": "History of myocardial infarction (situation)",
+      "onset": "1996-10-02"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "82b9035e-6f51-48b9-a65b-53fff94c318d",
+      "date": "1996-10-02",
+      "type": "emergency",
+      "description": "Myocardial Infarction",
+      "reason": "",
+      "procedure_code": "22298006",
+      "provider": "Dr. Jc Borer",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "d42ec9fc-6ee3-4cc6-bb5e-f55975b3da26",
+      "date": "1996-07-10",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Terry Wiegand",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "99d2df71-e591-4b09-9420-3aa234d904a7",
+      "date": "1995-08-10",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Terry Wiegand",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "efd656cc-5670-41e3-afb9-5f7b6e98f246",
+      "date": "1995-07-05",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Terry Wiegand",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "9736caa3-4fab-4104-9709-abfc779909a1",
+      "date": "1994-06-29",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Terry Wiegand",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "ac58086f-7599-4f0f-ac9f-7c9ef914764d",
+      "date": "1993-06-23",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Terry Wiegand",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "76275907-a259-4e19-8a01-627bbde45327",
+      "date": "1992-06-17",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Terry Wiegand",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "5e524935-aa27-48aa-b94b-e36c20eac6cc",
+      "date": "1992-03-31",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Terry Wiegand",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "1801cea6-4ee4-4367-8b2f-07679f3aec55",
+      "date": "1991-06-12",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Terry Wiegand",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "06d86207-cba3-4c20-ac49-7d950984ebc9",
+      "date": "1990-06-06",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Terry Wiegand",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "ac8f7bc0-ac65-4ff2-9f41-3e24b746d355",
+      "date": "1989-05-31",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Terry Wiegand",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "063017cd-3442-47eb-bab2-bbef5854ea7e",
+      "date": "1988-05-25",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Terry Wiegand",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "c6b4e34a-6ee9-4e39-81f9-7bfc2d601081",
+      "date": "1987-05-20",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Terry Wiegand",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "9446f67c-eb33-45d7-92a2-cfb3e894c147",
+      "date": "1985-06-02",
+      "type": "inpatient",
+      "description": "Non-urgent orthopedic admission",
+      "reason": "Injury of medial collateral ligament of knee",
+      "procedure_code": "183495009",
+      "provider": "Dr. Terry Wiegand",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "ecfd4dbc-973e-46dc-95a7-b3e4b7050f9e",
+      "date": "1982-02-13",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute bacterial sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Terry Wiegand",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "4b85d82a-f585-4629-9288-791955f3d045",
+      "date": "1960-03-09",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Violeta Morar",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "3a02fa57-d7e4-44a8-af64-724ccd01f5b0",
+      "date": "1955-02-28",
+      "type": "emergency",
+      "description": "Emergency Room Admission",
+      "reason": "Seizure disorder",
+      "procedure_code": "50849002",
+      "provider": "Dr. Jc Borer",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 2195.72,
+    "total_covered": 835.72,
+    "total_owed": 1360.0,
+    "denied_claims": 0,
+    "pending_claims": 0
+  }
+}

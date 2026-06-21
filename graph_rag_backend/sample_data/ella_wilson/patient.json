@@ -1,0 +1,350 @@
+{
+  "patient_id": "cafc2141-2307-4f62-abd1-2d6e5486d7a5",
+  "display_name": "Ella Wilson",
+  "dob": "1942-05-23",
+  "age": 84,
+  "gender": "M",
+  "city": "Chatham",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Dual Eligible",
+    "member_since": "2008",
+    "payer_id": "b3221cfc-24fb-339e-823d-bc4136cbc4ed"
+  },
+  "active_conditions": [
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1982-05-29"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "1986-06-07"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "1988-06-11"
+    },
+    {
+      "code": "124171000119105",
+      "description": "Chronic intractable migraine without aura",
+      "onset": "1990-02-05"
+    },
+    {
+      "code": "196416002",
+      "description": "Impacted molars",
+      "onset": "1990-09-10"
+    },
+    {
+      "code": "82423001",
+      "description": "Chronic pain",
+      "onset": "1991-05-23"
+    },
+    {
+      "code": "55680006",
+      "description": "Drug overdose",
+      "onset": "1998-01-30"
+    },
+    {
+      "code": "55822004",
+      "description": "Hyperlipidemia",
+      "onset": "2002-07-20"
+    },
+    {
+      "code": "88805009",
+      "description": "Chronic congestive heart failure (disorder)",
+      "onset": "2011-05-25"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "d489ca07-4ff6-4554-8d29-a1e017b25a75",
+      "date": "2011-12-12",
+      "type": "emergency",
+      "description": "Encounter for Problem",
+      "reason": "Chronic congestive heart failure (disorder)",
+      "procedure_code": "185347001",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "f6af4ae7-8bc0-46fc-98b0-f3283dae925e",
+      "date": "2011-12-12",
+      "type": "inpatient",
+      "description": "Inpatient stay (finding)",
+      "reason": "Chronic congestive heart failure (disorder)",
+      "procedure_code": "308540004",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "d1f24131-0faf-4a24-a5fa-e2426f346e2a",
+      "date": "2011-11-27",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "046983ce-f263-43de-a3a1-c53da7a203f3",
+      "date": "2011-10-28",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "22b40e43-112c-4053-8da3-13be5dcbcd31",
+      "date": "2011-09-10",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Marcos Buckridge",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "13c8e0ef-9e07-40c4-8a8d-61926c5ffc99",
+      "date": "2011-08-08",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "885f6629-5abc-490e-bb1b-4a1e375ef259",
+      "date": "2011-06-29",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute viral pharyngitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "d5de6f04-92d1-4ebb-8149-8cc746573359",
+      "date": "2011-06-15",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Chronic congestive heart failure (disorder)",
+      "procedure_code": "185347001",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "0d8c1e37-2084-4e6d-a482-cae6d2796425",
+      "date": "2011-05-25",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Chronic congestive heart failure (disorder)",
+      "procedure_code": "185347001",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "7ab229fd-b4ce-4225-8906-e51ff53d290c",
+      "date": "2011-01-29",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Brittani Satterfield",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "d8b6be21-eb3d-466c-88e3-df1bac0311f1",
+      "date": "2011-01-22",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute bronchitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "a1b26be1-bd02-40b4-bb50-81ed4902b88d",
+      "date": "2010-09-04",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Marcos Buckridge",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "e2a9a3e9-221a-4f6e-b597-a7ab9b99293b",
+      "date": "2010-08-08",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "4c37e41e-b22b-44c2-8b5e-3b38d098bf3a",
+      "date": "2010-01-22",
+      "type": "emergency",
+      "description": "Emergency Room Admission",
+      "reason": "Drug overdose",
+      "procedure_code": "50849002",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "a6051312-4e25-4965-83a5-30e242176f15",
+      "date": "2009-08-29",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Marcos Buckridge",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "cdb657b1-ad05-4b2d-bfd0-b5b33b3e2cd7",
+      "date": "2009-08-08",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "8fb540cc-9ec7-4c98-a0b0-b1b758dc100b",
+      "date": "2008-12-24",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "99f1872c-15a8-489b-b03b-2c8a65680899",
+      "date": "2008-11-24",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "a513f996-48a3-4873-9b02-460e00cee484",
+      "date": "2008-10-25",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "702a560a-02b7-4fc8-9dc8-ed4b6ffac1ba",
+      "date": "2008-09-25",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 10048.63,
+    "total_covered": 4042.83,
+    "total_owed": 6005.8,
+    "denied_claims": 5,
+    "pending_claims": 0
+  }
+}

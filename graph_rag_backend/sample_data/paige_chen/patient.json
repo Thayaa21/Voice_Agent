@@ -1,0 +1,355 @@
+{
+  "patient_id": "40c83ae5-ba34-483e-b348-b558b44179ca",
+  "display_name": "Paige Chen",
+  "dob": "1925-04-22",
+  "age": 101,
+  "gender": "M",
+  "city": "Dennis",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicare",
+    "member_since": "1991",
+    "payer_id": "7caa7254-5050-3b5e-9eae-bd5ea30e809c"
+  },
+  "active_conditions": [
+    {
+      "code": "40055000",
+      "description": "Chronic sinusitis (disorder)",
+      "onset": "1942-09-07"
+    },
+    {
+      "code": "59621000",
+      "description": "Hypertension",
+      "onset": "1943-06-16"
+    },
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1960-09-21"
+    },
+    {
+      "code": "55822004",
+      "description": "Hyperlipidemia",
+      "onset": "1969-11-12"
+    },
+    {
+      "code": "68496003",
+      "description": "Polyp of colon",
+      "onset": "1980-04-21"
+    },
+    {
+      "code": "713197008",
+      "description": "Recurrent rectal polyp",
+      "onset": "1981-06-15"
+    },
+    {
+      "code": "74400008",
+      "description": "Appendicitis",
+      "onset": "1986-04-09"
+    },
+    {
+      "code": "428251008",
+      "description": "History of appendectomy",
+      "onset": "1986-04-09"
+    },
+    {
+      "code": "230690007",
+      "description": "Stroke",
+      "onset": "1989-10-18"
+    },
+    {
+      "code": "88805009",
+      "description": "Chronic congestive heart failure (disorder)",
+      "onset": "2000-04-22"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "8690cad1-8bbd-4981-b114-7be6869d0c43",
+      "date": "2003-10-25",
+      "type": "emergency",
+      "description": "Encounter for Problem",
+      "reason": "Chronic congestive heart failure (disorder)",
+      "procedure_code": "185347001",
+      "provider": "Dr. Donita Ward",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "cb220464-63bd-4dee-b54b-cd5caa774d7d",
+      "date": "2003-10-25",
+      "type": "inpatient",
+      "description": "Inpatient stay (finding)",
+      "reason": "Chronic congestive heart failure (disorder)",
+      "procedure_code": "308540004",
+      "provider": "Dr. Donita Ward",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "e3fbfc75-79cc-416d-93c9-dc7fc06b21b8",
+      "date": "2003-05-21",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Claud Hilpert",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "5b5a7df2-1a16-4ede-9ed1-d5d59a94e630",
+      "date": "2003-04-28",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Chronic congestive heart failure (disorder)",
+      "procedure_code": "185347001",
+      "provider": "Dr. Donita Ward",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "c07094bd-fbee-4455-839e-f4ed4e472b52",
+      "date": "2002-11-25",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Donita Ward",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "e123d341-ffc8-4241-9152-59d724a5ef9a",
+      "date": "2002-05-15",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Claud Hilpert",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "d92cc163-2ae8-4f6c-a4e7-b243c65c326d",
+      "date": "2001-11-25",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Donita Ward",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "44caba27-224a-427c-be58-d357710f621f",
+      "date": "2001-11-04",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Chronic congestive heart failure (disorder)",
+      "procedure_code": "185347001",
+      "provider": "Dr. Donita Ward",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "a72c9d94-087c-4672-9ca9-92c7f9763f1f",
+      "date": "2001-05-09",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Claud Hilpert",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "81444003-5bc7-4c9b-9f85-847b82c7f6ec",
+      "date": "2000-11-25",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Donita Ward",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "51b86965-4648-483a-b9d2-25b5b8ab7495",
+      "date": "2000-05-13",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Chronic congestive heart failure (disorder)",
+      "procedure_code": "185347001",
+      "provider": "Dr. Donita Ward",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "e9a09660-3801-4425-ab32-a0c350ef3d8f",
+      "date": "2000-05-10",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Donita Ward",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "f0ce023b-c3c0-41ab-8e61-d3a1392b88a2",
+      "date": "2000-05-03",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Claud Hilpert",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "69a3c028-d878-4661-a6c2-24fc0b216913",
+      "date": "2000-04-22",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Chronic congestive heart failure (disorder)",
+      "procedure_code": "185347001",
+      "provider": "Dr. Donita Ward",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "7690ca1b-857f-47a8-a049-b9011a563791",
+      "date": "1999-11-26",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Donita Ward",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "ef318002-6385-4880-90ea-59d1a4ebae41",
+      "date": "1999-04-28",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Claud Hilpert",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "0104e16e-9986-4839-87d6-7f49b3f223a9",
+      "date": "1998-11-26",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Donita Ward",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "a6d390b2-6d74-4597-b8b3-5c2840ed13ca",
+      "date": "1998-04-22",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Claud Hilpert",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "80ccc56d-f112-4eb0-b8af-cbc89b8e23d3",
+      "date": "1997-11-26",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Donita Ward",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "c81422f1-16f6-4b33-b056-50dc992c7b0c",
+      "date": "1997-04-16",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Claud Hilpert",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 14672.57,
+    "total_covered": 8345.09,
+    "total_owed": 6327.48,
+    "denied_claims": 3,
+    "pending_claims": 0
+  }
+}

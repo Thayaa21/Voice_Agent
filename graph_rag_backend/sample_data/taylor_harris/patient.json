@@ -1,0 +1,108 @@
+{
+  "patient_id": "194aca62-c623-4ba8-a7ca-bb77f17736f5",
+  "display_name": "Taylor Harris",
+  "dob": "2019-03-30",
+  "age": 7,
+  "gender": "F",
+  "city": "Longmeadow",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicaid",
+    "member_since": "2019",
+    "payer_id": "7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a"
+  },
+  "active_conditions": [],
+  "encounters": [
+    {
+      "encounter_id": "0a080c1d-ff8c-4537-a2ab-33a45865cb4c",
+      "date": "2020-03-07",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Ruthanne Rogahn",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "2e57db9c-eab1-4227-bc7b-45f3b5a0b775",
+      "date": "2019-12-07",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Ruthanne Rogahn",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "08d47591-543c-4743-ac0c-3613009d8e02",
+      "date": "2019-09-07",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Ruthanne Rogahn",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "342c3954-b966-4b64-9657-3c88ed67a555",
+      "date": "2019-07-06",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Ruthanne Rogahn",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "5b6842ef-98ec-46e3-a3b2-84eae539348f",
+      "date": "2019-05-04",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Ruthanne Rogahn",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "e9d8a6af-632e-425a-9e5f-da442e3f717a",
+      "date": "2019-03-30",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Ruthanne Rogahn",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 774.96,
+    "total_covered": 774.96,
+    "total_owed": 0.0,
+    "denied_claims": 0,
+    "pending_claims": 0
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "patient_id": "49cc8ae0-debc-428b-918c-75d3a635a19b",
+  "display_name": "Logan Sharma",
+  "dob": "2019-08-16",
+  "age": 6,
+  "gender": "M",
+  "city": "Worcester",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "NO_INSURANCE",
+    "member_since": "",
+    "payer_id": ""
+  },
+  "active_conditions": [
+    {
+      "code": "65363002",
+      "description": "Otitis media",
+      "onset": "2020-04-12"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "c58e503f-f7b4-4da4-9f99-18f38133e546",
+      "date": "2020-04-24",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Fannie Kirlin",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "78b4c6dd-bdd7-4d4c-a4bc-fee9ebb38291",
+      "date": "2020-04-12",
+      "type": "outpatient",
+      "description": "Encounter for symptom",
+      "reason": "Otitis media",
+      "procedure_code": "185345009",
+      "provider": "Dr. Darlena Pfannerstill",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "085b967f-e687-4f83-b964-a4cd61841b04",
+      "date": "2020-01-24",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Fannie Kirlin",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "8afe0ab7-a0e5-482b-893a-d0f7c2a9519c",
+      "date": "2019-11-22",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Fannie Kirlin",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "9f4a3cbe-de8d-4429-9332-320372c756d6",
+      "date": "2019-09-20",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Fannie Kirlin",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "eb2b2169-1e97-4cd7-9223-851d782e4b62",
+      "date": "2019-08-16",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Fannie Kirlin",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 774.96,
+    "total_covered": 699.96,
+    "total_owed": 75.0,
+    "denied_claims": 0,
+    "pending_claims": 0
+  }
+}

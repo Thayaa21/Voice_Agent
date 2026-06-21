@@ -1,0 +1,199 @@
+{
+  "patient_id": "bc7b7bdb-c9cb-4d48-b5f3-da873de93a22",
+  "display_name": "Fatima Harris",
+  "dob": "1971-03-19",
+  "age": 55,
+  "gender": "F",
+  "city": "Rutland",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Humana",
+    "member_since": "2001",
+    "payer_id": "d47b3510-2895-3b70-9897-342d681c769d"
+  },
+  "active_conditions": [
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1985-04-19"
+    },
+    {
+      "code": "408512008",
+      "description": "Body mass index 40+ - severely obese (finding)",
+      "onset": "1989-05-12"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "2002-05-31"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "2002-05-31"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "b0afa7d8-8f4d-47fe-8e93-783deb77d2b0",
+      "date": "2019-04-12",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Keeley Quigley",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "d094f8e5-33bc-42ff-82ae-7568e0ab9222",
+      "date": "2017-04-07",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Keeley Quigley",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "b502f0f6-3920-48a7-a4d2-881c17ebf2f0",
+      "date": "2015-04-03",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Keeley Quigley",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "d594faa4-f2b0-4c56-9f38-5c35902c4dc3",
+      "date": "2014-11-28",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute viral pharyngitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Lon Lind",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "b1dc3c51-0953-4448-a018-77697abdc411",
+      "date": "2013-03-29",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Keeley Quigley",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "2415ca26-0546-422d-ba1a-3d56839f5f8d",
+      "date": "2011-12-09",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Lon Lind",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "66ad372d-026b-47a5-9e5f-c25450bdcb63",
+      "date": "2011-12-04",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute viral pharyngitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Lon Lind",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "061fb646-a0f5-48b6-97be-9c4d6a8580d2",
+      "date": "2011-03-25",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Keeley Quigley",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "1092d0f2-d8f9-46d0-a7b2-2b3fc69bc06b",
+      "date": "2002-05-31",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Keeley Quigley",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "f3b09ea9-336a-4d46-abd4-12bbcc319cc5",
+      "date": "1989-05-12",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Keeley Quigley",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "7030bd5a-fcdf-44b0-9ab5-f70065e81bd2",
+      "date": "1985-04-19",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Keeley Quigley",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 1420.76,
+    "total_covered": 793.28,
+    "total_owed": 627.48,
+    "denied_claims": 3,
+    "pending_claims": 0
+  }
+}

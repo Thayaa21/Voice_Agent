@@ -1,0 +1,128 @@
+{
+  "patient_id": "c4f221f2-611b-4cdd-a0b6-958bbbfcf346",
+  "display_name": "Maya Yamamoto",
+  "dob": "1987-03-18",
+  "age": 39,
+  "gender": "M",
+  "city": "Hopkinton",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Cigna Health",
+    "member_since": "1987",
+    "payer_id": "047f6ec3-6215-35eb-9608-f9dda363a44c"
+  },
+  "active_conditions": [
+    {
+      "code": "40055000",
+      "description": "Chronic sinusitis (disorder)",
+      "onset": "1999-09-21"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "19adce31-b4ef-4493-9403-e67eb5864259",
+      "date": "2018-05-30",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Ramon Legros",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "c289293e-2345-45b4-ad64-3a025c1aadbd",
+      "date": "2018-03-13",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Keri Schmidt",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "c0cd5aef-514c-4144-8409-bb82d017079d",
+      "date": "2015-05-27",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Ramon Legros",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "ed4377db-d14e-4484-a670-696cb6631c01",
+      "date": "2012-05-23",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Ramon Legros",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "9f4bb8ba-7b39-46f5-87ba-838844f4a5fa",
+      "date": "1999-09-21",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Keri Schmidt",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "c4bd5699-1d3f-421a-afff-b61489fc7304",
+      "date": "1987-09-24",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Keri Schmidt",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "166cfcde-4c11-48cb-8b19-3efb7b884e25",
+      "date": "1987-09-14",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Keri Schmidt",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 904.12,
+    "total_covered": 664.12,
+    "total_owed": 240.0,
+    "denied_claims": 0,
+    "pending_claims": 0
+  }
+}

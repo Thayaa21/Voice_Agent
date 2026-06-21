@@ -1,0 +1,265 @@
+{
+  "patient_id": "a96344e6-afe6-4eeb-9f95-00c62c152e8f",
+  "display_name": "Cora Parker",
+  "dob": "1982-01-14",
+  "age": 44,
+  "gender": "M",
+  "city": "Uxbridge",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Anthem",
+    "member_since": "1982",
+    "payer_id": "42c4fca7-f8a9-3cd1-982a-dd9751bf3e2a"
+  },
+  "active_conditions": [
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "2013-03-28"
+    },
+    {
+      "code": "40055000",
+      "description": "Chronic sinusitis (disorder)",
+      "onset": "2017-03-17"
+    },
+    {
+      "code": "6072007",
+      "description": "Bleeding from anus",
+      "onset": "2020-01-05"
+    },
+    {
+      "code": "236077008",
+      "description": "Protracted diarrhea",
+      "onset": "2020-01-05"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "2020-01-13"
+    },
+    {
+      "code": "94260004",
+      "description": "Secondary malignant neoplasm of colon",
+      "onset": "2020-01-13"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "c7ad2520-a35f-4740-8ec7-cf98ff287a6e",
+      "date": "2020-04-23",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Secondary malignant neoplasm of colon",
+      "procedure_code": "185347001",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "2a9bef20-463e-4e66-93d9-02b97cb15756",
+      "date": "2020-03-21",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Secondary malignant neoplasm of colon",
+      "procedure_code": "185347001",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "2d6fa114-1f00-4298-a5f6-22eb0645efe0",
+      "date": "2020-02-17",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Secondary malignant neoplasm of colon",
+      "procedure_code": "185347001",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "a5e7df7b-16fe-4dd9-bfbc-5e632c3326ae",
+      "date": "2020-01-21",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "Secondary malignant neoplasm of colon",
+      "procedure_code": "185347001",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "77f9b797-05d5-49ae-b20f-d43801021e9d",
+      "date": "2020-01-17",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "724bc666-35d6-4b6f-ab93-916d6847a494",
+      "date": "2020-01-14",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Anemia (disorder)",
+      "procedure_code": "185347001",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "a6bbae6a-49ba-4573-9e56-c88ee7df3291",
+      "date": "2020-01-14",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Secondary malignant neoplasm of colon",
+      "procedure_code": "185347001",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "56be48af-31c3-47ef-a520-975774680ab1",
+      "date": "2020-01-10",
+      "type": "ambulatory",
+      "description": "Encounter for 'check-up'",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "c732f970-fb31-47d6-8167-a3e669e844fa",
+      "date": "2020-01-06",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Bleeding from anus",
+      "procedure_code": "185345009",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "2197e37d-95b6-45d9-a2b5-f02158d58b48",
+      "date": "2019-04-05",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Ernestine Brown",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "4f207e01-7a4b-4861-84b8-fe1d0de1dc58",
+      "date": "2017-03-18",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "dc999b98-43ac-4e54-bf88-034c35677488",
+      "date": "2017-02-11",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "8554e97d-7b02-400a-9fd3-95b0e79fca2a",
+      "date": "2016-04-01",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Ernestine Brown",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "637f0c0e-9282-40dc-a961-be6e24bd666f",
+      "date": "2013-03-29",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Ernestine Brown",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "da619b95-6a99-4349-9576-c1f6280e079c",
+      "date": "2011-03-23",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute viral pharyngitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 1937.4,
+    "total_covered": 387.48,
+    "total_owed": 1549.92,
+    "denied_claims": 12,
+    "pending_claims": 0
+  }
+}

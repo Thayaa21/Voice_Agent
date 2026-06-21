@@ -1,0 +1,175 @@
+{
+  "patient_id": "506c6137-e174-474f-85fb-41398ace5ef4",
+  "display_name": "Nora Lee",
+  "dob": "1976-05-01",
+  "age": 50,
+  "gender": "M",
+  "city": "Melrose",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Aetna",
+    "member_since": "1976",
+    "payer_id": "4d71f845-a6a9-3c39-b242-14d25ef86a8d"
+  },
+  "active_conditions": [
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "2010-07-17"
+    },
+    {
+      "code": "239873007",
+      "description": "Osteoarthritis of knee",
+      "onset": "2015-04-22"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "adca3968-b003-49c1-8f1f-8c589715d5fa",
+      "date": "2018-05-12",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Donn Keebler",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "b5b3c274-367f-4271-b0ca-1b94f549bf1c",
+      "date": "2016-11-27",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "303049fe-c8fe-47b1-a33e-0e1b184ed293",
+      "date": "2016-05-07",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Donn Keebler",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "20d78d90-d38c-40e1-8149-9fdd06be0a23",
+      "date": "2015-04-22",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Osteoarthritis of knee",
+      "procedure_code": "185347001",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "2d247ba3-a109-476f-aecf-126c318d2ab2",
+      "date": "2014-02-22",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "0957d638-926d-4e26-8177-bf95f1f6123c",
+      "date": "2014-02-16",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute bronchitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "35550e3e-39c3-4e42-9590-f08652662dd4",
+      "date": "2013-07-20",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Donn Keebler",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "c079990b-f2a4-4e8c-bbda-ca91530ad12f",
+      "date": "2011-06-04",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "1e0b2c96-4afa-4ddd-8355-88df33e5adcf",
+      "date": "2011-05-28",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute bronchitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "34e1b978-0441-4fe7-a0a9-09efe0991a01",
+      "date": "2010-07-17",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Donn Keebler",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 1291.6,
+    "total_covered": 773.28,
+    "total_owed": 518.32,
+    "denied_claims": 2,
+    "pending_claims": 0
+  }
+}

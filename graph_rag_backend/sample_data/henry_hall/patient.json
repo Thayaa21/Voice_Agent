@@ -1,0 +1,375 @@
+{
+  "patient_id": "137acc1b-dbca-473e-84bb-fe1baaf98819",
+  "display_name": "Henry Hall",
+  "dob": "1911-11-19",
+  "age": 114,
+  "gender": "M",
+  "city": "West Tisbury",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Blue Cross Blue Shield",
+    "member_since": "1911",
+    "payer_id": "6e2f1a2d-27bd-3701-8d08-dae202c58632"
+  },
+  "active_conditions": [
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "1930-01-12"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "1930-01-12"
+    },
+    {
+      "code": "44054006",
+      "description": "Diabetes",
+      "onset": "1934-01-21"
+    },
+    {
+      "code": "302870006",
+      "description": "Hypertriglyceridemia (disorder)",
+      "onset": "1937-01-24"
+    },
+    {
+      "code": "431855005",
+      "description": "Chronic kidney disease stage 1 (disorder)",
+      "onset": "1942-06-21"
+    },
+    {
+      "code": "127013003",
+      "description": "Diabetic renal disease (disorder)",
+      "onset": "1942-06-21"
+    },
+    {
+      "code": "237602007",
+      "description": "Metabolic syndrome X (disorder)",
+      "onset": "1943-01-31"
+    },
+    {
+      "code": "7200002",
+      "description": "Alcoholism",
+      "onset": "1953-01-25"
+    },
+    {
+      "code": "128613002",
+      "description": "Seizure disorder",
+      "onset": "1956-11-07"
+    },
+    {
+      "code": "703151001",
+      "description": "History of single seizure (situation)",
+      "onset": "1956-11-07"
+    },
+    {
+      "code": "84757009",
+      "description": "Epilepsy",
+      "onset": "1956-11-07"
+    },
+    {
+      "code": "40055000",
+      "description": "Chronic sinusitis (disorder)",
+      "onset": "1971-08-24"
+    },
+    {
+      "code": "126906006",
+      "description": "Neoplasm of prostate",
+      "onset": "1971-11-04"
+    },
+    {
+      "code": "314994000",
+      "description": "Metastasis from malignant tumor of prostate (disorder)",
+      "onset": "1971-11-04"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "c86e7b1f-b82e-4855-81d9-384f1f256904",
+      "date": "1975-11-02",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "fef6531b-ae0e-405a-8e6b-4b4230431df0",
+      "date": "1975-10-26",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Tressa Kovacek",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "7bfd0c8f-1d3c-4865-930e-444dbd57f633",
+      "date": "1975-09-21",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Tressa Kovacek",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "98a6cd61-c0fb-48e8-8f03-078fed43eb06",
+      "date": "1975-08-31",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "f6a0dbf5-a2e1-4d29-8d4e-16eecb96a40a",
+      "date": "1975-08-24",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Tressa Kovacek",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "d7d49438-0ab1-456f-9653-ba1ade85a5a1",
+      "date": "1975-08-17",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "b7497564-4f6a-4c6b-b4dd-ba144be79b6c",
+      "date": "1975-08-10",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Tressa Kovacek",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "77351901-4183-4507-912a-5c0acbcf7225",
+      "date": "1975-08-03",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "7550b508-8c90-4aa8-9ce3-7e5fb2b31e77",
+      "date": "1975-07-27",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Tressa Kovacek",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "8cba3179-c08a-4769-adf4-c3433fe0195a",
+      "date": "1975-07-06",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "14aa4d58-1d96-461f-be0d-a5635b9c85ca",
+      "date": "1975-06-29",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Tressa Kovacek",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "710c8d7e-8b42-424d-b63c-6ad41782f52c",
+      "date": "1975-06-01",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Tressa Kovacek",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "e63782b8-32ca-4aa5-a818-93057b1a389f",
+      "date": "1975-05-25",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Tressa Kovacek",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "b192fc10-866e-4723-b378-fdab025a2fd3",
+      "date": "1975-04-27",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "e247ad88-5f4f-48ca-be24-778ff3a8e2bc",
+      "date": "1975-03-30",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "a6a9a50a-4d27-43f3-afc7-fae454adaabb",
+      "date": "1975-03-02",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "fd992261-4735-4f0c-a19a-00f51b8479c3",
+      "date": "1975-02-23",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Tressa Kovacek",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "bfd73e74-448a-41ac-9303-39bf0e20b533",
+      "date": "1975-01-26",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Tressa Kovacek",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "b649a23a-eb79-418c-8a53-480349488f86",
+      "date": "1975-01-05",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "8d64e650-3644-46de-be27-66830e534242",
+      "date": "1974-12-29",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Tressa Kovacek",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 44689.36,
+    "total_covered": 12456.8,
+    "total_owed": 32232.56,
+    "denied_claims": 116,
+    "pending_claims": 0
+  }
+}

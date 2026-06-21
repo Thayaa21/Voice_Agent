@@ -1,0 +1,350 @@
+{
+  "patient_id": "d0355c37-6594-4147-91ff-8b82dfb0a6c2",
+  "display_name": "Willow Perez",
+  "dob": "1974-12-09",
+  "age": 51,
+  "gender": "M",
+  "city": "Southborough",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Aetna",
+    "member_since": "1974",
+    "payer_id": "4d71f845-a6a9-3c39-b242-14d25ef86a8d"
+  },
+  "active_conditions": [
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "2003-02-17"
+    },
+    {
+      "code": "44054006",
+      "description": "Diabetes",
+      "onset": "2006-02-20"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "2006-02-20"
+    },
+    {
+      "code": "80394007",
+      "description": "Hyperglycemia (disorder)",
+      "onset": "2007-02-26"
+    },
+    {
+      "code": "302870006",
+      "description": "Hypertriglyceridemia (disorder)",
+      "onset": "2007-02-26"
+    },
+    {
+      "code": "237602007",
+      "description": "Metabolic syndrome X (disorder)",
+      "onset": "2007-02-26"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "2007-02-26"
+    },
+    {
+      "code": "431855005",
+      "description": "Chronic kidney disease stage 1 (disorder)",
+      "onset": "2013-04-01"
+    },
+    {
+      "code": "127013003",
+      "description": "Diabetic renal disease (disorder)",
+      "onset": "2013-04-01"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "0fd0d1fa-b88c-42a2-9087-8eb98d84245e",
+      "date": "2020-04-27",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Jc Borer",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "2d259b47-2197-4448-af51-f5c5a8a7c1d8",
+      "date": "2019-05-06",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Burton Mitchell",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "b39d4b25-9ccb-4396-9026-f97afdde0571",
+      "date": "2019-04-29",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Jc Borer",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "285f5065-b6c9-4f33-8da4-2837eeb21441",
+      "date": "2018-04-30",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Burton Mitchell",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "468fbb13-6f44-40e0-9d98-141be4653f25",
+      "date": "2018-01-08",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Jc Borer",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "49d19937-350e-47ab-ac42-5cbbcef9b0bd",
+      "date": "2017-04-24",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Burton Mitchell",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "929a13d5-e3e1-4c96-a498-0561e654bbe4",
+      "date": "2016-04-18",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Burton Mitchell",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "1bf35b66-a49d-44b4-8e15-f7535cc1623c",
+      "date": "2015-12-21",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Lon Lind",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "093fe057-b747-45fd-bb4d-9d601513d83b",
+      "date": "2015-04-13",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Burton Mitchell",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "0812b550-937c-4b9a-9152-183dfc5f5918",
+      "date": "2014-04-07",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Burton Mitchell",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "77709306-c639-417e-bc2e-e958432556d5",
+      "date": "2013-05-27",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Lon Lind",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "4e7f3fc4-b452-40f4-bb99-95e921aac4b7",
+      "date": "2013-05-15",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute bronchitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Jc Borer",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "6ba45651-5a41-4a7c-be95-97f47ea7f79c",
+      "date": "2013-04-01",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Burton Mitchell",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "46595ce1-f4ef-479d-9b17-740f715c1b0d",
+      "date": "2013-01-14",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Jc Borer",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "8534e3e7-e3d1-4e14-9fd3-0cee99e2f38b",
+      "date": "2013-01-07",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute bronchitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Jc Borer",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "31fc5081-350c-43bb-a97a-f9497c235340",
+      "date": "2012-03-26",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Burton Mitchell",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "21596cf9-ce1a-481a-8899-e1cacb767681",
+      "date": "2011-03-21",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Burton Mitchell",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "63511041-e54d-43a8-8399-5fb6f41c5477",
+      "date": "2010-03-15",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Burton Mitchell",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "5271aaaa-77a5-4982-a2b9-98ffd7070536",
+      "date": "2009-03-09",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Burton Mitchell",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "d691febb-ba2b-4d20-90e5-e76946c64fb1",
+      "date": "2008-03-03",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Burton Mitchell",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 3099.84,
+    "total_covered": 2064.88,
+    "total_owed": 1034.96,
+    "denied_claims": 6,
+    "pending_claims": 0
+  }
+}

@@ -1,0 +1,365 @@
+{
+  "patient_id": "88ea8573-863c-47e3-b144-b810c63156a0",
+  "display_name": "Paige Phillips",
+  "dob": "1962-10-25",
+  "age": 63,
+  "gender": "F",
+  "city": "Billerica",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Blue Cross Blue Shield",
+    "member_since": "1996",
+    "payer_id": "6e2f1a2d-27bd-3701-8d08-dae202c58632"
+  },
+  "active_conditions": [
+    {
+      "code": "275272006",
+      "description": "Brain damage - traumatic",
+      "onset": "1988-09-06"
+    },
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "2000-01-13"
+    },
+    {
+      "code": "44054006",
+      "description": "Diabetes",
+      "onset": "2004-11-04"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "2004-11-04"
+    },
+    {
+      "code": "59621000",
+      "description": "Hypertension",
+      "onset": "2004-11-04"
+    },
+    {
+      "code": "80394007",
+      "description": "Hyperglycemia (disorder)",
+      "onset": "2005-11-10"
+    },
+    {
+      "code": "302870006",
+      "description": "Hypertriglyceridemia (disorder)",
+      "onset": "2005-11-10"
+    },
+    {
+      "code": "237602007",
+      "description": "Metabolic syndrome X (disorder)",
+      "onset": "2005-11-10"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "2005-11-10"
+    },
+    {
+      "code": "431856006",
+      "description": "Chronic kidney disease stage 2 (disorder)",
+      "onset": "2007-11-22"
+    },
+    {
+      "code": "127013003",
+      "description": "Diabetic renal disease (disorder)",
+      "onset": "2007-11-22"
+    },
+    {
+      "code": "90781000119102",
+      "description": "Microalbuminuria due to type 2 diabetes mellitus (disorder)",
+      "onset": "2007-11-22"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "51cb420d-6046-492d-88ce-1ba5f3e9211c",
+      "date": "2020-04-16",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Zana Considine",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "453c55f2-bb68-4578-b991-adc35a35ed5a",
+      "date": "2020-01-30",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Belle Vandervort",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "31e7be53-e9f7-43b6-9698-3c2e52657d38",
+      "date": "2019-12-12",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Zana Considine",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "e4a4992e-fb25-4544-8c74-a8a07dc5c075",
+      "date": "2019-08-15",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Zana Considine",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "98d4c4b1-7919-431f-85b0-613381592ecf",
+      "date": "2019-06-20",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Zana Considine",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "6a706dba-55c7-4e1c-9cd6-20ab51b8f3bb",
+      "date": "2019-04-18",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Zana Considine",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "35c917c5-be25-4a30-b41b-9df7e4d8b690",
+      "date": "2019-01-24",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Belle Vandervort",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "5497ff9a-9552-4f65-ab11-02c2c501b141",
+      "date": "2018-12-20",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Zana Considine",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "29be77c1-f517-45bb-9da3-a0f3d32cfe07",
+      "date": "2018-09-20",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Zana Considine",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "9bb42b80-9d98-429d-8a71-9334201d01ab",
+      "date": "2018-07-26",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Zana Considine",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "dc039e53-7b0b-46ed-9752-29cff0516299",
+      "date": "2018-06-21",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Zana Considine",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "733988ec-e9f6-47e8-b710-996a21beaa51",
+      "date": "2018-02-22",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Zana Considine",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "a069c431-9c48-4c80-a1dd-80ca39ff48a0",
+      "date": "2018-01-18",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Belle Vandervort",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "f6d322c5-a488-4cd0-98c0-e4995c92525b",
+      "date": "2017-10-26",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Benton Becker",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "0ef74e5f-3716-4383-bac8-0b983d31331a",
+      "date": "2017-10-24",
+      "type": "ambulatory",
+      "description": "Encounter for 'check-up'",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Zana Considine",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "4643705e-6669-4467-a66c-e8eec8506d0a",
+      "date": "2017-06-29",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Zana Considine",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "549455ab-a53b-4b6f-80de-0246d3f0a337",
+      "date": "2017-06-01",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Zana Considine",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "be2b6313-c1f0-431a-9810-5fcc882be7ed",
+      "date": "2017-04-27",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Benton Becker",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "4a580f1e-eaaa-4293-af87-5a957c8e24ff",
+      "date": "2017-03-02",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Zana Considine",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "d0e03641-f926-4c72-a573-d4b74e226079",
+      "date": "2017-01-12",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Belle Vandervort",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 9170.36,
+    "total_covered": 4531.24,
+    "total_owed": 4639.12,
+    "denied_claims": 7,
+    "pending_claims": 0
+  }
+}

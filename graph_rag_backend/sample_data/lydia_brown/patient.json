@@ -1,0 +1,355 @@
+{
+  "patient_id": "b5bbfa23-0c80-4762-a3b9-97ceebed8d27",
+  "display_name": "Lydia Brown",
+  "dob": "1961-11-08",
+  "age": 64,
+  "gender": "F",
+  "city": "Hatfield",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "UnitedHealthcare",
+    "member_since": "2006",
+    "payer_id": "5059a55e-5d6e-34d1-b6cb-d83d16e57bcf"
+  },
+  "active_conditions": [
+    {
+      "code": "128613002",
+      "description": "Seizure disorder",
+      "onset": "1965-11-07"
+    },
+    {
+      "code": "703151001",
+      "description": "History of single seizure (situation)",
+      "onset": "1965-11-07"
+    },
+    {
+      "code": "84757009",
+      "description": "Epilepsy",
+      "onset": "1966-01-30"
+    },
+    {
+      "code": "59621000",
+      "description": "Hypertension",
+      "onset": "1979-12-12"
+    },
+    {
+      "code": "230690007",
+      "description": "Stroke",
+      "onset": "1989-09-20"
+    },
+    {
+      "code": "19169002",
+      "description": "Miscarriage in first trimester",
+      "onset": "1991-07-17"
+    },
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1993-03-17"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "1998-04-15"
+    },
+    {
+      "code": "239873007",
+      "description": "Osteoarthritis of knee",
+      "onset": "2002-10-29"
+    },
+    {
+      "code": "55680006",
+      "description": "Drug overdose",
+      "onset": "2010-10-05"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "7969917c-dfdf-409c-92a3-2a46fab45382",
+      "date": "2016-07-18",
+      "type": "emergency",
+      "description": "Emergency Room Admission",
+      "reason": "Drug overdose",
+      "procedure_code": "50849002",
+      "provider": "Dr. Guadalupe Valenzuela",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "9a40e975-1dd2-4b9f-8f63-766def21f231",
+      "date": "2016-04-13",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Clint Goldner",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "5efe5f91-5152-4f24-9f77-bc3660cd2d44",
+      "date": "2016-04-09",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Guadalupe Valenzuela",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 59.16,
+      "patient_owes": 70.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "2f1004f9-d0a3-48b0-bf6c-b6179b53b87e",
+      "date": "2016-02-20",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute viral pharyngitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Guadalupe Valenzuela",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 59.16,
+      "patient_owes": 70.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "44b0577b-57f9-4ae3-be1e-7fc93abdcdaa",
+      "date": "2015-11-30",
+      "type": "emergency",
+      "description": "Emergency Room Admission",
+      "reason": "Drug overdose",
+      "procedure_code": "50849002",
+      "provider": "Dr. Guadalupe Valenzuela",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 59.16,
+      "patient_owes": 70.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "cdfd8183-31c7-4ba9-a8c3-09b6e0b85c4e",
+      "date": "2015-08-22",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Guadalupe Valenzuela",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "b2037a65-615b-4d61-b339-dc849323e8f9",
+      "date": "2015-07-23",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Guadalupe Valenzuela",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "c66bd465-d05c-4a48-8ffb-8a4880ea61e5",
+      "date": "2015-07-22",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Andreas Schmidt",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "37a55cec-418b-4c79-a22f-a1ff2a5cf797",
+      "date": "2014-11-25",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Guadalupe Valenzuela",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "c9b9933b-1c45-4ac4-9d60-9ac051800fc6",
+      "date": "2014-10-26",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Guadalupe Valenzuela",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "ca6de23e-a59e-4a1a-9bdc-aebadac68c67",
+      "date": "2014-09-26",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Guadalupe Valenzuela",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "4b21edb4-d0f2-438a-b531-d374fc16802d",
+      "date": "2014-07-16",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Andreas Schmidt",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "3ff90135-512b-4754-9d0a-798fe2e7ac59",
+      "date": "2014-02-05",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Guadalupe Valenzuela",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "8510f0dc-a754-4bad-8628-b3f1b4f3f0d9",
+      "date": "2014-01-06",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Guadalupe Valenzuela",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "a159a0a1-cc78-47b5-bcab-0f07cc4a3367",
+      "date": "2013-12-07",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Guadalupe Valenzuela",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "99a39903-f78b-46b4-aad5-d5d948010095",
+      "date": "2013-11-07",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Guadalupe Valenzuela",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "33293f9d-e360-4ba4-ad56-87b82899efb6",
+      "date": "2013-10-08",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Guadalupe Valenzuela",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "0f2a54f7-0dd0-4eef-af8e-29a105dc3ef0",
+      "date": "2013-09-08",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Guadalupe Valenzuela",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "ef788516-6992-4548-88ca-5bd4cb91a60b",
+      "date": "2013-08-18",
+      "type": "emergency",
+      "description": "Emergency Room Admission",
+      "reason": "Drug overdose",
+      "procedure_code": "50849002",
+      "provider": "Dr. Guadalupe Valenzuela",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 59.16,
+      "patient_owes": 70.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "b3623eab-f7b9-494c-ad09-af06f65e39a8",
+      "date": "2013-07-27",
+      "type": "emergency",
+      "description": "Emergency room admission (procedure)",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Guadalupe Valenzuela",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 59.16,
+      "patient_owes": 70.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 14465.92,
+    "total_covered": 4442.92,
+    "total_owed": 10023.0,
+    "denied_claims": 50,
+    "pending_claims": 0
+  }
+}

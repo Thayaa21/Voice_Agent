@@ -1,0 +1,380 @@
+{
+  "patient_id": "85a0da4b-6e8d-492c-976b-748e39daf4ef",
+  "display_name": "Alice Allen",
+  "dob": "1933-12-19",
+  "age": 92,
+  "gender": "M",
+  "city": "Hingham",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicare",
+    "member_since": "1952",
+    "payer_id": "7caa7254-5050-3b5e-9eae-bd5ea30e809c"
+  },
+  "active_conditions": [
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1971-03-09"
+    },
+    {
+      "code": "59621000",
+      "description": "Hypertension",
+      "onset": "1983-12-20"
+    },
+    {
+      "code": "44054006",
+      "description": "Diabetes",
+      "onset": "1984-12-25"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "1984-12-25"
+    },
+    {
+      "code": "302870006",
+      "description": "Hypertriglyceridemia (disorder)",
+      "onset": "1985-12-31"
+    },
+    {
+      "code": "237602007",
+      "description": "Metabolic syndrome X (disorder)",
+      "onset": "1985-12-31"
+    },
+    {
+      "code": "40055000",
+      "description": "Chronic sinusitis (disorder)",
+      "onset": "1986-11-13"
+    },
+    {
+      "code": "201834006",
+      "description": "Localized  primary osteoarthritis of the hand",
+      "onset": "1987-12-06"
+    },
+    {
+      "code": "55822004",
+      "description": "Hyperlipidemia",
+      "onset": "1993-02-09"
+    },
+    {
+      "code": "53741008",
+      "description": "Coronary Heart Disease",
+      "onset": "1995-02-21"
+    },
+    {
+      "code": "49436004",
+      "description": "Atrial Fibrillation",
+      "onset": "1996-02-27"
+    },
+    {
+      "code": "368581000119106",
+      "description": "Neuropathy due to type 2 diabetes mellitus (disorder)",
+      "onset": "2001-10-09"
+    },
+    {
+      "code": "230690007",
+      "description": "Stroke",
+      "onset": "2014-07-08"
+    },
+    {
+      "code": "22298006",
+      "description": "Myocardial Infarction",
+      "onset": "2018-12-18"
+    },
+    {
+      "code": "399211009",
+      "description": "History of myocardial infarction (situation)",
+      "onset": "2018-12-18"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "99ca1f10-a343-40c7-adaa-589c656a90fc",
+      "date": "2020-02-24",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Leola Tremblay",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "9075550c-8e8e-49bc-b8d9-a207bc7b228e",
+      "date": "2019-07-09",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Elsy Schowalter",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "b93bc7ff-df84-4891-9132-7fea7d7d6c0d",
+      "date": "2019-03-12",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Leola Tremblay",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "3a228c3b-5721-41c7-b7f6-77e3a8116a54",
+      "date": "2019-02-24",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Leola Tremblay",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "f2f73cbe-0099-4dc3-9d5c-a9c0e7a5bf2f",
+      "date": "2018-12-18",
+      "type": "emergency",
+      "description": "Myocardial Infarction",
+      "reason": "",
+      "procedure_code": "22298006",
+      "provider": "Dr. Gertrudis Schaden",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "80e45fd8-0fa8-49ab-a180-a16e309047bf",
+      "date": "2018-07-03",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Elsy Schowalter",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "eb96d119-4264-4839-8da1-776e679d1e73",
+      "date": "2018-02-24",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Leola Tremblay",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "e3cfd1dc-ba32-4114-b0d2-ad0dd02ec0fd",
+      "date": "2018-01-30",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Leola Tremblay",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "56383196-e519-4149-a386-1eac709a99d3",
+      "date": "2018-01-30",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Leola Tremblay",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "112c6407-ab06-4cbe-8816-1e81dc5c4b25",
+      "date": "2017-06-27",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Elsy Schowalter",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "1b056242-0962-4e54-931d-34ad70dd12fa",
+      "date": "2017-02-24",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Leola Tremblay",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "f8c380eb-4001-41b0-9d57-74f921aec565",
+      "date": "2016-06-21",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Elsy Schowalter",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "bc81dc11-3e89-402b-b6cb-7ea0ed0b7182",
+      "date": "2016-02-25",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Leola Tremblay",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "38b5ce76-29e4-4368-9291-801d1abb0c00",
+      "date": "2015-06-16",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Elsy Schowalter",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "86084969-4c5f-4a4a-96fa-a6fed53bc22e",
+      "date": "2015-02-25",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Leola Tremblay",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "7d38d93b-4fdd-4119-823f-537c797d56e3",
+      "date": "2014-12-30",
+      "type": "emergency",
+      "description": "Stroke",
+      "reason": "",
+      "procedure_code": "230690007",
+      "provider": "Dr. Gertrudis Schaden",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "64f4443e-6b9a-4f0f-be13-83c4ab2406e7",
+      "date": "2014-07-08",
+      "type": "emergency",
+      "description": "Stroke",
+      "reason": "",
+      "procedure_code": "230690007",
+      "provider": "Dr. Gertrudis Schaden",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "b7775271-a65b-441b-afb4-67ac9d81a1be",
+      "date": "2014-06-10",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Elsy Schowalter",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "6a977e1d-e2b5-4aea-a7cc-5dc5fbe00091",
+      "date": "2014-02-25",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Leola Tremblay",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "3ec8d1b3-faa9-4917-b68a-5a69f0c6e2bf",
+      "date": "2013-06-04",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Elsy Schowalter",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 10849.44,
+    "total_covered": 7061.12,
+    "total_owed": 3788.32,
+    "denied_claims": 2,
+    "pending_claims": 0
+  }
+}

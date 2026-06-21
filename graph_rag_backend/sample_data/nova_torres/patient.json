@@ -1,0 +1,80 @@
+{
+  "patient_id": "ef544417-a448-4c9d-8ddf-cb7fb513061d",
+  "display_name": "Nova Torres",
+  "dob": "2019-10-16",
+  "age": 6,
+  "gender": "F",
+  "city": "Barnstable",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "NO_INSURANCE",
+    "member_since": "",
+    "payer_id": ""
+  },
+  "active_conditions": [],
+  "encounters": [
+    {
+      "encounter_id": "74902cd1-0a57-4d45-8b4f-91900d15f896",
+      "date": "2020-03-25",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Albert Davis",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "60e5e146-dfbf-4816-9d03-1d5aa38551bd",
+      "date": "2020-01-22",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Albert Davis",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "602cab95-3c54-4c07-aac4-b7128274e8b5",
+      "date": "2019-11-20",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Albert Davis",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "9be3764a-b907-4a31-a5cc-c9b30ea36d4a",
+      "date": "2019-10-16",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Albert Davis",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 516.64,
+    "total_covered": 516.64,
+    "total_owed": 0.0,
+    "denied_claims": 0,
+    "pending_claims": 0
+  }
+}

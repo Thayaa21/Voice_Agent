@@ -1,0 +1,312 @@
+{
+  "patient_id": "9c69f2d5-b7de-4634-84c5-bf3efd551f5e",
+  "display_name": "Ellie Thompson",
+  "dob": "1962-05-15",
+  "age": 64,
+  "gender": "M",
+  "city": "Peabody",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Humana",
+    "member_since": "1962",
+    "payer_id": "d47b3510-2895-3b70-9897-342d681c769d"
+  },
+  "active_conditions": [
+    {
+      "code": "40055000",
+      "description": "Chronic sinusitis (disorder)",
+      "onset": "1992-11-23"
+    },
+    {
+      "code": "47693006",
+      "description": "Rupture of appendix",
+      "onset": "2014-05-03"
+    },
+    {
+      "code": "74400008",
+      "description": "Appendicitis",
+      "onset": "2014-05-03"
+    },
+    {
+      "code": "428251008",
+      "description": "History of appendectomy",
+      "onset": "2014-05-03"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "2014-05-27"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "2015-06-02"
+    },
+    {
+      "code": "55822004",
+      "description": "Hyperlipidemia",
+      "onset": "2019-06-25"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "9c94d1a5-16f0-4883-a2e0-025447c63436",
+      "date": "2019-07-16",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Houston Osinski",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "f39b2c8f-ac88-492a-944c-11fbc5c70c19",
+      "date": "2019-06-25",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Lilliana Cronin",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "de059274-bfaf-4cfb-a09b-5bf628ba9878",
+      "date": "2018-06-19",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Lilliana Cronin",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "c4bd9539-881e-4c84-981f-1c5218bdd356",
+      "date": "2017-06-13",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Lilliana Cronin",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "da060710-a436-4457-88fc-9da89cf3d5b4",
+      "date": "2017-05-14",
+      "type": "ambulatory",
+      "description": "Encounter for 'check-up'",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Houston Osinski",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "092b4ce2-d739-4b0b-8be2-9885bce39dee",
+      "date": "2016-11-22",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Houston Osinski",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "5460116c-9a77-494f-9143-dae9e304c6ce",
+      "date": "2016-06-07",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Lilliana Cronin",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "715cf527-c659-412a-93ca-e22d3db1d395",
+      "date": "2015-06-02",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Lilliana Cronin",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "07345e26-b55e-4c56-98bd-faf15b413ab2",
+      "date": "2015-06-02",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Anemia (disorder)",
+      "procedure_code": "185347001",
+      "provider": "Dr. Houston Osinski",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "ee728198-135f-4f76-a2b6-819a9afa21fd",
+      "date": "2014-05-27",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Lilliana Cronin",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "a5c177a3-c526-41ee-9428-dfdbb270e5ec",
+      "date": "2014-05-03",
+      "type": "emergency",
+      "description": "Emergency Room Admission",
+      "reason": "Appendicitis",
+      "procedure_code": "50849002",
+      "provider": "Dr. Houston Osinski",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "51e3723b-d476-4880-a08b-ea3cd684f319",
+      "date": "2014-05-03",
+      "type": "inpatient",
+      "description": "Encounter Inpatient",
+      "reason": "Appendicitis",
+      "procedure_code": "183452005",
+      "provider": "Dr. Houston Osinski",
+      "payer": "Humana",
+      "billed": 77.49,
+      "covered": 0.0,
+      "patient_owes": 77.49,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "667f8304-7fa9-41b3-a2dd-93a820f8b2f9",
+      "date": "2013-05-21",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Lilliana Cronin",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "b5d32733-8f5a-4b66-a83e-3b8ea95d5f0b",
+      "date": "2012-05-15",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Lilliana Cronin",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "916db227-76fe-412c-a2ac-712a8fdd5941",
+      "date": "2012-05-15",
+      "type": "ambulatory",
+      "description": "Encounter for 'check-up'",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Houston Osinski",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "66f21532-bda5-415f-980b-b4e0101d32ac",
+      "date": "2011-07-07",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute viral pharyngitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Houston Osinski",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "5c1741ad-7dd0-4b21-8dc7-8f9e89f21b6f",
+      "date": "2010-06-08",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Lilliana Cronin",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "32d9d720-e291-4e04-b65a-bc1d1c7b015b",
+      "date": "1992-11-23",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute bacterial sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Houston Osinski",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 2273.21,
+    "total_covered": 1506.56,
+    "total_owed": 766.65,
+    "denied_claims": 1,
+    "pending_claims": 0
+  }
+}

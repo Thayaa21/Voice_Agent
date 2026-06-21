@@ -1,0 +1,161 @@
+{
+  "patient_id": "d5bf8e49-c70c-45df-9675-cf3dff4458d5",
+  "display_name": "Stella Nguyen",
+  "dob": "1977-08-08",
+  "age": 48,
+  "gender": "M",
+  "city": "Walpole",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Aetna",
+    "member_since": "1977",
+    "payer_id": "4d71f845-a6a9-3c39-b242-14d25ef86a8d"
+  },
+  "active_conditions": [
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "2008-10-20"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "2008-10-20"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "63ab184e-206e-451b-8249-4249175d0d11",
+      "date": "2019-08-19",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Numbers Bashirian",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "4301122b-7d1f-4826-885b-d6809bfe79bd",
+      "date": "2018-02-09",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute viral pharyngitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Luke Rath",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "58807f5b-e0bb-47d0-8e83-3e73d7bcd621",
+      "date": "2017-09-26",
+      "type": "emergency",
+      "description": "Emergency room admission (procedure)",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Luke Rath",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "b5c10e56-f297-4151-bdeb-0fd631cac9a3",
+      "date": "2017-08-14",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Numbers Bashirian",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "7245bad6-bf44-4fd4-9f96-8b72ec4004fd",
+      "date": "2015-11-11",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute viral pharyngitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Luke Rath",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "c07c1b20-26ad-47bc-8997-a6270ca9a1d4",
+      "date": "2014-10-27",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Numbers Bashirian",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "b43d54c4-56b3-4d9d-8fdc-b081fddb3601",
+      "date": "2011-10-24",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Numbers Bashirian",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "f36f6380-ce04-4f44-9f08-c4baee0ce9a3",
+      "date": "2010-05-30",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Luke Rath",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "25a761cd-70b6-4778-8e13-4902ab2d71b1",
+      "date": "2008-10-20",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Numbers Bashirian",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 1162.44,
+    "total_covered": 902.44,
+    "total_owed": 260.0,
+    "denied_claims": 0,
+    "pending_claims": 0
+  }
+}

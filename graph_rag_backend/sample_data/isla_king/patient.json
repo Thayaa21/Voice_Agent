@@ -1,0 +1,86 @@
+{
+  "patient_id": "dfc7b1ae-1583-4d88-970d-02712d55070c",
+  "display_name": "Isla King",
+  "dob": "2020-01-06",
+  "age": 6,
+  "gender": "F",
+  "city": "Boston",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "NO_INSURANCE",
+    "member_since": "",
+    "payer_id": ""
+  },
+  "active_conditions": [
+    {
+      "code": "65363002",
+      "description": "Otitis media",
+      "onset": "2020-04-05"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "847c5bf5-76f8-4f41-abcd-76766fb8bfb0",
+      "date": "2020-04-13",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Drew Hilll",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "b586bb97-e05d-4bbf-ab5b-b93decfc6cda",
+      "date": "2020-04-05",
+      "type": "outpatient",
+      "description": "Encounter for symptom",
+      "reason": "Otitis media",
+      "procedure_code": "185345009",
+      "provider": "Dr. Maile Frami",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "fd596bb9-87e8-412e-b21a-5ca1764aa4c6",
+      "date": "2020-02-10",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Drew Hilll",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "b3a61574-b9bb-4fa8-8bb2-29fd1ef0e3f8",
+      "date": "2020-01-06",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Drew Hilll",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 516.64,
+    "total_covered": 387.48,
+    "total_owed": 129.16,
+    "denied_claims": 1,
+    "pending_claims": 0
+  }
+}

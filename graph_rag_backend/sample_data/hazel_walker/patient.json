@@ -1,0 +1,355 @@
+{
+  "patient_id": "30d83f4d-837c-488d-9748-5ee0fa49edd5",
+  "display_name": "Hazel Walker",
+  "dob": "1965-12-20",
+  "age": 60,
+  "gender": "M",
+  "city": "Yarmouth",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Aetna",
+    "member_since": "1965",
+    "payer_id": "4d71f845-a6a9-3c39-b242-14d25ef86a8d"
+  },
+  "active_conditions": [
+    {
+      "code": "59621000",
+      "description": "Hypertension",
+      "onset": "1984-02-13"
+    },
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1986-02-24"
+    },
+    {
+      "code": "44054006",
+      "description": "Diabetes",
+      "onset": "2003-06-02"
+    },
+    {
+      "code": "87433001",
+      "description": "Pulmonary emphysema (disorder)",
+      "onset": "2004-04-19"
+    },
+    {
+      "code": "302870006",
+      "description": "Hypertriglyceridemia (disorder)",
+      "onset": "2004-04-19"
+    },
+    {
+      "code": "237602007",
+      "description": "Metabolic syndrome X (disorder)",
+      "onset": "2004-04-19"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "2004-06-07"
+    },
+    {
+      "code": "368581000119106",
+      "description": "Neuropathy due to type 2 diabetes mellitus (disorder)",
+      "onset": "2005-06-13"
+    },
+    {
+      "code": "422034002",
+      "description": "Diabetic retinopathy associated with type II diabetes mellitus (disorder)",
+      "onset": "2006-06-19"
+    },
+    {
+      "code": "1551000119108",
+      "description": "Nonproliferative diabetic retinopathy due to type 2 diabetes mellitus (disorder)",
+      "onset": "2008-06-30"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "515f524b-43a1-4725-ac8e-116465a4ee20",
+      "date": "2019-09-02",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Darwin Stehr",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "6a0e0d9f-40b7-4245-b57a-746c3a7b676a",
+      "date": "2018-08-27",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Darwin Stehr",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "e6243fed-3d88-41cc-bd43-0a2d7eb87ede",
+      "date": "2017-08-21",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Darwin Stehr",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "028f18e4-36f9-49cf-8b60-1de86b170ca7",
+      "date": "2016-08-15",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Darwin Stehr",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "d72703ab-4eea-4408-a5c5-cc39ae9bab3c",
+      "date": "2015-12-21",
+      "type": "ambulatory",
+      "description": "Encounter for 'check-up'",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Donita Ward",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "29336251-b787-4395-b946-95a58973455a",
+      "date": "2015-08-10",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Darwin Stehr",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "a5967cdf-e0d3-47f0-b370-869c2cdf744c",
+      "date": "2014-08-04",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Darwin Stehr",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "a8b0f276-3115-4dfd-a0f4-e8305f157eb3",
+      "date": "2013-07-29",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Darwin Stehr",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "ad350ffa-5050-447b-8bac-ba00aae346cd",
+      "date": "2013-04-22",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Donita Ward",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "3bacdbc9-1692-4729-822d-e0c276b55b25",
+      "date": "2013-04-15",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Jes\u00fas Quiroz",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "b7f035b6-6c8e-4f59-a9c5-0742177a871a",
+      "date": "2013-04-08",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute viral pharyngitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Donita Ward",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "dda6f429-8d70-4fd1-8967-b5a15cae554e",
+      "date": "2012-07-23",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Darwin Stehr",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "e56e3b11-b46a-4500-93f3-ffae66423f38",
+      "date": "2011-07-18",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Darwin Stehr",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "86b932c9-4cf8-48e7-94e2-02363fdbb265",
+      "date": "2010-07-12",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Darwin Stehr",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "e4257aae-ef70-4459-821d-9dcc4fc05d2e",
+      "date": "2009-07-06",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Darwin Stehr",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "9c09586e-9507-4540-9b11-066fd082c826",
+      "date": "2008-06-30",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Darwin Stehr",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "26c34b2a-35d1-459f-af98-db2d4ab5c307",
+      "date": "2007-06-25",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Darwin Stehr",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "39721729-39fd-4abc-ac7d-2a3807473093",
+      "date": "2006-06-19",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Darwin Stehr",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "f5d73baa-8fe9-4303-8215-62cbd5746c2e",
+      "date": "2005-06-13",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Darwin Stehr",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "aacb7eaf-a160-4d63-8f61-088cf344779b",
+      "date": "2004-06-07",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Darwin Stehr",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 5553.88,
+    "total_covered": 3412.24,
+    "total_owed": 2141.64,
+    "denied_claims": 4,
+    "pending_claims": 0
+  }
+}

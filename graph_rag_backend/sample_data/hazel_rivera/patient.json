@@ -1,0 +1,94 @@
+{
+  "patient_id": "7342aaa6-55d8-46d0-bce6-9cef87395f54",
+  "display_name": "Hazel Rivera",
+  "dob": "1989-07-22",
+  "age": 36,
+  "gender": "M",
+  "city": "Haverhill",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Cigna Health",
+    "member_since": "1989",
+    "payer_id": "047f6ec3-6215-35eb-9608-f9dda363a44c"
+  },
+  "active_conditions": [],
+  "encounters": [
+    {
+      "encounter_id": "015a0f0f-74fb-4154-81f3-88e892aa6fd2",
+      "date": "2018-01-07",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Judith Johns",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "5d2cee62-65dc-4b0f-908d-f7f1085690b0",
+      "date": "2017-09-30",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Gertrudis Altenwerth",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "dc59fa02-944d-478b-9046-cde52cd2cb5e",
+      "date": "2014-09-27",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Gertrudis Altenwerth",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "2afa5347-de35-4e87-b523-e56b6de7de74",
+      "date": "2011-09-24",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Gertrudis Altenwerth",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "4ef75597-a88c-43ae-977f-e7797ce3b260",
+      "date": "2010-05-29",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Judith Johns",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 645.8,
+    "total_covered": 525.8,
+    "total_owed": 120.0,
+    "denied_claims": 0,
+    "pending_claims": 0
+  }
+}

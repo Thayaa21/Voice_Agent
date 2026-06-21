@@ -1,0 +1,171 @@
+{
+  "patient_id": "9b745b3c-c385-44cf-b4cb-448b67e58389",
+  "display_name": "Liam Phillips",
+  "dob": "1969-03-24",
+  "age": 57,
+  "gender": "F",
+  "city": "Boston",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Cigna Health",
+    "member_since": "1992",
+    "payer_id": "047f6ec3-6215-35eb-9608-f9dda363a44c"
+  },
+  "active_conditions": [
+    {
+      "code": "19169002",
+      "description": "Miscarriage in first trimester",
+      "onset": "1985-06-24"
+    },
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "2015-04-13"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "2020-03-30"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "2020-03-30"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "763429aa-e58e-4ce2-86f8-588b5c90cf80",
+      "date": "2020-03-30",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Tyron Smith",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "a3073493-0d70-4179-aca0-d098d1f4b2ad",
+      "date": "2020-03-30",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Anemia (disorder)",
+      "procedure_code": "185347001",
+      "provider": "Dr. Jeanmarie Beatty",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "c4dea391-38a8-4955-968f-6ff0612fa34f",
+      "date": "2019-03-25",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Tyron Smith",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "52269968-d9fc-4d09-9a99-f7983c4529b6",
+      "date": "2019-03-25",
+      "type": "ambulatory",
+      "description": "Encounter for 'check-up'",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Jeanmarie Beatty",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "8461e763-5892-4749-8cb3-39338766b99e",
+      "date": "2017-04-17",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Tyron Smith",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "b5eb0e83-11a4-4410-ba04-e0cc73f5604c",
+      "date": "2015-04-13",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Tyron Smith",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "a4b7e5a2-1b7f-43a6-8202-bcd3b88c221c",
+      "date": "2013-04-08",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Tyron Smith",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "2d9cd747-4014-4a7e-a2f6-326fe9a5d783",
+      "date": "2011-04-04",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Tyron Smith",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "69fa5585-6750-4218-a4d8-eb9ca300c0ef",
+      "date": "1985-06-24",
+      "type": "ambulatory",
+      "description": "Prenatal initial visit",
+      "reason": "Normal pregnancy",
+      "procedure_code": "424441002",
+      "provider": "Dr. Jeanmarie Beatty",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 1162.44,
+    "total_covered": 977.44,
+    "total_owed": 185.0,
+    "denied_claims": 0,
+    "pending_claims": 0
+  }
+}

@@ -1,0 +1,375 @@
+{
+  "patient_id": "5cb510f1-244d-4f02-a82b-3631e998fad1",
+  "display_name": "Sydney Garcia",
+  "dob": "1939-04-01",
+  "age": 87,
+  "gender": "M",
+  "city": "Fitchburg",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicare",
+    "member_since": "2005",
+    "payer_id": "7caa7254-5050-3b5e-9eae-bd5ea30e809c"
+  },
+  "active_conditions": [
+    {
+      "code": "59621000",
+      "description": "Hypertension",
+      "onset": "1957-05-25"
+    },
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1973-08-25"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "1978-09-23"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "1983-10-22"
+    },
+    {
+      "code": "7200002",
+      "description": "Alcoholism",
+      "onset": "1988-11-19"
+    },
+    {
+      "code": "55822004",
+      "description": "Hyperlipidemia",
+      "onset": "1989-11-25"
+    },
+    {
+      "code": "201834006",
+      "description": "Localized  primary osteoarthritis of the hand",
+      "onset": "1990-03-19"
+    },
+    {
+      "code": "87433001",
+      "description": "Pulmonary emphysema (disorder)",
+      "onset": "1990-04-07"
+    },
+    {
+      "code": "49436004",
+      "description": "Atrial Fibrillation",
+      "onset": "2002-02-02"
+    },
+    {
+      "code": "126906006",
+      "description": "Neoplasm of prostate",
+      "onset": "2006-02-25"
+    },
+    {
+      "code": "92691004",
+      "description": "Carcinoma in situ of prostate (disorder)",
+      "onset": "2006-02-25"
+    },
+    {
+      "code": "162573006",
+      "description": "Suspected lung cancer (situation)",
+      "onset": "2008-05-20"
+    },
+    {
+      "code": "254637007",
+      "description": "Non-small cell lung cancer (disorder)",
+      "onset": "2008-05-28"
+    },
+    {
+      "code": "424132000",
+      "description": "Non-small cell carcinoma of lung  TNM stage 1 (disorder)",
+      "onset": "2008-05-30"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "5b7c0b21-252e-4e1e-baf6-5c61b6eb1e5a",
+      "date": "2013-05-12",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Von Mraz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "fafe7517-1568-44d1-b387-a4958be6efef",
+      "date": "2013-04-13",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Von Mraz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "ad7cf18e-8492-40c1-ab7d-cc24b5b14125",
+      "date": "2013-04-06",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Von Mraz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "1fe5e21c-e12b-4b5a-ba40-fbe1c6c9635a",
+      "date": "2013-03-14",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Von Mraz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "a772ef65-7400-4883-82bb-e544baeb2eed",
+      "date": "2013-02-10",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Von Mraz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "1d528b41-6821-4ce8-8712-37cef9503045",
+      "date": "2013-01-09",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Von Mraz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "c28dfb49-50b5-4702-b6ad-7f8db20ea760",
+      "date": "2012-12-10",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Von Mraz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "c59c3e58-9a20-415f-a64a-e2dd027ec35c",
+      "date": "2012-12-10",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Von Mraz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "e47731c3-66da-4975-bb01-a8f8d099485e",
+      "date": "2012-11-09",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Von Mraz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "bd7dbd6c-11a3-48e7-a716-c2beec88694f",
+      "date": "2012-10-12",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Von Mraz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "cfe27536-499b-46dd-b025-1cc59e32c5f8",
+      "date": "2012-09-14",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Von Mraz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "86356bdb-8da0-46d0-9088-c4166c885012",
+      "date": "2012-08-11",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Von Mraz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "694eaa1d-31bd-4b93-8119-5fc78481ddf1",
+      "date": "2012-07-10",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Von Mraz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "5726d8cf-7514-4566-a835-3f984b2ccc0e",
+      "date": "2012-06-06",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Von Mraz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "c58d03c5-c9ba-481a-b474-59d86e7c2446",
+      "date": "2012-05-05",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Von Mraz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "74acfe30-b2ff-4b8d-8de4-291066c47835",
+      "date": "2012-04-01",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Von Mraz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "855eefb6-721a-45c2-9a59-415659b48668",
+      "date": "2012-03-31",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Von Mraz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "9a1329fb-921f-4a66-ba99-b21b30804e2a",
+      "date": "2012-02-28",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Von Mraz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "7a52ce6b-a430-498d-98bf-623ec98665dd",
+      "date": "2012-01-28",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Von Mraz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "fd11e4eb-884a-44cb-a1b9-3978b2257fd7",
+      "date": "2011-12-26",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Von Mraz",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 20794.76,
+    "total_covered": 11588.96,
+    "total_owed": 9205.8,
+    "denied_claims": 5,
+    "pending_claims": 0
+  }
+}

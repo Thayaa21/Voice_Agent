@@ -1,0 +1,108 @@
+{
+  "patient_id": "01207ecd-9dff-4754-8887-4652eda231e2",
+  "display_name": "Fatima Taylor",
+  "dob": "2019-05-15",
+  "age": 7,
+  "gender": "F",
+  "city": "Colrain",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "NO_INSURANCE",
+    "member_since": "",
+    "payer_id": ""
+  },
+  "active_conditions": [],
+  "encounters": [
+    {
+      "encounter_id": "159f1f28-aaf4-4044-ae62-80cd5ce64603",
+      "date": "2020-04-22",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Casie Crona",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "9d95e547-6c40-46f5-94ad-38768b376d64",
+      "date": "2020-01-22",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Casie Crona",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "b1db8760-cdd7-4bb5-ab4e-8e5f1438dc84",
+      "date": "2019-10-23",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Casie Crona",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "0cf8d22d-9a41-4369-a0de-12ed6b8b0016",
+      "date": "2019-08-21",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Casie Crona",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "47a62056-2f39-4c39-a3bd-f12069d65a5e",
+      "date": "2019-06-19",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Casie Crona",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "c0e77238-8dba-4f59-aef0-3067164c611a",
+      "date": "2019-05-15",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Casie Crona",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 774.96,
+    "total_covered": 774.96,
+    "total_owed": 0.0,
+    "denied_claims": 0,
+    "pending_claims": 0
+  }
+}

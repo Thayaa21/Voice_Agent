@@ -1,0 +1,355 @@
+{
+  "patient_id": "8d1ba4bb-7250-4295-be1c-5d0d423e55f7",
+  "display_name": "Avery Stewart",
+  "dob": "1957-02-13",
+  "age": 69,
+  "gender": "M",
+  "city": "Lunenburg",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Anthem",
+    "member_since": "1957",
+    "payer_id": "42c4fca7-f8a9-3cd1-982a-dd9751bf3e2a"
+  },
+  "active_conditions": [
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "1994-05-05"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "1994-05-05"
+    },
+    {
+      "code": "44054006",
+      "description": "Diabetes",
+      "onset": "1999-02-24"
+    },
+    {
+      "code": "80394007",
+      "description": "Hyperglycemia (disorder)",
+      "onset": "2000-03-01"
+    },
+    {
+      "code": "302870006",
+      "description": "Hypertriglyceridemia (disorder)",
+      "onset": "2000-03-01"
+    },
+    {
+      "code": "237602007",
+      "description": "Metabolic syndrome X (disorder)",
+      "onset": "2000-03-01"
+    },
+    {
+      "code": "368581000119106",
+      "description": "Neuropathy due to type 2 diabetes mellitus (disorder)",
+      "onset": "2012-05-10"
+    },
+    {
+      "code": "64859006",
+      "description": "Osteoporosis (disorder)",
+      "onset": "2017-06-08"
+    },
+    {
+      "code": "410429000",
+      "description": "Cardiac Arrest",
+      "onset": "2017-07-13"
+    },
+    {
+      "code": "429007001",
+      "description": "History of cardiac arrest (situation)",
+      "onset": "2017-07-13"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "7ab1bedf-050f-4d82-a3d9-3e7743cc0525",
+      "date": "2019-06-20",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Jacquetta Jenkins",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "0fc2fc89-954e-4257-8c59-d726026fbabd",
+      "date": "2018-06-14",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Jacquetta Jenkins",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "c9fcfa27-a92b-4d68-95fa-0001835c87b6",
+      "date": "2018-04-03",
+      "type": "ambulatory",
+      "description": "Encounter for 'check-up'",
+      "reason": "Concussion with no loss of consciousness",
+      "procedure_code": "185349003",
+      "provider": "Dr. Tomas Sauer",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "08b9ffce-50fa-48ef-89e9-95691675d610",
+      "date": "2018-02-02",
+      "type": "emergency",
+      "description": "Emergency room admission (procedure)",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Tomas Sauer",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "a768af5c-9333-40c1-8ec6-5119f81c4f7c",
+      "date": "2017-09-28",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Tomas Sauer",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "267df23f-f24a-4869-98dd-1b8c0e34834b",
+      "date": "2017-09-27",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Tomas Sauer",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "4f1264b0-40f7-4e5f-af2c-f3dc83345dc2",
+      "date": "2017-07-13",
+      "type": "emergency",
+      "description": "Cardiac Arrest",
+      "reason": "",
+      "procedure_code": "410429000",
+      "provider": "Dr. Tomas Sauer",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "73934799-b4d2-4069-826e-7b702c66e7d6",
+      "date": "2017-06-08",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Jacquetta Jenkins",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "57fe424a-7ba2-4782-8c6d-a2b0ce3724ac",
+      "date": "2017-02-12",
+      "type": "ambulatory",
+      "description": "Encounter for 'check-up'",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Tomas Sauer",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "f3d4920f-8829-4198-9a37-cd9fdcab5870",
+      "date": "2016-06-02",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Jacquetta Jenkins",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "95051343-2cae-46f5-a59c-4c40a4d8e978",
+      "date": "2015-08-26",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Tomas Sauer",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "dd1dd712-8956-45c7-9936-d7ad27712e41",
+      "date": "2015-05-28",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Jacquetta Jenkins",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "d956f1e8-11e3-418b-9cf4-a600964cd6a5",
+      "date": "2014-12-16",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Tomas Sauer",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "8bab49b6-968c-42ff-b711-24949a951895",
+      "date": "2014-05-22",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Jacquetta Jenkins",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "e01c3745-8241-490f-804f-5ce399bfbdc9",
+      "date": "2013-05-16",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Jacquetta Jenkins",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "f414bfbb-5c15-4731-b44a-a4d678374ff9",
+      "date": "2012-05-10",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Jacquetta Jenkins",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "65b1fef4-8c7b-44a6-a3d4-eb1c9524157d",
+      "date": "2012-02-14",
+      "type": "ambulatory",
+      "description": "Encounter for 'check-up'",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Tomas Sauer",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "94427fa0-68b8-4aa4-b7d2-eceff026aa7c",
+      "date": "2011-05-05",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Jacquetta Jenkins",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "820c7e9c-09ed-4b27-9b70-50754252c87e",
+      "date": "2010-04-29",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Jacquetta Jenkins",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "7017cec3-8e5d-4e57-b173-23dd5b271390",
+      "date": "2009-04-23",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Jacquetta Jenkins",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 4133.12,
+    "total_covered": 2401.52,
+    "total_owed": 1731.6,
+    "denied_claims": 10,
+    "pending_claims": 0
+  }
+}

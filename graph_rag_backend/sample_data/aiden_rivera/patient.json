@@ -1,0 +1,161 @@
+{
+  "patient_id": "e47e6347-73d4-4244-b92e-8a7cea33d434",
+  "display_name": "Aiden Rivera",
+  "dob": "2004-08-13",
+  "age": 21,
+  "gender": "M",
+  "city": "Quincy",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "NO_INSURANCE",
+    "member_since": "",
+    "payer_id": ""
+  },
+  "active_conditions": [
+    {
+      "code": "128613002",
+      "description": "Seizure disorder",
+      "onset": "2004-08-13"
+    },
+    {
+      "code": "703151001",
+      "description": "History of single seizure (situation)",
+      "onset": "2004-08-13"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "1f8932f6-2309-4749-ab6b-b392a56ddad1",
+      "date": "2005-08-19",
+      "type": "wellness",
+      "description": "Death Certification",
+      "reason": "",
+      "procedure_code": "308646001",
+      "provider": "Dr. Napoleon Littel",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "fe1fb3b8-a6e9-4bd5-82d6-99b5673b03f8",
+      "date": "2005-07-22",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Napoleon Littel",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "4e5a9349-de4a-4520-941b-07de7d5b34a2",
+      "date": "2005-06-09",
+      "type": "outpatient",
+      "description": "Encounter for symptom",
+      "reason": "Otitis media",
+      "procedure_code": "185345009",
+      "provider": "Dr. Sanford Gottlieb",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "5305d05a-7a8a-45de-b48f-db08dffb87b5",
+      "date": "2005-04-22",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Napoleon Littel",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "e866a7d9-7764-4253-a725-7e0cfb9d5dc0",
+      "date": "2005-01-21",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Napoleon Littel",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "8e7e9738-010f-4446-97f5-eb2522d42322",
+      "date": "2004-11-19",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Napoleon Littel",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "200f737a-150f-4ce7-b4df-b8bbcac7f2ee",
+      "date": "2004-09-17",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Napoleon Littel",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "1658a1f5-4937-425e-bc87-062eb9498246",
+      "date": "2004-08-13",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Napoleon Littel",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "4e5223c0-9173-4c26-9a78-100fd523d7f7",
+      "date": "2004-08-13",
+      "type": "emergency",
+      "description": "Emergency Room Admission",
+      "reason": "Seizure disorder",
+      "procedure_code": "50849002",
+      "provider": "Dr. Edie Howell",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 1162.44,
+    "total_covered": 449.12,
+    "total_owed": 713.32,
+    "denied_claims": 2,
+    "pending_claims": 0
+  }
+}

@@ -1,0 +1,222 @@
+{
+  "patient_id": "8a2011ce-0a46-4f2a-ab6f-be7a287f9264",
+  "display_name": "Ruby Ahmed",
+  "dob": "1974-04-19",
+  "age": 52,
+  "gender": "F",
+  "city": "Springfield",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicaid",
+    "member_since": "1974",
+    "payer_id": "7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a"
+  },
+  "active_conditions": [
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1985-05-03"
+    },
+    {
+      "code": "19169002",
+      "description": "Miscarriage in first trimester",
+      "onset": "2007-11-09"
+    },
+    {
+      "code": "196416002",
+      "description": "Impacted molars",
+      "onset": "2018-01-08"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "6b3ac611-dbc1-4b1d-a1ba-bace56be4e85",
+      "date": "2018-05-05",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Karyl Vonrueden",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "b23a2c33-2786-487a-b624-e1fd14cbc7c4",
+      "date": "2018-04-20",
+      "type": "emergency",
+      "description": "Emergency room admission (procedure)",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Mohammed Parisian",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "d0c9328a-7d27-465f-affe-e9fc300e9533",
+      "date": "2018-01-09",
+      "type": "inpatient",
+      "description": "Encounter Inpatient",
+      "reason": "Impacted molars",
+      "procedure_code": "183452005",
+      "provider": "Dr. Catalina Olivo",
+      "payer": "Medicaid",
+      "billed": 77.49,
+      "covered": 17.49,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "1885ba36-4999-47c1-99cc-f6882ebc7ba5",
+      "date": "2016-04-30",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Karyl Vonrueden",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "5f21cabc-d818-4df3-ab58-0f6b9af0dca4",
+      "date": "2015-12-20",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Wayne Mertz",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "cdb8a39f-69d0-43b8-8550-d4320e6b402c",
+      "date": "2014-09-30",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Wayne Mertz",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "0bb5a858-a3ef-4467-88a8-db97bf5a2fa1",
+      "date": "2014-04-26",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Karyl Vonrueden",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "848ed386-5aaf-46d4-8526-3e59d4d50bcf",
+      "date": "2013-07-22",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Wayne Mertz",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "cc625a8b-46d9-4763-9af6-31a1ec4440c8",
+      "date": "2013-04-26",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Wayne Mertz",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "d24e8e51-a41a-48c2-bb0a-432809376d57",
+      "date": "2012-03-04",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Wayne Mertz",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "aefee532-a0f0-470b-896e-f81c10621ae7",
+      "date": "2011-07-09",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Karyl Vonrueden",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "2f3f20fe-838e-4af6-87ef-fc3a09f5d835",
+      "date": "2007-11-10",
+      "type": "ambulatory",
+      "description": "Prenatal initial visit",
+      "reason": "Normal pregnancy",
+      "procedure_code": "424441002",
+      "provider": "Dr. Wayne Mertz",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "51f6c778-77b8-496b-9552-e237f40f8e8f",
+      "date": "1985-05-04",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Karyl Vonrueden",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 1627.41,
+    "total_covered": 1087.41,
+    "total_owed": 540.0,
+    "denied_claims": 0,
+    "pending_claims": 0
+  }
+}

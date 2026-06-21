@@ -1,0 +1,365 @@
+{
+  "patient_id": "b118adba-1330-4ba0-8d96-fe610dfbd41e",
+  "display_name": "Isla Edwards",
+  "dob": "1966-09-21",
+  "age": 59,
+  "gender": "M",
+  "city": "Eastham",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "UnitedHealthcare",
+    "member_since": "1966",
+    "payer_id": "5059a55e-5d6e-34d1-b6cb-d83d16e57bcf"
+  },
+  "active_conditions": [
+    {
+      "code": "59621000",
+      "description": "Hypertension",
+      "onset": "1984-11-14"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "2000-02-09"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "2000-02-09"
+    },
+    {
+      "code": "44054006",
+      "description": "Diabetes",
+      "onset": "2005-03-09"
+    },
+    {
+      "code": "80394007",
+      "description": "Hyperglycemia (disorder)",
+      "onset": "2005-08-24"
+    },
+    {
+      "code": "302870006",
+      "description": "Hypertriglyceridemia (disorder)",
+      "onset": "2005-08-24"
+    },
+    {
+      "code": "237602007",
+      "description": "Metabolic syndrome X (disorder)",
+      "onset": "2005-08-24"
+    },
+    {
+      "code": "40055000",
+      "description": "Chronic sinusitis (disorder)",
+      "onset": "2013-12-21"
+    },
+    {
+      "code": "431855005",
+      "description": "Chronic kidney disease stage 1 (disorder)",
+      "onset": "2014-03-12"
+    },
+    {
+      "code": "127013003",
+      "description": "Diabetic renal disease (disorder)",
+      "onset": "2014-03-12"
+    },
+    {
+      "code": "431856006",
+      "description": "Chronic kidney disease stage 2 (disorder)",
+      "onset": "2014-04-30"
+    },
+    {
+      "code": "90781000119102",
+      "description": "Microalbuminuria due to type 2 diabetes mellitus (disorder)",
+      "onset": "2014-04-30"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "44bae390-1bdb-4399-a890-b4bc810c8c53",
+      "date": "2019-11-14",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "4758a6a8-b50e-4380-9f8e-d3b67b2f5920",
+      "date": "2019-07-18",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "45bc60a9-0b57-4487-94dd-4749511d7bab",
+      "date": "2019-05-30",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "bf51a2b3-fc5e-46bb-abea-55a41b422f0b",
+      "date": "2018-05-24",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "721ec672-031f-464c-808a-d933e35b8f00",
+      "date": "2018-02-22",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "63f91124-0cc9-4e86-909e-582306be1380",
+      "date": "2018-01-25",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "6429c565-2239-4592-ad9d-16b1600fe7d7",
+      "date": "2017-05-18",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "10fd8e93-1ead-439d-8b7e-efd44fd1469f",
+      "date": "2016-05-12",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "f811eca3-a61f-47c0-9593-df22ea2cf5c3",
+      "date": "2016-02-04",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "dbf0787c-cbe2-40d8-ae4b-f2007a3b17f5",
+      "date": "2015-12-03",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "257466e1-42e4-4e55-b70c-4a05a6e095dc",
+      "date": "2015-09-03",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "ef4ebe2d-bd1c-4bac-bbcb-318f388c7943",
+      "date": "2015-05-07",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "275dbebd-41ea-4eef-84a8-c03198cce102",
+      "date": "2014-08-14",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "d51e561e-85ba-49dc-a2b0-8ce50b4936ad",
+      "date": "2014-05-01",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "5fbbd9d1-bfeb-4c8f-b9bb-d39a6e3a926c",
+      "date": "2014-03-13",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "34d889f7-fe13-4955-80cc-f5e45906e384",
+      "date": "2014-01-02",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "f5b02d1c-f7d2-4c32-b2ad-023a165cde9f",
+      "date": "2013-12-22",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 59.16,
+      "patient_owes": 70.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "ea992024-a925-46dd-a945-cf270ed54947",
+      "date": "2013-09-22",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 59.16,
+      "patient_owes": 70.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "57df6114-a6e7-4f13-b9b4-47d75b86a1ca",
+      "date": "2013-04-25",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "35823c01-52af-445c-96b3-cc9aba89b4e8",
+      "date": "2012-04-19",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 6845.48,
+    "total_covered": 3405.56,
+    "total_owed": 3439.92,
+    "denied_claims": 12,
+    "pending_claims": 0
+  }
+}

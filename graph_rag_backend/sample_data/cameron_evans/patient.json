@@ -1,0 +1,350 @@
+{
+  "patient_id": "cd1d1f54-e4ea-458e-a264-b3e9c57d902e",
+  "display_name": "Cameron Evans",
+  "dob": "1953-02-05",
+  "age": 73,
+  "gender": "F",
+  "city": "Boston",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Dual Eligible",
+    "member_since": "1954",
+    "payer_id": "b3221cfc-24fb-339e-823d-bc4136cbc4ed"
+  },
+  "active_conditions": [
+    {
+      "code": "59621000",
+      "description": "Hypertension",
+      "onset": "1971-04-01"
+    },
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1985-03-07"
+    },
+    {
+      "code": "82423001",
+      "description": "Chronic pain",
+      "onset": "1990-04-04"
+    },
+    {
+      "code": "124171000119105",
+      "description": "Chronic intractable migraine without aura",
+      "onset": "1991-06-02"
+    },
+    {
+      "code": "196416002",
+      "description": "Impacted molars",
+      "onset": "1992-01-29"
+    },
+    {
+      "code": "19169002",
+      "description": "Miscarriage in first trimester",
+      "onset": "1995-03-30"
+    },
+    {
+      "code": "55680006",
+      "description": "Drug overdose",
+      "onset": "2008-01-17"
+    },
+    {
+      "code": "254837009",
+      "description": "Malignant neoplasm of breast (disorder)",
+      "onset": "2011-01-22"
+    },
+    {
+      "code": "64859006",
+      "description": "Osteoporosis (disorder)",
+      "onset": "2013-11-28"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "85962ffb-d381-432c-9387-3c280fadc8d7",
+      "date": "2020-01-25",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Sanford Gottlieb",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "1a33fcbb-48a8-4cd4-a758-bfeec8739e1a",
+      "date": "2020-01-02",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Zachariah Jacobs",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "bac5c522-c214-481f-9076-3797931362b2",
+      "date": "2019-12-26",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Sanford Gottlieb",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "e791dc68-998e-4ac8-9988-3ef4b7af2d76",
+      "date": "2019-07-14",
+      "type": "ambulatory",
+      "description": "Postoperative follow-up visit (procedure)",
+      "reason": "Malignant neoplasm of breast (disorder)",
+      "procedure_code": "439740005",
+      "provider": "Dr. Sanford Gottlieb",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "fc9fdbef-4f06-4310-b0cd-ba09ba8fc11a",
+      "date": "2019-07-14",
+      "type": "inpatient",
+      "description": "Screening surveillance (regime/therapy)",
+      "reason": "Malignant neoplasm of breast (disorder)",
+      "procedure_code": "410410006",
+      "provider": "Dr. Edie Howell",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "77cc19f5-9042-4c59-b53e-840440a477d1",
+      "date": "2019-07-14",
+      "type": "inpatient",
+      "description": "Gynecology service (qualifier value)",
+      "reason": "Malignant neoplasm of breast (disorder)",
+      "procedure_code": "310061009",
+      "provider": "Dr. Edie Howell",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "8638fac9-c649-4dae-9948-167f453ecb7a",
+      "date": "2018-12-27",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Zachariah Jacobs",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "e523f7dd-a5bb-435b-84db-caa9075f5695",
+      "date": "2018-09-04",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Sanford Gottlieb",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "7aab154e-ac60-4740-b11a-9a0a776044ec",
+      "date": "2018-08-05",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Sanford Gottlieb",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "ad725ed2-90b0-485d-97e5-76cc3cb5161d",
+      "date": "2018-07-19",
+      "type": "ambulatory",
+      "description": "Postoperative follow-up visit (procedure)",
+      "reason": "Malignant neoplasm of breast (disorder)",
+      "procedure_code": "439740005",
+      "provider": "Dr. Sanford Gottlieb",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "47f929a4-b2f1-458b-a3f5-6e4ef4a243e3",
+      "date": "2018-07-19",
+      "type": "inpatient",
+      "description": "Screening surveillance (regime/therapy)",
+      "reason": "Malignant neoplasm of breast (disorder)",
+      "procedure_code": "410410006",
+      "provider": "Dr. Edie Howell",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "e6991b2f-d7be-4e88-aa38-33527aa0e9be",
+      "date": "2018-07-19",
+      "type": "inpatient",
+      "description": "Gynecology service (qualifier value)",
+      "reason": "Malignant neoplasm of breast (disorder)",
+      "procedure_code": "310061009",
+      "provider": "Dr. Edie Howell",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "30bcb646-8b84-46db-afe8-0703ff15a1a2",
+      "date": "2018-07-06",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Sanford Gottlieb",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "6e8b8958-6613-497a-a346-06c7819551ce",
+      "date": "2018-06-06",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Sanford Gottlieb",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "62726a99-a7b3-4454-acc6-a23f1ac21dfb",
+      "date": "2018-05-07",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Sanford Gottlieb",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "d0fa460b-a817-4b0b-9071-1360d7259c28",
+      "date": "2017-12-21",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Zachariah Jacobs",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "2782ba3c-c66d-4ddc-902a-da369395b41c",
+      "date": "2017-08-23",
+      "type": "ambulatory",
+      "description": "Postoperative follow-up visit (procedure)",
+      "reason": "Malignant neoplasm of breast (disorder)",
+      "procedure_code": "439740005",
+      "provider": "Dr. Sanford Gottlieb",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "9a41075d-250b-4969-83b5-e1d5e870f50c",
+      "date": "2017-08-23",
+      "type": "inpatient",
+      "description": "Screening surveillance (regime/therapy)",
+      "reason": "Malignant neoplasm of breast (disorder)",
+      "procedure_code": "410410006",
+      "provider": "Dr. Edie Howell",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "da3cfdc3-0917-473e-831a-749aa380daff",
+      "date": "2017-08-23",
+      "type": "inpatient",
+      "description": "Gynecology service (qualifier value)",
+      "reason": "Malignant neoplasm of breast (disorder)",
+      "procedure_code": "310061009",
+      "provider": "Dr. Edie Howell",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "717b7927-ecef-453d-941d-09e39dad8cf7",
+      "date": "2017-08-05",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Sanford Gottlieb",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 21285.55,
+    "total_covered": 11507.23,
+    "total_owed": 9778.32,
+    "denied_claims": 2,
+    "pending_claims": 0
+  }
+}

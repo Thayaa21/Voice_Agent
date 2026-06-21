@@ -1,0 +1,175 @@
+{
+  "patient_id": "5f7f2deb-6627-465c-980a-9b6b4bf381dc",
+  "display_name": "Cameron Kim",
+  "dob": "1979-12-25",
+  "age": 46,
+  "gender": "F",
+  "city": "Pittsfield",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Aetna",
+    "member_since": "2002",
+    "payer_id": "4d71f845-a6a9-3c39-b242-14d25ef86a8d"
+  },
+  "active_conditions": [
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1995-01-31"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "2019-12-31"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "2d7e96bc-a67c-4fd0-be7d-73ab582b9322",
+      "date": "2019-12-31",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Juan Funk",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "0a9d5498-95f0-4e09-a989-5eeaa18a1f7a",
+      "date": "2018-01-31",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Cystitis",
+      "procedure_code": "185345009",
+      "provider": "Dr. Jes\u00fas Quiroz",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "83e3d924-9c34-4aa1-988e-ed547f690173",
+      "date": "2017-03-14",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Juan Funk",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "16ddb1aa-8f87-4e5e-8c42-3383a2750cd3",
+      "date": "2017-01-24",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Escherichia coli urinary tract infection",
+      "procedure_code": "185345009",
+      "provider": "Dr. Jes\u00fas Quiroz",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "a92dba15-0164-4503-92ca-37e9564abd89",
+      "date": "2016-12-15",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Escherichia coli urinary tract infection",
+      "procedure_code": "185345009",
+      "provider": "Dr. Jes\u00fas Quiroz",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "76fcf161-17a9-479b-a966-d61d522eca6d",
+      "date": "2014-03-11",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Juan Funk",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "a6ea8448-d58d-4147-a5a0-e1dfc3d0dba8",
+      "date": "2011-03-08",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Juan Funk",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "370cd9f6-922c-410d-a2d7-b158142301ce",
+      "date": "2011-01-11",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Jes\u00fas Quiroz",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "028c04ed-0f8b-4dd6-9d69-2eba2d51f93c",
+      "date": "2011-01-02",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute viral pharyngitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Jes\u00fas Quiroz",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "b8594096-d40c-4a62-a1b2-8e6218e96692",
+      "date": "1995-01-31",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Juan Funk",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 74.16,
+      "patient_owes": 55.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 1291.6,
+    "total_covered": 847.44,
+    "total_owed": 444.16,
+    "denied_claims": 1,
+    "pending_claims": 0
+  }
+}

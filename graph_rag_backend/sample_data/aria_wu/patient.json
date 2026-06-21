@@ -1,0 +1,94 @@
+{
+  "patient_id": "a2aa6863-6e21-4b0a-b46c-40a6c0205a10",
+  "display_name": "Aria Wu",
+  "dob": "2019-06-13",
+  "age": 7,
+  "gender": "M",
+  "city": "Boston",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "NO_INSURANCE",
+    "member_since": "2019",
+    "payer_id": "b1c428d6-4f07-31e0-90f0-68ffa6ff8c76"
+  },
+  "active_conditions": [],
+  "encounters": [
+    {
+      "encounter_id": "e8f5cae1-3741-44f0-9f62-7b015242ae05",
+      "date": "2020-02-20",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Crissy O'connell",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "a378680d-ebcf-4094-9a63-026cb9b1a2ac",
+      "date": "2019-11-21",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Crissy O'connell",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "a83ea14f-1721-49a7-a34b-f72295e2f8e3",
+      "date": "2019-09-19",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Crissy O'connell",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "7c60fa2a-9a97-414e-8fa1-f96f5a46bffb",
+      "date": "2019-07-18",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Crissy O'connell",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "581e53e9-0664-4c29-b25d-734c059b6e5e",
+      "date": "2019-06-13",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Crissy O'connell",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 645.8,
+    "total_covered": 645.8,
+    "total_owed": 0.0,
+    "denied_claims": 0,
+    "pending_claims": 0
+  }
+}

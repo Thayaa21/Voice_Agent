@@ -1,0 +1,128 @@
+{
+  "patient_id": "badf923b-91ff-4838-b9f4-94c80a6931f8",
+  "display_name": "Elena Ali",
+  "dob": "1987-06-18",
+  "age": 39,
+  "gender": "M",
+  "city": "Cambridge",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Aetna",
+    "member_since": "1987",
+    "payer_id": "4d71f845-a6a9-3c39-b242-14d25ef86a8d"
+  },
+  "active_conditions": [
+    {
+      "code": "40055000",
+      "description": "Chronic sinusitis (disorder)",
+      "onset": "1987-08-09"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "b2bd3510-dbe5-4cb2-8749-179c2b4841cb",
+      "date": "2018-08-30",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Lexie Glover",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "2a11fb1e-c015-4995-ac42-bf971f7a76f6",
+      "date": "2015-08-27",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Lexie Glover",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "21e56474-0661-4fa3-a410-8eca4fbb2c7b",
+      "date": "2014-09-25",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Suzette Monahan",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "426b48a2-e46a-44b6-95b4-ac9eb446f29c",
+      "date": "2014-09-14",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Streptococcal sore throat (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Suzette Monahan",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "8d82d545-2239-49a4-809f-e27ec2d535c5",
+      "date": "2013-10-16",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Suzette Monahan",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "a62ea512-27bd-45be-a3d6-8688afe2538f",
+      "date": "2012-08-23",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Lexie Glover",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "9fb70e04-ef89-422d-81d0-b5e805180e10",
+      "date": "1987-08-09",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute bacterial sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Suzette Monahan",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 904.12,
+    "total_covered": 579.96,
+    "total_owed": 324.16,
+    "denied_claims": 1,
+    "pending_claims": 0
+  }
+}

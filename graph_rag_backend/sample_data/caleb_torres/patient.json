@@ -1,0 +1,128 @@
+{
+  "patient_id": "6bac5e1a-692a-47a7-ba58-474ce3713644",
+  "display_name": "Caleb Torres",
+  "dob": "1986-04-02",
+  "age": 40,
+  "gender": "M",
+  "city": "Waltham",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Blue Cross Blue Shield",
+    "member_since": "1986",
+    "payer_id": "6e2f1a2d-27bd-3701-8d08-dae202c58632"
+  },
+  "active_conditions": [
+    {
+      "code": "262574004",
+      "description": "Bullet wound",
+      "onset": "1987-03-28"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "7968daee-9dd0-4237-883b-00b470d0fc64",
+      "date": "1987-03-28",
+      "type": "emergency",
+      "description": "Emergency room admission (procedure)",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Maile Frami",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "062a6117-8718-4d64-8e79-ba34ec8212c6",
+      "date": "1987-03-11",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Elene Ledner",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "e2a02fc4-a122-4625-9cbf-75d8bc9321a2",
+      "date": "1986-12-10",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Elene Ledner",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "3332043a-4f2c-4c3d-91a0-644b14a1b4dc",
+      "date": "1986-09-10",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Elene Ledner",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "3828663a-728a-4772-aa36-bbe244124f03",
+      "date": "1986-07-09",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Elene Ledner",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "fc3162b9-37d3-47ff-ab0f-a6f654d06de5",
+      "date": "1986-05-07",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Elene Ledner",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "ec714e0a-435c-4c13-8e18-a04cf5e30635",
+      "date": "1986-04-02",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Elene Ledner",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 904.12,
+    "total_covered": 324.96,
+    "total_owed": 579.16,
+    "denied_claims": 1,
+    "pending_claims": 0
+  }
+}

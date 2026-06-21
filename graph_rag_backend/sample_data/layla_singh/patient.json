@@ -1,0 +1,152 @@
+{
+  "patient_id": "dc811097-b472-4dbd-8ce9-bb0afca44d7e",
+  "display_name": "Layla Singh",
+  "dob": "1995-02-18",
+  "age": 31,
+  "gender": "M",
+  "city": "New Bedford",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Aetna",
+    "member_since": "1995",
+    "payer_id": "4d71f845-a6a9-3c39-b242-14d25ef86a8d"
+  },
+  "active_conditions": [
+    {
+      "code": "47693006",
+      "description": "Rupture of appendix",
+      "onset": "2003-02-18"
+    },
+    {
+      "code": "74400008",
+      "description": "Appendicitis",
+      "onset": "2003-02-18"
+    },
+    {
+      "code": "428251008",
+      "description": "History of appendectomy",
+      "onset": "2003-02-18"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "b155b503-5543-4013-a535-de3fb66e9bc8",
+      "date": "2020-04-25",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Jennette Ferry",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "27bf4312-7a5a-444d-a958-b76a6b3287bd",
+      "date": "2017-04-22",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Jennette Ferry",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "4b6bc44b-6dd8-4ca1-bf71-2692ec908da6",
+      "date": "2014-04-19",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Jennette Ferry",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "dc092f13-5d0b-4133-8029-1db16cdfc9e9",
+      "date": "2013-04-13",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Jennette Ferry",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "062246a2-93f6-413d-87af-a82020f1df8a",
+      "date": "2012-04-07",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Jennette Ferry",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "2223c55e-aa36-4dc8-b7e1-d0e3f43453f0",
+      "date": "2011-04-02",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Jennette Ferry",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "5e765f51-3969-4501-8c45-cabb794e19be",
+      "date": "2003-02-18",
+      "type": "emergency",
+      "description": "Emergency Room Admission",
+      "reason": "Appendicitis",
+      "procedure_code": "50849002",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "e7c7ca70-2423-4b53-abfd-6dfc341b0e0e",
+      "date": "2003-02-18",
+      "type": "inpatient",
+      "description": "Encounter Inpatient",
+      "reason": "Appendicitis",
+      "procedure_code": "183452005",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Aetna",
+      "billed": 77.49,
+      "covered": 12.49,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 981.61,
+    "total_covered": 787.45,
+    "total_owed": 194.16,
+    "denied_claims": 1,
+    "pending_claims": 0
+  }
+}

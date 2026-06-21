@@ -1,0 +1,355 @@
+{
+  "patient_id": "4a757679-50a3-4392-8929-bec0876f4744",
+  "display_name": "Sydney Stewart",
+  "dob": "1937-09-07",
+  "age": 88,
+  "gender": "M",
+  "city": "Fairhaven",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicare",
+    "member_since": "1956",
+    "payer_id": "7caa7254-5050-3b5e-9eae-bd5ea30e809c"
+  },
+  "active_conditions": [
+    {
+      "code": "59621000",
+      "description": "Hypertension",
+      "onset": "1955-11-01"
+    },
+    {
+      "code": "40055000",
+      "description": "Chronic sinusitis (disorder)",
+      "onset": "1956-06-14"
+    },
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1989-05-09"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "1991-05-21"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "1991-05-21"
+    },
+    {
+      "code": "55822004",
+      "description": "Hyperlipidemia",
+      "onset": "1998-06-30"
+    },
+    {
+      "code": "53741008",
+      "description": "Coronary Heart Disease",
+      "onset": "2005-08-09"
+    },
+    {
+      "code": "22298006",
+      "description": "Myocardial Infarction",
+      "onset": "2012-12-25"
+    },
+    {
+      "code": "399211009",
+      "description": "History of myocardial infarction (situation)",
+      "onset": "2012-12-25"
+    },
+    {
+      "code": "230690007",
+      "description": "Stroke",
+      "onset": "2013-01-22"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "9bd30eb7-c4f7-45c8-986f-e4d526e1e8a6",
+      "date": "2019-10-30",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Enoch Corwin",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "93139a35-6266-47fc-a780-7e4ee55e4d34",
+      "date": "2019-07-17",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "edeed443-bd1f-4a35-8f89-8c4f70e0c3d9",
+      "date": "2018-10-24",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Enoch Corwin",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "6ccbcac0-0d7f-40ee-b24f-aadfe87f4b53",
+      "date": "2018-07-17",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "5b29adba-dc41-4864-b4f9-dce6cb558a73",
+      "date": "2018-02-15",
+      "type": "emergency",
+      "description": "Emergency room admission (procedure)",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "f20813ab-bd0b-4ddf-a62f-1b32bbc8d2f3",
+      "date": "2017-10-18",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Enoch Corwin",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "77ee924b-35df-4304-9de6-b558fca6ed08",
+      "date": "2017-09-01",
+      "type": "ambulatory",
+      "description": "Encounter for 'check-up'",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "2399dc02-56fa-487d-8419-6480710094bd",
+      "date": "2017-07-17",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "d6c0bc19-32da-4acf-a3c8-92633a0fc653",
+      "date": "2016-10-12",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Enoch Corwin",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "52943538-bd32-4fb5-a3af-ab6a172155bc",
+      "date": "2016-07-17",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "4393e022-ba8f-4b3c-b6e6-170546694382",
+      "date": "2015-10-07",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Enoch Corwin",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "aa2a38e7-0888-451c-8bac-588b8fa8271c",
+      "date": "2015-07-18",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "fa6789ee-8ecc-472b-a9b5-475dbe2a3056",
+      "date": "2014-10-01",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Enoch Corwin",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "70892d40-50fc-482b-b395-7882f34a933e",
+      "date": "2014-07-18",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "bd610cae-bd17-4417-a4d2-fcb05a293b76",
+      "date": "2013-09-25",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Enoch Corwin",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "3d6642e8-60a4-4aee-9a63-d6bf8d8dadbc",
+      "date": "2013-07-18",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "87c97950-09d1-4e34-bad2-128bed94c714",
+      "date": "2013-01-23",
+      "type": "emergency",
+      "description": "Stroke",
+      "reason": "",
+      "procedure_code": "230690007",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "2630994c-39d3-486a-9f53-a565cf850dbe",
+      "date": "2012-12-26",
+      "type": "emergency",
+      "description": "Myocardial Infarction",
+      "reason": "",
+      "procedure_code": "22298006",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "974c58ad-e86d-488a-afb5-1d27c225e54f",
+      "date": "2012-09-19",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Enoch Corwin",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "b289e23f-f87d-427b-a37a-43c3e0fff10b",
+      "date": "2012-09-02",
+      "type": "ambulatory",
+      "description": "Encounter for 'check-up'",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 12399.36,
+    "total_covered": 7552.76,
+    "total_owed": 4846.6,
+    "denied_claims": 10,
+    "pending_claims": 0
+  }
+}

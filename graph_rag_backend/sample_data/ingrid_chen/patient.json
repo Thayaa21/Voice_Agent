@@ -1,0 +1,94 @@
+{
+  "patient_id": "f35c2499-623e-406b-b5f2-7fdfd4d41607",
+  "display_name": "Ingrid Chen",
+  "dob": "1990-05-07",
+  "age": 36,
+  "gender": "M",
+  "city": "Needham",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Cigna Health",
+    "member_since": "1990",
+    "payer_id": "047f6ec3-6215-35eb-9608-f9dda363a44c"
+  },
+  "active_conditions": [],
+  "encounters": [
+    {
+      "encounter_id": "e4f86ec5-88a3-4eec-86a1-3b61a2588957",
+      "date": "2018-07-16",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Earl Fahey",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "84a4773e-8816-49b4-abbd-ae5f6af59a4d",
+      "date": "2015-07-13",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Earl Fahey",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "6d14af9e-b2fe-4634-9dd2-7ec66be45155",
+      "date": "2012-07-09",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Earl Fahey",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "50a2f170-e014-4b7d-861f-35c040bbf2a3",
+      "date": "2011-01-04",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Maile Frami",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "b3259336-5203-4504-bf89-d503dc006fea",
+      "date": "2010-07-10",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Maile Frami",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 645.8,
+    "total_covered": 525.8,
+    "total_owed": 120.0,
+    "denied_claims": 0,
+    "pending_claims": 0
+  }
+}

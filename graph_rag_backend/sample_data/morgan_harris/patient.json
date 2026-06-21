@@ -1,0 +1,122 @@
+{
+  "patient_id": "2b67dfa5-83a8-49d9-9dd8-5bb4c2091516",
+  "display_name": "Morgan Harris",
+  "dob": "1993-05-17",
+  "age": 33,
+  "gender": "M",
+  "city": "Boston",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "UnitedHealthcare",
+    "member_since": "1993",
+    "payer_id": "5059a55e-5d6e-34d1-b6cb-d83d16e57bcf"
+  },
+  "active_conditions": [],
+  "encounters": [
+    {
+      "encounter_id": "275c9ab1-5c04-455c-9f31-1928f3fba494",
+      "date": "2018-07-23",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Rico Willms",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "db230f23-4e07-4066-80c3-3906792ac46a",
+      "date": "2015-07-20",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Rico Willms",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "eb876750-c9f3-4440-9041-ac54411db3cb",
+      "date": "2015-03-07",
+      "type": "emergency",
+      "description": "Emergency room admission (procedure)",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Rivka Sanford",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 59.16,
+      "patient_owes": 70.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "d05e83e7-58b2-40d3-bc27-c9a8edf9b5f6",
+      "date": "2012-07-16",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Rico Willms",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "e7b4b6fd-88f2-4f62-8cff-a40091bd0539",
+      "date": "2011-07-11",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Rico Willms",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "ab5fcb1c-f777-4bff-88ef-ec865a1f7d30",
+      "date": "2010-07-05",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Rico Willms",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "1ea6c39d-9273-405d-9a0c-7db6ee4c493d",
+      "date": "2000-05-15",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Child attention deficit disorder",
+      "procedure_code": "185347001",
+      "provider": "Dr. Rivka Sanford",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 59.16,
+      "patient_owes": 70.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 904.12,
+    "total_covered": 764.12,
+    "total_owed": 140.0,
+    "denied_claims": 0,
+    "pending_claims": 0
+  }
+}

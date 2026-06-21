@@ -1,0 +1,203 @@
+{
+  "patient_id": "1d97baad-7587-436e-ab04-8f7642432c71",
+  "display_name": "Chloe Sharma",
+  "dob": "1988-08-15",
+  "age": 37,
+  "gender": "M",
+  "city": "Tewksbury",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Anthem",
+    "member_since": "1988",
+    "payer_id": "42c4fca7-f8a9-3cd1-982a-dd9751bf3e2a"
+  },
+  "active_conditions": [
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "2016-10-24"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "2016-10-24"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "0a7affbe-2ceb-4aba-a0d8-3100030af3c5",
+      "date": "2020-01-29",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute bronchitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Zana Considine",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "6a5e0b57-1b37-40e3-9615-2ff6130df840",
+      "date": "2019-11-02",
+      "type": "emergency",
+      "description": "Emergency room admission (procedure)",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Zana Considine",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "225ffa8e-cf9c-44a4-9f3f-43a00aeedf52",
+      "date": "2019-10-29",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Ethan Gottlieb",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "828d7a50-a285-447e-81b9-7d8ffd87635b",
+      "date": "2017-06-13",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Zana Considine",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "70dc888e-1c2d-4d21-874e-755c23d2907e",
+      "date": "2017-06-04",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute bronchitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Zana Considine",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "9c8fec5c-af88-4aac-aebb-5fa6d5df2f22",
+      "date": "2017-05-18",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Zana Considine",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "d06a96f5-f951-4f19-81ae-4c5522a6011a",
+      "date": "2016-10-25",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Ethan Gottlieb",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "2d573467-433a-4bd9-9b89-84dd7894f644",
+      "date": "2016-10-25",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Anemia (disorder)",
+      "procedure_code": "185347001",
+      "provider": "Dr. Zana Considine",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "f578d3d3-616a-4a0e-a893-93f594745fc3",
+      "date": "2014-04-11",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Zana Considine",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "e69e3706-577c-47cb-a08d-a58b9ab38b71",
+      "date": "2013-10-22",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Ethan Gottlieb",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "16aea592-394a-4bed-9257-9ab81f31b5f3",
+      "date": "2010-10-19",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Ethan Gottlieb",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "d6a81954-fef4-44e7-b8e4-914a28113feb",
+      "date": "1993-12-20",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute bronchitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Zana Considine",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 1549.92,
+    "total_covered": 516.64,
+    "total_owed": 1033.28,
+    "denied_claims": 8,
+    "pending_claims": 0
+  }
+}

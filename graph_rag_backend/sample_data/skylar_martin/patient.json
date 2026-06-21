@@ -1,0 +1,355 @@
+{
+  "patient_id": "926fc2c9-0e8c-4dd4-a00a-6d37a01dd304",
+  "display_name": "Skylar Martin",
+  "dob": "1967-04-20",
+  "age": 59,
+  "gender": "F",
+  "city": "Salem",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Cigna Health",
+    "member_since": "2015",
+    "payer_id": "047f6ec3-6215-35eb-9608-f9dda363a44c"
+  },
+  "active_conditions": [
+    {
+      "code": "40055000",
+      "description": "Chronic sinusitis (disorder)",
+      "onset": "1986-08-31"
+    },
+    {
+      "code": "19169002",
+      "description": "Miscarriage in first trimester",
+      "onset": "1997-06-12"
+    },
+    {
+      "code": "185086009",
+      "description": "Chronic obstructive bronchitis (disorder)",
+      "onset": "1999-10-07"
+    },
+    {
+      "code": "44054006",
+      "description": "Diabetes",
+      "onset": "2003-07-17"
+    },
+    {
+      "code": "302870006",
+      "description": "Hypertriglyceridemia (disorder)",
+      "onset": "2004-07-22"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "2004-07-22"
+    },
+    {
+      "code": "80394007",
+      "description": "Hyperglycemia (disorder)",
+      "onset": "2005-07-28"
+    },
+    {
+      "code": "237602007",
+      "description": "Metabolic syndrome X (disorder)",
+      "onset": "2005-07-28"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "2007-08-09"
+    },
+    {
+      "code": "368581000119106",
+      "description": "Neuropathy due to type 2 diabetes mellitus (disorder)",
+      "onset": "2007-08-09"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "affadebc-5d9e-4315-a7c3-8b2b96176206",
+      "date": "2019-10-17",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Rosalba Huels",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "14630c93-44b7-4a73-83c5-4affadd26773",
+      "date": "2018-12-13",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Mari Reynolds",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "471e239f-8dd2-4911-9f3f-044b7e52229a",
+      "date": "2018-12-02",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute viral pharyngitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Mari Reynolds",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "7fb5b5f3-bf65-4075-819c-c8d2cb01724f",
+      "date": "2018-10-11",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Rosalba Huels",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "f40aed05-47d4-435b-8308-abbcd3d545ca",
+      "date": "2018-01-11",
+      "type": "ambulatory",
+      "description": "Prenatal visit",
+      "reason": "Fetus with unknown complication",
+      "procedure_code": "424619006",
+      "provider": "Dr. Mari Reynolds",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "c3e96e12-c11e-4eee-8f46-379f03ff0d22",
+      "date": "2017-12-28",
+      "type": "ambulatory",
+      "description": "Prenatal initial visit",
+      "reason": "Normal pregnancy",
+      "procedure_code": "424441002",
+      "provider": "Dr. Mari Reynolds",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "e3cbdcdc-3067-4854-9847-d2b4d0268e2e",
+      "date": "2017-11-02",
+      "type": "outpatient",
+      "description": "Patient encounter procedure",
+      "reason": "",
+      "procedure_code": "308335008",
+      "provider": "Dr. Mari Reynolds",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "db3402ac-8cf4-403a-a571-b95e5ab3a6ea",
+      "date": "2017-10-05",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Rosalba Huels",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "df31bc5a-aa94-4aff-b706-abc3269eed77",
+      "date": "2016-11-23",
+      "type": "outpatient",
+      "description": "Consultation for treatment",
+      "reason": "",
+      "procedure_code": "698314001",
+      "provider": "Dr. Mari Reynolds",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "27666969-84bc-45a4-bc6a-6ad57bc015a4",
+      "date": "2016-09-29",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Rosalba Huels",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "7d5c7f12-a404-47e7-bec5-4839e69f9c73",
+      "date": "2015-11-29",
+      "type": "outpatient",
+      "description": "Consultation for treatment",
+      "reason": "",
+      "procedure_code": "698314001",
+      "provider": "Dr. Mari Reynolds",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "4672d8cf-9454-4aed-9555-1f132dbc4e21",
+      "date": "2015-09-24",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Rosalba Huels",
+      "payer": "Cigna Health",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "f318ad67-6321-453f-90e1-285bf4543dc5",
+      "date": "2014-12-04",
+      "type": "ambulatory",
+      "description": "Postnatal visit",
+      "reason": "",
+      "procedure_code": "169762003",
+      "provider": "Dr. Mari Reynolds",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "15ab2285-d90d-4709-b44a-e7b6bfbd03b3",
+      "date": "2014-12-04",
+      "type": "outpatient",
+      "description": "Consultation for treatment",
+      "reason": "",
+      "procedure_code": "698314001",
+      "provider": "Dr. Mari Reynolds",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "ae68eae6-4db3-4dc2-b441-36d338de405b",
+      "date": "2014-10-23",
+      "type": "emergency",
+      "description": "Obstetric emergency hospital admission",
+      "reason": "Normal pregnancy",
+      "procedure_code": "183460006",
+      "provider": "Dr. Mari Reynolds",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "bc5591a6-9b8a-4cd5-b513-1616f9107cfe",
+      "date": "2014-10-16",
+      "type": "ambulatory",
+      "description": "Prenatal visit",
+      "reason": "Normal pregnancy",
+      "procedure_code": "424619006",
+      "provider": "Dr. Mari Reynolds",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "8f2e9ce6-d68a-48ac-ac37-05f035fd84a0",
+      "date": "2014-10-02",
+      "type": "ambulatory",
+      "description": "Prenatal visit",
+      "reason": "Normal pregnancy",
+      "procedure_code": "424619006",
+      "provider": "Dr. Mari Reynolds",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "bb53a56f-f259-467a-849a-aebad3764a3e",
+      "date": "2014-09-18",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Rosalba Huels",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "64f899de-d6a6-4500-92eb-8027d49bf386",
+      "date": "2014-09-04",
+      "type": "ambulatory",
+      "description": "Prenatal visit",
+      "reason": "Normal pregnancy",
+      "procedure_code": "424619006",
+      "provider": "Dr. Mari Reynolds",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "e9c0d0f9-4094-4250-91fe-7d45df130cfa",
+      "date": "2014-08-07",
+      "type": "ambulatory",
+      "description": "Prenatal visit",
+      "reason": "Normal pregnancy",
+      "procedure_code": "424619006",
+      "provider": "Dr. Mari Reynolds",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 6974.64,
+    "total_covered": 3540.56,
+    "total_owed": 3434.08,
+    "denied_claims": 13,
+    "pending_claims": 0
+  }
+}

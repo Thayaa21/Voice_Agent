@@ -1,0 +1,350 @@
+{
+  "patient_id": "ab6a2662-f6d1-4da6-b3ce-3929d68650d7",
+  "display_name": "Blake Singh",
+  "dob": "1971-01-16",
+  "age": 55,
+  "gender": "F",
+  "city": "Westfield",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Anthem",
+    "member_since": "2004",
+    "payer_id": "42c4fca7-f8a9-3cd1-982a-dd9751bf3e2a"
+  },
+  "active_conditions": [
+    {
+      "code": "24079001",
+      "description": "Atopic dermatitis",
+      "onset": "1971-02-22"
+    },
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1993-03-20"
+    },
+    {
+      "code": "44054006",
+      "description": "Diabetes",
+      "onset": "2015-01-31"
+    },
+    {
+      "code": "59621000",
+      "description": "Hypertension",
+      "onset": "2015-01-31"
+    },
+    {
+      "code": "80394007",
+      "description": "Hyperglycemia (disorder)",
+      "onset": "2016-02-06"
+    },
+    {
+      "code": "302870006",
+      "description": "Hypertriglyceridemia (disorder)",
+      "onset": "2016-02-06"
+    },
+    {
+      "code": "237602007",
+      "description": "Metabolic syndrome X (disorder)",
+      "onset": "2016-02-06"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "2016-02-06"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "2016-02-06"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "f41b10b7-f7a0-4137-9e7c-84f9ca511d3d",
+      "date": "2020-03-28",
+      "type": "outpatient",
+      "description": "Patient encounter procedure",
+      "reason": "",
+      "procedure_code": "308335008",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "ac876537-5ae2-4404-a690-35b0d4fd560f",
+      "date": "2020-02-29",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Leonel Will",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "f07c5068-fd21-482e-a856-648c4e3d7174",
+      "date": "2019-02-23",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Leonel Will",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "59a64f8d-50a2-487c-8edf-ff78fbb76917",
+      "date": "2018-02-17",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Leonel Will",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "e44c53ab-77e1-4d52-8cdc-cd6975634f0f",
+      "date": "2017-06-10",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "8b2dcb4a-a469-4cd9-a870-84232646e734",
+      "date": "2017-06-03",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Judith Johns",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "b399d5dc-e77c-40ce-8606-18ca8f0a0782",
+      "date": "2017-05-23",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute bronchitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "f5dadb23-2bcd-488c-a177-8aa0e2e8a6bf",
+      "date": "2017-02-11",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Leonel Will",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "77d96311-0122-4a97-b59e-29eaee988513",
+      "date": "2016-03-26",
+      "type": "outpatient",
+      "description": "Patient encounter procedure",
+      "reason": "",
+      "procedure_code": "308335008",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "929389b5-2695-4385-8487-74670427b8f4",
+      "date": "2016-02-28",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "b27ef5b9-4549-457c-8ef5-f8091d380f7d",
+      "date": "2016-02-06",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Leonel Will",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "c8ab35c0-2616-45e9-ab71-22fb877eabce",
+      "date": "2016-02-06",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Anemia (disorder)",
+      "procedure_code": "185347001",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "3da2ed63-4561-414b-892a-d9d6988b366b",
+      "date": "2015-03-02",
+      "type": "ambulatory",
+      "description": "Hypertension follow-up encounter",
+      "reason": "",
+      "procedure_code": "390906007",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "e0bf1102-60dc-4177-8cda-4ea889656c2f",
+      "date": "2015-01-31",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Leonel Will",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "558358f5-f49c-42ed-88b4-c84978b5b70d",
+      "date": "2013-01-26",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Leonel Will",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "127e7c04-7203-4bd4-87b2-a692983c5f93",
+      "date": "2013-01-19",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "b4a9c113-f768-4741-8556-2fccef3b16c0",
+      "date": "2013-01-14",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "e74dcb96-b458-475f-bd71-193081fd2890",
+      "date": "2013-01-09",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Atopic dermatitis",
+      "procedure_code": "185347001",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "63419048-022a-41b4-be68-b36d81b5e253",
+      "date": "2012-03-24",
+      "type": "outpatient",
+      "description": "Patient encounter procedure",
+      "reason": "",
+      "procedure_code": "308335008",
+      "provider": "Dr. \u00d3scar Mateo",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "d9023790-0082-449d-bfe2-1a3ef4e9d15f",
+      "date": "2011-01-22",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Leonel Will",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 3229.0,
+    "total_covered": 1269.92,
+    "total_owed": 1959.08,
+    "denied_claims": 13,
+    "pending_claims": 0
+  }
+}

@@ -1,0 +1,375 @@
+{
+  "patient_id": "53f3587e-b9bf-473a-b36e-62f0e1946fa1",
+  "display_name": "Isla Yamamoto",
+  "dob": "1949-02-26",
+  "age": 77,
+  "gender": "F",
+  "city": "Grafton",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicare",
+    "member_since": "1986",
+    "payer_id": "7caa7254-5050-3b5e-9eae-bd5ea30e809c"
+  },
+  "active_conditions": [
+    {
+      "code": "19169002",
+      "description": "Miscarriage in first trimester",
+      "onset": "1974-11-16"
+    },
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1983-05-14"
+    },
+    {
+      "code": "40055000",
+      "description": "Chronic sinusitis (disorder)",
+      "onset": "1991-09-04"
+    },
+    {
+      "code": "44054006",
+      "description": "Diabetes",
+      "onset": "2001-03-10"
+    },
+    {
+      "code": "59621000",
+      "description": "Hypertension",
+      "onset": "2001-03-10"
+    },
+    {
+      "code": "80394007",
+      "description": "Hyperglycemia (disorder)",
+      "onset": "2002-03-16"
+    },
+    {
+      "code": "302870006",
+      "description": "Hypertriglyceridemia (disorder)",
+      "onset": "2002-03-16"
+    },
+    {
+      "code": "237602007",
+      "description": "Metabolic syndrome X (disorder)",
+      "onset": "2002-03-16"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "2002-03-16"
+    },
+    {
+      "code": "55822004",
+      "description": "Hyperlipidemia",
+      "onset": "2004-03-27"
+    },
+    {
+      "code": "431856006",
+      "description": "Chronic kidney disease stage 2 (disorder)",
+      "onset": "2007-04-14"
+    },
+    {
+      "code": "127013003",
+      "description": "Diabetic renal disease (disorder)",
+      "onset": "2007-04-14"
+    },
+    {
+      "code": "90781000119102",
+      "description": "Microalbuminuria due to type 2 diabetes mellitus (disorder)",
+      "onset": "2007-04-14"
+    },
+    {
+      "code": "254837009",
+      "description": "Malignant neoplasm of breast (disorder)",
+      "onset": "2013-02-10"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "e16e3187-0824-4f86-963b-341f968e1095",
+      "date": "2020-04-13",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "7b63ea6b-1742-4135-8527-cb5f39110f2c",
+      "date": "2020-02-22",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "f7572043-6bae-4390-b350-569ec2fc3bc6",
+      "date": "2019-10-30",
+      "type": "ambulatory",
+      "description": "Postoperative follow-up visit (procedure)",
+      "reason": "Malignant neoplasm of breast (disorder)",
+      "procedure_code": "439740005",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "77162df4-6a37-4f4d-926a-8a453a7f9f47",
+      "date": "2019-10-30",
+      "type": "inpatient",
+      "description": "Screening surveillance (regime/therapy)",
+      "reason": "Malignant neoplasm of breast (disorder)",
+      "procedure_code": "410410006",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "0a352711-905a-4acb-a588-609d41a4f5d8",
+      "date": "2019-10-30",
+      "type": "inpatient",
+      "description": "Gynecology service (qualifier value)",
+      "reason": "Malignant neoplasm of breast (disorder)",
+      "procedure_code": "310061009",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "b5d1ada2-f42f-4ef2-a56b-c7edf38d6ead",
+      "date": "2019-06-29",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "517f1f21-eedb-4bf2-9e4a-9806b94b1823",
+      "date": "2019-06-22",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Joan Trantow",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "28f0ba40-c8d1-467e-bafc-c657d2148f62",
+      "date": "2019-04-27",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "2be3ac2e-7d1b-47fc-b7c2-aacec476eee1",
+      "date": "2019-04-14",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "e0fb58c8-2079-4b39-a68c-db23e3ac2291",
+      "date": "2019-03-30",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "4e70a9d8-198d-4afc-9df4-3bf5ef73e75e",
+      "date": "2019-03-02",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "918f57f7-b9f7-45ae-a5f3-6c0c01fd33c2",
+      "date": "2019-02-02",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "edfec3af-421a-4f15-bbc5-0a259eb90107",
+      "date": "2018-11-04",
+      "type": "ambulatory",
+      "description": "Postoperative follow-up visit (procedure)",
+      "reason": "Malignant neoplasm of breast (disorder)",
+      "procedure_code": "439740005",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "f8dfd497-004d-4633-ba73-b3cd9ba300b6",
+      "date": "2018-11-04",
+      "type": "inpatient",
+      "description": "Screening surveillance (regime/therapy)",
+      "reason": "Malignant neoplasm of breast (disorder)",
+      "procedure_code": "410410006",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "575b0aae-d8a3-4e3c-8c10-525fb400c577",
+      "date": "2018-11-04",
+      "type": "inpatient",
+      "description": "Gynecology service (qualifier value)",
+      "reason": "Malignant neoplasm of breast (disorder)",
+      "procedure_code": "310061009",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "7a030336-2773-453f-bb93-20631b701cd4",
+      "date": "2018-06-16",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Joan Trantow",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "141abe90-f20e-40d2-b415-b4bd692e683b",
+      "date": "2018-04-14",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "d25c40ae-ae39-4019-a88c-18c29c8c5dc1",
+      "date": "2018-03-03",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "66af43ae-83f1-4f20-a6a2-02e51b6f305f",
+      "date": "2018-02-03",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "3aabf690-4465-4f73-90aa-8400d716848f",
+      "date": "2017-12-09",
+      "type": "ambulatory",
+      "description": "Postoperative follow-up visit (procedure)",
+      "reason": "Malignant neoplasm of breast (disorder)",
+      "procedure_code": "439740005",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 18599.04,
+    "total_covered": 9749.24,
+    "total_owed": 8849.8,
+    "denied_claims": 30,
+    "pending_claims": 0
+  }
+}

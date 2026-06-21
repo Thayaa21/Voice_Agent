@@ -1,0 +1,395 @@
+{
+  "patient_id": "3f336702-bf73-4fc8-bd59-3ba77fd65d0d",
+  "display_name": "Avery Mueller",
+  "dob": "1923-06-22",
+  "age": 102,
+  "gender": "M",
+  "city": "Brookline",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicare",
+    "member_since": "1942",
+    "payer_id": "7caa7254-5050-3b5e-9eae-bd5ea30e809c"
+  },
+  "active_conditions": [
+    {
+      "code": "5602001",
+      "description": "Opioid abuse (disorder)",
+      "onset": "1951-08-31"
+    },
+    {
+      "code": "449868002",
+      "description": "Smokes tobacco daily",
+      "onset": "1951-08-31"
+    },
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1951-08-31"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "1965-07-02"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "1965-07-02"
+    },
+    {
+      "code": "44054006",
+      "description": "Diabetes",
+      "onset": "1969-07-11"
+    },
+    {
+      "code": "302870006",
+      "description": "Hypertriglyceridemia (disorder)",
+      "onset": "1971-07-16"
+    },
+    {
+      "code": "237602007",
+      "description": "Metabolic syndrome X (disorder)",
+      "onset": "1971-07-16"
+    },
+    {
+      "code": "80394007",
+      "description": "Hyperglycemia (disorder)",
+      "onset": "1972-07-21"
+    },
+    {
+      "code": "431855005",
+      "description": "Chronic kidney disease stage 1 (disorder)",
+      "onset": "1972-07-21"
+    },
+    {
+      "code": "127013003",
+      "description": "Diabetic renal disease (disorder)",
+      "onset": "1972-07-21"
+    },
+    {
+      "code": "64859006",
+      "description": "Osteoporosis (disorder)",
+      "onset": "1983-09-23"
+    },
+    {
+      "code": "49436004",
+      "description": "Atrial Fibrillation",
+      "onset": "1986-02-28"
+    },
+    {
+      "code": "126906006",
+      "description": "Neoplasm of prostate",
+      "onset": "1987-10-16"
+    },
+    {
+      "code": "92691004",
+      "description": "Carcinoma in situ of prostate (disorder)",
+      "onset": "1987-10-16"
+    },
+    {
+      "code": "53741008",
+      "description": "Coronary Heart Disease",
+      "onset": "1998-07-24"
+    },
+    {
+      "code": "230690007",
+      "description": "Stroke",
+      "onset": "2002-03-29"
+    },
+    {
+      "code": "26929004",
+      "description": "Alzheimer's disease (disorder)",
+      "onset": "2002-09-06"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "b6474481-0897-4f79-be91-b8ba6733f18c",
+      "date": "2020-04-24",
+      "type": "ambulatory",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Gaynell Streich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "35a12f1a-fd4b-4ea3-aff9-e5cf9944ef2a",
+      "date": "2020-04-21",
+      "type": "ambulatory",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Gaynell Streich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "ef08f50c-1e4e-411b-800c-354882cca0b5",
+      "date": "2020-04-18",
+      "type": "ambulatory",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Gaynell Streich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "f7fbbb15-bb24-4057-9df1-23fc29a1d4c5",
+      "date": "2020-04-17",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Gaynell Streich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "ef001e79-db5c-48a2-98e7-489b4c0ab5d0",
+      "date": "2020-04-15",
+      "type": "ambulatory",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Gaynell Streich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "3b876af8-3b2a-4239-bcf6-8802baba0258",
+      "date": "2020-04-12",
+      "type": "ambulatory",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Gaynell Streich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "6bde8d72-2b83-4e7f-92f2-aca2edadef53",
+      "date": "2020-04-09",
+      "type": "ambulatory",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Gaynell Streich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "3f59e067-b281-42b8-a303-253bce0ac89f",
+      "date": "2020-04-06",
+      "type": "ambulatory",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Gaynell Streich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "d0444f23-701a-47a0-a6b9-dc36de4d43e7",
+      "date": "2020-04-03",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Gaynell Streich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "e61a9f57-5145-4e9a-b363-a918a6bb8624",
+      "date": "2020-04-03",
+      "type": "ambulatory",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Gaynell Streich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "f20f4484-338a-4c22-b049-9c8a17620e3f",
+      "date": "2020-03-31",
+      "type": "ambulatory",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Gaynell Streich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "9c72714d-42e9-48d4-8f1d-ca548fb19d7c",
+      "date": "2020-03-31",
+      "type": "ambulatory",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Gaynell Streich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "9c701e55-617b-421c-a4f7-6e5497d64898",
+      "date": "2020-03-28",
+      "type": "ambulatory",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Gaynell Streich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "008eda2f-66a2-41ae-a143-37ce439c8caf",
+      "date": "2020-03-27",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Edie Howell",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "41eb8920-34f9-46d3-92c8-51afae7629b2",
+      "date": "2020-03-25",
+      "type": "ambulatory",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Gaynell Streich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "b5ecdb45-59d4-4d97-8ae4-db84d0bf453e",
+      "date": "2020-03-22",
+      "type": "ambulatory",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Gaynell Streich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "4fda28e9-71d4-422a-99d2-1b6ca779f5e6",
+      "date": "2020-03-19",
+      "type": "ambulatory",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Gaynell Streich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "031bf1b3-6b63-46c5-923b-6fec22e02306",
+      "date": "2020-03-16",
+      "type": "ambulatory",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Gaynell Streich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "13b0ddaa-4f90-40a7-88c9-3ddf2ee48cfc",
+      "date": "2020-03-13",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Gaynell Streich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "9f95eb73-02eb-4563-a516-2a721f024790",
+      "date": "2020-03-13",
+      "type": "ambulatory",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Gaynell Streich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 198648.08,
+    "total_covered": 118506.04,
+    "total_owed": 80142.04,
+    "denied_claims": 194,
+    "pending_claims": 0
+  }
+}

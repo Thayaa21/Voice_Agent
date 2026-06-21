@@ -1,0 +1,360 @@
+{
+  "patient_id": "2f76733b-933c-4cc5-aea2-53799158c8cc",
+  "display_name": "Alex Santos",
+  "dob": "1933-04-16",
+  "age": 93,
+  "gender": "F",
+  "city": "Waltham",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicare",
+    "member_since": "1983",
+    "payer_id": "7caa7254-5050-3b5e-9eae-bd5ea30e809c"
+  },
+  "active_conditions": [
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1948-05-23"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "1951-06-10"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "1952-06-15"
+    },
+    {
+      "code": "19169002",
+      "description": "Miscarriage in first trimester",
+      "onset": "1967-10-15"
+    },
+    {
+      "code": "196416002",
+      "description": "Impacted molars",
+      "onset": "1990-03-08"
+    },
+    {
+      "code": "124171000119105",
+      "description": "Chronic intractable migraine without aura",
+      "onset": "1990-05-12"
+    },
+    {
+      "code": "82423001",
+      "description": "Chronic pain",
+      "onset": "1990-06-18"
+    },
+    {
+      "code": "55822004",
+      "description": "Hyperlipidemia",
+      "onset": "2000-07-23"
+    },
+    {
+      "code": "55680006",
+      "description": "Drug overdose",
+      "onset": "2004-10-14"
+    },
+    {
+      "code": "254837009",
+      "description": "Malignant neoplasm of breast (disorder)",
+      "onset": "2008-03-28"
+    },
+    {
+      "code": "49436004",
+      "description": "Atrial Fibrillation",
+      "onset": "2011-09-25"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "edfb1011-d557-4edf-b4dd-309bea3b27de",
+      "date": "2020-04-26",
+      "type": "ambulatory",
+      "description": "Postoperative follow-up visit (procedure)",
+      "reason": "Malignant neoplasm of breast (disorder)",
+      "procedure_code": "439740005",
+      "provider": "Dr. Maile Frami",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "4ed243a7-7d99-488f-96fb-d1c31c292d6d",
+      "date": "2020-04-26",
+      "type": "inpatient",
+      "description": "Screening surveillance (regime/therapy)",
+      "reason": "Malignant neoplasm of breast (disorder)",
+      "procedure_code": "410410006",
+      "provider": "Dr. Maile Frami",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "a0fcbd40-9739-45b4-8d05-768e10598d62",
+      "date": "2020-04-26",
+      "type": "inpatient",
+      "description": "Gynecology service (qualifier value)",
+      "reason": "Malignant neoplasm of breast (disorder)",
+      "procedure_code": "310061009",
+      "provider": "Dr. Maile Frami",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "37893be4-86db-475a-9f00-6bb16dc4e06e",
+      "date": "2020-02-22",
+      "type": "emergency",
+      "description": "Emergency Room Admission",
+      "reason": "Drug overdose",
+      "procedure_code": "50849002",
+      "provider": "Dr. Maile Frami",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "50eae189-5f7e-48f8-8fe0-00a61379ca06",
+      "date": "2019-11-10",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Lucio Robel",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "6854deaf-c742-4835-a1cd-90b18af0a6ec",
+      "date": "2019-08-31",
+      "type": "emergency",
+      "description": "Emergency Room Admission",
+      "reason": "Drug overdose",
+      "procedure_code": "50849002",
+      "provider": "Dr. Maile Frami",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "585f8d00-fc8f-4f1f-8b18-94546a8d4d7c",
+      "date": "2019-08-09",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Maile Frami",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "6551dc71-9ddd-4630-b418-33b0c59306ce",
+      "date": "2019-06-01",
+      "type": "ambulatory",
+      "description": "Postoperative follow-up visit (procedure)",
+      "reason": "Malignant neoplasm of breast (disorder)",
+      "procedure_code": "439740005",
+      "provider": "Dr. Maile Frami",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "5a81a3e6-5aeb-4dd0-a4ff-95bf40230190",
+      "date": "2019-06-01",
+      "type": "inpatient",
+      "description": "Screening surveillance (regime/therapy)",
+      "reason": "Malignant neoplasm of breast (disorder)",
+      "procedure_code": "410410006",
+      "provider": "Dr. Maile Frami",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "fc29af87-2ecd-465a-bd20-33cff02bcffa",
+      "date": "2019-06-01",
+      "type": "inpatient",
+      "description": "Gynecology service (qualifier value)",
+      "reason": "Malignant neoplasm of breast (disorder)",
+      "procedure_code": "310061009",
+      "provider": "Dr. Maile Frami",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "13f72a30-3a73-4425-8e50-8305971398d8",
+      "date": "2019-05-02",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Maile Frami",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "4035d1d1-978a-4333-86a7-ae2b0b379618",
+      "date": "2019-04-02",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Maile Frami",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "232cb858-adb5-44fb-88b1-e4f233152f75",
+      "date": "2019-03-03",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Maile Frami",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "21ed7b0a-6bcf-499b-922b-1726f5477970",
+      "date": "2018-12-21",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Maile Frami",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "86dd4b03-b0ca-41ee-824c-7fb1e9da953e",
+      "date": "2018-11-04",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Lucio Robel",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "7de83e68-9b56-4a5c-af17-75027cdaf120",
+      "date": "2018-08-09",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Maile Frami",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "15650642-e968-42b4-9822-aa70217c1638",
+      "date": "2018-08-05",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Maile Frami",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "574d7665-e688-4723-9a8e-20c2b43fa77f",
+      "date": "2018-07-26",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute viral pharyngitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Maile Frami",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "f3f59937-4ee1-43eb-9208-c92cff360004",
+      "date": "2018-07-06",
+      "type": "ambulatory",
+      "description": "Postoperative follow-up visit (procedure)",
+      "reason": "Malignant neoplasm of breast (disorder)",
+      "procedure_code": "439740005",
+      "provider": "Dr. Maile Frami",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "09762c86-098c-4e8a-8b08-05861b37934b",
+      "date": "2018-07-06",
+      "type": "inpatient",
+      "description": "Screening surveillance (regime/therapy)",
+      "reason": "Malignant neoplasm of breast (disorder)",
+      "procedure_code": "410410006",
+      "provider": "Dr. Maile Frami",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 16377.47,
+    "total_covered": 11383.31,
+    "total_owed": 4994.16,
+    "denied_claims": 1,
+    "pending_claims": 0
+  }
+}

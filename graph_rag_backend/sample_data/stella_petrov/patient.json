@@ -1,0 +1,170 @@
+{
+  "patient_id": "c5d6bdfa-5554-4927-8fa8-794e5514cb56",
+  "display_name": "Stella Petrov",
+  "dob": "1978-10-26",
+  "age": 47,
+  "gender": "M",
+  "city": "Gloucester",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Humana",
+    "member_since": "1978",
+    "payer_id": "d47b3510-2895-3b70-9897-342d681c769d"
+  },
+  "active_conditions": [
+    {
+      "code": "196416002",
+      "description": "Impacted molars",
+      "onset": "1996-04-16"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "a29bfaef-304d-4628-b6fa-ba3ea0ad1fa3",
+      "date": "2018-11-01",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Esperanza Johnston",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "83753723-d483-45bb-bd06-6a93579f4cc4",
+      "date": "2016-11-10",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute bronchitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Mari Reynolds",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "ae4881ca-36ab-48ae-8cb8-afd4c7ddfc36",
+      "date": "2016-01-14",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Esperanza Johnston",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "9517f819-5bed-4c57-8fc6-a49ed776f25a",
+      "date": "2013-11-14",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Jeramy Littel",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "2ed4396f-05ff-422c-a9bd-2ae528330c3d",
+      "date": "2013-11-08",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute bronchitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Mari Reynolds",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "876050a1-50f1-4b71-9cc1-50488fe7b0a7",
+      "date": "2013-01-10",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Esperanza Johnston",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "43eebfab-e313-4cc2-8e4b-1d2fe7adad04",
+      "date": "2010-02-19",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute bronchitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Mari Reynolds",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "87611f2b-b91e-4a04-8a43-c9459153d9f0",
+      "date": "1996-04-16",
+      "type": "inpatient",
+      "description": "Encounter Inpatient",
+      "reason": "Impacted molars",
+      "procedure_code": "183452005",
+      "provider": "Dr. Mari Reynolds",
+      "payer": "Humana",
+      "billed": 77.49,
+      "covered": 0.0,
+      "patient_owes": 77.49,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "e42aa828-ad33-404f-af29-f1f9f17bd7f5",
+      "date": "1979-07-10",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Mari Reynolds",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "124bb22a-9dfa-40cf-a223-6f586f1d6958",
+      "date": "1979-06-23",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Mari Reynolds",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 1239.93,
+    "total_covered": 633.28,
+    "total_owed": 606.65,
+    "denied_claims": 1,
+    "pending_claims": 0
+  }
+}

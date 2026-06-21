@@ -1,0 +1,94 @@
+{
+  "patient_id": "293afb6b-b727-445a-a5b5-1c7a419ba7e2",
+  "display_name": "Grace Kim",
+  "dob": "2019-05-25",
+  "age": 7,
+  "gender": "F",
+  "city": "Chicopee",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicaid",
+    "member_since": "2019",
+    "payer_id": "7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a"
+  },
+  "active_conditions": [],
+  "encounters": [
+    {
+      "encounter_id": "bb4f70b1-3624-4dd6-8488-ec02510c9789",
+      "date": "2020-02-02",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Amalia Haro",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "a7affe83-62a3-4045-947d-58339aabb922",
+      "date": "2019-11-03",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Amalia Haro",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "62eb1779-f62f-4687-87eb-3e642e0de148",
+      "date": "2019-09-01",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Amalia Haro",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "65d0aaa2-0190-4e83-921f-e2a048d4058f",
+      "date": "2019-06-30",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Amalia Haro",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "7af4a30a-9bcb-49b7-bb4c-86091242b3ba",
+      "date": "2019-05-26",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Amalia Haro",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 645.8,
+    "total_covered": 645.8,
+    "total_owed": 0.0,
+    "denied_claims": 0,
+    "pending_claims": 0
+  }
+}

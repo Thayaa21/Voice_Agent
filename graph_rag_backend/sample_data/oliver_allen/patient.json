@@ -1,0 +1,375 @@
+{
+  "patient_id": "b1b10f6e-e97a-426a-9581-f1a5c29b6e05",
+  "display_name": "Oliver Allen",
+  "dob": "1914-09-06",
+  "age": 111,
+  "gender": "M",
+  "city": "Worcester",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicare",
+    "member_since": "1980",
+    "payer_id": "7caa7254-5050-3b5e-9eae-bd5ea30e809c"
+  },
+  "active_conditions": [
+    {
+      "code": "40055000",
+      "description": "Chronic sinusitis (disorder)",
+      "onset": "1927-06-28"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "1933-11-05"
+    },
+    {
+      "code": "47693006",
+      "description": "Rupture of appendix",
+      "onset": "1940-09-01"
+    },
+    {
+      "code": "74400008",
+      "description": "Appendicitis",
+      "onset": "1940-09-01"
+    },
+    {
+      "code": "428251008",
+      "description": "History of appendectomy",
+      "onset": "1940-09-01"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "1948-11-21"
+    },
+    {
+      "code": "55822004",
+      "description": "Hyperlipidemia",
+      "onset": "1954-09-12"
+    },
+    {
+      "code": "449868002",
+      "description": "Smokes tobacco daily",
+      "onset": "1956-09-16"
+    },
+    {
+      "code": "230690007",
+      "description": "Stroke",
+      "onset": "1986-10-12"
+    },
+    {
+      "code": "126906006",
+      "description": "Neoplasm of prostate",
+      "onset": "1990-01-22"
+    },
+    {
+      "code": "92691004",
+      "description": "Carcinoma in situ of prostate (disorder)",
+      "onset": "1990-01-22"
+    },
+    {
+      "code": "162573006",
+      "description": "Suspected lung cancer (situation)",
+      "onset": "1996-10-02"
+    },
+    {
+      "code": "254632001",
+      "description": "Small cell carcinoma of lung (disorder)",
+      "onset": "1996-10-09"
+    },
+    {
+      "code": "67811000119102",
+      "description": "Primary small cell malignant neoplasm of lung  TNM stage 1 (disorder)",
+      "onset": "1996-10-10"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "b276b4c7-82df-4dc2-926e-c876f7227b82",
+      "date": "1998-09-22",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "d98a324a-1eca-4d28-a71a-9010090828b1",
+      "date": "1998-09-14",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "Primary small cell malignant neoplasm of lung  TNM stage 1 (disorder)",
+      "procedure_code": "185347001",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "615b3823-2d0e-40c7-90e5-539aa5aab2e9",
+      "date": "1998-08-21",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "Primary small cell malignant neoplasm of lung  TNM stage 1 (disorder)",
+      "procedure_code": "185347001",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "40c45bf6-d35d-47c5-af47-18bc17e33fe9",
+      "date": "1998-07-30",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "Primary small cell malignant neoplasm of lung  TNM stage 1 (disorder)",
+      "procedure_code": "185347001",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "6c0bfc4c-249f-49a1-bdaf-521cb7e361de",
+      "date": "1998-07-09",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "Primary small cell malignant neoplasm of lung  TNM stage 1 (disorder)",
+      "procedure_code": "185347001",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "386b9d78-7d2d-4943-a1b9-12e8b06270e8",
+      "date": "1998-06-15",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "Primary small cell malignant neoplasm of lung  TNM stage 1 (disorder)",
+      "procedure_code": "185347001",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "4f78a04f-0e0a-4b3c-a530-4f53238e9655",
+      "date": "1998-05-25",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "Primary small cell malignant neoplasm of lung  TNM stage 1 (disorder)",
+      "procedure_code": "185347001",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "daaf1c5b-83a6-4d06-818e-f5949092d563",
+      "date": "1998-05-01",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "Primary small cell malignant neoplasm of lung  TNM stage 1 (disorder)",
+      "procedure_code": "185347001",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "b86a0ba7-9bd7-498e-88ae-7e401a292013",
+      "date": "1998-04-08",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "Primary small cell malignant neoplasm of lung  TNM stage 1 (disorder)",
+      "procedure_code": "185347001",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "87851ddf-6133-498f-9120-2797a388462f",
+      "date": "1998-03-18",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "Primary small cell malignant neoplasm of lung  TNM stage 1 (disorder)",
+      "procedure_code": "185347001",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "c2d9c644-263d-4716-80d7-4ce2d37f0fd6",
+      "date": "1998-03-15",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "c9255fdd-bbd2-448c-ac98-532cc9fd5458",
+      "date": "1998-02-22",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "Primary small cell malignant neoplasm of lung  TNM stage 1 (disorder)",
+      "procedure_code": "185347001",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "c8cc2f7e-4683-4499-8580-416c8701185c",
+      "date": "1998-01-27",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "Primary small cell malignant neoplasm of lung  TNM stage 1 (disorder)",
+      "procedure_code": "185347001",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "d1a11395-efb2-4d13-88e6-27759e4ab795",
+      "date": "1998-01-02",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "Primary small cell malignant neoplasm of lung  TNM stage 1 (disorder)",
+      "procedure_code": "185347001",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "406883c4-8fe2-45e5-be3d-763a42b2f602",
+      "date": "1997-12-12",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "Primary small cell malignant neoplasm of lung  TNM stage 1 (disorder)",
+      "procedure_code": "185347001",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "b89a4faa-2991-4ad3-9c7c-39ebaeff27ad",
+      "date": "1997-11-21",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "Primary small cell malignant neoplasm of lung  TNM stage 1 (disorder)",
+      "procedure_code": "185347001",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "c6a57894-7828-4de1-9edb-01e5c522f219",
+      "date": "1997-10-25",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "Primary small cell malignant neoplasm of lung  TNM stage 1 (disorder)",
+      "procedure_code": "185347001",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "f93a052b-c262-43f5-b352-da6510ffb06f",
+      "date": "1997-10-01",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "Primary small cell malignant neoplasm of lung  TNM stage 1 (disorder)",
+      "procedure_code": "185347001",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "248e5677-983f-47b5-bf4f-c08b33608a33",
+      "date": "1997-09-22",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "3596ff55-382f-4db5-9a89-6a5f09ddaab7",
+      "date": "1997-09-09",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "Primary small cell malignant neoplasm of lung  TNM stage 1 (disorder)",
+      "procedure_code": "185347001",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 14414.25,
+    "total_covered": 9165.09,
+    "total_owed": 5249.16,
+    "denied_claims": 1,
+    "pending_claims": 0
+  }
+}

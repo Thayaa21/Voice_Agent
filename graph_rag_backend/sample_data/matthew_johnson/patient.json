@@ -1,0 +1,175 @@
+{
+  "patient_id": "5bee22a4-3260-4bf7-9666-281fc8f1eeb9",
+  "display_name": "Matthew Johnson",
+  "dob": "1973-12-20",
+  "age": 52,
+  "gender": "F",
+  "city": "Lowell",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicaid",
+    "member_since": "1973",
+    "payer_id": "7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a"
+  },
+  "active_conditions": [
+    {
+      "code": "19169002",
+      "description": "Miscarriage in first trimester",
+      "onset": "1995-08-24"
+    },
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "2018-01-04"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "73392a52-b95d-4ff4-8b55-697bb80536e4",
+      "date": "2020-01-10",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Marquerite Weimann",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "25eb0e7e-a832-4df6-82c6-486924068ebf",
+      "date": "2018-12-08",
+      "type": "emergency",
+      "description": "Emergency room admission (procedure)",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Veda Pfeffer",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "2555ead6-ac39-42ca-93f1-6ca5a94fafb8",
+      "date": "2018-01-05",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Marquerite Weimann",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "fe4afb07-3044-4069-a434-79b0c472b514",
+      "date": "2017-03-04",
+      "type": "emergency",
+      "description": "Emergency room admission (procedure)",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Veda Pfeffer",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "384cdd97-8f94-4f3a-a91a-f911c47df432",
+      "date": "2016-01-01",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Marquerite Weimann",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "23986b4e-6493-4a2c-b3d4-cb8bdba1e4c7",
+      "date": "2014-05-05",
+      "type": "emergency",
+      "description": "Emergency room admission (procedure)",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Veda Pfeffer",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "4de80011-073c-4008-a936-aa58c5813ed0",
+      "date": "2013-12-27",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Marquerite Weimann",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "3bcc9f8e-88fb-4d12-9779-1617a4830f65",
+      "date": "2011-04-30",
+      "type": "emergency",
+      "description": "Emergency room admission (procedure)",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Veda Pfeffer",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "c4350e19-bec7-4cd6-9390-fca7f3fcb4d9",
+      "date": "2011-03-11",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Marquerite Weimann",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "8553e5c0-2cb0-41e6-aab4-579c89df7939",
+      "date": "1995-08-25",
+      "type": "ambulatory",
+      "description": "Prenatal initial visit",
+      "reason": "Normal pregnancy",
+      "procedure_code": "424441002",
+      "provider": "Dr. Veda Pfeffer",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 1291.6,
+    "total_covered": 991.6,
+    "total_owed": 300.0,
+    "denied_claims": 0,
+    "pending_claims": 0
+  }
+}

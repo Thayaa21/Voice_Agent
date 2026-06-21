@@ -1,0 +1,360 @@
+{
+  "patient_id": "b109dfad-954d-4a5a-91ee-6581dfeb7f93",
+  "display_name": "Mei Collins",
+  "dob": "1969-10-07",
+  "age": 56,
+  "gender": "F",
+  "city": "Lowell",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "NO_INSURANCE",
+    "member_since": "2005",
+    "payer_id": "b1c428d6-4f07-31e0-90f0-68ffa6ff8c76"
+  },
+  "active_conditions": [
+    {
+      "code": "124171000119105",
+      "description": "Chronic intractable migraine without aura",
+      "onset": "1990-03-10"
+    },
+    {
+      "code": "82423001",
+      "description": "Chronic pain",
+      "onset": "1990-04-23"
+    },
+    {
+      "code": "196416002",
+      "description": "Impacted molars",
+      "onset": "1990-05-30"
+    },
+    {
+      "code": "19169002",
+      "description": "Miscarriage in first trimester",
+      "onset": "1999-08-10"
+    },
+    {
+      "code": "79586000",
+      "description": "Tubal pregnancy",
+      "onset": "2000-06-20"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "2003-12-23"
+    },
+    {
+      "code": "55680006",
+      "description": "Drug overdose",
+      "onset": "2005-11-09"
+    },
+    {
+      "code": "40055000",
+      "description": "Chronic sinusitis (disorder)",
+      "onset": "2007-05-10"
+    },
+    {
+      "code": "55822004",
+      "description": "Hyperlipidemia",
+      "onset": "2013-10-22"
+    },
+    {
+      "code": "49436004",
+      "description": "Atrial Fibrillation",
+      "onset": "2017-10-31"
+    },
+    {
+      "code": "68496003",
+      "description": "Polyp of colon",
+      "onset": "2019-10-08"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "bd7c7180-4267-4801-a3e8-c275775fee94",
+      "date": "2020-01-28",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Garth Wyman",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "9cdaceb0-3e4f-4ea7-8eeb-cd5a75c9269b",
+      "date": "2020-01-18",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute bronchitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Veda Pfeffer",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "c17f3d1b-dc0f-4d07-8644-84b3ab773a12",
+      "date": "2019-11-12",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Enda Luettgen",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "d16f553b-fe9d-4b27-b8ae-cfd675d99b5c",
+      "date": "2019-11-11",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Veda Pfeffer",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "ab88becd-0ca1-4944-a899-412c7a693321",
+      "date": "2019-10-29",
+      "type": "outpatient",
+      "description": "Patient encounter procedure",
+      "reason": "",
+      "procedure_code": "308335008",
+      "provider": "Dr. Veda Pfeffer",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "df39169f-1b84-4e7b-a077-b3909b2642fa",
+      "date": "2019-10-08",
+      "type": "ambulatory",
+      "description": "Encounter for 'check-up'",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Veda Pfeffer",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "8f841c53-d25d-4caf-9942-c247c9599e4f",
+      "date": "2019-07-30",
+      "type": "outpatient",
+      "description": "Patient encounter procedure",
+      "reason": "",
+      "procedure_code": "308335008",
+      "provider": "Dr. Veda Pfeffer",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "4ad68349-f817-4495-9ffc-3602e313bfb6",
+      "date": "2019-04-30",
+      "type": "outpatient",
+      "description": "Patient encounter procedure",
+      "reason": "",
+      "procedure_code": "308335008",
+      "provider": "Dr. Veda Pfeffer",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "6d33b523-05e2-4446-8c40-a19c4bec7582",
+      "date": "2019-01-29",
+      "type": "outpatient",
+      "description": "Patient encounter procedure",
+      "reason": "",
+      "procedure_code": "308335008",
+      "provider": "Dr. Veda Pfeffer",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "903f941d-b679-41c6-8afc-7d6f8948e319",
+      "date": "2018-11-11",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Veda Pfeffer",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "09190c45-9f8a-4e58-8367-6bf4eab8017d",
+      "date": "2018-11-06",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Enda Luettgen",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "297708ae-bd62-4412-83ee-c2b79b8dd40b",
+      "date": "2018-10-30",
+      "type": "outpatient",
+      "description": "Patient encounter procedure",
+      "reason": "",
+      "procedure_code": "308335008",
+      "provider": "Dr. Veda Pfeffer",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "8bf38764-bbdc-4fdb-bf74-07ef860504e2",
+      "date": "2018-10-12",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Veda Pfeffer",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "1579bbb9-ac79-46fe-bcc6-072a3c6bc53e",
+      "date": "2018-09-12",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Veda Pfeffer",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "456d66ef-413e-482b-94a2-646ba317a0c9",
+      "date": "2018-08-13",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Veda Pfeffer",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "92bd63f9-9530-4b4b-b18d-16afcda918e1",
+      "date": "2018-07-31",
+      "type": "outpatient",
+      "description": "Patient encounter procedure",
+      "reason": "",
+      "procedure_code": "308335008",
+      "provider": "Dr. Veda Pfeffer",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "77acb3a8-021e-4598-bb35-5267eda60e5e",
+      "date": "2018-07-14",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Veda Pfeffer",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "d49e97d8-b531-4269-a3f3-a3926c546e11",
+      "date": "2018-06-14",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Veda Pfeffer",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "1ae590a7-3f5f-4a1c-9291-c39f8cf7c89b",
+      "date": "2018-05-15",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Veda Pfeffer",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "02766752-1c67-4ec3-a588-9d447016a020",
+      "date": "2018-05-01",
+      "type": "outpatient",
+      "description": "Patient encounter procedure",
+      "reason": "",
+      "procedure_code": "308335008",
+      "provider": "Dr. Veda Pfeffer",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 11211.07,
+    "total_covered": 0.0,
+    "total_owed": 11211.07,
+    "denied_claims": 85,
+    "pending_claims": 0
+  }
+}

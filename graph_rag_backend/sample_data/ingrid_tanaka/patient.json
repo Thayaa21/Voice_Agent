@@ -1,0 +1,360 @@
+{
+  "patient_id": "92408d94-8b50-4e26-a6e1-42ee77823db6",
+  "display_name": "Ingrid Tanaka",
+  "dob": "1979-09-22",
+  "age": 46,
+  "gender": "F",
+  "city": "Lawrence",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicaid",
+    "member_since": "1979",
+    "payer_id": "7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a"
+  },
+  "active_conditions": [
+    {
+      "code": "196416002",
+      "description": "Impacted molars",
+      "onset": "1993-11-24"
+    },
+    {
+      "code": "124171000119105",
+      "description": "Chronic intractable migraine without aura",
+      "onset": "1994-01-07"
+    },
+    {
+      "code": "82423001",
+      "description": "Chronic pain",
+      "onset": "1995-07-01"
+    },
+    {
+      "code": "55680006",
+      "description": "Drug overdose",
+      "onset": "2010-06-07"
+    },
+    {
+      "code": "44054006",
+      "description": "Diabetes",
+      "onset": "2013-12-07"
+    },
+    {
+      "code": "59621000",
+      "description": "Hypertension",
+      "onset": "2013-12-07"
+    },
+    {
+      "code": "302870006",
+      "description": "Hypertriglyceridemia (disorder)",
+      "onset": "2014-12-13"
+    },
+    {
+      "code": "237602007",
+      "description": "Metabolic syndrome X (disorder)",
+      "onset": "2014-12-13"
+    },
+    {
+      "code": "80394007",
+      "description": "Hyperglycemia (disorder)",
+      "onset": "2015-12-19"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "2016-12-24"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "2017-08-12"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "bc51a586-98b1-45aa-9864-605dcffd1c32",
+      "date": "2020-02-29",
+      "type": "outpatient",
+      "description": "Patient encounter procedure",
+      "reason": "",
+      "procedure_code": "308335008",
+      "provider": "Dr. Patricia Salgado",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "37978c29-06e9-42f9-8e21-71041a09d8c8",
+      "date": "2020-02-22",
+      "type": "inpatient",
+      "description": "Drug rehabilitation and detoxification",
+      "reason": "",
+      "procedure_code": "56876005",
+      "provider": "Dr. Patricia Salgado",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "b9a97e56-d3ec-4be5-8e80-7454a7df7f89",
+      "date": "2020-02-13",
+      "type": "outpatient",
+      "description": "Consultation for treatment",
+      "reason": "",
+      "procedure_code": "698314001",
+      "provider": "Dr. Patricia Salgado",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "0a9d20fd-0727-4121-8f5e-9cce24443439",
+      "date": "2020-01-11",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Lily Lesch",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "d9075b57-4a21-42b9-9c6e-3a187430f034",
+      "date": "2019-11-30",
+      "type": "outpatient",
+      "description": "Patient encounter procedure",
+      "reason": "",
+      "procedure_code": "308335008",
+      "provider": "Dr. Patricia Salgado",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "4db4b36c-6082-40ca-b98e-bc7133803e0f",
+      "date": "2019-08-31",
+      "type": "outpatient",
+      "description": "Patient encounter procedure",
+      "reason": "",
+      "procedure_code": "308335008",
+      "provider": "Dr. Patricia Salgado",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "82f75a13-9e4b-492b-8cea-6bb852df9143",
+      "date": "2019-06-01",
+      "type": "outpatient",
+      "description": "Patient encounter procedure",
+      "reason": "",
+      "procedure_code": "308335008",
+      "provider": "Dr. Patricia Salgado",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "be52b76b-84ae-4b1a-9035-2e39712a8a14",
+      "date": "2019-03-02",
+      "type": "outpatient",
+      "description": "Patient encounter procedure",
+      "reason": "",
+      "procedure_code": "308335008",
+      "provider": "Dr. Patricia Salgado",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "f9389b94-4c36-48ca-b37d-736297715d28",
+      "date": "2019-01-05",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Lily Lesch",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "8948202e-f5f6-444e-acc4-489eb531c3f1",
+      "date": "2018-12-01",
+      "type": "outpatient",
+      "description": "Patient encounter procedure",
+      "reason": "",
+      "procedure_code": "308335008",
+      "provider": "Dr. Patricia Salgado",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "e4cc1ed0-dba4-4b50-a215-f89587ca07e3",
+      "date": "2018-10-11",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Patricia Salgado",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "6548d307-6915-42a4-936c-15c3f929ccc0",
+      "date": "2018-09-11",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Patricia Salgado",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "7a4ff738-82e7-4bc3-9ec1-10bc2c9dbc8b",
+      "date": "2018-09-01",
+      "type": "outpatient",
+      "description": "Patient encounter procedure",
+      "reason": "",
+      "procedure_code": "308335008",
+      "provider": "Dr. Patricia Salgado",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "a8ee9e30-4801-4840-b6c5-6c5cef430def",
+      "date": "2018-08-12",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Patricia Salgado",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "c95e58ed-667e-47dd-9ac1-d94c749b5812",
+      "date": "2018-07-15",
+      "type": "emergency",
+      "description": "Emergency Room Admission",
+      "reason": "Drug overdose",
+      "procedure_code": "50849002",
+      "provider": "Dr. Patricia Salgado",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "8cfeb95d-166d-45fe-a64d-20e67ec7d51f",
+      "date": "2018-06-08",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Patricia Salgado",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "4246da6c-e13d-4c3a-b48c-9a15339520a2",
+      "date": "2018-06-02",
+      "type": "outpatient",
+      "description": "Patient encounter procedure",
+      "reason": "",
+      "procedure_code": "308335008",
+      "provider": "Dr. Patricia Salgado",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "4073e24e-3443-4ef2-8f5f-922a9c24319e",
+      "date": "2018-05-04",
+      "type": "emergency",
+      "description": "Emergency Room Admission",
+      "reason": "Drug overdose",
+      "procedure_code": "50849002",
+      "provider": "Dr. Patricia Salgado",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "59b509d9-2920-46bb-8e91-34a4f6ae3ffd",
+      "date": "2018-02-23",
+      "type": "outpatient",
+      "description": "Consultation for treatment",
+      "reason": "",
+      "procedure_code": "698314001",
+      "provider": "Dr. Patricia Salgado",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "2d85913d-845f-44e7-b4c7-b60a6ee5c899",
+      "date": "2017-12-30",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Lily Lesch",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 10565.27,
+    "total_covered": 5926.95,
+    "total_owed": 4638.32,
+    "denied_claims": 2,
+    "pending_claims": 0
+  }
+}

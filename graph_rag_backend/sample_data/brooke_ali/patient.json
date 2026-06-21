@@ -1,0 +1,293 @@
+{
+  "patient_id": "ab41f97a-1f4a-4718-a760-1e112514f282",
+  "display_name": "Brooke Ali",
+  "dob": "1967-11-19",
+  "age": 58,
+  "gender": "F",
+  "city": "Salisbury",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Aetna",
+    "member_since": "2000",
+    "payer_id": "4d71f845-a6a9-3c39-b242-14d25ef86a8d"
+  },
+  "active_conditions": [
+    {
+      "code": "19169002",
+      "description": "Miscarriage in first trimester",
+      "onset": "1992-11-15"
+    },
+    {
+      "code": "410429000",
+      "description": "Cardiac Arrest",
+      "onset": "2005-10-23"
+    },
+    {
+      "code": "429007001",
+      "description": "History of cardiac arrest (situation)",
+      "onset": "2005-10-23"
+    },
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "2011-12-04"
+    },
+    {
+      "code": "239873007",
+      "description": "Osteoarthritis of knee",
+      "onset": "2013-11-07"
+    },
+    {
+      "code": "53741008",
+      "description": "Coronary Heart Disease",
+      "onset": "2013-12-08"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "9b96b964-e08c-43ed-a096-ea1c617b8238",
+      "date": "2020-01-12",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Judith Johns",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "62afb17e-9a81-44ee-b646-430938f016a0",
+      "date": "2019-01-06",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Judith Johns",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "17a61278-f517-4c5f-8444-6f167ea421f5",
+      "date": "2017-12-31",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Judith Johns",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "94a8594f-7f40-433d-8469-03a17b5a7cda",
+      "date": "2016-12-25",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Judith Johns",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "2233f81d-3716-4878-97d4-4f7b5a6e669b",
+      "date": "2015-12-20",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Judith Johns",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "34e6ddce-c50c-401e-9a6e-7e5f5e063379",
+      "date": "2015-06-14",
+      "type": "outpatient",
+      "description": "Patient encounter procedure",
+      "reason": "",
+      "procedure_code": "308335008",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "8c7f56fe-7ad6-49c9-827e-8a1ae381172a",
+      "date": "2014-12-14",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Judith Johns",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "c443f2fe-3455-4a6e-9bdd-7463dc617daf",
+      "date": "2013-12-08",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Judith Johns",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "a147a2ad-2117-45e7-a394-6e0e8a7bcc17",
+      "date": "2013-11-07",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Osteoarthritis of knee",
+      "procedure_code": "185347001",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "da7fc65c-bcd1-4d02-bf3a-87c85cf15aa0",
+      "date": "2013-04-07",
+      "type": "emergency",
+      "description": "Cardiac Arrest",
+      "reason": "",
+      "procedure_code": "410429000",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "392f1f5b-a988-4952-bbf5-7b2c5ab5a31f",
+      "date": "2012-02-19",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "2296e323-155e-4ec6-a35e-147332098aa1",
+      "date": "2012-02-12",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Veda Pfeffer",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "aaeae536-3162-40dd-ac81-6c4dc17d275d",
+      "date": "2012-02-02",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute bronchitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "d72766e5-602c-4717-a4d9-b03d48ca8268",
+      "date": "2011-12-04",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Judith Johns",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "404f1816-1de8-4d6f-b367-e30a82cd148e",
+      "date": "2010-06-13",
+      "type": "outpatient",
+      "description": "Patient encounter procedure",
+      "reason": "",
+      "procedure_code": "308335008",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "10b38a65-ebff-46a7-a863-253729e08750",
+      "date": "2005-10-23",
+      "type": "emergency",
+      "description": "Cardiac Arrest",
+      "reason": "",
+      "procedure_code": "410429000",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "83a60d4e-cba6-421c-b7b3-1d6eee3cde27",
+      "date": "1992-11-15",
+      "type": "ambulatory",
+      "description": "Prenatal initial visit",
+      "reason": "Normal pregnancy",
+      "procedure_code": "424441002",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 2195.72,
+    "total_covered": 1359.08,
+    "total_owed": 836.64,
+    "denied_claims": 4,
+    "pending_claims": 0
+  }
+}

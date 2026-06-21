@@ -1,0 +1,312 @@
+{
+  "patient_id": "b953a648-a3e3-4d9f-a4be-28e13deaa08f",
+  "display_name": "Sara Harris",
+  "dob": "1986-05-13",
+  "age": 40,
+  "gender": "F",
+  "city": "Chelsea",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicaid",
+    "member_since": "1986",
+    "payer_id": "7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a"
+  },
+  "active_conditions": [
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "2011-07-19"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "2014-07-22"
+    },
+    {
+      "code": "44054006",
+      "description": "Diabetes",
+      "onset": "2017-07-25"
+    },
+    {
+      "code": "59621000",
+      "description": "Hypertension",
+      "onset": "2017-07-25"
+    },
+    {
+      "code": "80394007",
+      "description": "Hyperglycemia (disorder)",
+      "onset": "2018-07-31"
+    },
+    {
+      "code": "302870006",
+      "description": "Hypertriglyceridemia (disorder)",
+      "onset": "2018-07-31"
+    },
+    {
+      "code": "237602007",
+      "description": "Metabolic syndrome X (disorder)",
+      "onset": "2018-07-31"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "a001794f-af82-4bb3-b86b-83777656e50e",
+      "date": "2019-08-06",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Dionna Koss",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "ea974e8d-5bbc-4179-b5b7-3fc9beb76347",
+      "date": "2018-07-31",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Dionna Koss",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "71d96b90-7316-4e3e-bded-c1530fc6144e",
+      "date": "2018-01-23",
+      "type": "emergency",
+      "description": "Emergency room admission (procedure)",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Kasi Hickle",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "d6da39a8-a790-4d3d-a571-327d57f4fbaa",
+      "date": "2017-12-22",
+      "type": "ambulatory",
+      "description": "Hypertension follow-up encounter",
+      "reason": "",
+      "procedure_code": "390906007",
+      "provider": "Dr. Kyle Tremblay",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "47bc5cc1-ca31-41ef-bd13-a86a7a8ea4ea",
+      "date": "2017-10-23",
+      "type": "ambulatory",
+      "description": "Hypertension follow-up encounter",
+      "reason": "",
+      "procedure_code": "390906007",
+      "provider": "Dr. Kyle Tremblay",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "ad2268a9-274a-4f70-b106-da7b46480212",
+      "date": "2017-08-24",
+      "type": "ambulatory",
+      "description": "Hypertension follow-up encounter",
+      "reason": "",
+      "procedure_code": "390906007",
+      "provider": "Dr. Kyle Tremblay",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "b348599f-2a65-43a6-9865-aa900ba082bc",
+      "date": "2017-07-25",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Dionna Koss",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "b8b1f216-74c0-4b9e-aa17-af6d195a2827",
+      "date": "2016-09-29",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Kyle Tremblay",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "a3aa1a81-575c-4eba-b53b-7fa7afa0de8d",
+      "date": "2016-05-17",
+      "type": "outpatient",
+      "description": "Patient encounter procedure",
+      "reason": "",
+      "procedure_code": "308335008",
+      "provider": "Dr. Jamie Eichmann",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "2f3bcd84-b2ab-42c9-a79d-ba7fed5d413d",
+      "date": "2014-07-22",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Dionna Koss",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "a714d382-4452-482b-ab5d-4a1c408caa94",
+      "date": "2014-07-22",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Anemia (disorder)",
+      "procedure_code": "185347001",
+      "provider": "Dr. Kyle Tremblay",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "da54b23b-d077-4247-a95d-472609acac8e",
+      "date": "2014-02-13",
+      "type": "ambulatory",
+      "description": "Encounter for 'check-up'",
+      "reason": "First degree burn",
+      "procedure_code": "185349003",
+      "provider": "Dr. Kyle Tremblay",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "9b6bc111-9803-4c03-a3f7-ceeec949154c",
+      "date": "2014-01-16",
+      "type": "emergency",
+      "description": "Emergency room admission (procedure)",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Kasi Hickle",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "a56066aa-d98c-4d11-8794-7f57a17e7f5f",
+      "date": "2012-04-28",
+      "type": "inpatient",
+      "description": "Admission to surgical department",
+      "reason": "",
+      "procedure_code": "305408004",
+      "provider": "Dr. Pamelia Harber",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "d36a1d57-5b4c-4ecb-8056-4e354146575e",
+      "date": "2012-04-14",
+      "type": "outpatient",
+      "description": "Consultation for treatment",
+      "reason": "",
+      "procedure_code": "698314001",
+      "provider": "Dr. Jamie Eichmann",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "8140bc68-95f3-41e4-87d6-47a76d2036e7",
+      "date": "2011-07-19",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Dionna Koss",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "933dff54-43ac-4310-a5a2-1eb04627379c",
+      "date": "2011-05-17",
+      "type": "outpatient",
+      "description": "Patient encounter procedure",
+      "reason": "",
+      "procedure_code": "308335008",
+      "provider": "Dr. Jamie Eichmann",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "ae3a6854-8d28-469a-b760-0c39f83eda6d",
+      "date": "2011-04-20",
+      "type": "outpatient",
+      "description": "Consultation for treatment",
+      "reason": "",
+      "procedure_code": "698314001",
+      "provider": "Dr. Jamie Eichmann",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 2324.88,
+    "total_covered": 1544.88,
+    "total_owed": 780.0,
+    "denied_claims": 0,
+    "pending_claims": 0
+  }
+}

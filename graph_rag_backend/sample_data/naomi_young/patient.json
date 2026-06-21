@@ -1,0 +1,52 @@
+{
+  "patient_id": "76811a9f-dd57-4949-9377-5c164d58665d",
+  "display_name": "Naomi Young",
+  "dob": "2020-03-04",
+  "age": 6,
+  "gender": "F",
+  "city": "Waltham",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "NO_INSURANCE",
+    "member_since": "",
+    "payer_id": ""
+  },
+  "active_conditions": [],
+  "encounters": [
+    {
+      "encounter_id": "51e251cb-64da-4f9f-9c8f-c9738aaa71d6",
+      "date": "2020-04-08",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Laquita Gulgowski",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "82b5da95-3fd0-4788-8e20-d05baf6ba18d",
+      "date": "2020-03-04",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Laquita Gulgowski",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 258.32,
+    "total_covered": 258.32,
+    "total_owed": 0.0,
+    "denied_claims": 0,
+    "pending_claims": 0
+  }
+}

@@ -1,0 +1,241 @@
+{
+  "patient_id": "9d69e626-c968-4991-a486-79f4eab4db38",
+  "display_name": "Samuel Martin",
+  "dob": "1987-08-30",
+  "age": 38,
+  "gender": "M",
+  "city": "Longmeadow",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "UnitedHealthcare",
+    "member_since": "1987",
+    "payer_id": "5059a55e-5d6e-34d1-b6cb-d83d16e57bcf"
+  },
+  "active_conditions": [
+    {
+      "code": "128613002",
+      "description": "Seizure disorder",
+      "onset": "2000-08-26"
+    },
+    {
+      "code": "703151001",
+      "description": "History of single seizure (situation)",
+      "onset": "2000-08-26"
+    },
+    {
+      "code": "84757009",
+      "description": "Epilepsy",
+      "onset": "2000-09-23"
+    },
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "2018-11-11"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "78c2ca4f-1082-4d57-85aa-63ed8d3c7ae5",
+      "date": "2018-11-11",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Clay Cassin",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "114702ba-477b-44f2-8935-d0ce37d335bb",
+      "date": "2015-11-08",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Clay Cassin",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "b544d70b-0364-4077-819b-7846bc8292db",
+      "date": "2014-04-15",
+      "type": "ambulatory",
+      "description": "Domiciliary or rest home patient evaluation and management",
+      "reason": "",
+      "procedure_code": "210098006",
+      "provider": "Dr. Catalina Olivo",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 59.16,
+      "patient_owes": 70.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "bee6056e-dc96-430c-bee0-c07dbd05403d",
+      "date": "2014-03-16",
+      "type": "ambulatory",
+      "description": "Domiciliary or rest home patient evaluation and management",
+      "reason": "",
+      "procedure_code": "210098006",
+      "provider": "Dr. Catalina Olivo",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 59.16,
+      "patient_owes": 70.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "153c431a-5438-47bb-a53b-fb51ab3960ef",
+      "date": "2014-02-14",
+      "type": "ambulatory",
+      "description": "Domiciliary or rest home patient evaluation and management",
+      "reason": "",
+      "procedure_code": "210098006",
+      "provider": "Dr. Catalina Olivo",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 59.16,
+      "patient_owes": 70.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "fb9968d5-fabd-4d8a-bba5-81f410d4f675",
+      "date": "2014-01-15",
+      "type": "ambulatory",
+      "description": "Domiciliary or rest home patient evaluation and management",
+      "reason": "",
+      "procedure_code": "210098006",
+      "provider": "Dr. Catalina Olivo",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 59.16,
+      "patient_owes": 70.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "200bad82-891c-40cc-b669-2c5498ccfbc1",
+      "date": "2013-12-16",
+      "type": "ambulatory",
+      "description": "Domiciliary or rest home patient evaluation and management",
+      "reason": "",
+      "procedure_code": "210098006",
+      "provider": "Dr. Catalina Olivo",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 59.16,
+      "patient_owes": 70.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "ad0cf272-daa7-4914-9dbe-32315abb129f",
+      "date": "2013-10-17",
+      "type": "ambulatory",
+      "description": "Domiciliary or rest home patient evaluation and management",
+      "reason": "",
+      "procedure_code": "210098006",
+      "provider": "Dr. Catalina Olivo",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 59.16,
+      "patient_owes": 70.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "b553de78-14eb-4044-8397-6b88fe4a4c02",
+      "date": "2013-08-18",
+      "type": "ambulatory",
+      "description": "Domiciliary or rest home patient evaluation and management",
+      "reason": "",
+      "procedure_code": "210098006",
+      "provider": "Dr. Catalina Olivo",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 59.16,
+      "patient_owes": 70.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "b7c9dae5-9a07-4975-91e5-4ae247b6bcbe",
+      "date": "2013-07-19",
+      "type": "ambulatory",
+      "description": "Domiciliary or rest home patient evaluation and management",
+      "reason": "",
+      "procedure_code": "210098006",
+      "provider": "Dr. Catalina Olivo",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 59.16,
+      "patient_owes": 70.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "ce7c4dfd-f189-4125-92f8-397db71e45f6",
+      "date": "2013-06-19",
+      "type": "ambulatory",
+      "description": "Domiciliary or rest home patient evaluation and management",
+      "reason": "",
+      "procedure_code": "210098006",
+      "provider": "Dr. Catalina Olivo",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 59.16,
+      "patient_owes": 70.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "cbc987d5-2f06-4a75-94de-26335205fc39",
+      "date": "2012-11-04",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Clay Cassin",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "5671a28b-c508-4559-b56b-baaf3b808930",
+      "date": "2000-09-23",
+      "type": "emergency",
+      "description": "Emergency Room Admission",
+      "reason": "Seizure disorder",
+      "procedure_code": "50849002",
+      "provider": "Dr. Mohammed Parisian",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 59.16,
+      "patient_owes": 70.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "7725676b-0d01-4216-a21f-fce46a95a901",
+      "date": "2000-08-26",
+      "type": "emergency",
+      "description": "Emergency Room Admission",
+      "reason": "Seizure disorder",
+      "procedure_code": "50849002",
+      "provider": "Dr. Mohammed Parisian",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 59.16,
+      "patient_owes": 70.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 1808.24,
+    "total_covered": 1038.24,
+    "total_owed": 770.0,
+    "denied_claims": 0,
+    "pending_claims": 0
+  }
+}

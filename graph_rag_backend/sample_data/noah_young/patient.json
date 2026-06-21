@@ -1,0 +1,128 @@
+{
+  "patient_id": "f710eff2-55ee-49d8-84dd-2cf92748199d",
+  "display_name": "Noah Young",
+  "dob": "1947-11-26",
+  "age": 78,
+  "gender": "M",
+  "city": "Boston",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicaid",
+    "member_since": "1948",
+    "payer_id": "7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a"
+  },
+  "active_conditions": [
+    {
+      "code": "262574004",
+      "description": "Bullet wound",
+      "onset": "1983-12-17"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "8ef9a2a6-b42a-40ef-8503-081ef75e22f3",
+      "date": "1983-12-17",
+      "type": "emergency",
+      "description": "Emergency room admission (procedure)",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Jeanmarie Beatty",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "39261e7a-0dfa-4fc0-af76-557a26e6b51e",
+      "date": "1982-02-10",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Adela Chapa",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "e25724de-d9fa-41ba-bb90-8020332dc363",
+      "date": "1979-12-14",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Jeanmarie Beatty",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "baa5d729-afd8-4d0f-acff-0ff300cb72ce",
+      "date": "1979-07-04",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Jeanmarie Beatty",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "4af7faf0-3970-42d7-970c-7e322328b2f2",
+      "date": "1979-06-27",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute bronchitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Jeanmarie Beatty",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "52cb4f4f-30f3-4d17-98e5-8948aade795f",
+      "date": "1979-02-07",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Adela Chapa",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "49251bf3-ee3d-4ef3-96d2-0e2b079d692e",
+      "date": "1976-02-04",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Adela Chapa",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 904.12,
+    "total_covered": 414.96,
+    "total_owed": 489.16,
+    "denied_claims": 1,
+    "pending_claims": 0
+  }
+}

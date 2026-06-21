@@ -1,0 +1,355 @@
+{
+  "patient_id": "ac89baa4-4798-4392-aeb6-a4e635721290",
+  "display_name": "Riley Wright",
+  "dob": "1913-05-30",
+  "age": 113,
+  "gender": "M",
+  "city": "Boston",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicare",
+    "member_since": "1979",
+    "payer_id": "7caa7254-5050-3b5e-9eae-bd5ea30e809c"
+  },
+  "active_conditions": [
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1941-08-08"
+    },
+    {
+      "code": "7200002",
+      "description": "Alcoholism",
+      "onset": "1963-05-31"
+    },
+    {
+      "code": "239872002",
+      "description": "Osteoarthritis of hip",
+      "onset": "1969-05-16"
+    },
+    {
+      "code": "64859006",
+      "description": "Osteoporosis (disorder)",
+      "onset": "1973-07-27"
+    },
+    {
+      "code": "55822004",
+      "description": "Hyperlipidemia",
+      "onset": "1976-08-13"
+    },
+    {
+      "code": "126906006",
+      "description": "Neoplasm of prostate",
+      "onset": "1977-08-19"
+    },
+    {
+      "code": "92691004",
+      "description": "Carcinoma in situ of prostate (disorder)",
+      "onset": "1977-08-19"
+    },
+    {
+      "code": "162573006",
+      "description": "Suspected lung cancer (situation)",
+      "onset": "1982-07-29"
+    },
+    {
+      "code": "254637007",
+      "description": "Non-small cell lung cancer (disorder)",
+      "onset": "1982-08-05"
+    },
+    {
+      "code": "424132000",
+      "description": "Non-small cell carcinoma of lung  TNM stage 1 (disorder)",
+      "onset": "1982-08-06"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "cb019b5a-d741-4ed9-b30f-36273f6099ff",
+      "date": "1986-07-25",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "3cc036de-b1c2-4da1-9a9a-15b832515806",
+      "date": "1986-06-22",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "dd51fb1b-ad7d-4e37-bdfe-177c4cb815a8",
+      "date": "1986-05-20",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "abae0e54-63cb-48fb-a39b-c61f5197702b",
+      "date": "1986-04-22",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "a9c0cf3c-1e92-4808-8a3d-1e037cd7ec08",
+      "date": "1986-03-21",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "5c65a5f8-b5cd-4d30-a1ce-702d3a066c81",
+      "date": "1986-02-21",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "db7f936f-f364-45ef-a3c6-1f3807242679",
+      "date": "1986-01-23",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "8206036e-e834-487f-b982-b0594e829a7b",
+      "date": "1985-12-21",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "cf1e5875-6b85-442a-9d7a-ee84cb745ad2",
+      "date": "1985-11-20",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "0e5fc44e-856e-41e1-8888-fc214c885cf4",
+      "date": "1985-10-19",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "a06fa615-7ef7-49e9-8c8a-2bf93dff14be",
+      "date": "1985-10-04",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "d4d9ad28-520c-4555-90d7-6b9feb69221f",
+      "date": "1985-09-21",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "2a149db7-9839-4ed1-b8b3-31be219c9268",
+      "date": "1985-09-01",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "4c0ca5c6-ad7a-4aec-9d59-e1e7c38e5d24",
+      "date": "1985-08-23",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "8e867415-24e2-420b-90e9-3e0036de2574",
+      "date": "1985-07-24",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "961ebaa3-35e9-44e2-956c-317291884053",
+      "date": "1985-06-21",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "6790ff52-3e05-4ded-9291-7fbd3db67f30",
+      "date": "1985-05-24",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "2d6d05a5-c134-4d0e-aac7-3642eef37184",
+      "date": "1985-04-26",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "27197bde-af95-42c6-9b21-3bcaded126eb",
+      "date": "1985-03-29",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "3c2f4b3a-5959-422d-ad95-e7a00159ec88",
+      "date": "1985-03-01",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 10849.44,
+    "total_covered": 7069.44,
+    "total_owed": 3780.0,
+    "denied_claims": 0,
+    "pending_claims": 0
+  }
+}

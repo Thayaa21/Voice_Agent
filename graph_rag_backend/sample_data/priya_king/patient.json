@@ -1,0 +1,400 @@
+{
+  "patient_id": "59cf17d9-6c13-4333-a1cb-cc5fdf63366d",
+  "display_name": "Priya King",
+  "dob": "1942-05-23",
+  "age": 84,
+  "gender": "M",
+  "city": "Chatham",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicaid",
+    "member_since": "1943",
+    "payer_id": "7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a"
+  },
+  "active_conditions": [
+    {
+      "code": "40055000",
+      "description": "Chronic sinusitis (disorder)",
+      "onset": "1947-12-03"
+    },
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1967-07-29"
+    },
+    {
+      "code": "44054006",
+      "description": "Diabetes",
+      "onset": "1969-03-29"
+    },
+    {
+      "code": "431856006",
+      "description": "Chronic kidney disease stage 2 (disorder)",
+      "onset": "1969-03-29"
+    },
+    {
+      "code": "127013003",
+      "description": "Diabetic renal disease (disorder)",
+      "onset": "1969-03-29"
+    },
+    {
+      "code": "90781000119102",
+      "description": "Microalbuminuria due to type 2 diabetes mellitus (disorder)",
+      "onset": "1969-03-29"
+    },
+    {
+      "code": "80394007",
+      "description": "Hyperglycemia (disorder)",
+      "onset": "1969-04-05"
+    },
+    {
+      "code": "302870006",
+      "description": "Hypertriglyceridemia (disorder)",
+      "onset": "1969-04-05"
+    },
+    {
+      "code": "237602007",
+      "description": "Metabolic syndrome X (disorder)",
+      "onset": "1969-04-05"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "1969-04-05"
+    },
+    {
+      "code": "449868002",
+      "description": "Smokes tobacco daily",
+      "onset": "1985-07-06"
+    },
+    {
+      "code": "196416002",
+      "description": "Impacted molars",
+      "onset": "1990-02-05"
+    },
+    {
+      "code": "124171000119105",
+      "description": "Chronic intractable migraine without aura",
+      "onset": "1990-04-13"
+    },
+    {
+      "code": "82423001",
+      "description": "Chronic pain",
+      "onset": "1990-06-24"
+    },
+    {
+      "code": "162573006",
+      "description": "Suspected lung cancer (situation)",
+      "onset": "1993-10-07"
+    },
+    {
+      "code": "254637007",
+      "description": "Non-small cell lung cancer (disorder)",
+      "onset": "1993-10-12"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "1993-10-12"
+    },
+    {
+      "code": "424132000",
+      "description": "Non-small cell carcinoma of lung  TNM stage 1 (disorder)",
+      "onset": "1993-10-14"
+    },
+    {
+      "code": "55680006",
+      "description": "Drug overdose",
+      "onset": "1994-08-03"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "6d402074-5135-4728-a0d8-fbadd558c324",
+      "date": "1995-10-14",
+      "type": "wellness",
+      "description": "Death Certification",
+      "reason": "",
+      "procedure_code": "308646001",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "5cd628ad-f5b0-43d7-8a93-9d38d53102d4",
+      "date": "1995-09-16",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "ab859b2f-207d-48b3-8350-11afe6aecd9b",
+      "date": "1995-09-09",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "3986bc33-446d-4fa5-be05-841fb73696da",
+      "date": "1995-09-02",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "e6788405-c6fd-4785-9728-e70db80675e7",
+      "date": "1995-08-27",
+      "type": "inpatient",
+      "description": "Encounter Inpatient",
+      "reason": "Chronic pain",
+      "procedure_code": "183452005",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "Medicaid",
+      "billed": 77.49,
+      "covered": 17.49,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "a70e4bb1-8c8f-4135-a4ee-458d2abf51aa",
+      "date": "1995-08-16",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "db990624-e6d9-4140-8514-2396a37ec9dd",
+      "date": "1995-08-12",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "0d470f86-fabd-4fc9-b1d3-2810149f3b3a",
+      "date": "1995-07-15",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Brittani Satterfield",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "d4d21b5e-2a80-482e-a2e9-047a26b7877f",
+      "date": "1995-07-14",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "36236d84-90d8-4c8c-8498-60ef484e4b3c",
+      "date": "1995-06-30",
+      "type": "inpatient",
+      "description": "Encounter Inpatient",
+      "reason": "Impacted molars",
+      "procedure_code": "183452005",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "Medicaid",
+      "billed": 77.49,
+      "covered": 17.49,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "c46d912b-835e-477e-b9b6-78f5f020134b",
+      "date": "1995-06-17",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "b552b3c6-16b4-4781-997c-77186c634d46",
+      "date": "1995-06-14",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "09b88616-8d96-48e3-8088-4232544a019d",
+      "date": "1995-05-17",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "59455a7e-b0cf-4cd9-8b72-bb2fe1cc367d",
+      "date": "1995-05-13",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "3765509b-65d7-4ec2-a0f8-1ba12f2874ed",
+      "date": "1995-04-26",
+      "type": "inpatient",
+      "description": "Encounter Inpatient",
+      "reason": "Chronic intractable migraine without aura",
+      "procedure_code": "183452005",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "Medicaid",
+      "billed": 77.49,
+      "covered": 17.49,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "a6846fc7-1a88-48d1-bb5f-8b8645f60c4c",
+      "date": "1995-04-15",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Brittani Satterfield",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "4c700f3e-d818-442a-a9fd-390971968d82",
+      "date": "1995-04-14",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "7c44a98e-4b45-477b-a4fd-48de30113287",
+      "date": "1995-03-18",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Brittani Satterfield",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "6d95b602-0dae-4434-bf20-5af0e2082e53",
+      "date": "1995-03-17",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "5a6296a2-b33f-4096-8d70-6bd20d5c9499",
+      "date": "1995-02-17",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Leonor N\u00e1jera",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 37378.76,
+    "total_covered": 14459.24,
+    "total_owed": 22919.52,
+    "denied_claims": 72,
+    "pending_claims": 0
+  }
+}

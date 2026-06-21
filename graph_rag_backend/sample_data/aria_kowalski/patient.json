@@ -1,0 +1,86 @@
+{
+  "patient_id": "c6e8d2a5-ec57-4353-9e7f-0b0bbefd1959",
+  "display_name": "Aria Kowalski",
+  "dob": "1980-12-21",
+  "age": 45,
+  "gender": "M",
+  "city": "Millville",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Anthem",
+    "member_since": "1980",
+    "payer_id": "42c4fca7-f8a9-3cd1-982a-dd9751bf3e2a"
+  },
+  "active_conditions": [
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "2018-03-11"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "d91789e8-5744-4f4b-884c-cab4f93d535a",
+      "date": "2018-03-11",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Danial Rodriguez",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "94c1b616-f906-47f5-af10-279bfe9bacf3",
+      "date": "2015-03-08",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Danial Rodriguez",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "a462e2f6-6c98-415f-9bf1-292acc98330f",
+      "date": "2012-03-04",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Danial Rodriguez",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "64f85bed-3c81-4ed1-b228-6a14ea97bf3a",
+      "date": "2010-08-26",
+      "type": "outpatient",
+      "description": "Encounter for symptom",
+      "reason": "Otitis media",
+      "procedure_code": "185345009",
+      "provider": "Dr. Lonna Dietrich",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 516.64,
+    "total_covered": 387.48,
+    "total_owed": 129.16,
+    "denied_claims": 1,
+    "pending_claims": 0
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "patient_id": "d3f08bb8-e79f-4529-a37a-8aebdfbffe6a",
+  "display_name": "Reese Tanaka",
+  "dob": "2020-03-22",
+  "age": 6,
+  "gender": "F",
+  "city": "Boston",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "NO_INSURANCE",
+    "member_since": "",
+    "payer_id": ""
+  },
+  "active_conditions": [],
+  "encounters": [
+    {
+      "encounter_id": "dab9a177-ef4f-4d7f-bc67-53f69e991f35",
+      "date": "2020-04-26",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Claude Jacobs",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "18dd96cc-9f59-40b2-bb76-dbb0dd109ab9",
+      "date": "2020-03-22",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Claude Jacobs",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 258.32,
+    "total_covered": 258.32,
+    "total_owed": 0.0,
+    "denied_claims": 0,
+    "pending_claims": 0
+  }
+}

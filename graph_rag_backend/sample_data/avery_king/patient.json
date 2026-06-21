@@ -1,0 +1,170 @@
+{
+  "patient_id": "5be0e71b-5810-4d2f-8a9d-bc7a4c200888",
+  "display_name": "Avery King",
+  "dob": "1993-02-25",
+  "age": 33,
+  "gender": "M",
+  "city": "Hatfield",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "UnitedHealthcare",
+    "member_since": "1993",
+    "payer_id": "5059a55e-5d6e-34d1-b6cb-d83d16e57bcf"
+  },
+  "active_conditions": [
+    {
+      "code": "40055000",
+      "description": "Chronic sinusitis (disorder)",
+      "onset": "1996-06-12"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "4d1c56d2-f80f-41b5-b9f3-fe427d4e4cb2",
+      "date": "2018-05-03",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Andreas Schmidt",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "2da996ae-aa43-4885-b336-e925a7815a95",
+      "date": "2018-02-06",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute viral pharyngitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Guadalupe Valenzuela",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 59.16,
+      "patient_owes": 70.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "9947de6b-47c2-45a7-97cf-3381a58a5cf1",
+      "date": "2017-08-07",
+      "type": "emergency",
+      "description": "Emergency room admission (procedure)",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Guadalupe Valenzuela",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 59.16,
+      "patient_owes": 70.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "2ea9eae3-185b-4cd3-9e4d-0171fa0a7d02",
+      "date": "2015-04-30",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Andreas Schmidt",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "3ada0edd-0de0-4f7a-ac26-7c4f7d1c1e84",
+      "date": "2013-01-31",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Guadalupe Valenzuela",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "4391385f-15fb-4698-a9e7-fa57d9ce2969",
+      "date": "2013-01-22",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute bronchitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Guadalupe Valenzuela",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 59.16,
+      "patient_owes": 70.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "df40be52-8baa-48fc-bcd9-5c227662ecb4",
+      "date": "2012-04-26",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Andreas Schmidt",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "4b60bc3f-19be-4d10-8a9b-ef5218b1a9da",
+      "date": "2012-02-28",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Contact dermatitis",
+      "procedure_code": "185347001",
+      "provider": "Dr. Guadalupe Valenzuela",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 59.16,
+      "patient_owes": 70.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "eba704ef-a6c8-4f77-8b16-269335c69982",
+      "date": "2011-04-21",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Andreas Schmidt",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "3ca2312f-da1a-412d-accc-91ac254b785d",
+      "date": "1996-06-12",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute bacterial sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Guadalupe Valenzuela",
+      "payer": "UnitedHealthcare",
+      "billed": 129.16,
+      "covered": 59.16,
+      "patient_owes": 70.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 1291.6,
+    "total_covered": 812.44,
+    "total_owed": 479.16,
+    "denied_claims": 1,
+    "pending_claims": 0
+  }
+}

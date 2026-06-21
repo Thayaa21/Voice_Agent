@@ -1,0 +1,128 @@
+{
+  "patient_id": "02ea2f1a-ddcf-4809-8279-dde7a62e0318",
+  "display_name": "Ryan Evans",
+  "dob": "1991-01-08",
+  "age": 35,
+  "gender": "M",
+  "city": "Lynn",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Anthem",
+    "member_since": "1991",
+    "payer_id": "42c4fca7-f8a9-3cd1-982a-dd9751bf3e2a"
+  },
+  "active_conditions": [
+    {
+      "code": "65363002",
+      "description": "Otitis media",
+      "onset": "2019-04-11"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "adbfa889-fa97-4f9a-9ba9-f15df2f455db",
+      "date": "2019-04-11",
+      "type": "outpatient",
+      "description": "Encounter for symptom",
+      "reason": "Otitis media",
+      "procedure_code": "185345009",
+      "provider": "Dr. Houston Osinski",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "94b955a4-47cd-42e0-ade1-ea4197e4431a",
+      "date": "2019-03-19",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Albert Lynch",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "f6682d01-5f3c-4ec7-934d-9c576dae7f07",
+      "date": "2018-12-25",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute viral pharyngitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Houston Osinski",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "02e94c9c-b7c1-4c3d-946b-3b06d8a14881",
+      "date": "2016-09-06",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute bronchitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Houston Osinski",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "18a8fb8e-309b-43da-9d5c-05bf886cc160",
+      "date": "2016-03-15",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Albert Lynch",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "01a3bbf3-1d77-44de-aee0-d02ab22cb0e2",
+      "date": "2013-03-12",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Albert Lynch",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "b6629eeb-4533-4093-bb14-453b7fd3e122",
+      "date": "2012-03-16",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute viral pharyngitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Houston Osinski",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 904.12,
+    "total_covered": 387.48,
+    "total_owed": 516.64,
+    "denied_claims": 4,
+    "pending_claims": 0
+  }
+}

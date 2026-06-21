@@ -1,0 +1,360 @@
+{
+  "patient_id": "61417eb5-1c42-4207-afb3-c9ebef48496f",
+  "display_name": "Alex Young",
+  "dob": "1949-07-01",
+  "age": 76,
+  "gender": "F",
+  "city": "Taunton",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicare",
+    "member_since": "1981",
+    "payer_id": "7caa7254-5050-3b5e-9eae-bd5ea30e809c"
+  },
+  "active_conditions": [
+    {
+      "code": "410429000",
+      "description": "Cardiac Arrest",
+      "onset": "1965-10-22"
+    },
+    {
+      "code": "429007001",
+      "description": "History of cardiac arrest (situation)",
+      "onset": "1965-10-22"
+    },
+    {
+      "code": "59621000",
+      "description": "Hypertension",
+      "onset": "1967-08-25"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "1985-12-06"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "1986-12-12"
+    },
+    {
+      "code": "82423001",
+      "description": "Chronic pain",
+      "onset": "1990-04-05"
+    },
+    {
+      "code": "196416002",
+      "description": "Impacted molars",
+      "onset": "1990-05-19"
+    },
+    {
+      "code": "124171000119105",
+      "description": "Chronic intractable migraine without aura",
+      "onset": "1990-09-14"
+    },
+    {
+      "code": "55680006",
+      "description": "Drug overdose",
+      "onset": "1994-11-28"
+    },
+    {
+      "code": "55822004",
+      "description": "Hyperlipidemia",
+      "onset": "2005-03-25"
+    },
+    {
+      "code": "239873007",
+      "description": "Osteoarthritis of knee",
+      "onset": "2006-06-17"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "b19eb11e-ede2-4b2e-876d-8aa6a8c95829",
+      "date": "2020-04-12",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Brittani Satterfield",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "b20d53e4-cf61-46c9-926d-1f3f4376485f",
+      "date": "2019-09-15",
+      "type": "inpatient",
+      "description": "Drug rehabilitation and detoxification",
+      "reason": "",
+      "procedure_code": "56876005",
+      "provider": "Dr. Brittani Satterfield",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "444db0df-07de-4d74-9d4c-b988dd57a5c9",
+      "date": "2019-08-02",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Brittani Satterfield",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "a07d9def-db1b-464a-a4cf-a720f38f8558",
+      "date": "2019-07-03",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Brittani Satterfield",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "c74f4af8-c9e8-4fa1-ab3e-0d2ed89846d7",
+      "date": "2019-06-19",
+      "type": "emergency",
+      "description": "Emergency Room Admission",
+      "reason": "Drug overdose",
+      "procedure_code": "50849002",
+      "provider": "Dr. Brittani Satterfield",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "d844c8d0-b9b4-4d2e-b6a9-055f7ddccc6c",
+      "date": "2019-06-15",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Myron Lynch",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "aa732299-ed06-4306-8c10-9fd5e2a92bca",
+      "date": "2019-04-13",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Brittani Satterfield",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "f258a240-b4bb-49f2-9771-79b1d2ea5cd7",
+      "date": "2018-10-15",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Brittani Satterfield",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "115af44b-1914-40ae-83b0-3849054d56c1",
+      "date": "2018-08-27",
+      "type": "inpatient",
+      "description": "Drug rehabilitation and detoxification",
+      "reason": "",
+      "procedure_code": "56876005",
+      "provider": "Dr. Brittani Satterfield",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "374b5f27-faea-46ff-adf2-b75e4273e432",
+      "date": "2018-06-09",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Myron Lynch",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "f52b1d6a-696b-4847-9772-50b545175f23",
+      "date": "2018-05-26",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Brittani Satterfield",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "b7c7e985-9b7b-4824-bd5a-1c9ee84edd84",
+      "date": "2018-04-26",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Brittani Satterfield",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "47fb27af-2764-421f-8a66-bd55796e8db8",
+      "date": "2018-04-19",
+      "type": "emergency",
+      "description": "Emergency Room Admission",
+      "reason": "Drug overdose",
+      "procedure_code": "50849002",
+      "provider": "Dr. Brittani Satterfield",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "9540b721-d0b5-4de8-bb0b-61ee30fb6ef0",
+      "date": "2018-04-13",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Brittani Satterfield",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "20d9f556-f9b1-40ed-b773-f97d791c96eb",
+      "date": "2017-06-03",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Myron Lynch",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "371f3c6b-1edf-4ccb-9493-0ee7fa60ad15",
+      "date": "2017-04-13",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Brittani Satterfield",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "964ddb7e-0861-42f7-88e2-0794f622d9ab",
+      "date": "2016-12-06",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Brittani Satterfield",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "8de36758-257b-4678-86c1-07d9d88c7299",
+      "date": "2016-11-06",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Brittani Satterfield",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "1fd49ef6-201e-41f4-bc0c-0c761bc06b17",
+      "date": "2016-05-28",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Myron Lynch",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "9edf15e1-fa40-4ad4-98b5-d27c97d30b9b",
+      "date": "2016-04-13",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Brittani Satterfield",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 13794.27,
+    "total_covered": 7245.95,
+    "total_owed": 6548.32,
+    "denied_claims": 2,
+    "pending_claims": 0
+  }
+}

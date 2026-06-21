@@ -1,0 +1,142 @@
+{
+  "patient_id": "85b81fe1-9eaa-419b-9cf6-16aabba09fd6",
+  "display_name": "Stella Sharma",
+  "dob": "1992-03-23",
+  "age": 34,
+  "gender": "M",
+  "city": "Boston",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Blue Cross Blue Shield",
+    "member_since": "1992",
+    "payer_id": "6e2f1a2d-27bd-3701-8d08-dae202c58632"
+  },
+  "active_conditions": [
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "2014-05-27"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "04fe2c7a-6a2d-4bbf-9e2b-df746e4b907d",
+      "date": "2017-05-30",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Alvin Goodwin",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "1f6f413e-237d-4cb8-b822-eb900eea2850",
+      "date": "2014-05-27",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Alvin Goodwin",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "a9d1f57f-140f-4d97-bbea-5ef5c2bbc8bd",
+      "date": "2013-09-03",
+      "type": "ambulatory",
+      "description": "Encounter for 'check-up'",
+      "reason": "First degree burn",
+      "procedure_code": "185349003",
+      "provider": "Dr. Tisha Dickens",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "b9a24419-afde-4dfa-a5cf-b5a855969d9b",
+      "date": "2013-07-30",
+      "type": "emergency",
+      "description": "Emergency room admission (procedure)",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Terry Wiegand",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "60a7ff87-966e-4f71-91b3-a83aa140238f",
+      "date": "2012-10-30",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute viral pharyngitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Tisha Dickens",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "f489b36f-3c50-4a0f-a4bf-f86212a9ed63",
+      "date": "2011-05-26",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Streptococcal sore throat (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Tisha Dickens",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 54.16,
+      "patient_owes": 75.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "a0bc3888-cae9-4622-89bb-f3b6f07ee2cf",
+      "date": "2011-05-24",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Alvin Goodwin",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "f6eb338c-52a8-4fec-8dff-43e0d686d94d",
+      "date": "2010-05-18",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Alvin Goodwin",
+      "payer": "Blue Cross Blue Shield",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 1033.28,
+    "total_covered": 733.28,
+    "total_owed": 300.0,
+    "denied_claims": 0,
+    "pending_claims": 0
+  }
+}

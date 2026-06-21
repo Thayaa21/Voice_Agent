@@ -1,0 +1,122 @@
+{
+  "patient_id": "a52b02ff-bff3-4a5f-8fe4-f06a1712f0e6",
+  "display_name": "Aurora Jackson",
+  "dob": "1981-04-21",
+  "age": 45,
+  "gender": "M",
+  "city": "Middleborough",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Humana",
+    "member_since": "1981",
+    "payer_id": "d47b3510-2895-3b70-9897-342d681c769d"
+  },
+  "active_conditions": [],
+  "encounters": [
+    {
+      "encounter_id": "dbceecf8-f5b9-4190-9bc0-6bc3e3103355",
+      "date": "2018-07-10",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Hung Sauer",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "c6798961-71c4-4f18-9dbe-12a17a06e538",
+      "date": "2017-01-24",
+      "type": "outpatient",
+      "description": "Encounter for symptom",
+      "reason": "Otitis media",
+      "procedure_code": "185345009",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "6764dfd0-d333-4a62-ac27-e7e5fefe93cc",
+      "date": "2015-07-07",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Hung Sauer",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "3850baa1-9c06-4e4c-9e90-b458d823bcaf",
+      "date": "2015-04-15",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "6acd98f9-ed78-4cd0-97f3-a12ea878528c",
+      "date": "2013-11-20",
+      "type": "inpatient",
+      "description": "Non-urgent orthopedic admission",
+      "reason": "Injury of anterior cruciate ligament",
+      "procedure_code": "183495009",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "39145daa-72fd-4ea3-8e47-fab0a6469816",
+      "date": "2013-11-13",
+      "type": "emergency",
+      "description": "Emergency room admission (procedure)",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "9f2af8d2-36c3-461b-afd3-3459858747ac",
+      "date": "2012-07-03",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Hung Sauer",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 904.12,
+    "total_covered": 534.96,
+    "total_owed": 369.16,
+    "denied_claims": 1,
+    "pending_claims": 0
+  }
+}

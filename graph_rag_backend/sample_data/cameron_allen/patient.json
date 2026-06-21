@@ -1,0 +1,133 @@
+{
+  "patient_id": "e7b0fe9b-a6ae-4a8a-9055-7971a07568d8",
+  "display_name": "Cameron Allen",
+  "dob": "1977-07-24",
+  "age": 48,
+  "gender": "M",
+  "city": "Cambridge",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Aetna",
+    "member_since": "1977",
+    "payer_id": "4d71f845-a6a9-3c39-b242-14d25ef86a8d"
+  },
+  "active_conditions": [
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "2002-09-29"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "2002-09-29"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "b840db7c-783e-4c62-8a2b-9456ac14e3ff",
+      "date": "2020-03-27",
+      "type": "ambulatory",
+      "description": "Encounter for 'check-up'",
+      "reason": "Fracture of forearm",
+      "procedure_code": "185349003",
+      "provider": "Dr. Jeanmarie Beatty",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "e55c6baf-4925-4653-b7d8-96fcabb70777",
+      "date": "2019-12-28",
+      "type": "emergency",
+      "description": "Emergency room admission (procedure)",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Suzette Monahan",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "674638b8-ff62-4d61-ac8d-93bb57245cdf",
+      "date": "2019-08-04",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Felicitas Wiza",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "8ad63f97-a0f7-419f-9c81-00b0a69d7222",
+      "date": "2017-07-30",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Felicitas Wiza",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "c17f433a-0f9a-4298-a623-49bb281a1a0a",
+      "date": "2014-10-12",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Felicitas Wiza",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "c31b6ec6-bd6f-4b6c-ba2c-e7a3f973fe3f",
+      "date": "2011-10-09",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Felicitas Wiza",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "63cd54f2-f53b-4253-9e30-6d93c15bb7b1",
+      "date": "2002-09-29",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Felicitas Wiza",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 904.12,
+    "total_covered": 709.12,
+    "total_owed": 195.0,
+    "denied_claims": 0,
+    "pending_claims": 0
+  }
+}

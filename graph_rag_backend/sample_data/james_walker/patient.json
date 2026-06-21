@@ -1,0 +1,175 @@
+{
+  "patient_id": "3c2bfff1-8a3f-4b9c-bc18-e7ea6562e436",
+  "display_name": "James Walker",
+  "dob": "2018-07-25",
+  "age": 7,
+  "gender": "F",
+  "city": "Salem",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicaid",
+    "member_since": "2018",
+    "payer_id": "7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a"
+  },
+  "active_conditions": [
+    {
+      "code": "128613002",
+      "description": "Seizure disorder",
+      "onset": "2018-07-25"
+    },
+    {
+      "code": "703151001",
+      "description": "History of single seizure (situation)",
+      "onset": "2018-07-25"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "16fc2429-927c-4e76-9e62-f12360006e0f",
+      "date": "2019-05-15",
+      "type": "wellness",
+      "description": "Death Certification",
+      "reason": "",
+      "procedure_code": "308646001",
+      "provider": "Dr. Boyd Okuneva",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "c6de4d5b-3735-4204-8eb3-a86af25e1d5e",
+      "date": "2019-04-03",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Boyd Okuneva",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "7a25f1b3-c7fd-4ce4-811b-51638f2a35e9",
+      "date": "2019-02-20",
+      "type": "outpatient",
+      "description": "Encounter for symptom",
+      "reason": "Otitis media",
+      "procedure_code": "185345009",
+      "provider": "Dr. Houston Osinski",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "b1b1a054-cc37-49d7-a9b5-2481720f8187",
+      "date": "2019-01-02",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Boyd Okuneva",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "6be2d91d-95ac-472d-966e-8f74c0890c5c",
+      "date": "2018-12-12",
+      "type": "emergency",
+      "description": "Emergency Room Admission",
+      "reason": "Seizure disorder",
+      "procedure_code": "50849002",
+      "provider": "Dr. Houston Osinski",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "dcf0fdeb-c724-4592-9abc-31e20b5272c3",
+      "date": "2018-10-31",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Boyd Okuneva",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "c6b5402e-c2ca-412a-9270-23c5c4c43a49",
+      "date": "2018-09-12",
+      "type": "emergency",
+      "description": "Emergency Room Admission",
+      "reason": "Seizure disorder",
+      "procedure_code": "50849002",
+      "provider": "Dr. Houston Osinski",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "a6826210-03da-418f-88b3-cf612e818281",
+      "date": "2018-08-29",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Boyd Okuneva",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "39580768-2d52-4915-9573-028598584c41",
+      "date": "2018-07-25",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Boyd Okuneva",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "9ad76a05-0de5-45a7-9453-a1e2fe64d08c",
+      "date": "2018-07-25",
+      "type": "emergency",
+      "description": "Emergency Room Admission",
+      "reason": "Seizure disorder",
+      "procedure_code": "50849002",
+      "provider": "Dr. Houston Osinski",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 1291.6,
+    "total_covered": 922.44,
+    "total_owed": 369.16,
+    "denied_claims": 1,
+    "pending_claims": 0
+  }
+}

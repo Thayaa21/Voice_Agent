@@ -1,0 +1,380 @@
+{
+  "patient_id": "cae10920-f977-48b4-a0d3-4d70ad561fd1",
+  "display_name": "Penelope Nguyen",
+  "dob": "1913-05-30",
+  "age": 113,
+  "gender": "M",
+  "city": "Boston",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicare",
+    "member_since": "1932",
+    "payer_id": "7caa7254-5050-3b5e-9eae-bd5ea30e809c"
+  },
+  "active_conditions": [
+    {
+      "code": "40055000",
+      "description": "Chronic sinusitis (disorder)",
+      "onset": "1950-11-23"
+    },
+    {
+      "code": "239872002",
+      "description": "Osteoarthritis of hip",
+      "onset": "1959-05-19"
+    },
+    {
+      "code": "44054006",
+      "description": "Diabetes",
+      "onset": "1963-05-31"
+    },
+    {
+      "code": "302870006",
+      "description": "Hypertriglyceridemia (disorder)",
+      "onset": "1964-06-05"
+    },
+    {
+      "code": "237602007",
+      "description": "Metabolic syndrome X (disorder)",
+      "onset": "1964-06-05"
+    },
+    {
+      "code": "422034002",
+      "description": "Diabetic retinopathy associated with type II diabetes mellitus (disorder)",
+      "onset": "1964-06-05"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "1966-06-17"
+    },
+    {
+      "code": "230690007",
+      "description": "Stroke",
+      "onset": "1972-05-05"
+    },
+    {
+      "code": "431855005",
+      "description": "Chronic kidney disease stage 1 (disorder)",
+      "onset": "1972-07-21"
+    },
+    {
+      "code": "127013003",
+      "description": "Diabetic renal disease (disorder)",
+      "onset": "1972-07-21"
+    },
+    {
+      "code": "55822004",
+      "description": "Hyperlipidemia",
+      "onset": "1973-07-27"
+    },
+    {
+      "code": "26929004",
+      "description": "Alzheimer's disease (disorder)",
+      "onset": "1994-05-10"
+    },
+    {
+      "code": "126906006",
+      "description": "Neoplasm of prostate",
+      "onset": "2008-02-02"
+    },
+    {
+      "code": "92691004",
+      "description": "Carcinoma in situ of prostate (disorder)",
+      "onset": "2008-02-02"
+    },
+    {
+      "code": "314994000",
+      "description": "Metastasis from malignant tumor of prostate (disorder)",
+      "onset": "2008-05-02"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "1ec9a1a7-db9c-4868-8fd4-c4ee56ba563d",
+      "date": "2009-05-01",
+      "type": "emergency",
+      "description": "Emergency Encounter",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Jeanmarie Beatty",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "d6e5be3d-d698-4a79-a78c-1c1093cab96e",
+      "date": "2009-05-01",
+      "type": "ambulatory",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Gaynell Streich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "ca4d5bc0-bf74-4035-a91b-25e9b1b13dc8",
+      "date": "2009-05-01",
+      "type": "ambulatory",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Gaynell Streich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "daa979b5-c836-410e-9716-01e9b83779fa",
+      "date": "2009-04-28",
+      "type": "ambulatory",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Gaynell Streich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "16c2ab76-9c70-4a1c-80ea-837eedc3d7d8",
+      "date": "2009-04-25",
+      "type": "ambulatory",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Gaynell Streich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "7c329571-975b-45b8-bb13-ae5e6cf6ae4d",
+      "date": "2009-04-24",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Gaynell Streich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "5f055c4f-b447-48a6-95bc-19c8217f802a",
+      "date": "2009-04-22",
+      "type": "ambulatory",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Gaynell Streich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "6438483e-5879-4b0b-9d5e-4c66a14c110b",
+      "date": "2009-04-19",
+      "type": "ambulatory",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Gaynell Streich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "12478ad9-cd92-43c2-9e4b-8877d29ffee3",
+      "date": "2009-04-17",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Malinda Cassin",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "d2e5a534-b853-4627-af8b-25a08b0b499e",
+      "date": "2009-04-16",
+      "type": "ambulatory",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Gaynell Streich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "6d702a3d-56f1-4709-8224-e5435766682d",
+      "date": "2009-04-13",
+      "type": "ambulatory",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Gaynell Streich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "754f7666-9655-4781-9d1b-9e4c78483189",
+      "date": "2009-04-10",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Malinda Cassin",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "c5a4fb5b-b52b-4d62-9be1-5d954d226733",
+      "date": "2009-04-10",
+      "type": "ambulatory",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Gaynell Streich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "c9970b2a-7871-4b0d-a751-e1cee46fd28b",
+      "date": "2009-04-07",
+      "type": "ambulatory",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Gaynell Streich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "3e5d5395-26d9-4fb0-8a82-5c60b3ee51f3",
+      "date": "2009-04-04",
+      "type": "ambulatory",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Gaynell Streich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "f0f48bf5-cd86-474b-a9b8-dd92fad0fa5e",
+      "date": "2009-04-03",
+      "type": "emergency",
+      "description": "Emergency Encounter",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Jeanmarie Beatty",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "c4c8e58a-aaeb-45c6-acb2-5a3291fe7ef5",
+      "date": "2009-04-01",
+      "type": "ambulatory",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Gaynell Streich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "1cc4cee7-831a-4330-8920-0f93e59a34c6",
+      "date": "2009-04-01",
+      "type": "ambulatory",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Gaynell Streich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "7c0e0e00-312f-455e-9fc6-7e3ae9b68184",
+      "date": "2009-03-29",
+      "type": "ambulatory",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Gaynell Streich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "99a9a5c1-d129-41c9-9959-c274e0daab0a",
+      "date": "2009-03-26",
+      "type": "ambulatory",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Gaynell Streich",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 259094.96,
+    "total_covered": 150747.04,
+    "total_owed": 108347.92,
+    "denied_claims": 312,
+    "pending_claims": 0
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "patient_id": "64c260d6-c09b-4280-ab86-0410f555e1f4",
+  "display_name": "Lily Ahmed",
+  "dob": "1991-09-12",
+  "age": 34,
+  "gender": "M",
+  "city": "Worcester",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "NO_INSURANCE",
+    "member_since": "1991",
+    "payer_id": "b1c428d6-4f07-31e0-90f0-68ffa6ff8c76"
+  },
+  "active_conditions": [],
+  "encounters": [
+    {
+      "encounter_id": "a5dc4cb1-e999-4da4-9651-65e23f2960b3",
+      "date": "2019-11-21",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Pok Waelchi",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "64b670c1-4bce-4eba-b5e7-7f065a60f343",
+      "date": "2016-11-17",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Pok Waelchi",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "843f4818-0341-4cb2-beb8-d652144b9388",
+      "date": "2013-11-14",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Pok Waelchi",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "b86c63f5-b521-46c1-ba97-b3b8fabd3123",
+      "date": "2010-11-11",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Pok Waelchi",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 516.64,
+    "total_covered": 0.0,
+    "total_owed": 516.64,
+    "denied_claims": 4,
+    "pending_claims": 0
+  }
+}

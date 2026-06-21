@@ -1,0 +1,100 @@
+{
+  "patient_id": "7f0a46d8-43bd-4141-ab86-92b63e1da025",
+  "display_name": "Aria Stewart",
+  "dob": "1993-03-01",
+  "age": 33,
+  "gender": "M",
+  "city": "Revere",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Anthem",
+    "member_since": "1993",
+    "payer_id": "42c4fca7-f8a9-3cd1-982a-dd9751bf3e2a"
+  },
+  "active_conditions": [
+    {
+      "code": "40055000",
+      "description": "Chronic sinusitis (disorder)",
+      "onset": "1999-10-27"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "cb2912e3-9e87-4eb6-bfec-758ac86c5e4c",
+      "date": "2018-05-08",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Lavern Rath",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "6b458d16-ca5e-41c4-8393-2a99de203622",
+      "date": "2015-05-05",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Lavern Rath",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "f56b8aff-fff3-42b5-99e5-32fe4b197d42",
+      "date": "2012-05-01",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Lavern Rath",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "fcf81167-e5bb-428c-a682-c3653a3c528b",
+      "date": "2011-04-26",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Lavern Rath",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "f76b3a71-ba51-4229-b9eb-1e50694579b9",
+      "date": "1999-10-28",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Houston Osinski",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 645.8,
+    "total_covered": 516.64,
+    "total_owed": 129.16,
+    "denied_claims": 1,
+    "pending_claims": 0
+  }
+}

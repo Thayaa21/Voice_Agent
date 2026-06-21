@@ -1,0 +1,157 @@
+{
+  "patient_id": "77f75716-3e7c-4e75-ad10-e5f04ae35002",
+  "display_name": "Hazel Stewart",
+  "dob": "1942-05-23",
+  "age": 84,
+  "gender": "M",
+  "city": "Chatham",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicaid",
+    "member_since": "1942",
+    "payer_id": "7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a"
+  },
+  "active_conditions": [
+    {
+      "code": "53741008",
+      "description": "Coronary Heart Disease",
+      "onset": "1973-08-04"
+    },
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1973-08-04"
+    },
+    {
+      "code": "22298006",
+      "description": "Myocardial Infarction",
+      "onset": "1977-02-19"
+    },
+    {
+      "code": "399211009",
+      "description": "History of myocardial infarction (situation)",
+      "onset": "1977-02-19"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "4ca6bbd2-cfa7-4c92-86c7-3346b76503d9",
+      "date": "1977-02-19",
+      "type": "emergency",
+      "description": "Myocardial Infarction",
+      "reason": "",
+      "procedure_code": "22298006",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "6c30d4fb-6017-47f4-8529-0da4fe718a88",
+      "date": "1976-08-21",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Jude Franecki",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "f77e8480-9d31-43ab-9d0c-416bdd29ac4a",
+      "date": "1975-08-16",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Jude Franecki",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "475a2605-241e-4e73-aeba-31b89fc8b2b9",
+      "date": "1974-08-10",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Jude Franecki",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "78dada84-7ca4-4bd4-8f00-88b2fbc1fdc2",
+      "date": "1973-08-04",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Jude Franecki",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "fa23e437-d2ff-4a20-bca0-575389c0ac93",
+      "date": "1970-08-01",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Jude Franecki",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "480ca908-4764-4ef5-8546-5594eefec9fa",
+      "date": "1967-12-26",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute bronchitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "8ba0cd6f-039b-4980-b0bb-955db849a13e",
+      "date": "1967-07-29",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Jude Franecki",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 1033.28,
+    "total_covered": 553.28,
+    "total_owed": 480.0,
+    "denied_claims": 0,
+    "pending_claims": 0
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "patient_id": "d9e0f5cd-e132-42d4-8727-01ba47c697b8",
+  "display_name": "Nova Scott",
+  "dob": "1976-05-15",
+  "age": 50,
+  "gender": "M",
+  "city": "Wellesley",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Anthem",
+    "member_since": "1976",
+    "payer_id": "42c4fca7-f8a9-3cd1-982a-dd9751bf3e2a"
+  },
+  "active_conditions": [
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1986-05-24"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "1994-07-09"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "1994-07-09"
+    },
+    {
+      "code": "40055000",
+      "description": "Chronic sinusitis (disorder)",
+      "onset": "2008-12-31"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "793d9e86-a35a-4f6e-9db5-b1110dcde27d",
+      "date": "2019-11-09",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Jeramy Littel",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "72165013-ff89-4b62-9ea0-c1e75d0d9dd2",
+      "date": "2019-11-05",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Jeramy Littel",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "c8b2477d-6110-411e-9473-36eb3dd48fae",
+      "date": "2019-09-08",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Jeramy Littel",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "e086eb50-8f52-4a37-8702-d2db57b75008",
+      "date": "2018-07-28",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute viral pharyngitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Jeramy Littel",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "23ecec38-bdd2-445d-9a42-ae97dbc5f93e",
+      "date": "2018-05-26",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Marnie Pagac",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "a8bfface-90d1-4975-a434-38e5c3fe8820",
+      "date": "2016-05-21",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Marnie Pagac",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "8f37c069-85dc-4da0-92b6-bdc4dcae7a0c",
+      "date": "2013-08-03",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Marnie Pagac",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "6e3fe02f-8894-440d-8706-88081f6ff702",
+      "date": "2010-07-31",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Marnie Pagac",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "a99a7246-c9a0-4140-85cf-bf11c538fcd6",
+      "date": "2008-12-31",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Jeramy Littel",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "6df69199-1846-4220-93eb-d7417f4201eb",
+      "date": "1994-07-09",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Marnie Pagac",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 74.16,
+      "patient_owes": 55.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "57378ca5-453f-49ab-affd-7de2bea0d92a",
+      "date": "1986-05-24",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Marnie Pagac",
+      "payer": "Anthem",
+      "billed": 129.16,
+      "covered": 74.16,
+      "patient_owes": 55.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 1420.76,
+    "total_covered": 664.96,
+    "total_owed": 755.8,
+    "denied_claims": 5,
+    "pending_claims": 0
+  }
+}

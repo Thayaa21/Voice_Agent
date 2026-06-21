@@ -1,0 +1,375 @@
+{
+  "patient_id": "2c3932da-bde3-4d3c-a790-ff3b0fc4fb53",
+  "display_name": "Ingrid Singh",
+  "dob": "1942-05-23",
+  "age": 84,
+  "gender": "M",
+  "city": "Chatham",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Dual Eligible",
+    "member_since": "1943",
+    "payer_id": "b3221cfc-24fb-339e-823d-bc4136cbc4ed"
+  },
+  "active_conditions": [
+    {
+      "code": "44054006",
+      "description": "Diabetes",
+      "onset": "1967-07-29"
+    },
+    {
+      "code": "302870006",
+      "description": "Hypertriglyceridemia (disorder)",
+      "onset": "1970-08-01"
+    },
+    {
+      "code": "237602007",
+      "description": "Metabolic syndrome X (disorder)",
+      "onset": "1970-08-01"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "1970-08-01"
+    },
+    {
+      "code": "80394007",
+      "description": "Hyperglycemia (disorder)",
+      "onset": "1974-08-10"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "1974-08-10"
+    },
+    {
+      "code": "368581000119106",
+      "description": "Neuropathy due to type 2 diabetes mellitus (disorder)",
+      "onset": "1976-08-21"
+    },
+    {
+      "code": "82423001",
+      "description": "Chronic pain",
+      "onset": "1990-03-07"
+    },
+    {
+      "code": "40055000",
+      "description": "Chronic sinusitis (disorder)",
+      "onset": "1990-03-18"
+    },
+    {
+      "code": "55680006",
+      "description": "Drug overdose",
+      "onset": "1992-10-30"
+    },
+    {
+      "code": "422034002",
+      "description": "Diabetic retinopathy associated with type II diabetes mellitus (disorder)",
+      "onset": "2003-01-18"
+    },
+    {
+      "code": "230690007",
+      "description": "Stroke",
+      "onset": "2007-04-21"
+    },
+    {
+      "code": "53741008",
+      "description": "Coronary Heart Disease",
+      "onset": "2014-03-22"
+    },
+    {
+      "code": "68496003",
+      "description": "Polyp of colon",
+      "onset": "2019-12-03"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "a730e72e-8e63-4524-ab35-00c29ecff7dd",
+      "date": "2020-04-25",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Tiffani Becker",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "d915a2c9-60c3-4a25-b120-e3864c83f5d2",
+      "date": "2020-04-20",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "3ed4ecf6-641d-48af-9ade-4f6c54beef34",
+      "date": "2020-03-28",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "3cbe00ff-b663-41ee-b54c-69e6bfc63705",
+      "date": "2020-03-21",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Brittani Satterfield",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "06fa2bce-c01e-4196-bf49-4aebc5516ab1",
+      "date": "2020-03-21",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "119159e4-28a7-469d-9746-6fba012d372f",
+      "date": "2020-02-20",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "7f292e67-8124-469a-b171-ce0ebad82a56",
+      "date": "2020-02-15",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Brittani Satterfield",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "24f11d7b-6ae7-449b-a3df-86d207fa55f9",
+      "date": "2020-01-21",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "7391a470-352c-45db-9dfe-9864afefc116",
+      "date": "2020-01-18",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Brittani Satterfield",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "7068965d-da7e-4f8d-a93e-31ff4c5a4c6f",
+      "date": "2019-12-22",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "5f8a02f8-f1ce-4cd0-be03-6067961ba7e5",
+      "date": "2019-12-21",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "027b3efa-61a1-482a-ae28-7cd3134beb35",
+      "date": "2019-12-03",
+      "type": "ambulatory",
+      "description": "Encounter for 'check-up'",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "44f9e11b-a56f-4427-a4e4-20dcd9fb7c1a",
+      "date": "2019-11-30",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "c882a36b-8edf-4f65-a13c-5d18094126a5",
+      "date": "2019-11-23",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Brittani Satterfield",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "3af5bba8-cfcd-4553-bbf0-b9af021fb0b7",
+      "date": "2019-10-19",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Brittani Satterfield",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "66dd026d-65e6-409a-8b2d-a9a4f9286500",
+      "date": "2019-09-28",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "80ee45b7-3f2c-45b9-b333-554674055b65",
+      "date": "2019-09-21",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Brittani Satterfield",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "401a36a2-0951-4b1e-8a6e-2ad991e79296",
+      "date": "2019-08-18",
+      "type": "inpatient",
+      "description": "Drug rehabilitation and detoxification",
+      "reason": "",
+      "procedure_code": "56876005",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "f3887f24-9e60-4bdc-bb6b-f57f1c648de7",
+      "date": "2019-07-20",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "26ac774d-b8c0-4a33-95c6-7730a9afb2e0",
+      "date": "2019-05-25",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 15189.21,
+    "total_covered": 6475.93,
+    "total_owed": 8713.28,
+    "denied_claims": 8,
+    "pending_claims": 0
+  }
+}

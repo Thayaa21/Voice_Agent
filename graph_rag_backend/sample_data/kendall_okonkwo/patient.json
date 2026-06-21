@@ -1,0 +1,360 @@
+{
+  "patient_id": "c1cfae08-b141-40ea-a8bb-78c46cde0f3c",
+  "display_name": "Kendall Okonkwo",
+  "dob": "1946-01-24",
+  "age": 80,
+  "gender": "F",
+  "city": "Waltham",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Dual Eligible",
+    "member_since": "1947",
+    "payer_id": "b3221cfc-24fb-339e-823d-bc4136cbc4ed"
+  },
+  "active_conditions": [
+    {
+      "code": "410429000",
+      "description": "Cardiac Arrest",
+      "onset": "1963-08-29"
+    },
+    {
+      "code": "429007001",
+      "description": "History of cardiac arrest (situation)",
+      "onset": "1963-08-29"
+    },
+    {
+      "code": "59621000",
+      "description": "Hypertension",
+      "onset": "1964-03-19"
+    },
+    {
+      "code": "40055000",
+      "description": "Chronic sinusitis (disorder)",
+      "onset": "1965-09-29"
+    },
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1976-05-27"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "1982-07-01"
+    },
+    {
+      "code": "239872002",
+      "description": "Osteoarthritis of hip",
+      "onset": "1990-01-13"
+    },
+    {
+      "code": "55680006",
+      "description": "Drug overdose",
+      "onset": "2001-05-08"
+    },
+    {
+      "code": "83664006",
+      "description": "Idiopathic atrophic hypothyroidism",
+      "onset": "2012-01-15"
+    },
+    {
+      "code": "64859006",
+      "description": "Osteoporosis (disorder)",
+      "onset": "2016-01-07"
+    },
+    {
+      "code": "26929004",
+      "description": "Alzheimer's disease (disorder)",
+      "onset": "2020-01-30"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "335b953f-8d74-42bf-9823-44e78344998e",
+      "date": "2020-02-13",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Maile Frami",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "7991d480-67f7-4566-b830-cfa500a6943e",
+      "date": "2020-01-30",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Gay King",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "5043e077-0ec8-436d-bee9-97683fc84206",
+      "date": "2020-01-14",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Maile Frami",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "54331da5-f1af-425f-bc48-5162c98d430e",
+      "date": "2019-12-15",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Maile Frami",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "11621de2-19bc-42f5-94c4-11fef38cbb03",
+      "date": "2019-11-15",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Maile Frami",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "72056f75-cc96-4134-be5c-93e48ba5d14b",
+      "date": "2019-10-16",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Maile Frami",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "6dcb3785-5cd5-48a7-a96d-9cb7efca35c3",
+      "date": "2019-09-16",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Maile Frami",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "5659cfbf-ffd2-4272-9e75-3f0a6502140f",
+      "date": "2019-08-17",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Maile Frami",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "7284a3f8-c638-4971-a585-6d3322023604",
+      "date": "2019-07-18",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Maile Frami",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "74c5b43d-4826-43ef-9325-441a107d0040",
+      "date": "2019-06-18",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Maile Frami",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "d4119783-c6a1-447c-bdc0-16ffc5b8e86d",
+      "date": "2019-01-24",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Gay King",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "73506461-26fd-42a8-b55a-f7cdae68f727",
+      "date": "2019-01-08",
+      "type": "inpatient",
+      "description": "Drug rehabilitation and detoxification",
+      "reason": "",
+      "procedure_code": "56876005",
+      "provider": "Dr. Maile Frami",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "8f11f283-4d2f-4b04-b242-5dd6bf3f5b98",
+      "date": "2018-12-27",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Maile Frami",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "24f6327a-e54b-462f-ac9c-f1d7ae9a148e",
+      "date": "2018-11-08",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Maile Frami",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "31a553fa-d431-44a3-a4f2-110542b09364",
+      "date": "2018-11-06",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Maile Frami",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "73f712c8-9387-4914-8711-cf4aa85acfa2",
+      "date": "2018-10-09",
+      "type": "emergency",
+      "description": "Emergency Room Admission",
+      "reason": "Drug overdose",
+      "procedure_code": "50849002",
+      "provider": "Dr. Maile Frami",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "d1ad03a3-15fd-4944-8ce6-5ea01c1b07c2",
+      "date": "2018-08-26",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Maile Frami",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "e71defe1-befb-4fc3-93aa-429fba60fedb",
+      "date": "2018-07-27",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Maile Frami",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "8436f80a-47d3-4a48-a4f3-a61ac4d1d019",
+      "date": "2018-06-27",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Maile Frami",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "8d0255f7-dca7-42c8-a3c7-6c898db43ee7",
+      "date": "2018-05-28",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Maile Frami",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 15886.68,
+    "total_covered": 4787.0,
+    "total_owed": 11099.68,
+    "denied_claims": 48,
+    "pending_claims": 0
+  }
+}

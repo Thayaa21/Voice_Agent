@@ -1,0 +1,94 @@
+{
+  "patient_id": "f1fff31f-a2b2-4237-9429-4fa8d9625374",
+  "display_name": "Leila Ahmed",
+  "dob": "1976-05-19",
+  "age": 50,
+  "gender": "M",
+  "city": "Dartmouth",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Aetna",
+    "member_since": "1976",
+    "payer_id": "4d71f845-a6a9-3c39-b242-14d25ef86a8d"
+  },
+  "active_conditions": [],
+  "encounters": [
+    {
+      "encounter_id": "157ec239-42fa-4a57-896c-017d5b7f84e2",
+      "date": "2018-05-30",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Rafaela Murphy",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "cf477c8c-0a04-46fb-8d94-687ef3cf8011",
+      "date": "2017-07-08",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Colby Schowalter",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 64.16,
+      "patient_owes": 65.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "afe902b8-d9dd-4f51-b55f-4bdeccf4714a",
+      "date": "2016-05-25",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Rafaela Murphy",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "b733d888-b070-4bd2-a5dc-228294b7fa60",
+      "date": "2013-08-07",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Rafaela Murphy",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "e60c66c1-9d80-40e4-a7b0-2e33650604ae",
+      "date": "2010-08-04",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Rafaela Murphy",
+      "payer": "Aetna",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 645.8,
+    "total_covered": 580.8,
+    "total_owed": 65.0,
+    "denied_claims": 0,
+    "pending_claims": 0
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "patient_id": "3f8d6443-f7d9-40bf-acb5-427c853a68ca",
+  "display_name": "Aria Okonkwo",
+  "dob": "1937-09-07",
+  "age": 88,
+  "gender": "M",
+  "city": "Fairhaven",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "NO_INSURANCE",
+    "member_since": "",
+    "payer_id": ""
+  },
+  "active_conditions": [
+    {
+      "code": "192127007",
+      "description": "Child attention deficit disorder",
+      "onset": "1948-09-04"
+    },
+    {
+      "code": "53741008",
+      "description": "Coronary Heart Disease",
+      "onset": "1950-10-03"
+    },
+    {
+      "code": "58150001",
+      "description": "Fracture of clavicle",
+      "onset": "1952-07-20"
+    },
+    {
+      "code": "22298006",
+      "description": "Myocardial Infarction",
+      "onset": "1952-08-19"
+    },
+    {
+      "code": "399211009",
+      "description": "History of myocardial infarction (situation)",
+      "onset": "1952-08-19"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "e7954918-b3c6-472f-b837-5083d4556e7d",
+      "date": "1952-08-20",
+      "type": "emergency",
+      "description": "Myocardial Infarction",
+      "reason": "",
+      "procedure_code": "22298006",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "5c621887-8661-4ae2-bd53-d3baef1a8080",
+      "date": "1952-07-21",
+      "type": "emergency",
+      "description": "Emergency room admission (procedure)",
+      "reason": "",
+      "procedure_code": "50849002",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "4a890558-81fc-4428-9843-b5b4bd0a2d8c",
+      "date": "1952-07-20",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute viral pharyngitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "451c7b70-a99b-4010-b767-6994a0cf2671",
+      "date": "1951-10-10",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Layne Metz",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "0d76e061-64dc-4129-9b15-bf3a6ddacb92",
+      "date": "1950-10-04",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Layne Metz",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "be4b3b32-72cd-4091-8c1f-fd76b9182f3e",
+      "date": "1950-09-18",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Acute viral pharyngitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "1d6e5ef7-3894-438b-9560-e164d92afe59",
+      "date": "1949-09-28",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Layne Metz",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "ba08b5dd-ca18-4b9e-9e50-c6a9bbe2bfa2",
+      "date": "1948-09-22",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Layne Metz",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "855efc43-3402-45d4-a827-eb756d4b9f98",
+      "date": "1948-09-05",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Child attention deficit disorder",
+      "procedure_code": "185347001",
+      "provider": "Dr. Phillip Mccullough",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "62defb03-ca16-4ecd-8c4a-770cde7532b8",
+      "date": "1947-09-17",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Layne Metz",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "e7ad3ad7-13b6-4392-8e19-5d3313fb87e6",
+      "date": "1946-09-11",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Layne Metz",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "1eacb4cd-535e-4c08-8df0-54bfaf783099",
+      "date": "1945-09-05",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Layne Metz",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "9bd956f2-c47f-46e1-b3d4-b0e056c26ba7",
+      "date": "1944-08-30",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Layne Metz",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "e9aced8f-a2a5-4beb-b5bc-5d0a5b723d67",
+      "date": "1943-08-25",
+      "type": "wellness",
+      "description": "Well child visit (procedure)",
+      "reason": "",
+      "procedure_code": "410620009",
+      "provider": "Dr. Layne Metz",
+      "payer": "Humana",
+      "billed": 129.16,
+      "covered": 49.16,
+      "patient_owes": 80.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 1808.24,
+    "total_covered": 688.24,
+    "total_owed": 1120.0,
+    "denied_claims": 0,
+    "pending_claims": 0
+  }
+}

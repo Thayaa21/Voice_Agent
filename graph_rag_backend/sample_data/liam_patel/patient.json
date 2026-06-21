@@ -1,0 +1,370 @@
+{
+  "patient_id": "3dd2dd29-7cd0-48f7-b859-136c6e9d36e0",
+  "display_name": "Liam Patel",
+  "dob": "1920-05-01",
+  "age": 106,
+  "gender": "M",
+  "city": "Boston",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Dual Eligible",
+    "member_since": "1986",
+    "payer_id": "b3221cfc-24fb-339e-823d-bc4136cbc4ed"
+  },
+  "active_conditions": [
+    {
+      "code": "40055000",
+      "description": "Chronic sinusitis (disorder)",
+      "onset": "1933-08-08"
+    },
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1962-05-12"
+    },
+    {
+      "code": "55822004",
+      "description": "Hyperlipidemia",
+      "onset": "1964-05-16"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "1964-05-16"
+    },
+    {
+      "code": "44054006",
+      "description": "Diabetes",
+      "onset": "1968-05-25"
+    },
+    {
+      "code": "80394007",
+      "description": "Hyperglycemia (disorder)",
+      "onset": "1969-05-31"
+    },
+    {
+      "code": "302870006",
+      "description": "Hypertriglyceridemia (disorder)",
+      "onset": "1969-05-31"
+    },
+    {
+      "code": "237602007",
+      "description": "Metabolic syndrome X (disorder)",
+      "onset": "1969-05-31"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "1969-05-31"
+    },
+    {
+      "code": "431855005",
+      "description": "Chronic kidney disease stage 1 (disorder)",
+      "onset": "1972-05-20"
+    },
+    {
+      "code": "127013003",
+      "description": "Diabetic renal disease (disorder)",
+      "onset": "1972-05-20"
+    },
+    {
+      "code": "230690007",
+      "description": "Stroke",
+      "onset": "1979-12-22"
+    },
+    {
+      "code": "64859006",
+      "description": "Osteoporosis (disorder)",
+      "onset": "2010-06-17"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "88b7a334-505a-4e92-acd7-9f271c58871f",
+      "date": "2020-04-04",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Malinda Cassin",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "3c2c7a8f-770d-4c67-b1c1-3a50e9194d17",
+      "date": "2020-03-14",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Theron Pagac",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "56755a1f-f6af-4158-b077-bd394df52ded",
+      "date": "2020-03-07",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Malinda Cassin",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "caf8982e-0448-43e7-9eac-49fbbcf162f7",
+      "date": "2020-02-08",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Malinda Cassin",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "52f08067-df0f-48b2-919a-662bc48c819a",
+      "date": "2020-01-11",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Maile Frami",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "029caba9-df99-455f-9a14-6e424ca638de",
+      "date": "2020-01-04",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Malinda Cassin",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "550d34d4-24ed-4c2b-a30b-332420b67032",
+      "date": "2019-12-07",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Maile Frami",
+      "payer": "NO_INSURANCE",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "542a1b5e-a5dc-4daf-b50f-71072f57b335",
+      "date": "2019-11-16",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Malinda Cassin",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "cd9c8961-4de1-4446-aaa5-ca466088290e",
+      "date": "2019-11-09",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Malinda Cassin",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "250abc4c-2e5d-47f7-bd97-c4193e24565a",
+      "date": "2019-10-12",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Malinda Cassin",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "c2c81f9c-2f58-48f1-a60c-e2c2781a1806",
+      "date": "2019-09-14",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Maile Frami",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "17c5ab7c-e134-41ca-b4ed-ba0a6f07143e",
+      "date": "2019-09-07",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Malinda Cassin",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "12714804-f833-4aaa-9bea-fc8cdb1205c9",
+      "date": "2019-08-17",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Maile Frami",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "4c6b90e2-a342-4a86-8b2f-c12b240ae5b2",
+      "date": "2019-08-10",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Malinda Cassin",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "3e978a49-5798-4a3b-af49-cb0aaaa4e638",
+      "date": "2019-07-20",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Maile Frami",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "1d0ba94b-db0c-4bdd-b1e2-804cbefddac3",
+      "date": "2019-07-13",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Malinda Cassin",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "4c1fc35a-1ac2-4ab7-af7f-b43d93e150c7",
+      "date": "2019-06-08",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Malinda Cassin",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "b9b836d8-fab4-4410-92ad-f1310e1a2a48",
+      "date": "2019-05-24",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Maile Frami",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "2769e15a-906e-4949-bdcc-017c891a4453",
+      "date": "2019-05-18",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Maile Frami",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 29.16,
+      "patient_owes": 100.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "e6377d62-2598-4445-9f3d-bd4623df9f53",
+      "date": "2019-05-11",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Malinda Cassin",
+      "payer": "Dual Eligible",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 49726.6,
+    "total_covered": 7946.2,
+    "total_owed": 41780.4,
+    "denied_claims": 190,
+    "pending_claims": 0
+  }
+}

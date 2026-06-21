@@ -1,0 +1,375 @@
+{
+  "patient_id": "1c0cea09-f0db-4ef0-a551-d67645ee4538",
+  "display_name": "Reese Lee",
+  "dob": "1927-04-24",
+  "age": 99,
+  "gender": "F",
+  "city": "Melrose",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicare",
+    "member_since": "1993",
+    "payer_id": "7caa7254-5050-3b5e-9eae-bd5ea30e809c"
+  },
+  "active_conditions": [
+    {
+      "code": "19169002",
+      "description": "Miscarriage in first trimester",
+      "onset": "1948-04-25"
+    },
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1961-07-09"
+    },
+    {
+      "code": "15777000",
+      "description": "Prediabetes",
+      "onset": "1969-05-04"
+    },
+    {
+      "code": "55822004",
+      "description": "Hyperlipidemia",
+      "onset": "1979-05-06"
+    },
+    {
+      "code": "68496003",
+      "description": "Polyp of colon",
+      "onset": "1988-07-19"
+    },
+    {
+      "code": "82423001",
+      "description": "Chronic pain",
+      "onset": "1990-04-12"
+    },
+    {
+      "code": "55680006",
+      "description": "Drug overdose",
+      "onset": "1991-02-25"
+    },
+    {
+      "code": "196416002",
+      "description": "Impacted molars",
+      "onset": "1991-08-08"
+    },
+    {
+      "code": "124171000119105",
+      "description": "Chronic intractable migraine without aura",
+      "onset": "1992-02-12"
+    },
+    {
+      "code": "230690007",
+      "description": "Stroke",
+      "onset": "1997-10-12"
+    },
+    {
+      "code": "26929004",
+      "description": "Alzheimer's disease (disorder)",
+      "onset": "2007-10-14"
+    },
+    {
+      "code": "53741008",
+      "description": "Coronary Heart Disease",
+      "onset": "2013-11-17"
+    },
+    {
+      "code": "64859006",
+      "description": "Osteoporosis (disorder)",
+      "onset": "2017-12-10"
+    },
+    {
+      "code": "233604007",
+      "description": "Pneumonia",
+      "onset": "2018-07-18"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "db0dadde-dde0-4018-8515-5e6e10bab61d",
+      "date": "2018-07-18",
+      "type": "inpatient",
+      "description": "Hospital admission",
+      "reason": "Pneumonia",
+      "procedure_code": "32485007",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "fda759de-ee40-4d3a-acef-2918b79f81bf",
+      "date": "2018-05-17",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "930d1c3a-695b-4b0d-bab7-5e52cf9d7f5b",
+      "date": "2017-12-10",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Bert O'reilly",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "e3261c2f-bd72-4627-94ae-bb69942b1dd2",
+      "date": "2017-10-21",
+      "type": "ambulatory",
+      "description": "Office Visit",
+      "reason": "Alzheimer's disease (disorder)",
+      "procedure_code": "316744009",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "fcc95312-a9fa-43fc-8812-6b6bcc1d7b0e",
+      "date": "2017-05-17",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "948f5193-13d7-44e5-8961-aac64dd02bee",
+      "date": "2017-02-04",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "946be157-941c-4ff0-8675-2ba069b601ef",
+      "date": "2016-12-04",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Bert O'reilly",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "7319316c-37f2-4188-a89b-73a6fbd9aeb4",
+      "date": "2016-05-19",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "bca9a67c-c33d-4c32-8b2e-86d8f187caa4",
+      "date": "2016-05-17",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "dfcde495-763c-48d6-86c6-e3cc6067374d",
+      "date": "2015-11-29",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Bert O'reilly",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "5e973b7c-bba2-4e71-9e2e-993036aa82a2",
+      "date": "2015-11-19",
+      "type": "emergency",
+      "description": "Emergency Room Admission",
+      "reason": "Drug overdose",
+      "procedure_code": "50849002",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "39c7ada2-d1f6-490a-879b-215ffa04af4a",
+      "date": "2015-08-06",
+      "type": "inpatient",
+      "description": "Drug rehabilitation and detoxification",
+      "reason": "",
+      "procedure_code": "56876005",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "591ee856-cf44-4a5f-9a80-e5ae6416387d",
+      "date": "2015-06-25",
+      "type": "emergency",
+      "description": "Emergency Room Admission",
+      "reason": "Drug overdose",
+      "procedure_code": "50849002",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "de41a51b-dbda-4b30-b798-065dcd1fc337",
+      "date": "2015-05-18",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "338ffabb-9a4f-4d94-b589-322b10f56973",
+      "date": "2014-11-23",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Bert O'reilly",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "5c126cfa-f5fd-413f-8131-8e79f5c4ef53",
+      "date": "2014-08-21",
+      "type": "inpatient",
+      "description": "Drug rehabilitation and detoxification",
+      "reason": "",
+      "procedure_code": "56876005",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "3bada556-8171-447c-bd1a-5ad47f743667",
+      "date": "2014-08-08",
+      "type": "ambulatory",
+      "description": "Office Visit",
+      "reason": "Alzheimer's disease (disorder)",
+      "procedure_code": "316744009",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "edc563bc-4f0b-4e18-8d2f-ec8f9fda5809",
+      "date": "2014-05-18",
+      "type": "ambulatory",
+      "description": "Follow-up encounter",
+      "reason": "Hyperlipidemia",
+      "procedure_code": "390906007",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "30802268-cf77-4d02-9d2b-f3e4bb97452a",
+      "date": "2013-11-17",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Bert O'reilly",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 129.16,
+      "patient_owes": 0.0,
+      "claim_status": "PAID"
+    },
+    {
+      "encounter_id": "837ae740-720c-4d89-b637-ddeab861257a",
+      "date": "2013-10-15",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Vern Powlowski",
+      "payer": "Medicare",
+      "billed": 129.16,
+      "covered": 89.16,
+      "patient_owes": 40.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 14181.75,
+    "total_covered": 8027.76,
+    "total_owed": 6153.99,
+    "denied_claims": 22,
+    "pending_claims": 0
+  }
+}

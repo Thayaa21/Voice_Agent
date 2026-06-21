@@ -1,0 +1,385 @@
+{
+  "patient_id": "02f9aadd-72de-4b20-b381-f4c3b1cf7aa3",
+  "display_name": "Cameron Sharma",
+  "dob": "1942-05-23",
+  "age": 84,
+  "gender": "M",
+  "city": "Chatham",
+  "state": "Massachusetts",
+  "insurance": {
+    "payer": "Medicaid",
+    "member_since": "1943",
+    "payer_id": "7c4411ce-02f1-39b5-b9ec-dfbea9ad3c1a"
+  },
+  "active_conditions": [
+    {
+      "code": "128613002",
+      "description": "Seizure disorder",
+      "onset": "1982-05-13"
+    },
+    {
+      "code": "703151001",
+      "description": "History of single seizure (situation)",
+      "onset": "1982-05-13"
+    },
+    {
+      "code": "162864005",
+      "description": "Body mass index 30+ - obesity (finding)",
+      "onset": "1982-05-29"
+    },
+    {
+      "code": "44054006",
+      "description": "Diabetes",
+      "onset": "1984-06-02"
+    },
+    {
+      "code": "59621000",
+      "description": "Hypertension",
+      "onset": "1984-06-02"
+    },
+    {
+      "code": "302870006",
+      "description": "Hypertriglyceridemia (disorder)",
+      "onset": "1985-06-08"
+    },
+    {
+      "code": "237602007",
+      "description": "Metabolic syndrome X (disorder)",
+      "onset": "1985-06-08"
+    },
+    {
+      "code": "271737000",
+      "description": "Anemia (disorder)",
+      "onset": "1986-06-14"
+    },
+    {
+      "code": "82423001",
+      "description": "Chronic pain",
+      "onset": "1990-02-05"
+    },
+    {
+      "code": "196416002",
+      "description": "Impacted molars",
+      "onset": "1990-06-26"
+    },
+    {
+      "code": "124171000119105",
+      "description": "Chronic intractable migraine without aura",
+      "onset": "1990-10-11"
+    },
+    {
+      "code": "55680006",
+      "description": "Drug overdose",
+      "onset": "2000-06-04"
+    },
+    {
+      "code": "68496003",
+      "description": "Polyp of colon",
+      "onset": "2002-05-21"
+    },
+    {
+      "code": "422034002",
+      "description": "Diabetic retinopathy associated with type II diabetes mellitus (disorder)",
+      "onset": "2003-09-20"
+    },
+    {
+      "code": "713197008",
+      "description": "Recurrent rectal polyp",
+      "onset": "2003-10-13"
+    },
+    {
+      "code": "363406005",
+      "description": "Malignant tumor of colon",
+      "onset": "2003-10-19"
+    }
+  ],
+  "encounters": [
+    {
+      "encounter_id": "83b86cd5-d041-476a-834e-b22bce7128fb",
+      "date": "2005-10-01",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Ed Ward",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "6d26c149-90fe-41ca-8c0f-3faed7f19fa3",
+      "date": "2005-09-16",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "2d317783-55cd-4885-be8a-63a5652e521f",
+      "date": "2005-08-17",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "e17ec9e5-6922-4314-b926-5e4cfd96eb9f",
+      "date": "2005-07-18",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "67bc048c-59a2-4e8c-be84-a640bd320dc7",
+      "date": "2005-06-18",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "c7384e2a-6c72-4881-8ff5-be5925752df5",
+      "date": "2005-05-19",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "e5646296-845e-4ef3-8c8e-67bba85e9b1a",
+      "date": "2004-12-23",
+      "type": "inpatient",
+      "description": "Drug rehabilitation and detoxification",
+      "reason": "",
+      "procedure_code": "56876005",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "c4c1dea5-ffb8-4877-bdcd-bd3fb3f6a1be",
+      "date": "2004-09-25",
+      "type": "wellness",
+      "description": "General examination of patient (procedure)",
+      "reason": "",
+      "procedure_code": "162673000",
+      "provider": "Dr. Ed Ward",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "f2027651-90c9-439b-a3ff-a031128ae7a0",
+      "date": "2004-06-01",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "1bcc8d4f-a26a-4a48-b1df-09112831a325",
+      "date": "2004-05-02",
+      "type": "outpatient",
+      "description": "Encounter for problem (procedure)",
+      "reason": "",
+      "procedure_code": "185347001",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "6397257a-6305-4fc0-b6fb-aaece4339c1d",
+      "date": "2004-04-21",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Malignant tumor of colon",
+      "procedure_code": "185347001",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "e5f8d1d2-0750-4205-9639-631018da5783",
+      "date": "2004-03-20",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Malignant tumor of colon",
+      "procedure_code": "185347001",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "540d80f8-caee-4ff5-bf3a-6480b298fb4a",
+      "date": "2004-02-19",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Malignant tumor of colon",
+      "procedure_code": "185347001",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "4c98b8a2-d670-4339-87bd-a1b72e4546a7",
+      "date": "2004-01-18",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Malignant tumor of colon",
+      "procedure_code": "185347001",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "766f0473-e566-4299-85ae-92885c47f7a4",
+      "date": "2003-12-16",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Malignant tumor of colon",
+      "procedure_code": "185347001",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "579a102c-fb1b-47a6-9533-1dd4911e4c5f",
+      "date": "2003-11-22",
+      "type": "outpatient",
+      "description": "Encounter for check up (procedure)",
+      "reason": "",
+      "procedure_code": "185349003",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "e2925eaf-e9fc-4b72-a1f4-42df009dd513",
+      "date": "2003-11-15",
+      "type": "urgentcare",
+      "description": "Urgent care clinic (procedure)",
+      "reason": "",
+      "procedure_code": "702927004",
+      "provider": "Dr. Brittani Satterfield",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 0.0,
+      "patient_owes": 129.16,
+      "claim_status": "DENIED_NO_PA"
+    },
+    {
+      "encounter_id": "abeb73c9-4f44-4bc8-b4a2-2599e018eb51",
+      "date": "2003-11-14",
+      "type": "ambulatory",
+      "description": "Encounter for problem",
+      "reason": "Malignant tumor of colon",
+      "procedure_code": "185347001",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "47428b05-2f56-4914-ad6d-f6efbe0f94c3",
+      "date": "2003-11-09",
+      "type": "ambulatory",
+      "description": "Encounter for symptom",
+      "reason": "Viral sinusitis (disorder)",
+      "procedure_code": "185345009",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    },
+    {
+      "encounter_id": "838a0890-5d4d-4d60-9f28-1314c499d0cc",
+      "date": "2003-10-26",
+      "type": "inpatient",
+      "description": "Encounter for problem",
+      "reason": "Malignant tumor of colon",
+      "procedure_code": "185347001",
+      "provider": "Dr. Bryant Murazik",
+      "payer": "Medicaid",
+      "billed": 129.16,
+      "covered": 69.16,
+      "patient_owes": 60.0,
+      "claim_status": "PARTIAL"
+    }
+  ],
+  "claim_summary": {
+    "total_billed": 10177.79,
+    "total_covered": 5308.63,
+    "total_owed": 4869.16,
+    "denied_claims": 1,
+    "pending_claims": 0
+  }
+}
