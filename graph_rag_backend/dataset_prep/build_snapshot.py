@@ -63,7 +63,7 @@ def build(
     from graph_rag.core.resolver import EntityResolver
     from graph_rag.core.contradiction import ContradictionDetector
     from graph_rag.core.household import HouseholdDetector
-    from graph_rag.extraction.uipath_extractor import UiPathExtractor
+    from graph_rag.extraction.patient_extractor import PatientExtractor
     from graph_rag.llm.provider import create_llm_provider
 
     graph_builder    = KnowledgeGraphBuilder()
@@ -75,8 +75,8 @@ def build(
     demo_folders = {p.name for p in demo_dir.iterdir() if p.is_dir()} if demo_dir.exists() else set()
     logger.info("Demo folders (excluded from snapshot): %s", sorted(demo_folders))
 
-    # ---- 1. Ingest all .json files via UiPath extractor (fast) ----
-    uipath = UiPathExtractor()
+    # ---- 1. Ingest all patient.json files via PatientExtractor ----
+    extractor = PatientExtractor()
     json_ok = 0
     json_fail = 0
 
@@ -87,22 +87,25 @@ def build(
             logger.info("SKIP (demo): %s", person_dir.name)
             continue
 
-        for json_file in sorted(person_dir.glob("*.json")):
-            try:
-                doc, entities = uipath.extract(str(json_file))
-                if doc is None:
-                    continue
-                documents[doc.doc_id] = doc
-                graph_builder.add_document(doc)
-                embedding_engine.embed_entities(entities)
-                for entity in entities:
-                    graph_builder.add_entity(entity)
-                json_ok += 1
-            except Exception as e:
-                logger.warning("Failed %s: %s", json_file.name, e)
-                json_fail += 1
+        patient_file = person_dir / "patient.json"
+        if not patient_file.exists():
+            continue
 
-    logger.info("JSON ingest: %d OK, %d failed", json_ok, json_fail)
+        try:
+            doc, entities = extractor.extract(patient_file)
+            if doc is None:
+                continue
+            documents[doc.doc_id] = doc
+            graph_builder.add_document(doc)
+            embedding_engine.embed_entities(entities)
+            for entity in entities:
+                graph_builder.add_entity(entity)
+            json_ok += 1
+        except Exception as e:
+            logger.warning("Failed %s: %s", patient_file.name, e)
+            json_fail += 1
+
+    logger.info("Patient JSON ingest: %d OK, %d failed", json_ok, json_fail)
 
     # ---- 2. Ingest all .pdf files — embed text directly, link to person ----
     # No LLM extraction needed — person name+DOB is already in the header.
