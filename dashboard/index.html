@@ -701,42 +701,48 @@ function handleWsEvent(data) {
     addFeed('Tool result received', 'system', ts);
 
   } else if (t === 'insurance_calling') {
-    addFeed('Calling insurance: ' + (data.insurance || ''), 'insurance', ts);
+    addFeed('Calling insurance', 'insurance', ts);
     document.getElementById('ins-panel').innerHTML = '';
-    addInsMsg('Hospital AI', 'Dialing Pacific Shield Insurance…', 'hospital');
-    queueAudio('Dialing Pacific Shield Insurance. Please wait.', HOSPITAL_VOICE_ID);
+    var callingMsg = data.message || 'Dialing Pacific Shield Insurance...';
+    addInsMsg('Hospital AI', callingMsg, 'hospital');
+    queueAudio(callingMsg, HOSPITAL_VOICE_ID);
 
   } else if (t === 'insurance_ivr') {
-    var ivrText = data.text || data.message || '';
-    addFeed('IVR: ' + ivrText, 'insurance', ts);
+    var ivrText = data.message || data.text || 'Welcome to Pacific Shield Insurance...';
+    addFeed('IVR: ' + ivrText.substring(0,60), 'insurance', ts);
     addInsMsg('IVR System', ivrText, 'ivr');
     queueAudio(ivrText, INSURANCE_VOICE_ID);
 
   } else if (t === 'insurance_agent_speaks') {
-    var agentText = data.text || data.message || '';
-    addFeed('Hospital AI: ' + agentText.substring(0,80), 'system', ts);
-    addInsMsg('Hospital AI', agentText, 'hospital');
-    queueAudio(agentText, HOSPITAL_VOICE_ID);
+    var agentMsg = data.message || data.text || '';
+    if (!agentMsg) { break_early: true; }
+    var isSpeakerHospital = (data.speaker === 'hospital');
+    var spkName = isSpeakerHospital ? 'Hospital AI' : 'Insurance Agent (Sarah)';
+    var spkRole = isSpeakerHospital ? 'hospital' : 'insurance';
+    var spkVoice = isSpeakerHospital ? HOSPITAL_VOICE_ID : INSURANCE_VOICE_ID;
+    addFeed(spkName + ': ' + agentMsg.substring(0,60), isSpeakerHospital ? 'system' : 'insurance', ts);
+    addInsMsg(spkName, agentMsg, spkRole);
+    queueAudio(agentMsg, spkVoice);
 
   } else if (t === 'insurance_hold') {
-    var holdText = data.text || data.message || 'Please hold…';
-    addFeed('On hold with insurance…', 'insurance', ts);
-    addInsMsg('IVR System', holdText, 'ivr');
-    queueAudio(holdText, INSURANCE_VOICE_ID);
+    var holdMsg = data.message || data.text || 'Please hold. Your call is important to us.';
+    addFeed('On hold...', 'insurance', ts);
+    addInsMsg('IVR System', holdMsg, 'ivr');
+    queueAudio(holdMsg, INSURANCE_VOICE_ID);
 
   } else if (t === 'insurance_connected') {
-    var connText = data.text || data.message || 'Insurance agent answered.';
-    addFeed('Connected to insurance agent', 'insurance', ts);
-    addInsMsg('Insurance Agent (Sarah)', connText, 'insurance');
-    queueAudio(connText, INSURANCE_VOICE_ID);
+    var connMsg = data.message || data.text || 'Thank you for holding. This is Pacific Shield Claims.';
+    addFeed('Insurance agent connected', 'insurance', ts);
+    addInsMsg('Insurance Agent (Sarah)', connMsg, 'insurance');
+    queueAudio(connMsg, INSURANCE_VOICE_ID);
 
   } else if (t === 'insurance_response') {
-    var insResp = data.text || data.response || data.agent_response || '';
-    var insStatus = data.claim_status || '';
-    addFeed('Insurance responded: ' + insResp.substring(0, 80), 'insurance', ts);
-    addInsMsg('Insurance Agent (Sarah)', insResp, 'insurance');
-    showInsResult(insStatus || 'PENDING', insResp);
-    queueAudio(insResp, INSURANCE_VOICE_ID);
+    var insResp = data.agent_response || data.message || data.text || data.response || '';
+    var insStatus = data.claim_status || 'PENDING';
+    addFeed('Insurance verdict: ' + insStatus, 'insurance', ts);
+    if (insResp) addInsMsg('Insurance Agent (Sarah)', insResp, 'insurance');
+    showInsResult(insStatus, insResp);
+    if (insResp) queueAudio(insResp, INSURANCE_VOICE_ID);
 
   } else if (t === 'callback_initiated') {
     addFeed('Callback initiated: ' + (data.number || ''), 'callback', ts);
