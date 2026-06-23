@@ -20,10 +20,11 @@ from pathlib import Path
 from typing import Optional, TypedDict, Annotated
 
 import httpx
-from fastapi import FastAPI
+from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from dotenv import load_dotenv
+from events import broadcast, register
 
 load_dotenv(Path(__file__).parent.parent / ".env")
 
@@ -143,6 +144,9 @@ async def process_turn(call_id: str, text: str) -> dict:
     session = get_session(call_id)
     state   = session["state"]
 
+    # Broadcast transcript
+    await broadcast("transcript", {"call_id": call_id, "text": text, "state": state})
+
     # Add to history
     session["history"].append({"role": "user", "content": text})
 
@@ -151,101 +155,143 @@ async def process_turn(call_id: str, text: str) -> dict:
         person = session.get("person", "")
         farewell = f"Thank you for calling{', ' + person if person else ''}. Have a great day. Goodbye!"
         session["state"] = "end_call"
+        await broadcast("call_ended", {"call_id": call_id, "person": person})
         return _resp(farewell, end_call=True)
 
     # ── STATE: verify_identity ────────────────────────────────────────────
     if state == "verify_identity":
+
+        # Require at least 2 words — first + last name minimum
+        words = [w for w in text.strip().split() if len(w) > 1]
+        if len(words) < 2:
+            reply = "I need your full name to find your records. Please say your first and last name."
+            await broadcast("agent_response", {"call_id": call_id, "text": reply, "state": "verify_identity"})
+            return _resp(reply)
+
+        await broadcast("searching", {"call_id": call_id, "query": text})
         result = await smart_query(text)
         rtype  = result.get("type", "not_found")
 
         if rtype == "answer":
-            person = result.get("person", "")
+            person      = result.get("person", "")
+            person_parts = person.lower().split()
+            text_lower   = text.lower()
+            name_found   = any(part in text_lower for part in person_parts if len(part) > 2)
+
+            if not name_found:
+                session["retries"] += 1
+                if session["retries"] >= 2:
+                    del sessions[call_id]
+                    await broadcast("patient_not_found", {"call_id": call_id})
+                    return _resp("I'm unable to locate your records. Please call back with your full name and date of birth. Goodbye.", end_call=True)
+                reply = "I couldn't find your records with that name. Could you please repeat your full first and last name?"
+                await broadcast("agent_response", {"call_id": call_id, "text": reply})
+                return _resp(reply)
+
             session["person"] = person
             session["state"]  = "answering"
+
+            # Fetch and broadcast full patient record
+            await broadcast("patient_identified", {"call_id": call_id, "person": person})
+            patient_data = await _fetch_patient_record(person)
+            await broadcast("patient_record", {"call_id": call_id, "person": person, "record": patient_data})
+
             reply = f"Thank you. I found your records, {person}. How can I help you today?"
+            await broadcast("agent_response", {"call_id": call_id, "text": reply})
             return _resp(reply)
 
         elif rtype == "disambiguation":
             options = result.get("options", [])
             names   = [o["name"] if isinstance(o, dict) else str(o) for o in options[:3]]
 
-            # Check if the caller's text matches one of the options exactly
             text_lower = text.lower().strip()
             for name in names:
                 if name.lower() in text_lower or text_lower in name.lower():
-                    # Caller confirmed their identity from the disambiguation list
                     session["person"] = name
                     session["state"]  = "answering"
+                    await broadcast("patient_identified", {"call_id": call_id, "person": name})
+                    patient_data = await _fetch_patient_record(name)
+                    await broadcast("patient_record", {"call_id": call_id, "person": name, "record": patient_data})
                     reply = f"Thank you. I found your records, {name}. How can I help you today?"
+                    await broadcast("agent_response", {"call_id": call_id, "text": reply})
                     return _resp(reply)
 
-            # Still ambiguous — ask caller to clarify
             names_str = ", or ".join(names)
             reply = f"I found a few patients with that name. Are you {names_str}?"
+            await broadcast("agent_response", {"call_id": call_id, "text": reply})
             return _resp(reply)
 
         else:
             session["retries"] += 1
             if session["retries"] >= 2:
                 del sessions[call_id]
-                return _resp(
-                    "I'm unable to locate your records after two attempts. "
-                    "Please call back with your full name and date of birth, "
-                    "or visit us in person. Goodbye.",
-                    end_call=True
-                )
-            return _resp(
-                "I couldn't find your records. "
-                "Could you please repeat your full name and date of birth?"
-            )
+                await broadcast("patient_not_found", {"call_id": call_id})
+                return _resp("I'm unable to locate your records after two attempts. Please call back with your full name and date of birth, or visit us in person. Goodbye.", end_call=True)
+            reply = "I couldn't find your records. Could you please repeat your full name and date of birth?"
+            await broadcast("agent_response", {"call_id": call_id, "text": reply})
+            return _resp(reply)
 
     # ── STATE: answering ──────────────────────────────────────────────────
     elif state == "answering":
         person = session["person"]
         intent = classify_intent(text)
 
+        await broadcast("tool_called", {"call_id": call_id, "intent": intent, "person": person})
+
         if intent == "claim_status":
             result = await hospital_endpoint("claim-status", person)
             reply  = result.get("answer", "I couldn't retrieve your claim status.")
-
         elif intent == "cost_estimate":
             result = await hospital_endpoint("cost-estimate", person)
             reply  = result.get("answer", "I couldn't calculate your cost estimate.")
-
         elif intent == "pre_procedure":
             result = await hospital_endpoint("pre-procedure", person)
             reply  = result.get("answer", "I couldn't find preparation instructions.")
-
         elif intent == "bill_explain":
             result = await hospital_endpoint("bill-explanation", person)
             reply  = result.get("answer", "I couldn't retrieve your billing details.")
-
         else:
-            # General query — use smart-query with person's name prefixed
             q      = f"{person} {text}"
             result = await smart_query(q)
             if result.get("type") == "answer":
                 reply = result.get("answer", "I don't have that information.")
             else:
                 reply = await llm_answer(
-                    f"You are a hospital AI assistant. The verified patient is {person}. "
-                    "Answer concisely in 2-3 sentences.",
+                    f"You are a hospital AI assistant. The verified patient is {person}. Answer concisely in 2-3 sentences.",
                     text
                 )
 
-        # Check for conflicts
         if result.get("has_conflicts"):
             reply += " Note: there is a discrepancy in your records that our team should review."
+
+        await broadcast("tool_result", {"call_id": call_id, "intent": intent, "answer": reply})
+        await broadcast("agent_response", {"call_id": call_id, "text": reply})
 
         session["history"].append({"role": "assistant", "content": reply})
         return _resp(reply)
 
-    # ── STATE: end_call ───────────────────────────────────────────────────
     return _resp("Is there anything else I can help you with?")
 
 
 def _resp(text: str, end_call: bool = False) -> dict:
     return {"response": text, "end_call": end_call}
+
+async def _fetch_patient_record(person: str) -> dict:
+    """Fetch full patient data for dashboard display."""
+    try:
+        async with httpx.AsyncClient(timeout=10.0) as client:
+            r1 = await client.post(f"{GRAPH_URL}/hospital/claim-status",   json={"patient_name": person})
+            r2 = await client.post(f"{GRAPH_URL}/hospital/cost-estimate",  json={"patient_name": person})
+            r3 = await client.post(f"{GRAPH_URL}/hospital/pre-procedure",  json={"patient_name": person})
+            return {
+                "claim_status":   r1.json().get("answer", ""),
+                "cost_estimate":  r2.json().get("answer", ""),
+                "pre_procedure":  r3.json().get("answer", ""),
+            }
+    except Exception as e:
+        logger.error("Patient record fetch failed: %s", e)
+        return {}
+
 
 # ---------------------------------------------------------------------------
 # FastAPI app
@@ -268,6 +314,9 @@ class AgentResponse(BaseModel):
 
 @app.post("/agent", response_model=AgentResponse)
 async def agent_endpoint(req: AgentRequest):
+    # Broadcast call started if new session
+    if req.call_id not in sessions:
+        await broadcast("call_started", {"call_id": req.call_id})
     result = await process_turn(req.call_id, req.text.strip())
     return AgentResponse(**result)
 
@@ -276,6 +325,13 @@ async def agent_endpoint(req: AgentRequest):
 def health():
     return {"status": "ok", "service": "hospital-agent", "port": 9001,
             "active_sessions": len(sessions)}
+
+
+@app.websocket("/ws")
+async def websocket_endpoint(websocket: WebSocket):
+    """WebSocket endpoint for live dashboard."""
+    await websocket.accept()
+    await register(websocket)
 
 
 @app.delete("/sessions/{call_id}")

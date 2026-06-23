@@ -3,272 +3,537 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hospital Voice AI — Live Dashboard</title>
+<title>Hospital Voice AI — Live Operations Center</title>
 <style>
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f1117; color: #e2e8f0; min-height: 100vh; }
-.header { background: #1a1d2e; border-bottom: 1px solid #2d3748; padding: 16px 24px; display: flex; align-items: center; gap: 12px; }
-.header h1 { font-size: 18px; font-weight: 600; color: #fff; }
-.header .badge { background: #10b981; color: #fff; font-size: 11px; padding: 2px 8px; border-radius: 20px; font-weight: 500; }
-.status-dot { width: 8px; height: 8px; background: #10b981; border-radius: 50%; animation: pulse 2s infinite; }
-@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
-.layout { display: grid; grid-template-columns: 320px 1fr; gap: 0; height: calc(100vh - 57px); }
-.sidebar { background: #1a1d2e; border-right: 1px solid #2d3748; overflow-y: auto; padding: 16px; }
-.sidebar h2 { font-size: 12px; font-weight: 600; color: #718096; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 12px; }
-.patient-card { background: #242838; border: 1px solid #2d3748; border-radius: 8px; padding: 14px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s; }
-.patient-card:hover { border-color: #4299e1; background: #2a3045; }
-.patient-card.active { border-color: #4299e1; background: #1e3a5f; }
-.patient-name { font-size: 14px; font-weight: 600; color: #fff; margin-bottom: 4px; }
-.patient-meta { font-size: 12px; color: #718096; margin-bottom: 8px; }
-.patient-tags { display: flex; gap: 6px; flex-wrap: wrap; }
-.tag { font-size: 11px; padding: 2px 8px; border-radius: 4px; font-weight: 500; }
-.tag.denied { background: #4a1a1a; color: #fc8181; }
-.tag.insurance { background: #1a2a4a; color: #63b3ed; }
-.tag.conditions { background: #1a3a2a; color: #68d391; }
-.main { overflow-y: auto; padding: 20px; }
-.section { background: #1a1d2e; border: 1px solid #2d3748; border-radius: 10px; margin-bottom: 16px; }
-.section-header { padding: 14px 18px; border-bottom: 1px solid #2d3748; display: flex; align-items: center; justify-content: space-between; }
-.section-title { font-size: 13px; font-weight: 600; color: #a0aec0; text-transform: uppercase; letter-spacing: 0.05em; }
-.section-body { padding: 18px; }
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+  *{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --bg:#070b14;--panel:#0d1117;--border:#1c2333;--border2:#21262d;
+    --text:#e6edf3;--muted:#7d8590;--accent:#58a6ff;--green:#3fb950;
+    --red:#f85149;--yellow:#d29922;--purple:#bc8cff;--orange:#ffa657;
+    --card:#161b22;--card2:#1c2128;
+  }
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);height:100vh;overflow:hidden;display:flex;flex-direction:column}
+  
+  /* TOP BAR */
+  .topbar{height:52px;background:var(--panel);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 20px;gap:16px;flex-shrink:0}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;color:var(--text)}
+  .logo svg{width:28px;height:28px}
+  .pulse{width:8px;height:8px;border-radius:50%;background:var(--green);animation:pulse 2s infinite;flex-shrink:0}
+  @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(63,185,80,.4)}50%{box-shadow:0 0 0 8px rgba(63,185,80,0)}}
+  .topbar-right{margin-left:auto;display:flex;align-items:center;gap:20px}
+  .service-pill{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--muted);padding:4px 10px;border:1px solid var(--border2);border-radius:20px}
+  .dot{width:6px;height:6px;border-radius:50%;background:var(--green)}
+  .dot.off{background:var(--red)}
+  .call-badge{background:rgba(248,81,73,.15);border:1px solid rgba(248,81,73,.3);color:var(--red);padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;display:none}
+  .call-badge.active{display:flex;align-items:center;gap:6px;animation:flash 1s infinite}
+  @keyframes flash{0%,100%{opacity:1}50%{opacity:0.6}}
+
+  /* LAYOUT */
+  .layout{display:grid;grid-template-columns:280px 1fr 320px;gap:0;flex:1;overflow:hidden}
+  
+  /* PANELS */
+  .panel{background:var(--panel);border-right:1px solid var(--border);overflow-y:auto;display:flex;flex-direction:column}
+  .panel:last-child{border-right:none;border-left:1px solid var(--border)}
+  .panel-header{padding:14px 16px;border-bottom:1px solid var(--border);font-size:11px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;flex-shrink:0}
+  .panel-body{flex:1;overflow-y:auto;padding:12px}
+  
+  /* MAIN CENTER */
+  .main{display:flex;flex-direction:column;overflow:hidden;background:var(--bg)}
+  .main-top{flex:1;overflow-y:auto;padding:20px}
+  .main-bottom{border-top:1px solid var(--border);background:var(--panel);flex-shrink:0}
+  
+  /* PATIENT CARDS */
+  .patient-card{border:1px solid var(--border2);border-radius:8px;padding:12px;margin-bottom:8px;cursor:pointer;transition:all .15s;background:var(--card)}
+  .patient-card:hover{border-color:var(--accent);background:var(--card2)}
+  .patient-card.active{border-color:var(--accent);background:rgba(88,166,255,.08)}
+  .p-name{font-size:13px;font-weight:600;color:var(--text);margin-bottom:3px}
+  .p-meta{font-size:11px;color:var(--muted);margin-bottom:8px}
+  .tags{display:flex;gap:5px;flex-wrap:wrap}
+  .tag{font-size:10px;padding:2px 7px;border-radius:4px;font-weight:500;letter-spacing:.02em}
+  .tag-blue{background:rgba(88,166,255,.12);color:var(--accent);border:1px solid rgba(88,166,255,.2)}
+  .tag-red{background:rgba(248,81,73,.12);color:var(--red);border:1px solid rgba(248,81,73,.2)}
+  .tag-green{background:rgba(63,185,80,.12);color:var(--green);border:1px solid rgba(63,185,80,.2)}
+  .tag-purple{background:rgba(188,140,255,.12);color:var(--purple);border:1px solid rgba(188,140,255,.2)}
+
+  /* PATIENT RECORD */
+  .record-empty{text-align:center;padding:60px 20px;color:var(--muted)}
+  .record-empty .icon{font-size:48px;margin-bottom:16px;opacity:.4}
+  .record-header{background:linear-gradient(135deg,rgba(88,166,255,.08),rgba(188,140,255,.08));border:1px solid rgba(88,166,255,.2);border-radius:10px;padding:20px;margin-bottom:16px}
+  .r-name{font-size:22px;font-weight:700;color:var(--text);margin-bottom:4px}
+  .r-meta{font-size:13px;color:var(--muted);margin-bottom:12px}
+  .r-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+  .stat{background:rgba(255,255,255,.03);border:1px solid var(--border2);border-radius:6px;padding:10px;text-align:center}
+  .stat-val{font-size:20px;font-weight:700;margin-bottom:2px}
+  .stat-label{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+  .info-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px}
+  .info-card{background:var(--card);border:1px solid var(--border2);border-radius:8px;padding:14px}
+  .info-title{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px;display:flex;align-items:center;gap:6px}
+  .info-body{font-size:13px;color:var(--text);line-height:1.6}
+
+  /* LIVE FEED */
+  .feed-item{padding:10px 12px;border-radius:6px;margin-bottom:6px;border-left:3px solid transparent;font-size:13px;background:var(--card);line-height:1.5;animation:fadeIn .3s ease}
+  @keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
+  .feed-item.transcript{border-color:var(--accent);background:rgba(88,166,255,.05)}
+  .feed-item.patient_found{border-color:var(--green);background:rgba(63,185,80,.05)}
+  .feed-item.agent{border-color:var(--purple);background:rgba(188,140,255,.05)}
+  .feed-item.insurance{border-color:var(--yellow);background:rgba(210,153,34,.05)}
+  .feed-item.error{border-color:var(--red);background:rgba(248,81,73,.05)}
+  .feed-item.callback{border-color:var(--orange);background:rgba(255,166,87,.05)}
+  .feed-meta{font-size:10px;color:var(--muted);margin-bottom:3px;display:flex;align-items:center;gap:8px}
+  .feed-label{font-size:10px;font-weight:600;padding:1px 6px;border-radius:3px;text-transform:uppercase;letter-spacing:.04em}
+  .lbl-transcript{background:rgba(88,166,255,.15);color:var(--accent)}
+  .lbl-agent{background:rgba(188,140,255,.15);color:var(--purple)}
+  .lbl-insurance{background:rgba(210,153,34,.15);color:var(--yellow)}
+  .lbl-system{background:rgba(63,185,80,.15);color:var(--green)}
+  .lbl-callback{background:rgba(255,166,87,.15);color:var(--orange)}
+
+  /* INSURANCE PANEL */
+  .ins-status{text-align:center;padding:30px 16px;color:var(--muted)}
+  .ins-status .icon{font-size:36px;margin-bottom:12px;opacity:.5}
+  .ins-phase{background:var(--card);border:1px solid var(--border2);border-radius:8px;padding:12px;margin-bottom:8px;animation:fadeIn .3s ease}
+  .ins-phase-icon{font-size:16px;margin-right:8px}
+  .ins-phase-title{font-size:12px;font-weight:600;color:var(--text);margin-bottom:4px}
+  .ins-phase-body{font-size:12px;color:var(--muted);line-height:1.5}
+  .ins-response{background:linear-gradient(135deg,rgba(210,153,34,.06),rgba(255,166,87,.06));border:1px solid rgba(210,153,34,.2);border-radius:8px;padding:14px;margin-top:12px}
+  .ins-response-title{font-size:10px;font-weight:600;color:var(--yellow);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px}
+  .ins-response-body{font-size:13px;color:var(--text);line-height:1.6}
+  .status-badge{display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;margin-bottom:10px}
+  .badge-denied{background:rgba(248,81,73,.15);color:var(--red);border:1px solid rgba(248,81,73,.25)}
+  .badge-paid{background:rgba(63,185,80,.15);color:var(--green);border:1px solid rgba(63,185,80,.25)}
+  .badge-pending{background:rgba(210,153,34,.15);color:var(--yellow);border:1px solid rgba(210,153,34,.25)}
+
+  /* TRANSCRIPT BAR */
+  .transcript-bar{padding:14px 16px;display:flex;align-items:center;gap:12px}
+  .waveform{display:flex;align-items:center;gap:2px;height:24px}
+  .wave-bar{width:3px;border-radius:2px;background:var(--accent);opacity:.3;animation:wave 1.2s ease-in-out infinite}
+  .wave-bar:nth-child(1){height:8px;animation-delay:.0s}
+  .wave-bar:nth-child(2){height:16px;animation-delay:.15s}
+  .wave-bar:nth-child(3){height:24px;animation-delay:.3s}
+  .wave-bar:nth-child(4){height:16px;animation-delay:.45s}
+  .wave-bar:nth-child(5){height:8px;animation-delay:.6s}
+  @keyframes wave{0%,100%{transform:scaleY(.5)}50%{transform:scaleY(1)}}
+  .waveform.active .wave-bar{opacity:1}
+  .transcript-text{font-size:14px;color:var(--muted);font-style:italic;flex:1}
+  .transcript-text.speaking{color:var(--text);font-style:normal}
+  .call-timer{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--accent);letter-spacing:.05em}
+
+  /* NOTES */
+  .note-item{background:var(--card);border:1px solid var(--border2);border-radius:6px;padding:10px;margin-bottom:6px;font-size:12px;color:var(--text);line-height:1.5}
+  .note-time{font-size:10px;color:var(--muted);margin-bottom:3px;font-family:'JetBrains Mono',monospace}
+
+  /* SCROLLBAR */
+  ::-webkit-scrollbar{width:4px}
+  ::-webkit-scrollbar-track{background:transparent}
+  ::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px}
+
+  /* GLOW EFFECTS */
+  .glow-green{box-shadow:0 0 20px rgba(63,185,80,.15)}
+  .glow-blue{box-shadow:0 0 20px rgba(88,166,255,.15)}
 </style>
 </head>
 <body>
 
-<div class="header">
-  <div class="status-dot"></div>
-  <h1>Hospital Voice AI — Live Dashboard</h1>
-  <span class="badge">LIVE</span>
-  <div style="margin-left:auto;font-size:12px;color:#718096" id="service-status">Checking services...</div>
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="logo">
+    <svg viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="6" fill="rgba(88,166,255,.15)"/><path d="M14 6v4M14 18v4M6 14h4M18 14h4" stroke="#58a6ff" stroke-width="2" stroke-linecap="round"/><circle cx="14" cy="14" r="4" fill="#58a6ff" opacity=".6"/></svg>
+    Hospital Voice AI
+  </div>
+  <span style="color:var(--muted);font-size:13px">Operations Center</span>
+  <div class="call-badge" id="call-badge">
+    <div class="pulse"></div>
+    <span id="call-badge-text">CALL ACTIVE</span>
+  </div>
+  <div class="topbar-right" id="service-pills"></div>
 </div>
 
+<!-- LAYOUT -->
 <div class="layout">
-  <div class="sidebar">
-    <h2>Demo Patients</h2>
-    <div id="patient-list"></div>
-    <div style="margin-top:20px">
-      <h2>System Status</h2>
-      <div id="sys-status"></div>
-    </div>
+
+  <!-- LEFT: DEMO PATIENTS -->
+  <div class="panel">
+    <div class="panel-header">Demo Patients</div>
+    <div class="panel-body" id="patient-list"></div>
   </div>
+
+  <!-- CENTER: MAIN -->
   <div class="main">
-    <div id="patient-detail">
-      <div style="text-align:center;padding:60px;color:#718096">
-        <div style="font-size:48px;margin-bottom:16px">🏥</div>
-        <div style="font-size:16px;font-weight:600;color:#a0aec0">Select a demo patient to test</div>
-        <div style="font-size:13px;margin-top:8px">Click a patient on the left to run all 4 use cases</div>
+    <div class="main-top" id="main-content">
+      <div class="record-empty">
+        <div class="icon">🏥</div>
+        <div style="font-size:16px;font-weight:600;color:var(--text);margin-bottom:8px">Waiting for call...</div>
+        <div style="font-size:13px">Select a demo patient or place a real call to <strong style="color:var(--accent)">+1 (531) 324-5471</strong></div>
+      </div>
+    </div>
+    <div class="main-bottom">
+      <div class="transcript-bar">
+        <div class="waveform" id="waveform">
+          <div class="wave-bar"></div><div class="wave-bar"></div>
+          <div class="wave-bar"></div><div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+        </div>
+        <div class="transcript-text" id="last-transcript">Waiting for speech...</div>
+        <div class="call-timer" id="call-timer" style="display:none">00:00</div>
       </div>
     </div>
   </div>
+
+  <!-- RIGHT: LIVE FEED + INSURANCE -->
+  <div class="panel" style="border-left:1px solid var(--border)">
+    <div class="panel-header" style="display:flex;justify-content:space-between;align-items:center">
+      <span>Live Event Feed</span>
+      <span id="event-count" style="color:var(--accent);font-size:10px">0 events</span>
+    </div>
+    <div class="panel-body" id="live-feed" style="padding:8px"></div>
+    <div class="panel-header" style="border-top:1px solid var(--border);border-bottom:1px solid var(--border)">Insurance Agent</div>
+    <div style="flex:1;overflow-y:auto;padding:12px" id="insurance-panel">
+      <div class="ins-status">
+        <div class="icon">🏢</div>
+        <div style="font-size:12px">Insurance agent idle</div>
+        <div style="font-size:11px;margin-top:4px">Will activate when 3-phase resolution starts</div>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <script>
-const AGENT_URL   = 'http://localhost:9001';
-const GRAPH_URL   = 'http://localhost:8000';
-const VOICE_URL   = 'http://localhost:8001';
-const INS_URL     = 'http://localhost:8002';
+const AGENT_URL = 'http://localhost:9001';
+const GRAPH_URL = 'http://localhost:8000';
+const INS_URL   = 'http://localhost:8002';
+const WS_URL    = 'ws://localhost:9001/ws';
 
 const DEMO_PATIENTS = [
-  { name: 'Sydney Santos',  scenario: 'Claim Denial',    insurance: 'Anthem',   dob:'1999-05-24' },
-  { name: 'Dylan Ali',      scenario: 'Cost Estimate',   insurance: 'Medicare', dob:'1940-04-12' },
-  { name: 'Grace Collins',  scenario: 'Pre-Procedure',   insurance: 'Medicare', dob:'1938-09-05' },
+  { name:'Sydney Santos',  insurance:'Anthem',   dob:'1999-05-24', denied:150, conditions:2,  scenario:'Claim Denial' },
+  { name:'Dylan Ali',      insurance:'Medicare', dob:'1940-04-12', denied:254, conditions:18, scenario:'Cost Estimate' },
+  { name:'Grace Collins',  insurance:'Medicare', dob:'1938-09-05', denied:240, conditions:18, scenario:'Pre-Procedure' },
 ];
 
-const QUERIES = [
-  { label: '1. Identify Patient',    text: (name) => name,                           endpoint: null,            icon: '👤' },
-  { label: '2. Claim Status',        text: (name) => 'why was my claim denied',       endpoint: 'claim-status',  icon: '🚫' },
-  { label: '3. Cost Estimate',       text: (name) => 'how much do I owe',             endpoint: 'cost-estimate', icon: '💰' },
-  { label: '4. Pre-Procedure Prep',  text: (name) => 'what do I do before my procedure', endpoint: 'pre-procedure', icon: '📋' },
-  { label: '5. Bill Explanation',    text: (name) => 'I got a bill and I dont understand', endpoint: 'bill-explanation', icon: '🧾' },
-];
+let ws = null, eventCount = 0, callTimer = null, callSeconds = 0;
+let activePatient = null, notes = [];
 
-// Render patient list
-function renderPatients() {
-  const el = document.getElementById('patient-list');
-  el.innerHTML = DEMO_PATIENTS.map((p, i) => `
-    <div class="patient-card" onclick="loadPatient(${i})" id="pc-${i}">
-      <div class="patient-name">${p.name}</div>
-      <div class="patient-meta">DOB: ${p.dob}</div>
-      <div class="patient-tags">
-        <span class="tag insurance">${p.insurance}</span>
-        <span class="tag denied">Demo: ${p.scenario}</span>
-      </div>
-    </div>
-  `).join('');
+// ── WebSocket ──────────────────────────────────────────────────────────────
+function connectWS() {
+  ws = new WebSocket(WS_URL);
+  ws.onopen  = () => { updateServicePill('Agent WS', true); };
+  ws.onclose = () => { updateServicePill('Agent WS', false); setTimeout(connectWS, 3000); };
+  ws.onerror = () => { updateServicePill('Agent WS', false); };
+  ws.onmessage = (e) => {
+    try { handleEvent(JSON.parse(e.data)); } catch(err) { console.error(err); }
+  };
 }
 
-// Check service health
-async function checkServices() {
-  const services = [
-    { name: 'Graph',     url: `${GRAPH_URL}/graph/stats`,  key: 'documents' },
-    { name: 'Agent',     url: `${AGENT_URL}/health`,       key: 'status' },
-    { name: 'Insurance', url: `${INS_URL}/health`,         key: 'status' },
-    { name: 'Voice',     url: `${VOICE_URL}/health`,       key: 'status' },
-  ];
-  const el = document.getElementById('sys-status');
-  const statusEl = document.getElementById('service-status');
-  const results = [];
-  for (const s of services) {
-    try {
-      const r = await fetch(s.url);
-      const d = await r.json();
-      const ok = s.key === 'documents' ? `${d.documents} patients` : d.status;
-      results.push(`<div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #2d3748;font-size:12px"><span style="color:#a0aec0">${s.name}</span><span style="color:#10b981">● ${ok}</span></div>`);
-    } catch {
-      results.push(`<div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #2d3748;font-size:12px"><span style="color:#a0aec0">${s.name}</span><span style="color:#fc8181">● offline</span></div>`);
-    }
+function handleEvent(ev) {
+  eventCount++;
+  document.getElementById('event-count').textContent = eventCount + ' events';
+
+  const { type, timestamp, data } = ev;
+
+  switch(type) {
+    case 'call_started':
+      startCallTimer();
+      document.getElementById('call-badge').className = 'call-badge active';
+      addFeed('📞 Inbound call received', 'system', timestamp);
+      break;
+
+    case 'transcript':
+      document.getElementById('last-transcript').textContent = data.text;
+      document.getElementById('last-transcript').className = 'transcript-text speaking';
+      document.getElementById('waveform').classList.add('active');
+      addFeed(`"${data.text}"`, 'transcript', timestamp, data.state);
+      setTimeout(() => {
+        document.getElementById('waveform').classList.remove('active');
+        document.getElementById('last-transcript').className = 'transcript-text';
+      }, 2000);
+      break;
+
+    case 'searching':
+      addFeed(`🔍 Searching graph for: "${data.query}"`, 'system', timestamp);
+      break;
+
+    case 'patient_identified':
+      addFeed(`✅ Patient identified: ${data.person}`, 'patient_found', timestamp);
+      addNote(`Patient verified: ${data.person}`);
+      break;
+
+    case 'patient_not_found':
+      addFeed('❌ Patient not found in records', 'error', timestamp);
+      break;
+
+    case 'patient_record':
+      renderPatientRecord(data);
+      break;
+
+    case 'tool_called':
+      const intentLabels = {
+        claim_status:'Prior Auth / Claim Denial', cost_estimate:'Out-of-Pocket Estimate',
+        pre_procedure:'Pre-Procedure Prep', bill_explain:'Bill Explanation', general:'General Query'
+      };
+      addFeed(`🔧 Tool: ${intentLabels[data.intent] || data.intent}`, 'system', timestamp);
+      break;
+
+    case 'tool_result':
+      addNote(`${data.intent}: ${data.answer.substring(0,120)}...`);
+      break;
+
+    case 'agent_response':
+      addFeed(data.text.substring(0,120) + (data.text.length > 120 ? '...' : ''), 'agent', timestamp);
+      break;
+
+    case 'insurance_calling':
+      renderInsurancePhase('calling', data);
+      addFeed('📞 Initiating 3-Phase Resolution — calling insurance', 'insurance', timestamp);
+      break;
+
+    case 'insurance_ivr':
+      renderInsurancePhase('ivr', data);
+      addFeed(data.message, 'insurance', timestamp);
+      break;
+
+    case 'insurance_hold':
+      renderInsurancePhase('hold', data);
+      addFeed(data.message, 'insurance', timestamp);
+      break;
+
+    case 'insurance_connected':
+      renderInsurancePhase('connected', data);
+      addFeed(data.message, 'insurance', timestamp);
+      break;
+
+    case 'insurance_response':
+      renderInsuranceResponse(data);
+      addFeed(`✅ Insurance response received: ${data.claim_status}`, 'insurance', timestamp);
+      addNote(`Insurance: ${data.summary || data.claim_status}`);
+      break;
+
+    case 'callback_initiated':
+      addFeed(`📱 Calling patient back at ${data.callback_number}`, 'callback', timestamp);
+      addNote(`Callback initiated: ${data.callback_message.substring(0,100)}...`);
+      break;
+
+    case 'call_ended':
+      stopCallTimer();
+      document.getElementById('call-badge').className = 'call-badge';
+      addFeed(`📴 Call ended${data.person ? ' — ' + data.person : ''}`, 'system', timestamp);
+      break;
   }
-  el.innerHTML = results.join('');
-  statusEl.textContent = 'All services running';
 }
 </script>
 
 <script>
-let callId = null;
-
-async function loadPatient(idx) {
-  document.querySelectorAll('.patient-card').forEach(c => c.classList.remove('active'));
-  document.getElementById('pc-' + idx).classList.add('active');
-  const p = DEMO_PATIENTS[idx];
-  callId = 'demo_' + Date.now();
-
-  const detail = document.getElementById('patient-detail');
-  detail.innerHTML = `
-    <div style="margin-bottom:20px">
-      <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
-        <div style="width:48px;height:48px;background:#1e3a5f;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px">👤</div>
-        <div>
-          <div style="font-size:20px;font-weight:700;color:#fff">${p.name}</div>
-          <div style="font-size:13px;color:#718096">${p.insurance} · DOB: ${p.dob} · Session: ${callId}</div>
-        </div>
-        <button onclick="runAllTests(${idx})" style="margin-left:auto;background:#4299e1;color:#fff;border:none;padding:10px 20px;border-radius:6px;cursor:pointer;font-size:13px;font-weight:600">▶ Run All Tests</button>
-      </div>
-    </div>
-    <div id="test-results"></div>
-  `;
-
-  // Auto-load patient data
-  runAllTests(idx);
+// ── Feed ──────────────────────────────────────────────────────────────────
+function addFeed(text, type, time, sub) {
+  const feed = document.getElementById('live-feed');
+  const labels = {transcript:'lbl-transcript',agent:'lbl-agent',insurance:'lbl-insurance',system:'lbl-system',patient_found:'lbl-system',callback:'lbl-callback',error:'lbl-agent'};
+  const names  = {transcript:'PATIENT',agent:'AGENT',insurance:'INSURANCE',system:'SYSTEM',patient_found:'MATCH',callback:'CALLBACK',error:'ERROR'};
+  const typeClass = {transcript:'transcript',patient_found:'patient_found',agent:'agent',insurance:'insurance',error:'error',callback:'callback'};
+  const div = document.createElement('div');
+  div.className = `feed-item ${typeClass[type] || ''}`;
+  div.innerHTML = `<div class="feed-meta"><span class="feed-label ${labels[type]||'lbl-system'}">${names[type]||type.toUpperCase()}</span><span>${time||''}</span>${sub?`<span style="color:var(--muted)">${sub}</span>`:''}</div>${text}`;
+  feed.prepend(div);
+  if(feed.children.length > 50) feed.removeChild(feed.lastChild);
 }
 
-async function runAllTests(idx) {
+// ── Notes ─────────────────────────────────────────────────────────────────
+function addNote(text) {
+  notes.push({text, time: new Date().toLocaleTimeString()});
+  const notesEl = document.getElementById('call-notes');
+  if(!notesEl) return;
+  const div = document.createElement('div');
+  div.className = 'note-item';
+  div.innerHTML = `<div class="note-time">${notes[notes.length-1].time}</div>${text}`;
+  notesEl.prepend(div);
+}
+
+// ── Patient Record ─────────────────────────────────────────────────────────
+function renderPatientRecord(data) {
+  const {person, record} = data;
+  const main = document.getElementById('main-content');
+  main.innerHTML = `
+    <div class="record-header glow-blue">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+        <div style="width:44px;height:44px;background:rgba(88,166,255,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px">👤</div>
+        <div>
+          <div class="r-name">${person}</div>
+          <div class="r-meta">Verified patient · Session active</div>
+        </div>
+        <div style="margin-left:auto"><span class="tag tag-green">✓ VERIFIED</span></div>
+      </div>
+    </div>
+    
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="info-title">🚫 Claim Status</div>
+        <div class="info-body" style="font-size:12px">${record.claim_status||'Loading...'}</div>
+      </div>
+      <div class="info-card">
+        <div class="info-title">💰 Cost Estimate</div>
+        <div class="info-body" style="font-size:12px">${record.cost_estimate||'Loading...'}</div>
+      </div>
+      <div class="info-card" style="grid-column:span 2">
+        <div class="info-title">📋 Pre-Procedure Instructions</div>
+        <div class="info-body" style="font-size:12px">${record.pre_procedure||'Loading...'}</div>
+      </div>
+    </div>
+
+    <div style="background:var(--card);border:1px solid var(--border2);border-radius:8px;padding:14px">
+      <div class="info-title">📝 Call Notes</div>
+      <div id="call-notes" style="margin-top:8px"></div>
+    </div>
+
+    <div style="margin-top:12px;display:flex;gap:10px">
+      <button onclick="triggerThreePhase('${person}')" style="flex:1;background:linear-gradient(135deg,#805ad5,#553c9a);color:#fff;border:none;padding:12px;border-radius:8px;cursor:pointer;font-size:13px;font-weight:600;transition:opacity .2s" onmouseover="this.style.opacity='.85'" onmouseout="this.style.opacity='1'">
+        🔄 Trigger 3-Phase Insurance Resolution
+      </button>
+    </div>
+  `;
+  // Re-render existing notes
+  notes.forEach(n => {
+    const el = document.getElementById('call-notes');
+    if(el) { const d=document.createElement('div'); d.className='note-item'; d.innerHTML=`<div class="note-time">${n.time}</div>${n.text}`; el.appendChild(d); }
+  });
+}
+
+// ── Insurance Panel ────────────────────────────────────────────────────────
+let insurancePhases = [];
+function renderInsurancePhase(phase, data) {
+  const panel = document.getElementById('insurance-panel');
+  const icons = {calling:'📞',ivr:'🔢',hold:'🎵',connected:'☎️'};
+  const titles = {calling:'Dialing Insurance',ivr:'Navigating IVR',hold:'On Hold',connected:'Agent Answered'};
+  insurancePhases.push({phase, data});
+  panel.innerHTML = insurancePhases.map(p => `
+    <div class="ins-phase">
+      <div class="ins-phase-icon">${icons[p.phase]||'•'}</div>
+      <div style="display:inline;font-weight:600;font-size:12px;color:var(--text)">${titles[p.phase]||p.phase}</div>
+      <div class="ins-phase-body">${p.data.message||''}</div>
+    </div>
+  `).join('') + `<div id="ins-response-area"></div>`;
+}
+
+function renderInsuranceResponse(data) {
+  const statusClass = {DENIED_NO_PA:'badge-denied',PAID:'badge-paid',PENDING_P2P:'badge-pending',PARTIAL:'badge-pending'}[data.claim_status]||'badge-pending';
+  const area = document.getElementById('ins-response-area');
+  if(area) area.innerHTML = `
+    <div class="ins-response">
+      <div class="ins-response-title">Insurance Agent Response</div>
+      <span class="status-badge ${statusClass}">${data.claim_status||'UNKNOWN'}</span>
+      <div class="ins-response-body">${data.agent_response||''}</div>
+    </div>
+  `;
+}
+
+// ── 3-Phase trigger ────────────────────────────────────────────────────────
+async function triggerThreePhase(patientName) {
+  insurancePhases = [];
+  addFeed('🔄 Starting 3-Phase Resolution...', 'system', new Date().toLocaleTimeString());
+  try {
+    await fetch(`${AGENT_URL}/resolve`, {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({patient_name:patientName, inquiry_type:'claim_status', callback_number:'+15313245471', call_id:'dashboard_'+Date.now()})
+    });
+  } catch(e) { addFeed('Error: ' + e.message, 'error', ''); }
+}
+</script>
+
+<script>
+// ── Demo patient simulation ────────────────────────────────────────────────
+async function loadDemoPatient(idx) {
+  document.querySelectorAll('.patient-card').forEach(c => c.classList.remove('active'));
+  document.getElementById('pc-'+idx).classList.add('active');
   const p = DEMO_PATIENTS[idx];
-  callId = 'demo_' + Date.now();
-  const container = document.getElementById('test-results');
-  container.innerHTML = '';
+  activePatient = p;
+  notes = [];
+  insurancePhases = [];
+  const callId = 'demo_' + Date.now();
 
-  for (const q of QUERIES) {
-    const card = document.createElement('div');
-    card.className = 'section';
-    card.innerHTML = `
-      <div class="section-header">
-        <span class="section-title">${q.icon} ${q.label}</span>
-        <span id="status-${q.label.replace(/\s/g,'_')}" style="font-size:12px;color:#718096">Running...</span>
-      </div>
-      <div class="section-body" id="result-${q.label.replace(/\s/g,'_')}">
-        <div style="color:#718096;font-size:13px">⏳ Processing...</div>
-      </div>
-    `;
-    container.appendChild(card);
+  // Simulate call start
+  handleEvent({type:'call_started', timestamp: new Date().toLocaleTimeString(), data:{call_id:callId}});
+  await sleep(500);
+  handleEvent({type:'transcript', timestamp:now(), data:{text:p.name, call_id:callId, state:'verify_identity'}});
 
-    const t0 = Date.now();
+  // Call agent
+  const r1 = await fetch(`${AGENT_URL}/agent`, {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text:p.name,call_id:callId})});
+  const d1 = await r1.json();
+  handleEvent({type:'agent_response', timestamp:now(), data:{text:d1.response, call_id:callId}});
+  await sleep(800);
+
+  // Ask about claim
+  const questions = {
+    'Claim Denial': 'why was my claim denied',
+    'Cost Estimate': 'how much will I owe for my procedure',
+    'Pre-Procedure': 'what do I need to do before my procedure'
+  };
+  const q = questions[p.scenario] || 'tell me about my account';
+  handleEvent({type:'transcript', timestamp:now(), data:{text:q, call_id:callId, state:'answering'}});
+  const r2 = await fetch(`${AGENT_URL}/agent`, {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text:q,call_id:callId})});
+  const d2 = await r2.json();
+  handleEvent({type:'agent_response', timestamp:now(), data:{text:d2.response, call_id:callId}});
+}
+
+// ── Timer ──────────────────────────────────────────────────────────────────
+function startCallTimer() {
+  callSeconds = 0;
+  const el = document.getElementById('call-timer');
+  el.style.display = 'block';
+  callTimer = setInterval(() => {
+    callSeconds++;
+    const m = String(Math.floor(callSeconds/60)).padStart(2,'0');
+    const s = String(callSeconds%60).padStart(2,'0');
+    el.textContent = m+':'+s;
+  }, 1000);
+}
+function stopCallTimer() { clearInterval(callTimer); }
+
+// ── Services ──────────────────────────────────────────────────────────────
+const services = [
+  {name:'Graph', url:`${GRAPH_URL}/graph/stats`, check:d=>d.documents+' patients'},
+  {name:'Agent', url:`${AGENT_URL}/health`,      check:d=>d.status},
+  {name:'Insur', url:`${INS_URL}/health`,        check:d=>d.status},
+];
+async function checkServices() {
+  const el = document.getElementById('service-pills');
+  const pills = [];
+  for(const s of services) {
     try {
-      let response, source;
-      if (q.endpoint) {
-        // Direct hospital endpoint
-        const r = await fetch(`${GRAPH_URL}/hospital/${q.endpoint}`, {
-          method: 'POST',
-          headers: {'Content-Type': 'application/json'},
-          body: JSON.stringify({patient_name: p.name})
-        });
-        const d = await r.json();
-        response = d.answer || d.response || JSON.stringify(d);
-        source = `Graph endpoint: /hospital/${q.endpoint}`;
-      } else {
-        // Agent conversation
-        const r = await fetch(`${AGENT_URL}/agent`, {
-          method: 'POST',
-          headers: {'Content-Type': 'application/json'},
-          body: JSON.stringify({text: q.text(p.name), call_id: callId})
-        });
-        const d = await r.json();
-        response = d.response;
-        source = 'Agent conversation';
-      }
-
-      const ms = Date.now() - t0;
-      const statusEl = document.getElementById(`status-${q.label.replace(/\s/g,'_')}`);
-      statusEl.innerHTML = `<span style="color:#10b981">✓ ${ms}ms</span>`;
-      document.getElementById(`result-${q.label.replace(/\s/g,'_')}`).innerHTML = `
-        <div style="font-size:14px;color:#e2e8f0;line-height:1.6;margin-bottom:10px">${response}</div>
-        <div style="font-size:11px;color:#4a5568;border-top:1px solid #2d3748;padding-top:8px">${source}</div>
-      `;
-    } catch(e) {
-      document.getElementById(`status-${q.label.replace(/\s/g,'_')}`).innerHTML = `<span style="color:#fc8181">✗ Error</span>`;
-      document.getElementById(`result-${q.label.replace(/\s/g,'_')}`).innerHTML = `<div style="color:#fc8181;font-size:13px">${e.message}</div>`;
+      const r = await fetch(s.url); const d = await r.json();
+      pills.push(`<div class="service-pill"><div class="dot"></div>${s.name}: ${s.check(d)}</div>`);
+    } catch {
+      pills.push(`<div class="service-pill"><div class="dot off"></div>${s.name}: offline</div>`);
     }
   }
-
-  // Add 3-phase resolution section
-  const phaseCard = document.createElement('div');
-  phaseCard.className = 'section';
-  phaseCard.innerHTML = `
-    <div class="section-header">
-      <span class="section-title">🔄 3-Phase Insurance Resolution</span>
-      <button onclick="runThreePhase('${p.name}')" style="background:#805ad5;color:#fff;border:none;padding:6px 14px;border-radius:4px;cursor:pointer;font-size:12px">Run 3-Phase Flow</button>
-    </div>
-    <div class="section-body" id="three-phase-result">
-      <div style="color:#718096;font-size:13px">Click "Run 3-Phase Flow" to simulate: Patient call → AI calls insurance → AI calls patient back</div>
-    </div>
-  `;
-  container.appendChild(phaseCard);
+  el.innerHTML = pills.join('');
 }
 
-async function runThreePhase(patientName) {
-  const el = document.getElementById('three-phase-result');
-  el.innerHTML = renderPhase('Phase 1', 'Patient called hospital', '✅', 'Patient identified. Inquiry collected. Told: "I\'ll call you back in 15 minutes."') +
-                 renderPhase('Phase 2', 'AI calling insurance company...', '⏳', '');
-
-  try {
-    const r = await fetch(`${AGENT_URL}/resolve/sync`, {
-      method: 'POST',
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({
-        patient_name: patientName,
-        inquiry_type: 'claim_status',
-        callback_number: '+15313245471',
-        call_id: 'dashboard_' + Date.now()
-      })
-    });
-    const d = await r.json();
-    el.innerHTML =
-      renderPhase('Phase 1', 'Patient called hospital', '✅', `Patient "${patientName}" identified. Inquiry: claim status. Callback promised.`) +
-      renderPhase('Phase 2', 'AI called Pacific Shield Insurance', '✅', `Insurance agent response: "${d.insurance_response ? d.insurance_response.substring(0,200) + '...' : 'Received denial details'}" · Claim status: ${d.claim_status}`) +
-      renderPhase('Phase 3', 'AI called patient back', d.callback_result?.status === 'initiated' ? '✅' : '⚠️',
-        d.callback_result?.status === 'initiated'
-          ? `Outbound call initiated. CallSid: ${d.callback_result.call_sid}<br><br><strong>Callback message:</strong><br>${d.callback_message ? d.callback_message.substring(0,300) + '...' : ''}`
-          : `Callback logged: ${d.callback_message ? d.callback_message.substring(0,200) + '...' : ''}`);
-  } catch(e) {
-    el.innerHTML += `<div style="color:#fc8181;padding:12px">Error: ${e.message}</div>`;
-  }
-}
-
-function renderPhase(phase, title, status, detail) {
-  const color = status === '✅' ? '#10b981' : status === '⏳' ? '#f6ad55' : '#fc8181';
-  return `
-    <div style="display:flex;gap:16px;padding:14px 0;border-bottom:1px solid #2d3748">
-      <div style="font-size:20px;width:28px">${status}</div>
-      <div style="flex:1">
-        <div style="font-size:13px;font-weight:600;color:#fff;margin-bottom:4px">${phase}: ${title}</div>
-        ${detail ? `<div style="font-size:12px;color:#a0aec0;line-height:1.5">${detail}</div>` : ''}
+// ── Patient list ───────────────────────────────────────────────────────────
+function renderPatients() {
+  document.getElementById('patient-list').innerHTML = DEMO_PATIENTS.map((p,i) => `
+    <div class="patient-card" id="pc-${i}" onclick="loadDemoPatient(${i})">
+      <div class="p-name">${p.name}</div>
+      <div class="p-meta">DOB: ${p.dob}</div>
+      <div class="tags">
+        <span class="tag tag-blue">${p.insurance}</span>
+        <span class="tag tag-red">${p.denied} denied</span>
+        <span class="tag tag-purple">${p.scenario}</span>
       </div>
     </div>
+  `).join('') + `
+    <div style="margin-top:20px;padding:12px;background:var(--card);border:1px solid var(--border2);border-radius:8px">
+      <div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">Real Phone Call</div>
+      <div style="font-size:12px;color:var(--accent);font-weight:600">+1 (531) 324-5471</div>
+      <div style="font-size:11px;color:var(--muted);margin-top:4px">Call this number — dashboard updates live</div>
+    </div>
   `;
 }
 
-// Init
+function now() { return new Date().toLocaleTimeString(); }
+function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+// ── Init ──────────────────────────────────────────────────────────────────
 renderPatients();
 checkServices();
-setInterval(checkServices, 10000);
+setInterval(checkServices, 15000);
+connectWS();
 </script>
 </body>
 </html>
