@@ -125,10 +125,10 @@ async def run_three_phase(
     await asyncio.sleep(1)
 
     pickup_msg = await _llm(
-        "You are Sarah, a real insurance claims agent at Pacific Shield Insurance. Sound friendly and professional.",
-        "Greet a hospital billing coordinator who has been on hold. Say your name and department. 1-2 sentences.",
+        "You are George, a male insurance claims agent at Pacific Shield Insurance. Sound professional and efficient.",
+        "Greet a hospital billing coordinator who has been on hold. Say your name is George and your department. 1-2 sentences.",
         temperature=0.8
-    ) or "Thank you for holding. This is Sarah from Pacific Shield Insurance, claims department. How can I assist you today?"
+    ) or "Thank you for holding. This is George from Pacific Shield Insurance, claims department. How can I assist you today?"
     await broadcast("insurance_connected", {
         "call_id": call_id,
         "speaker": "insurance",
@@ -152,10 +152,10 @@ async def run_three_phase(
 
     # Insurance agent Sarah answers the specific question
     insurance_response = await _llm(
-        "You are Sarah, a real insurance claims agent at Pacific Shield Insurance answering a hospital billing coordinator's specific question about a claim denial. Be factual and helpful.",
+        "You are George, a male insurance claims agent at Pacific Shield Insurance answering a hospital billing coordinator's specific question about a claim denial. Be factual and helpful.",
         f"The hospital coordinator asked about {patient_name}'s denial. Claim data: {claim_answer}. "
-        f"Answer their question directly: confirm CO-4 denial code (no prior auth), state the 30-day appeal deadline, confirm Peer-to-Peer review is available. "
-        f"Speak professionally to the hospital coordinator. 3 sentences. Your name is Sarah.",
+        f"Answer their question directly as George: confirm CO-4 denial code (no prior auth), state the 30-day appeal deadline, confirm Peer-to-Peer review is available. "
+        f"Speak professionally to the hospital coordinator. 3 sentences. Your name is George.",
         temperature=0.75
     ) or f"Yes, I can confirm that claim was denied under denial code CO-4 — prior authorization was not obtained before the procedure. Your hospital has 30 days from the denial date to submit a formal appeal. The attending physician can also request a Peer-to-Peer clinical review by calling our medical management line at any time."
     logger.info("[3-PHASE] insurance_response: %s", insurance_response[:60] if insurance_response else "EMPTY")

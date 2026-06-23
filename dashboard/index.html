@@ -291,7 +291,8 @@ var timerInt       = null;
 var timerSecs      = 0;
 var activePatient  = null;
 var callNotes      = [];
-var insResultShown = false;  // guard against double-rendering insurance result
+var insResultShown = false;
+var currentInsurancePatient = null;  // guard against double-rendering insurance result
 
 // ── HELPERS ─────────────────────────────────────────────────────────────────
 function nowStr() {
@@ -639,6 +640,8 @@ function runDemoCall(name) {
 // POST to /resolve/sync — WS events handle all panel rendering in real-time.
 // The sync response is ONLY used as a fallback if WS missed the final result.
 function runInsuranceDemo(name) {
+  insResultShown = false;
+  currentInsurancePatient = name;
   addFeed('Starting insurance call for ' + name, 'insurance');
 
   // Reset duplicate-guard so a fresh call can render its result
@@ -671,7 +674,7 @@ function runInsuranceDemo(name) {
       var status  = data.claim_status || 'DENIED_NO_PA';
       if (insResp && !insResultShown) {
         // WS missed it — show the final insurance message and result card
-        addInsMsg('Sarah (Insurance Agent)', insResp, 'insurance');
+        addInsMsg('George (Insurance)', insResp, 'insurance');
         showInsResult(status, insResp);
         queueAudio(insResp, INSURANCE_VOICE_ID);
       }
@@ -782,7 +785,8 @@ function handleWsEvent(data) {
   } else if (t === 'insurance_agent_speaks') {
     var agentMsg = data.message || data.text || '';
     var isSpeakerHospital = (data.speaker === 'hospital');
-    var spkName  = isSpeakerHospital ? 'Hospital Coordinator' : 'Sarah (Insurance)';
+    // Hospital = Sarah (female voice), Insurance = George (male voice)
+    var spkName  = isSpeakerHospital ? 'Sarah (Hospital)' : 'George (Insurance)';
     var spkRole  = isSpeakerHospital ? 'hospital' : 'insurance';
     var spkVoice = isSpeakerHospital ? HOSPITAL_VOICE_ID : INSURANCE_VOICE_ID;
     if (agentMsg) {
@@ -798,18 +802,34 @@ function handleWsEvent(data) {
     queueAudio(holdMsg, INSURANCE_VOICE_ID);
 
   } else if (t === 'insurance_connected') {
-    var connMsg = data.message || data.text || 'Thank you for holding. This is Sarah from Pacific Shield Insurance. How can I assist you?';
-    addFeed('Sarah (insurance agent) answered', 'insurance', ts);
-    addInsMsg('Sarah (Insurance Agent)', connMsg, 'insurance');
+    var connMsg = data.message || data.text || 'Thank you for holding. This is George from Pacific Shield Insurance. How can I assist you?';
+    addFeed('George (insurance) answered', 'insurance', ts);
+    addInsMsg('George (Insurance)', connMsg, 'insurance');
     queueAudio(connMsg, INSURANCE_VOICE_ID);
+    // After George answers, show Sarah asking the question (hospital coordinator)
+    // This ensures it always appears even if WS event is missed
+    setTimeout(function() {
+      var panel = document.getElementById('ins-panel');
+      if (panel && !panel.querySelector('.sarah-question')) {
+        var q = currentInsurancePatient
+          ? 'Hi George, I\'m calling about a prior authorization denial for patient ' + currentInsurancePatient + '. Can you confirm the denial reason code, the appeal deadline, and if a Peer-to-Peer review is available?'
+          : 'I\'m calling about a prior authorization denial. Can you confirm the denial reason code, appeal deadline, and Peer-to-Peer review availability?';
+        var div = document.createElement('div');
+        div.className = 'ins-msg hospital sarah-question';
+        div.innerHTML = '<div class="ins-msg-from">Sarah (Hospital)</div>' + q;
+        panel.appendChild(div);
+        panel.scrollTop = panel.scrollHeight;
+        queueAudio(q, HOSPITAL_VOICE_ID);
+      }
+    }, 1500);
 
   } else if (t === 'insurance_response') {
     var insResp = data.agent_response || data.message || data.text || data.response || '';
     var insStatus = data.claim_status || 'PENDING';
-    addFeed('Insurance verdict: ' + insStatus, 'insurance', ts);
+    addFeed('George responds: ' + insStatus, 'insurance', ts);
     if (insResp && !insResultShown) {
-      addInsMsg('Sarah (Insurance Agent)', insResp, 'insurance');
-      showInsResult(insStatus, insResp);  // sets insResultShown = true inside
+      addInsMsg('George (Insurance)', insResp, 'insurance');
+      showInsResult(insStatus, insResp);
       queueAudio(insResp, INSURANCE_VOICE_ID);
     }
 
