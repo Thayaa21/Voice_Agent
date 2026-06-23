@@ -348,6 +348,11 @@ function handleEvent(ev) {
       if(audioEnabled) setTimeout(() => speak('Calling patient back now with the full insurance response.', hospitalVoice, 0.95), 500);
       break;
 
+    case 'three_phase_queued':
+      addFeed(`🔄 3-Phase resolution queued for ${data.person} — calling insurance now`, 'system', timestamp);
+      addNote(`3-phase triggered: will call insurance then call patient back`);
+      break;
+
     case 'call_ended':
       stopCallTimer();
       document.getElementById('call-badge').className = 'call-badge';

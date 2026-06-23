@@ -31,9 +31,10 @@ load_dotenv(Path(__file__).parent.parent / ".env")
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 logger = logging.getLogger(__name__)
 
-GRAPH_URL   = os.getenv("GRAPH_RAG_URL",  "http://localhost:8000")
-OPENAI_KEY  = os.getenv("OPENAI_API_KEY", "")
+GRAPH_URL    = os.getenv("GRAPH_RAG_URL",  "http://localhost:8000")
+OPENAI_KEY   = os.getenv("OPENAI_API_KEY", "")
 OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
+TWILIO_FROM  = os.getenv("TWILIO_PHONE_NUMBER", "")
 
 # ---------------------------------------------------------------------------
 # Session store
@@ -238,13 +239,35 @@ async def process_turn(call_id: str, text: str) -> dict:
 
         await broadcast("tool_called", {"call_id": call_id, "intent": intent, "person": person})
 
-        if intent == "claim_status":
-            result = await hospital_endpoint("claim-status", person)
-            reply  = result.get("answer", "I couldn't retrieve your claim status.")
-        elif intent == "cost_estimate":
-            result = await hospital_endpoint("cost-estimate", person)
-            reply  = result.get("answer", "I couldn't calculate your cost estimate.")
-        elif intent == "pre_procedure":
+        # ── Intents that need insurance contact → trigger 3-phase flow ────
+        if intent in ("claim_status", "cost_estimate"):
+            # Tell patient we'll call back, end call, then run 3-phase async
+            reply = (
+                f"I understand, {person}. This requires me to contact your insurance company directly. "
+                f"I'll call them now and call you back within 15 minutes with a full answer. "
+                f"Please keep your phone available. Have a great day."
+            )
+            await broadcast("agent_response", {"call_id": call_id, "text": reply})
+            await broadcast("three_phase_queued", {"call_id": call_id, "person": person, "intent": intent})
+            session["state"] = "end_call"
+
+            # Get caller's phone number from session (stored when call comes in)
+            callback_number = session.get("caller_number", TWILIO_FROM or "+15313245471")
+
+            # Fire 3-phase in background after call ends
+            from orchestrator import run_three_phase
+            asyncio.create_task(
+                run_three_phase(
+                    patient_name    = person,
+                    callback_number = callback_number,
+                    inquiry_type    = intent,
+                    call_id         = call_id,
+                )
+            )
+            return _resp(reply, end_call=True)
+
+        # ── Other intents → answer immediately ───────────────────────────
+        if intent == "pre_procedure":
             result = await hospital_endpoint("pre-procedure", person)
             reply  = result.get("answer", "I couldn't find preparation instructions.")
         elif intent == "bill_explain":
@@ -257,16 +280,14 @@ async def process_turn(call_id: str, text: str) -> dict:
                 reply = result.get("answer", "I don't have that information.")
             else:
                 reply = await llm_answer(
-                    f"You are a hospital AI assistant. The verified patient is {person}. Answer concisely in 2-3 sentences.",
+                    f"You are a hospital AI assistant. The verified patient is {person}. Answer concisely in 2 sentences.",
                     text
                 )
-
-        if result.get("has_conflicts"):
-            reply += " Note: there is a discrepancy in your records that our team should review."
+            if result.get("has_conflicts"):
+                reply += " Note: there is a discrepancy in your records."
 
         await broadcast("tool_result", {"call_id": call_id, "intent": intent, "answer": reply})
         await broadcast("agent_response", {"call_id": call_id, "text": reply})
-
         session["history"].append({"role": "assistant", "content": reply})
         return _resp(reply)
 
@@ -303,8 +324,9 @@ app.add_middleware(CORSMiddleware, allow_origins=["*"],
 
 
 class AgentRequest(BaseModel):
-    text:    str
-    call_id: str
+    text:          str
+    call_id:       str
+    caller_number: str = ""
 
 
 class AgentResponse(BaseModel):
@@ -317,6 +339,10 @@ async def agent_endpoint(req: AgentRequest):
     # Broadcast call started if new session
     if req.call_id not in sessions:
         await broadcast("call_started", {"call_id": req.call_id})
+    # Store caller number in session for callback
+    session = get_session(req.call_id)
+    if req.caller_number:
+        session["caller_number"] = req.caller_number
     result = await process_turn(req.call_id, req.text.strip())
     return AgentResponse(**result)
 

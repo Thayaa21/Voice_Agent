@@ -107,12 +107,12 @@ def _escape(text: str) -> str:
 # Agent call
 # ---------------------------------------------------------------------------
 
-async def call_agent(text: str, call_id: str) -> dict:
+async def call_agent(text: str, call_id: str, caller_number: str = "") -> dict:
     async with httpx.AsyncClient(timeout=20.0) as client:
         try:
             r = await client.post(
                 f"{AGENT_URL}/agent",
-                json={"text": text, "call_id": call_id}
+                json={"text": text, "call_id": call_id, "caller_number": caller_number}
             )
             return r.json()
         except Exception as e:
@@ -145,9 +145,10 @@ async def process_speech(
     SpeechResult: str = Form(default=""),
     CallSid:      str = Form(default="unknown"),
     Confidence:   str = Form(default="0"),
+    From:         str = Form(default=""),
 ):
     """Twilio webhook — receives transcribed speech, forwards to agent."""
-    logger.info("CallSid=%s Speech='%s' Confidence=%s", CallSid, SpeechResult, Confidence)
+    logger.info("CallSid=%s Speech='%s' Confidence=%s From=%s", CallSid, SpeechResult, Confidence, From)
 
     if not SpeechResult.strip():
         twiml = """<?xml version="1.0" encoding="UTF-8"?>
@@ -158,8 +159,8 @@ async def process_speech(
 </Response>"""
         return FastAPIResponse(content=twiml, media_type="application/xml")
 
-    # Call agent
-    result   = await call_agent(SpeechResult, CallSid)
+    # Call agent — pass caller number so agent can call back
+    result   = await call_agent(SpeechResult, CallSid, caller_number=From)
     response = result.get("response", "I'm sorry, something went wrong.")
     end_call = result.get("end_call", False)
 
