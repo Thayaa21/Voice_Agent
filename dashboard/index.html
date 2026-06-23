@@ -310,50 +310,47 @@ function handleEvent(ev) {
       break;
 
     case 'insurance_calling':
-      // Clear insurance panel for fresh conversation
       document.getElementById('insurance-panel').innerHTML = '';
       addInsuranceConvo('System', `📞 Initiating call to Pacific Shield Insurance for ${data.patient_name}...`, 'ivr');
       addFeed('📞 Initiating 3-Phase Resolution — calling insurance', 'insurance', timestamp);
-      if(audioEnabled) speak('Dialing Pacific Shield Insurance. Please wait.', hospitalVoice, 0.95);
+      if(audioEnabled) queueAudio('Dialing Pacific Shield Insurance. Please wait.', HOSPITAL_VOICE_ID, 'hospital');
       break;
 
     case 'insurance_ivr':
       addInsuranceConvo('IVR System', data.message, 'ivr');
       addFeed('🔢 ' + data.message, 'insurance', timestamp);
-      if(audioEnabled) setTimeout(() => speak(data.message, insuranceVoice, 0.85, 0.88), 500);
+      if(audioEnabled) queueAudio(data.message, INSURANCE_VOICE_ID, 'ivr');
       break;
 
     case 'insurance_agent_speaks':
       addInsuranceConvo('Hospital Agent', data.message, 'hospital');
       addFeed('🏥 Hospital: ' + data.message.substring(0,80), 'system', timestamp);
-      if(audioEnabled) setTimeout(() => speak(data.message, hospitalVoice, 1.0, 1.05), 300);
+      if(audioEnabled) queueAudio(data.message, HOSPITAL_VOICE_ID, 'hospital');
       break;
 
     case 'insurance_hold':
       addInsuranceConvo('IVR System', data.message, 'ivr');
       addFeed('🎵 ' + data.message, 'insurance', timestamp);
-      if(audioEnabled) setTimeout(() => speak(data.message, insuranceVoice, 0.82, 0.85), 500);
+      if(audioEnabled) queueAudio(data.message, INSURANCE_VOICE_ID, 'ivr');
       break;
 
     case 'insurance_connected':
       addInsuranceConvo('Sarah (Insurance Agent)', data.message, 'insurance');
       addFeed('☎️ Insurance agent answered', 'insurance', timestamp);
-      if(audioEnabled) setTimeout(() => speak(data.message, insuranceVoice, 0.92, 0.95), 300);
+      if(audioEnabled) queueAudio(data.message, INSURANCE_VOICE_ID, 'insurance');
       break;
 
     case 'insurance_response':
       addInsuranceConvo('Sarah (Insurance Agent)', data.agent_response, 'insurance');
       addFeed(`✅ Insurance: ${data.summary||data.claim_status}`, 'insurance', timestamp);
       addNote(`Insurance verdict: ${data.summary||data.claim_status}`);
-      if(audioEnabled && data.agent_response) {
-        setTimeout(() => speak(data.agent_response, insuranceVoice, 0.9, 0.93), 300);
-      }
+      if(audioEnabled && data.agent_response) queueAudio(data.agent_response, INSURANCE_VOICE_ID, 'insurance');
       break;
 
     case 'callback_initiated':
       addFeed(`📱 Calling patient back at ${data.callback_number}`, 'callback', timestamp);
-      addNote(`Callback initiated: ${data.callback_message.substring(0,100)}...`);
-      if(audioEnabled) setTimeout(() => speak('Calling patient back now with the full insurance response.', hospitalVoice, 0.95), 500);
+      addNote(`Callback: ${data.callback_message ? data.callback_message.substring(0,100)+'...' : ''}`);
+      if(audioEnabled) queueAudio('Calling patient back now with the full insurance response.', HOSPITAL_VOICE_ID, 'hospital');
       break;
 
     case 'three_phase_queued':
@@ -516,73 +513,176 @@ async function triggerThreePhase(patientName) {
 </script>
 
 <script>
-// ── Demo patient simulation ────────────────────────────────────────────────
-async function loadDemoPatient(idx) {
-  document.querySelectorAll('.patient-card').forEach(c => c.classList.remove('active'));
-  document.getElementById('pc-'+idx).classList.add('active');
-  const p = DEMO_PATIENTS[idx];
-  activePatient = p;
+// ── Demo: simulate patient call ────────────────────────────────────────────
+async function runDemoCall(patientName) {
+  const p = DEMO_PATIENTS.find(x => x.name === patientName);
+  if(!p) return;
   notes = [];
-  insurancePhases = [];
   const callId = 'demo_' + Date.now();
 
-  // Simulate call start
-  handleEvent({type:'call_started', timestamp: new Date().toLocaleTimeString(), data:{call_id:callId}});
-  await sleep(500);
-  handleEvent({type:'transcript', timestamp:now(), data:{text:p.name, call_id:callId, state:'verify_identity'}});
+  handleEvent({type:'call_started', timestamp:now(), data:{call_id:callId}});
+  await sleep(600);
 
-  // Call agent
-  const r1 = await fetch(`${AGENT_URL}/agent`, {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text:p.name,call_id:callId})});
+  // Step 1: identity
+  handleEvent({type:'transcript', timestamp:now(), data:{text:p.name, call_id:callId, state:'verify_identity'}});
+  const r1 = await fetch(`${AGENT_URL}/agent`, {method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({text:p.name, call_id:callId, caller_number:'+15313245471'})});
   const d1 = await r1.json();
   handleEvent({type:'agent_response', timestamp:now(), data:{text:d1.response, call_id:callId}});
-  await sleep(800);
+  await sleep(1000);
 
-  // Ask about claim
-  const questions = {
-    'Claim Denial': 'why was my claim denied',
-    'Cost Estimate': 'how much will I owe for my procedure',
-    'Pre-Procedure': 'what do I need to do before my procedure'
-  };
-  const q = questions[p.scenario] || 'tell me about my account';
+  // Step 2: ask claim question (triggers 3-phase)
+  const q = 'why was my claim denied';
   handleEvent({type:'transcript', timestamp:now(), data:{text:q, call_id:callId, state:'answering'}});
-  const r2 = await fetch(`${AGENT_URL}/agent`, {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text:q,call_id:callId})});
+  const r2 = await fetch(`${AGENT_URL}/agent`, {method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({text:q, call_id:callId})});
   const d2 = await r2.json();
   handleEvent({type:'agent_response', timestamp:now(), data:{text:d2.response, call_id:callId}});
 }
 
-// ── Speech synthesis (hear the insurance call) ────────────────────────────
-const synth = window.speechSynthesis;
-let hospitalVoice = null, insuranceVoice = null;
-
-function loadVoices() {
-  const voices = synth.getVoices();
-  // Hospital agent — female, US English
-  hospitalVoice = voices.find(v => v.name.includes('Samantha') || v.name.includes('Karen') || (v.lang === 'en-US' && v.name.includes('Female'))) || voices.find(v => v.lang === 'en-US') || voices[0];
-  // Insurance agent — different voice, slightly different character
-  insuranceVoice = voices.find(v => v.name.includes('Alex') || v.name.includes('Daniel') || (v.lang === 'en-US' && !v.name.includes('Samantha'))) || voices.find(v => v.lang === 'en-US') || voices[0];
+// ── Demo: simulate insurance call (button only) ────────────────────────────
+async function runInsuranceDemo(patientName) {
+  document.getElementById('insurance-panel').innerHTML = '';
+  addFeed('🎬 Starting insurance demo for ' + patientName, 'system', now());
+  try {
+    const r = await fetch(`${AGENT_URL}/resolve`, {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({
+        patient_name:    patientName,
+        inquiry_type:    'claim_status',
+        callback_number: '+15313245471',
+        call_id:         'ins_demo_' + Date.now()
+      })
+    });
+    const d = await r.json();
+    addFeed('✅ 3-phase queued: ' + d.message, 'system', now());
+  } catch(e) {
+    addFeed('Error: ' + e.message, 'error', now());
+  }
 }
 
-if (synth.onvoiceschanged !== undefined) {
-  synth.onvoiceschanged = loadVoices;
+// ── 3-Phase trigger (from patient record button) ───────────────────────────
+async function triggerThreePhase(patientName) {
+  await runInsuranceDemo(patientName);
 }
-setTimeout(loadVoices, 500);
+  document.querySelectorAll('.patient-card').forEach(c => c.classList.remove('active'));
+  document.getElementById('pc-' + idx).classList.add('active');
+  const p = DEMO_PATIENTS[idx];
+  activePatient = p;
+  notes = [];
+  insurancePhases = [];
 
-function speak(text, voice, rate = 1.0, pitch = 1.0) {
-  synth.cancel(); // stop any current speech
-  const utt = new SpeechSynthesisUtterance(text);
-  utt.voice = voice;
-  utt.rate  = rate;
-  utt.pitch = pitch;
-  utt.volume = 1.0;
-  synth.speak(utt);
+  // Just show the patient record — DO NOT trigger any calls or 3-phase
+  const detail = document.getElementById('main-content');
+  detail.innerHTML = `
+    <div class="record-header glow-blue">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+        <div style="width:44px;height:48px;background:rgba(88,166,255,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px">👤</div>
+        <div>
+          <div class="r-name">${p.name}</div>
+          <div class="r-meta">${p.insurance} · DOB: ${p.dob} · <span style="color:var(--accent)">${p.details.phone_script}</span></div>
+        </div>
+        <div style="margin-left:auto"><span class="tag tag-blue">READY</span></div>
+      </div>
+      <div style="background:rgba(88,166,255,.06);border:1px solid rgba(88,166,255,.15);border-radius:6px;padding:10px;font-size:12px;color:var(--accent)">
+        📞 <strong>To test:</strong> Call <strong>+1 (531) 324-5471</strong> and say "${p.name}" — or click Demo below
+      </div>
+    </div>
+    <div style="background:rgba(63,185,80,.04);border:1px solid rgba(63,185,80,.2);border-radius:8px;padding:14px;margin-bottom:16px">
+      <div style="font-size:11px;color:var(--green);text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:12px">📋 What You Can Ask On The Phone</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+        <div style="background:rgba(0,0,0,.3);border-radius:6px;padding:10px">
+          <div style="font-size:10px;color:var(--yellow);margin-bottom:4px;font-weight:600">🚫 CLAIM / DENIAL</div>
+          <div style="font-size:11px;color:var(--text)">"Why was my claim denied?"</div>
+        </div>
+        <div style="background:rgba(0,0,0,.3);border-radius:6px;padding:10px">
+          <div style="font-size:10px;color:var(--accent);margin-bottom:4px;font-weight:600">💰 COST</div>
+          <div style="font-size:11px;color:var(--text)">"How much will I owe?"</div>
+        </div>
+        <div style="background:rgba(0,0,0,.3);border-radius:6px;padding:10px">
+          <div style="font-size:10px;color:var(--purple);margin-bottom:4px;font-weight:600">📋 PRE-PROCEDURE</div>
+          <div style="font-size:11px;color:var(--text)">"What do I do before my procedure?"</div>
+        </div>
+        <div style="background:rgba(0,0,0,.3);border-radius:6px;padding:10px">
+          <div style="font-size:10px;color:var(--orange);margin-bottom:4px;font-weight:600">🧾 BILL</div>
+          <div style="font-size:11px;color:var(--text)">"Why do I owe this amount?"</div>
+        </div>
+      </div>
+    </div>
+    <div class="info-grid">
+      <div class="info-card"><div class="info-title">🚫 Claim Status</div><div class="info-body" style="font-size:12px">${p.details.claim}</div></div>
+      <div class="info-card"><div class="info-title">💰 Cost Estimate</div><div class="info-body" style="font-size:12px">${p.details.cost}</div></div>
+      <div class="info-card"><div class="info-title">📋 Pre-Procedure</div><div class="info-body" style="font-size:12px">${p.details.prep}</div></div>
+      <div class="info-card"><div class="info-title">🧾 Bill</div><div class="info-body" style="font-size:12px">${p.details.bill}</div></div>
+    </div>
+    <div style="background:var(--card);border:1px solid var(--border2);border-radius:8px;padding:14px;margin-bottom:12px">
+      <div class="info-title">📝 Live Call Notes</div>
+      <div id="call-notes" style="margin-top:8px;font-size:12px;color:var(--muted)">Notes appear here during a live call...</div>
+    </div>
+    <div style="display:flex;gap:10px">
+      <button onclick="runDemoCall('${p.name}')" style="flex:1;background:linear-gradient(135deg,#2d6a4f,#1b4332);color:#fff;border:none;padding:12px;border-radius:8px;cursor:pointer;font-size:13px;font-weight:600">
+        📞 Demo: Simulate Patient Call
+      </button>
+      <button onclick="runInsuranceDemo('${p.name}')" style="flex:1;background:linear-gradient(135deg,#805ad5,#553c9a);color:#fff;border:none;padding:12px;border-radius:8px;cursor:pointer;font-size:13px;font-weight:600">
+        🏢 Demo: Simulate Insurance Call
+      </button>
+    </div>
+  `;
+}
+
+// ── ElevenLabs audio queue (sequential, not overlapping) ──────────────────
+const ELEVENLABS_KEY       = 'sk_69a730fdec9d50cccb83edd40eb1ebf65d5dd619b45964e1';
+const HOSPITAL_VOICE_ID    = 'nf4MCGNSdM0hxM95ZBQR';
+const INSURANCE_VOICE_ID   = 'bfGb7JTLUnZebZRiFYyq';
+let audioQueue = [];
+let audioPlaying = false;
+
+async function queueAudio(text, voiceId, role) {
+  if(!audioEnabled || !text) return;
+  audioQueue.push({text, voiceId, role});
+  if(!audioPlaying) processAudioQueue();
+}
+
+async function processAudioQueue() {
+  if(audioQueue.length === 0) { audioPlaying = false; return; }
+  audioPlaying = true;
+  const {text, voiceId} = audioQueue.shift();
+  try {
+    const r = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`, {
+      method: 'POST',
+      headers: {'xi-api-key': ELEVENLABS_KEY, 'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        text,
+        model_id: 'eleven_turbo_v2',
+        voice_settings: {stability: 0.5, similarity_boost: 0.75, style: 0.2, use_speaker_boost: true}
+      })
+    });
+    if(r.ok) {
+      const blob = await r.blob();
+      const url  = URL.createObjectURL(blob);
+      const audio = new Audio(url);
+      audio.onended = () => { URL.revokeObjectURL(url); processAudioQueue(); };
+      audio.onerror = () => processAudioQueue();
+      await audio.play();
+    } else {
+      processAudioQueue();
+    }
+  } catch(e) {
+    console.error('ElevenLabs audio error:', e);
+    processAudioQueue();
+  }
+}
+
+function stopAllAudio() {
+  audioQueue = [];
+  audioPlaying = false;
 }
 
 let audioEnabled = true;
-
 function toggleAudio() {
   audioEnabled = !audioEnabled;
   document.getElementById('audio-btn').textContent = audioEnabled ? '🔊 Audio On' : '🔇 Audio Off';
-  if (!audioEnabled) synth.cancel();
+  if(!audioEnabled) { stopAllAudio(); }
 }
 // ── Insurance conversation (chat style) ───────────────────────────────────
 function addInsuranceConvo(speaker, text, role) {
