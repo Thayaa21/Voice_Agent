@@ -62,7 +62,7 @@ async def run_three_phase(
     logger.info("[3-PHASE] Starting for %s (type=%s)", patient_name, inquiry_type)
 
     # ── Wait for first call to fully end ─────────────────────────────────
-    await asyncio.sleep(6)
+    await asyncio.sleep(1)
 
     # ── Get patient data from graph ───────────────────────────────────────
     patient_data = {}
@@ -84,7 +84,7 @@ async def run_three_phase(
         "message": f"Dialing Pacific Shield Insurance on behalf of {patient_name}...",
         "speaker": "hospital"
     })
-    await asyncio.sleep(2)
+    await asyncio.sleep(1)
 
     # Step 2: IVR
     ivr_msg = await _llm(
@@ -97,7 +97,7 @@ async def run_three_phase(
         "speaker": "ivr",
         "message": ivr_msg,
     })
-    await asyncio.sleep(3)
+    await asyncio.sleep(1)
 
     nav_msg = await _llm(
         "You are a hospital AI agent calling an insurance company. Sound professional and efficient.",
@@ -109,7 +109,7 @@ async def run_three_phase(
         "speaker": "hospital",
         "message": nav_msg,
     })
-    await asyncio.sleep(2)
+    await asyncio.sleep(1)
 
     hold_msg = await _llm(
         "You are an insurance company IVR hold system.",
@@ -121,7 +121,7 @@ async def run_three_phase(
         "speaker": "ivr",
         "message": hold_msg,
     })
-    await asyncio.sleep(4)
+    await asyncio.sleep(1)
 
     pickup_msg = await _llm(
         "You are a real insurance claims agent named Sarah at Pacific Shield Insurance. Sound friendly and professional.",
@@ -133,19 +133,20 @@ async def run_three_phase(
         "speaker": "insurance",
         "message": pickup_msg,
     })
-    await asyncio.sleep(2)
+    await asyncio.sleep(1)
 
     explain_msg = await _llm(
         "You are a hospital AI agent calling to check on a claim denial. Be professional and specific.",
         f"Explain why you're calling about patient {patient_name}. Mention you need the denial reason, appeal deadline, and next steps. 2 sentences.",
         temperature=0.7
     ) or f"I'm calling to inquire about a prior authorization denial for patient {patient_name}. Can you provide the denial reason code, appeal deadline, and next steps?"
+    logger.info("[3-PHASE] explain_msg: %s", explain_msg[:60] if explain_msg else "EMPTY")
     await broadcast("insurance_agent_speaks", {
         "call_id": call_id,
         "speaker": "hospital",
         "message": explain_msg,
     })
-    await asyncio.sleep(2)
+    await asyncio.sleep(1)
 
     insurance_response = await _llm(
         "You are a real insurance claims agent at Pacific Shield Insurance. Use the claim data provided to give a realistic, professional response about the denial.",
@@ -154,6 +155,7 @@ async def run_three_phase(
         f"Sound like a real phone call. 3-4 sentences. Include specific details from the claim data.",
         temperature=0.75
     ) or f"I can see {patient_name}'s claim was denied under code CO-4 — prior authorization was not obtained. You have 30 days to file an appeal. The attending physician may also request a Peer-to-Peer clinical review."
+    logger.info("[3-PHASE] insurance_response: %s", insurance_response[:60] if insurance_response else "EMPTY")
     await broadcast("insurance_response", {
         "call_id":        call_id,
         "speaker":        "insurance",
@@ -161,7 +163,7 @@ async def run_three_phase(
         "claim_status":   "DENIED_NO_PA",
         "summary":        "Prior authorization not obtained",
     })
-    await asyncio.sleep(2)
+    await asyncio.sleep(1)
 
     confirm_msg = await _llm(
         "You are a hospital AI agent wrapping up a call with an insurance company.",

@@ -378,7 +378,19 @@ async def agent_endpoint(req: AgentRequest):
 @app.websocket("/ws")
 async def websocket_endpoint(websocket: WebSocket):
     await websocket.accept()
-    await register(websocket)
+    # Send a ping every 20 seconds to keep connection alive
+    async def keepalive():
+        while True:
+            try:
+                await asyncio.sleep(20)
+                await websocket.send_text('{"type":"ping","data":{}}')
+            except Exception:
+                break
+    task = asyncio.create_task(keepalive())
+    try:
+        await register(websocket)
+    finally:
+        task.cancel()
 
 
 @app.post("/tts")
