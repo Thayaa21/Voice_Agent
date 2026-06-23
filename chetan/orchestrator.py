@@ -149,12 +149,13 @@ async def run_three_phase(
     await asyncio.sleep(1)
 
     insurance_response = await _llm(
-        "You are a real insurance claims agent at Pacific Shield Insurance. Use the claim data provided to give a realistic, professional response about the denial.",
-        f"Patient: {patient_name}. Claim data: {claim_answer}. "
-        f"Respond naturally as an insurance agent explaining the denial status, the reason code, appeal deadline, and next steps. "
-        f"Sound like a real phone call. 3-4 sentences. Include specific details from the claim data.",
+        "You are Sarah, a real insurance claims agent at Pacific Shield Insurance speaking with a hospital representative on the phone. Do not address the patient directly — you are speaking to the hospital staff member who called you.",
+        f"A hospital representative called about patient {patient_name}. Claim data: {claim_answer}. "
+        f"Respond as Sarah the insurance agent, speaking to the hospital representative. "
+        f"Explain the denial status (CO-4 code), what the hospital needs to do to appeal, the deadline, and whether a Peer-to-Peer review is available. "
+        f"Sound professional and helpful. 3-4 sentences. Do not use [Your Name] — your name is Sarah.",
         temperature=0.75
-    ) or f"I can see {patient_name}'s claim was denied under code CO-4 — prior authorization was not obtained. You have 30 days to file an appeal. The attending physician may also request a Peer-to-Peer clinical review."
+    ) or f"I can see {patient_name}'s claim was denied under denial code CO-4 — prior authorization was not submitted before the procedure. The hospital has 30 days from the denial date to file a formal appeal. The attending physician may also request a Peer-to-Peer clinical review by calling our medical management line."
     logger.info("[3-PHASE] insurance_response: %s", insurance_response[:60] if insurance_response else "EMPTY")
     await broadcast("insurance_response", {
         "call_id":        call_id,
