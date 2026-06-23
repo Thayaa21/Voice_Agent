@@ -104,6 +104,7 @@ async def run_three_phase(
         f"You just heard an IVR menu. Say you're calling about a prior authorization claim for patient {patient_name}. One sentence.",
         temperature=0.7
     ) or f"I'm calling regarding a prior authorization claim for patient {patient_name}, please transfer me to claims."
+    logger.info("[3-PHASE] nav_msg: %s", nav_msg[:80] if nav_msg else "EMPTY")
     await broadcast("insurance_agent_speaks", {
         "call_id": call_id,
         "speaker": "hospital",

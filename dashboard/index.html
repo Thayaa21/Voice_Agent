@@ -252,8 +252,8 @@ var GRAPH_URL          = 'http://localhost:8000';
 var INS_URL            = 'http://localhost:8002';
 var WS_URL             = 'ws://localhost:9001/ws';
 var EL_API_KEY         = 'sk_69a730fdec9d50cccb83edd40eb1ebf65d5dd619b45964e1';
-var HOSPITAL_VOICE_ID  = 'EXAVITQu4vr4xnSDxMaL';  // Sarah - hospital agent
-var INSURANCE_VOICE_ID = 'JBFqnCBsd6RMkjVDRZzb';  // George - insurance agent
+var HOSPITAL_VOICE_ID  = 'EXAVITQu4vr4xnSDxMaL';  // Sarah (female) - hospital agent
+var INSURANCE_VOICE_ID = 'JBFqnCBsd6RMkjVDRZzb';  // George (male) - insurance agent
 
 // ── DEMO PATIENTS ───────────────────────────────────────────────────────────
 var DEMO_PATIENTS = [
@@ -282,15 +282,16 @@ var DEMO_PATIENTS = [
 ];
 
 // ── STATE ───────────────────────────────────────────────────────────────────
-var ws            = null;
-var audioEnabled  = true;
-var audioQueue    = [];
-var isPlaying     = false;
-var eventCount    = 0;
-var timerInt      = null;
-var timerSecs     = 0;
-var activePatient = null;
-var callNotes     = [];
+var ws             = null;
+var audioEnabled   = true;
+var audioQueue     = [];
+var isPlaying      = false;
+var eventCount     = 0;
+var timerInt       = null;
+var timerSecs      = 0;
+var activePatient  = null;
+var callNotes      = [];
+var insResultShown = false;  // guard against double-rendering insurance result
 
 // ── HELPERS ─────────────────────────────────────────────────────────────────
 function nowStr() {
@@ -481,6 +482,8 @@ function addInsMsg(from, text, role) {
 }
 
 function showInsResult(claimStatus, agentResponse) {
+  if (insResultShown) return;  // prevent duplicate rendering
+  insResultShown = true;
   var panel = document.getElementById('ins-panel');
   if (!panel) return;
   var statusCls = 'sb-pending';
@@ -633,17 +636,21 @@ function runDemoCall(name) {
 }
 
 // ── DEMO: INSURANCE CALL ──────────────────────────────────────────────────────
-// POST to /resolve/sync — gets full result back directly
+// POST to /resolve/sync — WS events handle all panel rendering in real-time.
+// The sync response is ONLY used as a fallback if WS missed the final result.
 function runInsuranceDemo(name) {
   addFeed('Starting insurance call for ' + name, 'insurance');
+
+  // Reset duplicate-guard so a fresh call can render its result
+  insResultShown = false;
+
   var panel = document.getElementById('ins-panel');
   if (panel) panel.innerHTML =
     '<div style="text-align:center;padding:20px;color:var(--muted);font-size:12px">' +
     '<div style="font-size:24px;margin-bottom:8px">📞</div>' +
     '<div>Calling Pacific Shield Insurance...<br>Watch the conversation appear below</div></div>';
 
-  // Use /resolve/sync so the response contains the full result
-  // WS events will render the chat in real-time, and the sync response is fallback
+  // Fire the call — WS events will render each bubble as they arrive
   fetch(AGENT_URL + '/resolve/sync', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -657,17 +664,21 @@ function runInsuranceDemo(name) {
   .then(function(r) { return r.json().catch(function() { return {}; }); })
   .then(function(data) {
     if (!data) return;
-    // Render final result directly (in case WS missed events)
-    var insResp = data.insurance_response || '';
-    var status  = data.claim_status || 'DENIED_NO_PA';
-    if (insResp) {
-      addInsMsg('Insurance Agent (Sarah)', insResp, 'insurance');
-      showInsResult(status, insResp);
-      queueAudio(insResp, INSURANCE_VOICE_ID);
-    }
-    if (data.callback_message) {
-      addFeed('✅ Resolution complete. Patient callback initiated.', 'callback');
-    }
+    // Fallback: if WS events didn't render the result, render it now
+    // Use a short delay so any in-flight WS messages can land first
+    setTimeout(function() {
+      var insResp = data.insurance_response || '';
+      var status  = data.claim_status || 'DENIED_NO_PA';
+      if (insResp && !insResultShown) {
+        // WS missed it — show the final insurance message and result card
+        addInsMsg('Sarah (Insurance Agent)', insResp, 'insurance');
+        showInsResult(status, insResp);
+        queueAudio(insResp, INSURANCE_VOICE_ID);
+      }
+      if (data.callback_message) {
+        addFeed('✅ Resolution complete. Patient callback initiated.', 'callback');
+      }
+    }, 2000);
   })
   .catch(function(err) {
     addFeed('Error: ' + err.message, 'error');
@@ -756,6 +767,7 @@ function handleWsEvent(data) {
 
   } else if (t === 'insurance_calling') {
     addFeed('Calling insurance', 'insurance', ts);
+    insResultShown = false;  // reset so this new call can render its result
     var insPanel = document.getElementById('ins-panel');
     if (insPanel) insPanel.innerHTML = '';
     addInsMsg('Hospital AI', data.message || 'Dialing Pacific Shield Insurance...', 'hospital');
@@ -795,12 +807,9 @@ function handleWsEvent(data) {
     var insResp = data.agent_response || data.message || data.text || data.response || '';
     var insStatus = data.claim_status || 'PENDING';
     addFeed('Insurance verdict: ' + insStatus, 'insurance', ts);
-    // Only render if sync call hasn't already shown it
-    var insPanel = document.getElementById('ins-panel');
-    var alreadyShown = insPanel && insPanel.querySelector('.ins-result');
-    if (insResp && !alreadyShown) {
+    if (insResp && !insResultShown) {
       addInsMsg('Sarah (Insurance Agent)', insResp, 'insurance');
-      showInsResult(insStatus, insResp);
+      showInsResult(insStatus, insResp);  // sets insResultShown = true inside
       queueAudio(insResp, INSURANCE_VOICE_ID);
     }
 
