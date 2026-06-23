@@ -205,9 +205,36 @@ const INS_URL   = 'http://localhost:8002';
 const WS_URL    = 'ws://localhost:9001/ws';
 
 const DEMO_PATIENTS = [
-  { name:'Sydney Santos',  insurance:'Anthem',   dob:'1999-05-24', denied:150, conditions:2,  scenario:'Claim Denial' },
-  { name:'Dylan Ali',      insurance:'Medicare', dob:'1940-04-12', denied:254, conditions:18, scenario:'Cost Estimate' },
-  { name:'Grace Collins',  insurance:'Medicare', dob:'1938-09-05', denied:240, conditions:18, scenario:'Pre-Procedure' },
+  {
+    name: 'Ruby Hall',
+    insurance: 'Cigna Health',
+    dob: '1966-07-06',
+    denied: 94,
+    conditions: 14,
+    scenario: 'Claim Denial',
+    details: {
+      claim: 'Ruby Hall, your Encounter for check up claim from 2019-06-05 was denied — prior auth not obtained. Billed: $129.16, covered: $0. Appeal by submitting prior auth to Cigna Health. 94 total denied claims.',
+      cost: 'Ruby Hall, billing with Cigna Health: total billed $14,672.57, covered $2,111.53, your responsibility $12,561.04. 94 denied claims may be adding to balance.',
+      bill: 'Ruby Hall: $14,672.57 billed, Cigna paid $2,111.53, you owe $12,561.04. $2,454.04 from 19 denied claims. We offer payment plans.',
+      prep: 'Do not eat or drink after midnight. Bring ID, insurance card, medication list. Arrange a driver if sedation is used. Arrive 30 min early.',
+      phone_script: 'Say: "Ruby Hall, date of birth July 6, 1966"'
+    }
+  },
+  {
+    name: 'Elena Garcia',
+    insurance: 'Humana',
+    dob: '1969-07-16',
+    denied: 69,
+    conditions: 9,
+    scenario: 'Cost Estimate',
+    details: {
+      claim: 'Elena Garcia, your Encounter for check up claim from 2019-05-29 was denied — prior auth not obtained. Billed: $129.16, covered: $0. Appeal via Humana prior auth request. 69 total denied claims.',
+      cost: 'Elena Garcia, billing with Humana: total billed $14,724.24, covered $3,367.20, your responsibility $11,357.04. 69 denied claims adding to balance.',
+      bill: 'Elena Garcia: $14,724.24 billed, Humana paid $3,367.20, you owe $11,357.04. Denied claims contributing to balance. Payment plans available.',
+      prep: 'Do not eat or drink after midnight. Bring ID, insurance card, medication list. Arrange a driver if sedation is used. Arrive 30 min early.',
+      phone_script: 'Say: "Elena Garcia, date of birth July 16, 1969"'
+    }
+  },
 ];
 
 let ws = null, eventCount = 0, callTimer = null, callSeconds = 0;
@@ -349,6 +376,7 @@ function addNote(text) {
 // ── Patient Record ─────────────────────────────────────────────────────────
 function renderPatientRecord(data) {
   const {person, record} = data;
+  const p = DEMO_PATIENTS.find(x => x.name === person) || {};
   const main = document.getElementById('main-content');
   main.innerHTML = `
     <div class="record-header glow-blue">
@@ -356,30 +384,60 @@ function renderPatientRecord(data) {
         <div style="width:44px;height:44px;background:rgba(88,166,255,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px">👤</div>
         <div>
           <div class="r-name">${person}</div>
-          <div class="r-meta">Verified patient · Session active</div>
+          <div class="r-meta">${p.insurance||'Unknown'} · DOB: ${p.dob||''} · <span style="color:var(--accent)">${p.phone_script||''}</span></div>
         </div>
         <div style="margin-left:auto"><span class="tag tag-green">✓ VERIFIED</span></div>
       </div>
+      <div style="background:rgba(88,166,255,.06);border:1px solid rgba(88,166,255,.15);border-radius:6px;padding:10px;font-size:12px;color:var(--accent)">
+        📞 <strong>Phone script:</strong> ${p.details?.phone_script || 'Say the patient name and date of birth'}
+      </div>
     </div>
-    
+
+    <!-- CHEAT SHEET - what to say on the phone -->
+    <div style="background:rgba(63,185,80,.04);border:1px solid rgba(63,185,80,.2);border-radius:8px;padding:14px;margin-bottom:16px">
+      <div style="font-size:11px;color:var(--green);text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:12px">📋 What You Can Ask On The Phone</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+        <div style="background:rgba(0,0,0,.3);border-radius:6px;padding:10px">
+          <div style="font-size:10px;color:var(--yellow);text-transform:uppercase;letter-spacing:.04em;margin-bottom:4px">🚫 Claim / Denial</div>
+          <div style="font-size:11px;color:var(--text);line-height:1.5">"Why was my claim denied?"<br>"What's my claim status?"</div>
+        </div>
+        <div style="background:rgba(0,0,0,.3);border-radius:6px;padding:10px">
+          <div style="font-size:10px;color:var(--accent);text-transform:uppercase;letter-spacing:.04em;margin-bottom:4px">💰 Cost</div>
+          <div style="font-size:11px;color:var(--text);line-height:1.5">"How much will I owe?"<br>"What's my out-of-pocket?"</div>
+        </div>
+        <div style="background:rgba(0,0,0,.3);border-radius:6px;padding:10px">
+          <div style="font-size:10px;color:var(--purple);text-transform:uppercase;letter-spacing:.04em;margin-bottom:4px">📋 Pre-Procedure</div>
+          <div style="font-size:11px;color:var(--text);line-height:1.5">"What do I do before my procedure?"<br>"Should I stop my medication?"</div>
+        </div>
+        <div style="background:rgba(0,0,0,.3);border-radius:6px;padding:10px">
+          <div style="font-size:10px;color:var(--orange);text-transform:uppercase;letter-spacing:.04em;margin-bottom:4px">🧾 Bill</div>
+          <div style="font-size:11px;color:var(--text);line-height:1.5">"I got a bill — why do I owe this?"<br>"Explain my statement"</div>
+        </div>
+      </div>
+    </div>
+
     <div class="info-grid">
       <div class="info-card">
         <div class="info-title">🚫 Claim Status</div>
-        <div class="info-body" style="font-size:12px">${record.claim_status||'Loading...'}</div>
+        <div class="info-body" style="font-size:12px">${p.details?.claim || record.claim_status || 'Loading...'}</div>
       </div>
       <div class="info-card">
         <div class="info-title">💰 Cost Estimate</div>
-        <div class="info-body" style="font-size:12px">${record.cost_estimate||'Loading...'}</div>
+        <div class="info-body" style="font-size:12px">${p.details?.cost || record.cost_estimate || 'Loading...'}</div>
       </div>
-      <div class="info-card" style="grid-column:span 2">
-        <div class="info-title">📋 Pre-Procedure Instructions</div>
-        <div class="info-body" style="font-size:12px">${record.pre_procedure||'Loading...'}</div>
+      <div class="info-card">
+        <div class="info-title">📋 Pre-Procedure</div>
+        <div class="info-body" style="font-size:12px">${p.details?.prep || record.pre_procedure || 'Loading...'}</div>
+      </div>
+      <div class="info-card">
+        <div class="info-title">🧾 Bill Explanation</div>
+        <div class="info-body" style="font-size:12px">${p.details?.bill || 'Loading...'}</div>
       </div>
     </div>
 
     <div style="background:var(--card);border:1px solid var(--border2);border-radius:8px;padding:14px">
-      <div class="info-title">📝 Call Notes</div>
-      <div id="call-notes" style="margin-top:8px"></div>
+      <div class="info-title">📝 Live Call Notes</div>
+      <div id="call-notes" style="margin-top:8px;font-size:12px;color:var(--muted)">Notes will appear here as the call progresses...</div>
     </div>
 
     <div style="margin-top:12px;display:flex;gap:10px">
@@ -388,10 +446,9 @@ function renderPatientRecord(data) {
       </button>
     </div>
   `;
-  // Re-render existing notes
   notes.forEach(n => {
     const el = document.getElementById('call-notes');
-    if(el) { const d=document.createElement('div'); d.className='note-item'; d.innerHTML=`<div class="note-time">${n.time}</div>${n.text}`; el.appendChild(d); }
+    if(el) { el.style.color='var(--text)'; const d=document.createElement('div'); d.className='note-item'; d.innerHTML=`<div class="note-time">${n.time}</div>${n.text}`; el.appendChild(d); }
   });
 }
 
@@ -510,7 +567,8 @@ function renderPatients() {
   document.getElementById('patient-list').innerHTML = DEMO_PATIENTS.map((p,i) => `
     <div class="patient-card" id="pc-${i}" onclick="loadDemoPatient(${i})">
       <div class="p-name">${p.name}</div>
-      <div class="p-meta">DOB: ${p.dob}</div>
+      <div class="p-meta">DOB: ${p.dob} · ${p.insurance}</div>
+      <div style="font-size:11px;color:var(--accent);margin-bottom:6px;font-style:italic">${p.details.phone_script}</div>
       <div class="tags">
         <span class="tag tag-blue">${p.insurance}</span>
         <span class="tag tag-red">${p.denied} denied</span>
@@ -518,10 +576,10 @@ function renderPatients() {
       </div>
     </div>
   `).join('') + `
-    <div style="margin-top:20px;padding:12px;background:var(--card);border:1px solid var(--border2);border-radius:8px">
-      <div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">Real Phone Call</div>
-      <div style="font-size:12px;color:var(--accent);font-weight:600">+1 (531) 324-5471</div>
-      <div style="font-size:11px;color:var(--muted);margin-top:4px">Call this number — dashboard updates live</div>
+    <div style="margin-top:16px;padding:12px;background:var(--card);border:1px solid rgba(88,166,255,.2);border-radius:8px">
+      <div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px">📞 Real Phone Call</div>
+      <div style="font-size:14px;color:var(--accent);font-weight:700;margin-bottom:4px">+1 (531) 324-5471</div>
+      <div style="font-size:11px;color:var(--muted)">Call this number — dashboard updates live as you speak</div>
     </div>
   `;
 }

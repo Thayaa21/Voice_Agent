@@ -180,30 +180,25 @@ def get_claim_status(patient_name: str, graph) -> dict:
 
     if status == "DENIED_NO_PA":
         msg = (
-            f"{display_name}, your claim for {description} on {date} was denied by {payer}. "
-            f"The denial reason is that prior authorization was not obtained before the procedure. "
-            f"The billed amount was ${billed:,.2f} and none of it was covered. "
-            f"You can appeal this decision — your care team will need to submit a prior authorization request to {payer}. "
-            f"If denied again, your doctor can request a Peer-to-Peer clinical review with the insurance medical director."
+            f"{display_name}, your {description} claim from {date} was denied — prior authorization not obtained. "
+            f"Billed: ${billed:,.2f}, covered: $0. "
+            f"To appeal: your care team submits a prior auth request to {primary_attrs.get('insurance_payer','your insurer')}. "
+            f"If denied again, your doctor can request a Peer-to-Peer review."
         )
         if denied_count > 1:
-            msg += f" Note: you have {denied_count} total denied claims on your account."
+            msg += f" You have {denied_count} total denied claims."
 
     elif status == "PENDING_P2P":
         msg = (
-            f"{display_name}, your claim for {description} on {date} is currently pending a Peer-to-Peer clinical review with {payer}. "
-            f"This means your doctor needs to speak directly with the insurance company's medical director to justify the procedure. "
-            f"The billed amount is ${billed:,.2f}, of which ${covered:,.2f} may be covered. "
-            f"This process typically takes 3 to 5 business days. Your care coordinator should be in contact with you soon."
+            f"{display_name}, your {description} claim from {date} is pending a Peer-to-Peer review with {payer}. "
+            f"Your doctor needs to speak with the insurer's medical director. "
+            f"Billed: ${billed:,.2f}, potentially covered: ${covered:,.2f}. Typically resolves in 3-5 business days."
         )
 
     elif status == "PARTIAL":
         msg = (
-            f"{display_name}, your most recent claim for {description} on {date} was partially covered. "
-            f"{payer} paid ${covered:,.2f} of the ${billed:,.2f} billed amount. "
-            f"Your remaining balance is ${owes:,.2f}. "
-            f"This is based on your current deductible and coinsurance plan. "
-            f"If you believe this is incorrect, our billing team can review the claim."
+            f"{display_name}, your {description} claim from {date} was partially covered. "
+            f"{payer} paid ${covered:,.2f} of ${billed:,.2f}. Your balance: ${owes:,.2f}."
         )
 
     else:  # PAID
@@ -257,30 +252,16 @@ def get_cost_estimate(patient_name: str, graph) -> dict:
         coverage_pct = 0
 
     if total_billed == 0:
-        return _answer(display_name, f"I don't have enough billing history for {display_name} to estimate your out-of-pocket costs. Please contact our billing department directly.")
+        return _answer(display_name, f"No billing history on file. Contact our billing department directly.")
 
     msg = (
-        f"{display_name}, based on your billing history with {payer}: "
-        f"your total healthcare costs to date are ${total_billed:,.2f}, "
-        f"of which {payer} has covered ${total_covered:,.2f}. "
-        f"Your total out-of-pocket responsibility is ${total_owed:,.2f}. "
+        f"{display_name}, billing summary with {payer}: "
+        f"total billed ${total_billed:,.2f}, covered ${total_covered:,.2f}, "
+        f"your responsibility ${total_owed:,.2f}."
     )
-
-    if coverage_pct > 0:
-        msg += f"On average, {payer} covers about {coverage_pct}% of your procedure costs. "
-
     if denied_count > 0:
-        msg += (
-            f"Important: you have {denied_count} denied claim{'s' if denied_count > 1 else ''} "
-            f"which may be adding to your balance. "
-            f"I recommend speaking with our billing team to review those denials. "
-        )
-
-    msg += (
-        f"For a precise estimate for a specific upcoming procedure, "
-        f"our financial counselors can run an exact cost calculation based on your current deductible and coinsurance. "
-        f"Would you like me to have someone call you back?"
-    )
+        msg += f" {denied_count} denied claim{'s' if denied_count > 1 else ''} may be adding to your balance — our billing team can review."
+    msg += " For a procedure-specific estimate, call our financial counselors."
 
     return _answer(display_name, msg)
 
@@ -411,41 +392,22 @@ def get_bill_explanation(patient_name: str, graph) -> dict:
     denied_count = int(primary_attrs.get("denied_claims", 0))
 
     if total_owed == 0 and total_billed == 0:
-        return _answer(display_name, f"I don't have any outstanding billing records for {display_name}. If you received a bill, please have the bill reference number ready and call our billing department.")
+        return _answer(display_name, f"No outstanding billing records found. Call billing with your bill reference number.")
 
-    # Break down the bill
-    paid_encounters    = [e for e in encounters if e.get("claim_status") == "PAID"]
-    partial_encounters = [e for e in encounters if e.get("claim_status") == "PARTIAL"]
     denied_encounters  = [e for e in encounters if e.get("claim_status") == "DENIED_NO_PA"]
+    partial_encounters = [e for e in encounters if e.get("claim_status") == "PARTIAL"]
 
     msg = (
-        f"{display_name}, let me explain your current balance. "
-        f"The hospital billed a total of ${total_billed:,.2f} for your care. "
-        f"{payer} has paid ${total_covered:,.2f} of that amount, "
-        f"leaving a patient responsibility of ${total_owed:,.2f}. "
+        f"{display_name}, your bill: ${total_billed:,.2f} billed, "
+        f"{payer} paid ${total_covered:,.2f}, you owe ${total_owed:,.2f}. "
     )
-
     if denied_encounters:
         denied_total = sum(float(e.get("billed", 0)) for e in denied_encounters)
-        msg += (
-            f"Of your balance, ${denied_total:,.2f} comes from {len(denied_encounters)} denied claim{'s' if len(denied_encounters) > 1 else ''} "
-            f"where {payer} did not cover the procedure — typically because prior authorization was not obtained. "
-            f"You have the right to appeal these denials. "
-        )
-
+        msg += f"${denied_total:,.2f} from {len(denied_encounters)} denied claim{'s' if len(denied_encounters)>1 else ''} — prior auth not obtained. You can appeal these. "
     if partial_encounters:
-        msg += (
-            f"The remaining balance is from your cost-sharing responsibility — "
-            f"this is the portion you owe after your deductible and coinsurance are applied. "
-            f"This is standard under your {payer} plan and is not an error. "
-        )
-
+        msg += f"Remaining balance is your deductible/coinsurance share under your {payer} plan. "
     if total_owed > 500:
-        msg += (
-            f"If you are unable to pay the full balance of ${total_owed:,.2f} at once, "
-            f"we offer payment plans. Our billing team can set that up for you today. "
-            f"Would you like me to transfer you to billing?"
-        )
+        msg += f"We offer payment plans — contact billing to set one up."
     else:
         msg += (
             f"You can pay your balance of ${total_owed:,.2f} online at our patient portal, "
