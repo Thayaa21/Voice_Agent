@@ -124,8 +124,8 @@ async def run_three_phase(
     await asyncio.sleep(1)
 
     pickup_msg = await _llm(
-        "You are a real insurance claims agent named Sarah at Pacific Shield Insurance. Sound friendly and professional.",
-        "Greet a caller after they've been on hold. Say your name and department. 1-2 sentences.",
+        "You are Sarah, a real insurance claims agent at Pacific Shield Insurance. Sound friendly and professional.",
+        "Greet a hospital billing coordinator who has been on hold. Say your name and department. 1-2 sentences.",
         temperature=0.8
     ) or "Thank you for holding. This is Sarah from Pacific Shield Insurance, claims department. How can I assist you today?"
     await broadcast("insurance_connected", {
@@ -135,11 +135,12 @@ async def run_three_phase(
     })
     await asyncio.sleep(1)
 
+    # Hospital agent asks the specific question FIRST
     explain_msg = await _llm(
-        "You are a hospital AI agent calling to check on a claim denial. Be professional and specific.",
-        f"Explain why you're calling about patient {patient_name}. Mention you need the denial reason, appeal deadline, and next steps. 2 sentences.",
+        "You are a hospital billing coordinator calling an insurance company. Be specific and direct.",
+        f"Ask Sarah about the prior authorization denial for patient {patient_name}. Ask for: the denial reason code, the appeal deadline, and whether a Peer-to-Peer review is available. 2 sentences.",
         temperature=0.7
-    ) or f"I'm calling to inquire about a prior authorization denial for patient {patient_name}. Can you provide the denial reason code, appeal deadline, and next steps?"
+    ) or f"Hi Sarah, I'm calling about a prior authorization denial for patient {patient_name}. Can you confirm the denial reason code, the appeal deadline, and whether a Peer-to-Peer review is an option?"
     logger.info("[3-PHASE] explain_msg: %s", explain_msg[:60] if explain_msg else "EMPTY")
     await broadcast("insurance_agent_speaks", {
         "call_id": call_id,
@@ -148,14 +149,14 @@ async def run_three_phase(
     })
     await asyncio.sleep(1)
 
+    # Insurance agent Sarah answers the specific question
     insurance_response = await _llm(
-        "You are Sarah, a real insurance claims agent at Pacific Shield Insurance speaking with a hospital representative on the phone. Do not address the patient directly — you are speaking to the hospital staff member who called you.",
-        f"A hospital representative called about patient {patient_name}. Claim data: {claim_answer}. "
-        f"Respond as Sarah the insurance agent, speaking to the hospital representative. "
-        f"Explain the denial status (CO-4 code), what the hospital needs to do to appeal, the deadline, and whether a Peer-to-Peer review is available. "
-        f"Sound professional and helpful. 3-4 sentences. Do not use [Your Name] — your name is Sarah.",
+        "You are Sarah, a real insurance claims agent at Pacific Shield Insurance answering a hospital billing coordinator's specific question about a claim denial. Be factual and helpful.",
+        f"The hospital coordinator asked about {patient_name}'s denial. Claim data: {claim_answer}. "
+        f"Answer their question directly: confirm CO-4 denial code (no prior auth), state the 30-day appeal deadline, confirm Peer-to-Peer review is available. "
+        f"Speak professionally to the hospital coordinator. 3 sentences. Your name is Sarah.",
         temperature=0.75
-    ) or f"I can see {patient_name}'s claim was denied under denial code CO-4 — prior authorization was not submitted before the procedure. The hospital has 30 days from the denial date to file a formal appeal. The attending physician may also request a Peer-to-Peer clinical review by calling our medical management line."
+    ) or f"Yes, I can confirm that claim was denied under denial code CO-4 — prior authorization was not obtained before the procedure. Your hospital has 30 days from the denial date to submit a formal appeal. The attending physician can also request a Peer-to-Peer clinical review by calling our medical management line at any time."
     logger.info("[3-PHASE] insurance_response: %s", insurance_response[:60] if insurance_response else "EMPTY")
     await broadcast("insurance_response", {
         "call_id":        call_id,
