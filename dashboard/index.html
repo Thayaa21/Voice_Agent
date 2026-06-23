@@ -621,15 +621,18 @@ function runDemoCall(name) {
 }
 
 // ── DEMO: INSURANCE CALL ──────────────────────────────────────────────────────
-// POST to /resolve with patient_name, inquiry_type, callback_number
+// POST to /resolve/sync — gets full result back directly
 function runInsuranceDemo(name) {
   addFeed('Starting insurance call for ' + name, 'insurance');
-  document.getElementById('ins-panel').innerHTML =
+  var panel = document.getElementById('ins-panel');
+  if (panel) panel.innerHTML =
     '<div style="text-align:center;padding:20px;color:var(--muted);font-size:12px">' +
-    '<div style="font-size:24px;margin-bottom:8px;animation:pulse 1s infinite">📞</div>' +
-    '<div>Calling Pacific Shield Insurance...<br>Conversation will appear below</div></div>';
+    '<div style="font-size:24px;margin-bottom:8px">📞</div>' +
+    '<div>Calling Pacific Shield Insurance...<br>Watch the conversation appear below</div></div>';
 
-  fetch(AGENT_URL + '/resolve', {
+  // Use /resolve/sync so the response contains the full result
+  // WS events will render the chat in real-time, and the sync response is fallback
+  fetch(AGENT_URL + '/resolve/sync', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
@@ -641,7 +644,18 @@ function runInsuranceDemo(name) {
   })
   .then(function(r) { return r.json().catch(function() { return {}; }); })
   .then(function(data) {
-    addFeed('Resolution queued — conversation incoming via WebSocket', 'system');
+    if (!data) return;
+    // Render final result directly (in case WS missed events)
+    var insResp = data.insurance_response || '';
+    var status  = data.claim_status || 'DENIED_NO_PA';
+    if (insResp) {
+      addInsMsg('Insurance Agent (Sarah)', insResp, 'insurance');
+      showInsResult(status, insResp);
+      queueAudio(insResp, INSURANCE_VOICE_ID);
+    }
+    if (data.callback_message) {
+      addFeed('✅ Resolution complete. Patient callback initiated.', 'callback');
+    }
   })
   .catch(function(err) {
     addFeed('Error: ' + err.message, 'error');
