@@ -739,12 +739,12 @@ function handleWsEvent(data) {
 
   } else if (t === 'insurance_agent_speaks') {
     var agentMsg = data.message || data.text || '';
-    if (!agentMsg) { break_early: true; }
+    if (!agentMsg) return; // skip empty messages
     var isSpeakerHospital = (data.speaker === 'hospital');
-    var spkName = isSpeakerHospital ? 'Hospital AI' : 'Insurance Agent (Sarah)';
-    var spkRole = isSpeakerHospital ? 'hospital' : 'insurance';
+    var spkName  = isSpeakerHospital ? 'Hospital AI' : 'Insurance Agent';
+    var spkRole  = isSpeakerHospital ? 'hospital' : 'insurance';
     var spkVoice = isSpeakerHospital ? HOSPITAL_VOICE_ID : INSURANCE_VOICE_ID;
-    addFeed(spkName + ': ' + agentMsg.substring(0,60), isSpeakerHospital ? 'system' : 'insurance', ts);
+    addFeed(spkName + ': ' + agentMsg.substring(0,80), isSpeakerHospital ? 'system' : 'insurance', ts);
     addInsMsg(spkName, agentMsg, spkRole);
     queueAudio(agentMsg, spkVoice);
 
