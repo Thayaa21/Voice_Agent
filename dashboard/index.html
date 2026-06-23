@@ -457,10 +457,12 @@ function addFeed(text, type, ts, sub) {
 // ── INSURANCE PANEL ───────────────────────────────────────────────────────────
 function addInsMsg(from, text, role) {
   var panel = document.getElementById('ins-panel');
+  if (!panel) return;
   var idle = panel.querySelector('.ins-idle');
   if (idle) panel.innerHTML = '';
+  if (!text || !text.trim()) return; // skip empty messages
   var div = document.createElement('div');
-  div.className = 'ins-msg ' + role;
+  div.className = 'ins-msg ' + (role || 'ivr');
   div.innerHTML = '<div class="ins-msg-from">' + from + '</div>' + text;
   panel.appendChild(div);
   panel.scrollTop = panel.scrollHeight;
@@ -676,13 +678,14 @@ function connectWS() {
   ws.onmessage = function(evt) {
     var data;
     try { data = JSON.parse(evt.data); } catch(e) { return; }
-    handleWsEvent(data);
+    try { handleWsEvent(data); } catch(e) { console.error('WS event error:', e, data); }
   };
 }
 
 function handleWsEvent(data) {
   var t = data.type || data.event || '';
   var ts = nowStr();
+  if (t === 'ping') return; // ignore keepalive pings
 
   if (t === 'call_started') {
     document.getElementById('call-badge').classList.add('active');
@@ -757,14 +760,14 @@ function handleWsEvent(data) {
   } else if (t === 'insurance_connected') {
     var connMsg = data.message || data.text || 'Thank you for holding. This is Pacific Shield Claims.';
     addFeed('Insurance agent connected', 'insurance', ts);
-    addInsMsg('Insurance Agent (Sarah)', connMsg, 'insurance');
+    addInsMsg('Insurance Agent (George)', connMsg, 'insurance');
     queueAudio(connMsg, INSURANCE_VOICE_ID);
 
   } else if (t === 'insurance_response') {
     var insResp = data.agent_response || data.message || data.text || data.response || '';
     var insStatus = data.claim_status || 'PENDING';
     addFeed('Insurance verdict: ' + insStatus, 'insurance', ts);
-    if (insResp) addInsMsg('Insurance Agent (Sarah)', insResp, 'insurance');
+    if (insResp) addInsMsg('Insurance Agent (George)', insResp, 'insurance');
     showInsResult(insStatus, insResp);
     if (insResp) queueAudio(insResp, INSURANCE_VOICE_ID);
 
