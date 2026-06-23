@@ -343,13 +343,17 @@ function playNextAudio() {
 }
 
 function speakElevenLabs(text, voiceId, onDone) {
-  var url = 'https://api.elevenlabs.io/v1/text-to-speech/' + voiceId + '/stream';
+  var url = 'https://api.elevenlabs.io/v1/text-to-speech/' + voiceId;
   fetch(url, {
     method: 'POST',
-    headers: { 'xi-api-key': EL_API_KEY, 'Content-Type': 'application/json' },
+    headers: {
+      'xi-api-key': EL_API_KEY,
+      'Content-Type': 'application/json',
+      'Accept': 'audio/mpeg'
+    },
     body: JSON.stringify({
       text: text,
-      model_id: 'eleven_turbo_v2',
+      model_id: 'eleven_multilingual_v2',
       voice_settings: { stability: 0.5, similarity_boost: 0.75 }
     })
   })
