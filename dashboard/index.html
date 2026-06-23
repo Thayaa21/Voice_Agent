@@ -364,7 +364,38 @@ function speakElevenLabs(text, voiceId, onDone) {
     audio.onerror = function() { if (onDone) onDone(); };
     audio.play().catch(function() { if (onDone) onDone(); });
   })
-  .catch(function() { if (onDone) onDone(); });
+  .catch(function(e) {
+    // Fallback to browser TTS when ElevenLabs fails or is out of credits
+    console.warn('ElevenLabs failed (' + e.message + '), using browser TTS');
+    speakBrowser(text, voiceId, onDone);
+  });
+}
+
+function speakBrowser(text, voiceId, onDone) {
+  if (!window.speechSynthesis) { if (onDone) onDone(); return; }
+  window.speechSynthesis.cancel();
+  var utt = new SpeechSynthesisUtterance(text);
+  var voices = window.speechSynthesis.getVoices();
+  // Hospital voice: female US English
+  // Insurance voice: different pitch/rate
+  if (voiceId === HOSPITAL_VOICE_ID) {
+    utt.voice = voices.find(function(v) { return v.lang === 'en-US' && v.name.indexOf('Female') !== -1; })
+               || voices.find(function(v) { return v.lang === 'en-US'; })
+               || voices[0];
+    utt.rate  = 0.95;
+    utt.pitch = 1.05;
+  } else {
+    // Insurance agent — slightly different voice
+    utt.voice = voices.find(function(v) { return v.lang === 'en-US' && v.name.indexOf('Male') !== -1; })
+               || voices.find(function(v) { return v.lang === 'en-US'; })
+               || voices[0];
+    utt.rate  = 0.9;
+    utt.pitch = 0.92;
+  }
+  utt.volume = 1.0;
+  utt.onend = function() { if (onDone) onDone(); };
+  utt.onerror = function() { if (onDone) onDone(); };
+  window.speechSynthesis.speak(utt);
 }
 
 // ── LIVE FEED ─────────────────────────────────────────────────────────────────
@@ -564,7 +595,10 @@ function runInsuranceDemo(name) {
   addFeed('Initiating insurance resolution for ' + name, 'insurance');
   var panel = document.getElementById('ins-panel');
   panel.innerHTML = '';
-  addInsMsg('Hospital AI', 'Contacting insurance for ' + name + '…', 'hospital');
+  addInsMsg('Hospital AI', '📞 Dialing Pacific Shield Insurance for ' + name + '...', 'hospital');
+  addInsMsg('System', '⏳ Conversation will appear here. You will hear both voices via your speakers.', 'ivr');
+  // Speak immediately so user knows it started
+  speakBrowser('Dialing Pacific Shield Insurance on behalf of ' + name + '. Please wait.', HOSPITAL_VOICE_ID, null);
 
   fetch(AGENT_URL + '/resolve', {
     method: 'POST',
@@ -578,18 +612,11 @@ function runInsuranceDemo(name) {
   })
   .then(function(r) { return r.json().catch(function() { return {}; }); })
   .then(function(data) {
-    addFeed('Insurance resolution request sent for ' + name, 'insurance');
-    if (data && data.response) {
-      addInsMsg('Insurance Agent', data.response, 'insurance');
-      queueAudio(data.response, INSURANCE_VOICE_ID);
-      showInsResult(data.claim_status || 'PENDING', data.response);
-    } else {
-      addInsMsg('System', 'Request submitted. Awaiting insurance callback.', 'ivr');
-    }
+    addFeed('Insurance resolution queued — listen for the conversation', 'insurance');
   })
   .catch(function(err) {
     addFeed('Insurance demo error: ' + err.message, 'error');
-    addInsMsg('System', 'Could not reach insurance service: ' + err.message, 'ivr');
+    addInsMsg('System', 'Error: ' + err.message, 'ivr');
   });
 }
 </script>
