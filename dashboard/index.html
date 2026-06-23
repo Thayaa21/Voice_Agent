@@ -653,20 +653,33 @@ function runInsuranceDemo(name) {
   .then(function(r) { return r.json().catch(function() { return {}; }); })
   .then(function(data) {
     if (!data) return;
-    // Fallback: if WS events didn't render the result, render it now
-    // Use a short delay so any in-flight WS messages can land first
+    var insResp = data.insurance_response || '';
+    var status  = data.claim_status || 'DENIED_NO_PA';
+    // Always show George's response from sync data — don't rely on WS
+    // Add Sarah's question first if not already shown, then George's response
     setTimeout(function() {
-      var insResp = data.insurance_response || '';
-      var status  = data.claim_status || 'DENIED_NO_PA';
+      var panel = document.getElementById('ins-panel');
+      if (!panel) return;
+      // If Sarah's question not shown yet, add it
+      if (!panel.querySelector('.sarah-question')) {
+        var patName = window._lastPatientName || currentInsurancePatient || 'the patient';
+        if (patName && patName !== 'the patient') {
+          var sarahQ = 'Hi George, I\'m calling about a prior authorization denial for ' + patName + '. Can you confirm the denial reason code, appeal deadline, and if Peer-to-Peer review is available?';
+          addInsMsg('Sarah (Hospital)', sarahQ, 'hospital sarah-question');
+          queueAudio(sarahQ, HOSPITAL_VOICE_ID);
+        }
+      }
+      // Show George's response
       if (insResp && !document.querySelector('#ins-panel .ins-result')) {
-        // WS missed it — show the final insurance message and result card
-        queueBubble('George (Insurance)', insResp, 'insurance', INSURANCE_VOICE_ID);
-        showInsResult(status, insResp);
+        setTimeout(function() {
+          queueBubble('George (Insurance)', insResp, 'insurance', INSURANCE_VOICE_ID);
+          showInsResult(status, insResp);
+        }, 1500);
       }
       if (data.callback_message) {
         addFeed('✅ Resolution complete. Patient callback initiated.', 'callback');
       }
-    }, 2000);
+    }, 1000);
   })
   .catch(function(err) {
     addFeed('Error: ' + err.message, 'error');
@@ -915,20 +928,23 @@ function showLivePatient(name) {
       '<div id="call-notes" style="margin-top:8px;font-size:12px;color:var(--muted)">Notes appear as call progresses...</div>' +
     '</div>';
 
-  // Immediately fetch patient data from graph
+  // Immediately fetch all 4 data cards from graph
   Promise.all([
-    fetch(GRAPH_URL + '/hospital/claim-status', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({patient_name: name})}),
-    fetch(GRAPH_URL + '/hospital/cost-estimate', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({patient_name: name})}),
-    fetch(GRAPH_URL + '/hospital/pre-procedure', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({patient_name: name})})
+    fetch(GRAPH_URL + '/hospital/claim-status',   {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({patient_name: name})}),
+    fetch(GRAPH_URL + '/hospital/cost-estimate',  {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({patient_name: name})}),
+    fetch(GRAPH_URL + '/hospital/pre-procedure',  {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({patient_name: name})}),
+    fetch(GRAPH_URL + '/hospital/bill-explanation',{method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({patient_name: name})})
   ]).then(function(responses) {
     return Promise.all(responses.map(function(r) { return r.json().catch(function(){return {};}); }));
   }).then(function(results) {
-    updateLiveRecord(name, {
+    var record = {
       claim_status:  results[0].answer || '',
       cost_estimate: results[1].answer || '',
-      pre_procedure: results[2].answer || ''
-    });
-  }).catch(function(){});
+      pre_procedure: results[2].answer || '',
+      bill:          results[3].answer || ''
+    };
+    renderFullLivePatient(name, record);
+  }).catch(function(e) { console.warn('patient fetch failed', e); });
 }
 
 function updateLiveRecord(person, record) {
@@ -971,7 +987,7 @@ function renderFullLivePatient(person, record) {
       '<div class="info-card"><div class="info-title"><span>🚫</span> Claim Status</div><div class="info-body">' + (record.claim_status || 'Loading...') + '</div></div>' +
       '<div class="info-card"><div class="info-title"><span>💰</span> Cost Estimate</div><div class="info-body">' + (record.cost_estimate || 'Loading...') + '</div></div>' +
       '<div class="info-card"><div class="info-title"><span>📋</span> Pre-Procedure Prep</div><div class="info-body">' + (record.pre_procedure || 'Loading...') + '</div></div>' +
-      '<div class="info-card"><div class="info-title"><span>🧾</span> Bill Explanation</div><div class="info-body">Contact billing for a detailed breakdown of your account balance and payment options.</div></div>' +
+      '<div class="info-card"><div class="info-title"><span>🧾</span> Bill Explanation</div><div class="info-body">' + (record.bill || 'Contact billing for a detailed breakdown of your account balance and payment options.') + '</div></div>' +
     '</div>' +
     '<div class="notes-wrap">' +
       '<div class="info-title">📝 Live Call Notes</div>' +
