@@ -395,6 +395,10 @@ async def tts_endpoint(body: dict):
         raise
     except Exception as e:
         raise HTTPException(500, str(e))
+
+
+@app.websocket("/ws")
+async def websocket_endpoint(websocket: WebSocket):
     """WebSocket endpoint for live dashboard."""
     await websocket.accept()
     await register(websocket)
@@ -402,6 +406,12 @@ async def tts_endpoint(body: dict):
 
 @app.get("/health")
 def health():
+    return {"status": "ok", "service": "hospital-agent", "port": 9001,
+            "active_sessions": len(sessions)}
+
+
+@app.delete("/sessions/{call_id}")
+def clear_session(call_id: str):
     sessions.pop(call_id, None)
     return {"cleared": call_id}
 
