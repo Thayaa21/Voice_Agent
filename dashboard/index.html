@@ -146,6 +146,7 @@
     <span id="call-badge-text">CALL ACTIVE</span>
   </div>
   <div class="topbar-right" id="service-pills"></div>
+  <button id="audio-btn" onclick="toggleAudio()" style="background:rgba(63,185,80,.15);border:1px solid rgba(63,185,80,.3);color:var(--green);padding:5px 12px;border-radius:6px;cursor:pointer;font-size:12px;font-weight:600;margin-left:12px">🔊 Audio On</button>
 </div>
 
 <!-- LAYOUT -->
@@ -311,32 +312,40 @@ function handleEvent(ev) {
     case 'insurance_calling':
       renderInsurancePhase('calling', data);
       addFeed('📞 Initiating 3-Phase Resolution — calling insurance', 'insurance', timestamp);
+      if(audioEnabled) speak('Dialing Pacific Shield Insurance. Please wait.', hospitalVoice, 0.95);
       break;
 
     case 'insurance_ivr':
       renderInsurancePhase('ivr', data);
       addFeed(data.message, 'insurance', timestamp);
+      if(audioEnabled) setTimeout(() => speak('For claims, press 1. For prior authorization, press 2.', insuranceVoice, 0.9, 0.95), 1500);
       break;
 
     case 'insurance_hold':
       renderInsurancePhase('hold', data);
       addFeed(data.message, 'insurance', timestamp);
+      if(audioEnabled) setTimeout(() => speak('Thank you for calling Pacific Shield Insurance. All agents are currently assisting other customers. Your call is important to us. Please hold.', insuranceVoice, 0.85, 0.9), 1000);
       break;
 
     case 'insurance_connected':
       renderInsurancePhase('connected', data);
       addFeed(data.message, 'insurance', timestamp);
+      if(audioEnabled) setTimeout(() => speak('Thank you for holding. This is Pacific Shield Insurance, claims department. My name is Sarah. How can I assist you today?', insuranceVoice, 0.9, 0.95), 500);
       break;
 
     case 'insurance_response':
       renderInsuranceResponse(data);
       addFeed(`✅ Insurance response received: ${data.claim_status}`, 'insurance', timestamp);
       addNote(`Insurance: ${data.summary || data.claim_status}`);
+      if(audioEnabled && data.agent_response) {
+        setTimeout(() => speak(data.agent_response, insuranceVoice, 0.9, 0.95), 1000);
+      }
       break;
 
     case 'callback_initiated':
       addFeed(`📱 Calling patient back at ${data.callback_number}`, 'callback', timestamp);
       addNote(`Callback initiated: ${data.callback_message.substring(0,100)}...`);
+      if(audioEnabled) setTimeout(() => speak('Calling patient back now with the full insurance response.', hospitalVoice, 0.95), 500);
       break;
 
     case 'call_ended':
@@ -528,7 +537,40 @@ async function loadDemoPatient(idx) {
   handleEvent({type:'agent_response', timestamp:now(), data:{text:d2.response, call_id:callId}});
 }
 
-// ── Timer ──────────────────────────────────────────────────────────────────
+// ── Speech synthesis (hear the insurance call) ────────────────────────────
+const synth = window.speechSynthesis;
+let hospitalVoice = null, insuranceVoice = null;
+
+function loadVoices() {
+  const voices = synth.getVoices();
+  // Hospital agent — female, US English
+  hospitalVoice = voices.find(v => v.name.includes('Samantha') || v.name.includes('Karen') || (v.lang === 'en-US' && v.name.includes('Female'))) || voices.find(v => v.lang === 'en-US') || voices[0];
+  // Insurance agent — different voice, slightly different character
+  insuranceVoice = voices.find(v => v.name.includes('Alex') || v.name.includes('Daniel') || (v.lang === 'en-US' && !v.name.includes('Samantha'))) || voices.find(v => v.lang === 'en-US') || voices[0];
+}
+
+if (synth.onvoiceschanged !== undefined) {
+  synth.onvoiceschanged = loadVoices;
+}
+setTimeout(loadVoices, 500);
+
+function speak(text, voice, rate = 1.0, pitch = 1.0) {
+  synth.cancel(); // stop any current speech
+  const utt = new SpeechSynthesisUtterance(text);
+  utt.voice = voice;
+  utt.rate  = rate;
+  utt.pitch = pitch;
+  utt.volume = 1.0;
+  synth.speak(utt);
+}
+
+let audioEnabled = true;
+
+function toggleAudio() {
+  audioEnabled = !audioEnabled;
+  document.getElementById('audio-btn').textContent = audioEnabled ? '🔊 Audio On' : '🔇 Audio Off';
+  if (!audioEnabled) synth.cancel();
+}
 function startCallTimer() {
   callSeconds = 0;
   const el = document.getElementById('call-timer');
