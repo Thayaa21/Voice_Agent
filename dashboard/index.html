@@ -197,7 +197,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);heigh
   <div class="panel">
     <div class="panel-hdr">
       <span>Demo Patients</span>
-      <span style="color:var(--accent)">2 patients</span>
+      <span style="color:var(--accent)">3 patients</span>
     </div>
     <div class="panel-body" id="patient-list"></div>
   </div>
@@ -277,6 +277,17 @@ var DEMO_PATIENTS = [
     claim: 'Elena Garcia, your check up claim from 2019-05-29 was denied — prior auth not obtained. Billed: $129.16, covered: $0. Appeal to Humana. 69 total denied.',
     cost: 'Total billed $14,724.24, Humana covered $3,367.20, you owe $11,357.04. 69 denied claims.',
     bill: '$14,724.24 billed, Humana paid $3,367.20, you owe $11,357.04. Payment plans available.',
+    prep: 'No food/drink after midnight. Bring ID, insurance card, medications. Arrange driver. Arrive 30 min early.'
+  },
+  {
+    name: 'Sara Chen',
+    insurance: 'Humana',
+    dob: '1969-03-31',
+    denied: 39,
+    phone_script: 'Say: "Sara Chen, date of birth March 31, 1969"',
+    claim: 'Sara Chen, your check up claim from 2018-04-30 was denied — prior auth not obtained. Billed: $129.16, covered: $0. Appeal to Humana. 39 total denied.',
+    cost: 'Sara Chen: Humana coverage plan. 39 denied claims may be adding to your balance. Contact billing for exact out-of-pocket estimate.',
+    bill: 'Sara Chen: denied claims contributing to balance. Payment plans available through billing department.',
     prep: 'No food/drink after midnight. Bring ID, insurance card, medications. Arrange driver. Arrive 30 min early.'
   }
 ];
@@ -754,10 +765,13 @@ function handleWsEvent(data) {
     queueAudio(resp, HOSPITAL_VOICE_ID);
 
   } else if (t === 'tool_called') {
-    addFeed('Tool called: ' + (data.tool || data.name || ''), 'system', ts);
+    addFeed('Tool called: ' + (data.tool || data.name || data.intent || ''), 'system', ts);
 
   } else if (t === 'tool_result') {
     addFeed('Tool result received', 'system', ts);
+
+  } else if (t === 'searching') {
+    addFeed('🔍 Searching for: ' + (data.query || ''), 'system', ts);
 
   } else if (t === 'insurance_calling') {
     addFeed('Calling insurance', 'insurance', ts);
@@ -831,11 +845,13 @@ function handleWsEvent(data) {
     addFeed('Call ended', 'system', ts);
 
   } else if (t === 'three_phase_queued') {
-    addFeed('Three-phase resolution queued for ' + (data.patient || ''), 'callback', ts);
+    addFeed('Three-phase resolution queued for ' + (data.patient || data.person || ''), 'callback', ts);
 
-  } else {
-    addFeed(JSON.stringify(data).substring(0, 120), 'system', ts);
+  } else if (t === 'patient_not_found') {
+    addFeed('Patient not found in records', 'error', ts);
+
   }
+  // Unknown event types are silently ignored (no raw JSON dump)
 }
 </script>
 <script>
