@@ -81,6 +81,7 @@ async def run_three_phase(
     # Step 1: Dialing
     await broadcast("insurance_calling", {
         "call_id": call_id,
+        "patient_name": patient_name,
         "message": f"Dialing Pacific Shield Insurance on behalf of {patient_name}...",
         "speaker": "hospital"
     })

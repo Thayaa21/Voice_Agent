@@ -741,10 +741,10 @@ function handleWsEvent(data) {
     queueAudio(txt, HOSPITAL_VOICE_ID);
 
   } else if (t === 'patient_identified') {
-    var pname = data.name || data.patient_name || data.person || '';
+    var pname = data.person || data.name || data.patient_name || '';
     addFeed('Patient identified: ' + pname, 'patient', ts);
     addNote('Patient matched: ' + pname);
-    currentInsurancePatient = pname; // store for insurance question
+    currentInsurancePatient = pname;
     // Auto-select matching demo patient if available
     var found = false;
     for (var i = 0; i < DEMO_PATIENTS.length; i++) {
@@ -762,8 +762,10 @@ function handleWsEvent(data) {
     var prRecord = data.record || {};
     addFeed('Patient record loaded', 'patient', ts);
     addNote('Record fetched from graph');
-    // Update the center panel with live record data if we have it
-    if (prPerson && prRecord) updateLiveRecord(prPerson, prRecord);
+    // Update the center panel with live record data
+    if (prRecord && (prRecord.claim_status || prRecord.cost_estimate)) {
+      updateLiveRecord(prPerson, prRecord);
+    }
 
   } else if (t === 'agent_response') {
     var resp = data.text || data.response || '';
@@ -900,16 +902,31 @@ function showLivePatient(name) {
         '<div style="width:46px;height:46px;background:rgba(88,166,255,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0">📞</div>' +
         '<div>' +
           '<div class="rec-name">' + name + '</div>' +
-          '<div class="rec-sub">Live call in progress — loading record...</div>' +
+          '<div class="rec-sub">Live call — loading patient record...</div>' +
         '</div>' +
         '<div style="margin-left:auto"><span class="tag tag-green">● LIVE CALL</span></div>' +
       '</div>' +
     '</div>' +
-    '<div id="live-record-data" style="color:var(--muted);font-size:13px;padding:20px;text-align:center">Fetching patient data from graph...</div>' +
+    '<div id="live-record-data" style="padding:12px;color:var(--muted);font-size:13px">Fetching patient data...</div>' +
     '<div style="background:var(--card);border:1px solid var(--border2);border-radius:8px;padding:14px;margin-top:12px">' +
       '<div class="info-title">📝 Live Call Notes</div>' +
       '<div id="call-notes" style="margin-top:8px;font-size:12px;color:var(--muted)">Notes appear as call progresses...</div>' +
     '</div>';
+
+  // Immediately fetch patient data from graph
+  Promise.all([
+    fetch(GRAPH_URL + '/hospital/claim-status', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({patient_name: name})}),
+    fetch(GRAPH_URL + '/hospital/cost-estimate', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({patient_name: name})}),
+    fetch(GRAPH_URL + '/hospital/pre-procedure', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({patient_name: name})})
+  ]).then(function(responses) {
+    return Promise.all(responses.map(function(r) { return r.json().catch(function(){return {};}); }));
+  }).then(function(results) {
+    updateLiveRecord(name, {
+      claim_status:  results[0].answer || '',
+      cost_estimate: results[1].answer || '',
+      pre_procedure: results[2].answer || ''
+    });
+  }).catch(function(){});
 }
 
 function updateLiveRecord(person, record) {
