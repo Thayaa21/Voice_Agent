@@ -157,6 +157,16 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);heigh
 </head>
 <body>
 
+<!-- AUDIO UNLOCK OVERLAY -->
+<div id="audio-overlay" style="position:fixed;inset:0;background:rgba(7,11,20,.92);display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:9999;backdrop-filter:blur(4px)">
+  <div style="font-size:48px;margin-bottom:16px">🔊</div>
+  <div style="font-size:20px;font-weight:700;color:#e2e8f0;margin-bottom:8px">Hospital Voice AI</div>
+  <div style="font-size:14px;color:#718096;margin-bottom:28px;text-align:center;max-width:320px">Click to enable audio for the insurance conversation playback</div>
+  <button onclick="enableAudioAndStart()" style="background:linear-gradient(135deg,#3182ce,#6b46c1);color:#fff;border:none;padding:14px 36px;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;letter-spacing:.02em">
+    ▶ Enable Audio &amp; Start
+  </button>
+</div>
+
 <!-- TOP BAR -->
 <div class="topbar">
   <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
@@ -316,12 +326,22 @@ function stopTimer() {
 </script>
 <script>
 // ── AUDIO TOGGLE ─────────────────────────────────────────────────────────────
+var audioUnlocked = false;
+
+function unlockAudio() {
+  if (audioUnlocked) return;
+  audioUnlocked = true;
+  var btn = document.getElementById('audio-btn');
+  if (btn) { btn.textContent = '🔊 Audio On'; btn.className = 'audio-btn'; }
+}
+
 function toggleAudio() {
   audioEnabled = !audioEnabled;
   var btn = document.getElementById('audio-btn');
   if (audioEnabled) {
     btn.textContent = '🔊 Audio On';
     btn.className = 'audio-btn';
+    unlockAudio();
   } else {
     btn.textContent = '🔇 Audio Off';
     btn.className = 'audio-btn off';
@@ -343,6 +363,11 @@ function playNextAudio() {
 }
 
 function speakElevenLabs(text, voiceId, onDone) {
+  if (!audioUnlocked) {
+    // Can't play yet — fall back to browser TTS which doesn't need unlock
+    speakBrowser(text, voiceId, onDone);
+    return;
+  }
   // Use our backend proxy to avoid CORS issues
   fetch(AGENT_URL + '/tts', {
     method: 'POST',
@@ -357,8 +382,15 @@ function speakElevenLabs(text, voiceId, onDone) {
     var burl = URL.createObjectURL(blob);
     var audio = new Audio(burl);
     audio.onended = function() { URL.revokeObjectURL(burl); if (onDone) onDone(); };
-    audio.onerror = function() { if (onDone) onDone(); };
-    audio.play().catch(function() { if (onDone) onDone(); });
+    audio.onerror = function() { URL.revokeObjectURL(burl); speakBrowser(text, voiceId, onDone); };
+    var playPromise = audio.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(function(e) {
+        console.warn('Audio play blocked:', e.message, '— using browser TTS');
+        URL.revokeObjectURL(burl);
+        speakBrowser(text, voiceId, onDone);
+      });
+    }
   })
   .catch(function(e) {
     // Fallback to browser TTS when ElevenLabs fails or is out of credits
@@ -782,6 +814,18 @@ function checkHealth() {
 
   // Voice / ElevenLabs (always show as up if key present)
   setDot('dot-voice', !!EL_API_KEY);
+}
+
+function enableAudioAndStart() {
+  unlockAudio();
+  var overlay = document.getElementById('audio-overlay');
+  if (overlay) overlay.style.display = 'none';
+  try {
+    var ctx = new (window.AudioContext || window.webkitAudioContext)();
+    var buf = ctx.createBuffer(1, 1, 22050);
+    var src = ctx.createBufferSource();
+    src.buffer = buf; src.connect(ctx.destination); src.start(0);
+  } catch(e) {}
 }
 
 // ── INIT ──────────────────────────────────────────────────────────────────────
