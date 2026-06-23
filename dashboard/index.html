@@ -3,767 +3,761 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hospital Voice AI — Live Operations Center</title>
+<title>Hospital Voice AI — Operations Center</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
-  *{box-sizing:border-box;margin:0;padding:0}
-  :root{
-    --bg:#070b14;--panel:#0d1117;--border:#1c2333;--border2:#21262d;
-    --text:#e6edf3;--muted:#7d8590;--accent:#58a6ff;--green:#3fb950;
-    --red:#f85149;--yellow:#d29922;--purple:#bc8cff;--orange:#ffa657;
-    --card:#161b22;--card2:#1c2128;
-  }
-  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);height:100vh;overflow:hidden;display:flex;flex-direction:column}
-  
-  /* TOP BAR */
-  .topbar{height:52px;background:var(--panel);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 20px;gap:16px;flex-shrink:0}
-  .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;color:var(--text)}
-  .logo svg{width:28px;height:28px}
-  .pulse{width:8px;height:8px;border-radius:50%;background:var(--green);animation:pulse 2s infinite;flex-shrink:0}
-  @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(63,185,80,.4)}50%{box-shadow:0 0 0 8px rgba(63,185,80,0)}}
-  .topbar-right{margin-left:auto;display:flex;align-items:center;gap:20px}
-  .service-pill{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--muted);padding:4px 10px;border:1px solid var(--border2);border-radius:20px}
-  .dot{width:6px;height:6px;border-radius:50%;background:var(--green)}
-  .dot.off{background:var(--red)}
-  .call-badge{background:rgba(248,81,73,.15);border:1px solid rgba(248,81,73,.3);color:var(--red);padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;display:none}
-  .call-badge.active{display:flex;align-items:center;gap:6px;animation:flash 1s infinite}
-  @keyframes flash{0%,100%{opacity:1}50%{opacity:0.6}}
-
-  /* LAYOUT */
-  .layout{display:grid;grid-template-columns:280px 1fr 320px;gap:0;flex:1;overflow:hidden}
-  
-  /* PANELS */
-  .panel{background:var(--panel);border-right:1px solid var(--border);overflow-y:auto;display:flex;flex-direction:column}
-  .panel:last-child{border-right:none;border-left:1px solid var(--border)}
-  .panel-header{padding:14px 16px;border-bottom:1px solid var(--border);font-size:11px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;flex-shrink:0}
-  .panel-body{flex:1;overflow-y:auto;padding:12px}
-  
-  /* MAIN CENTER */
-  .main{display:flex;flex-direction:column;overflow:hidden;background:var(--bg)}
-  .main-top{flex:1;overflow-y:auto;padding:20px}
-  .main-bottom{border-top:1px solid var(--border);background:var(--panel);flex-shrink:0}
-  
-  /* PATIENT CARDS */
-  .patient-card{border:1px solid var(--border2);border-radius:8px;padding:12px;margin-bottom:8px;cursor:pointer;transition:all .15s;background:var(--card)}
-  .patient-card:hover{border-color:var(--accent);background:var(--card2)}
-  .patient-card.active{border-color:var(--accent);background:rgba(88,166,255,.08)}
-  .p-name{font-size:13px;font-weight:600;color:var(--text);margin-bottom:3px}
-  .p-meta{font-size:11px;color:var(--muted);margin-bottom:8px}
-  .tags{display:flex;gap:5px;flex-wrap:wrap}
-  .tag{font-size:10px;padding:2px 7px;border-radius:4px;font-weight:500;letter-spacing:.02em}
-  .tag-blue{background:rgba(88,166,255,.12);color:var(--accent);border:1px solid rgba(88,166,255,.2)}
-  .tag-red{background:rgba(248,81,73,.12);color:var(--red);border:1px solid rgba(248,81,73,.2)}
-  .tag-green{background:rgba(63,185,80,.12);color:var(--green);border:1px solid rgba(63,185,80,.2)}
-  .tag-purple{background:rgba(188,140,255,.12);color:var(--purple);border:1px solid rgba(188,140,255,.2)}
-
-  /* PATIENT RECORD */
-  .record-empty{text-align:center;padding:60px 20px;color:var(--muted)}
-  .record-empty .icon{font-size:48px;margin-bottom:16px;opacity:.4}
-  .record-header{background:linear-gradient(135deg,rgba(88,166,255,.08),rgba(188,140,255,.08));border:1px solid rgba(88,166,255,.2);border-radius:10px;padding:20px;margin-bottom:16px}
-  .r-name{font-size:22px;font-weight:700;color:var(--text);margin-bottom:4px}
-  .r-meta{font-size:13px;color:var(--muted);margin-bottom:12px}
-  .r-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-  .stat{background:rgba(255,255,255,.03);border:1px solid var(--border2);border-radius:6px;padding:10px;text-align:center}
-  .stat-val{font-size:20px;font-weight:700;margin-bottom:2px}
-  .stat-label{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
-  .info-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px}
-  .info-card{background:var(--card);border:1px solid var(--border2);border-radius:8px;padding:14px}
-  .info-title{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px;display:flex;align-items:center;gap:6px}
-  .info-body{font-size:13px;color:var(--text);line-height:1.6}
-
-  /* LIVE FEED */
-  .feed-item{padding:10px 12px;border-radius:6px;margin-bottom:6px;border-left:3px solid transparent;font-size:13px;background:var(--card);line-height:1.5;animation:fadeIn .3s ease}
-  @keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
-  .feed-item.transcript{border-color:var(--accent);background:rgba(88,166,255,.05)}
-  .feed-item.patient_found{border-color:var(--green);background:rgba(63,185,80,.05)}
-  .feed-item.agent{border-color:var(--purple);background:rgba(188,140,255,.05)}
-  .feed-item.insurance{border-color:var(--yellow);background:rgba(210,153,34,.05)}
-  .feed-item.error{border-color:var(--red);background:rgba(248,81,73,.05)}
-  .feed-item.callback{border-color:var(--orange);background:rgba(255,166,87,.05)}
-  .feed-meta{font-size:10px;color:var(--muted);margin-bottom:3px;display:flex;align-items:center;gap:8px}
-  .feed-label{font-size:10px;font-weight:600;padding:1px 6px;border-radius:3px;text-transform:uppercase;letter-spacing:.04em}
-  .lbl-transcript{background:rgba(88,166,255,.15);color:var(--accent)}
-  .lbl-agent{background:rgba(188,140,255,.15);color:var(--purple)}
-  .lbl-insurance{background:rgba(210,153,34,.15);color:var(--yellow)}
-  .lbl-system{background:rgba(63,185,80,.15);color:var(--green)}
-  .lbl-callback{background:rgba(255,166,87,.15);color:var(--orange)}
-
-  /* INSURANCE PANEL */
-  .ins-status{text-align:center;padding:30px 16px;color:var(--muted)}
-  .ins-status .icon{font-size:36px;margin-bottom:12px;opacity:.5}
-  .ins-phase{background:var(--card);border:1px solid var(--border2);border-radius:8px;padding:12px;margin-bottom:8px;animation:fadeIn .3s ease}
-  .ins-phase-icon{font-size:16px;margin-right:8px}
-  .ins-phase-title{font-size:12px;font-weight:600;color:var(--text);margin-bottom:4px}
-  .ins-phase-body{font-size:12px;color:var(--muted);line-height:1.5}
-  .ins-response{background:linear-gradient(135deg,rgba(210,153,34,.06),rgba(255,166,87,.06));border:1px solid rgba(210,153,34,.2);border-radius:8px;padding:14px;margin-top:12px}
-  .ins-response-title{font-size:10px;font-weight:600;color:var(--yellow);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px}
-  .ins-response-body{font-size:13px;color:var(--text);line-height:1.6}
-  .status-badge{display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;margin-bottom:10px}
-  .badge-denied{background:rgba(248,81,73,.15);color:var(--red);border:1px solid rgba(248,81,73,.25)}
-  .badge-paid{background:rgba(63,185,80,.15);color:var(--green);border:1px solid rgba(63,185,80,.25)}
-  .badge-pending{background:rgba(210,153,34,.15);color:var(--yellow);border:1px solid rgba(210,153,34,.25)}
-
-  /* TRANSCRIPT BAR */
-  .transcript-bar{padding:14px 16px;display:flex;align-items:center;gap:12px}
-  .waveform{display:flex;align-items:center;gap:2px;height:24px}
-  .wave-bar{width:3px;border-radius:2px;background:var(--accent);opacity:.3;animation:wave 1.2s ease-in-out infinite}
-  .wave-bar:nth-child(1){height:8px;animation-delay:.0s}
-  .wave-bar:nth-child(2){height:16px;animation-delay:.15s}
-  .wave-bar:nth-child(3){height:24px;animation-delay:.3s}
-  .wave-bar:nth-child(4){height:16px;animation-delay:.45s}
-  .wave-bar:nth-child(5){height:8px;animation-delay:.6s}
-  @keyframes wave{0%,100%{transform:scaleY(.5)}50%{transform:scaleY(1)}}
-  .waveform.active .wave-bar{opacity:1}
-  .transcript-text{font-size:14px;color:var(--muted);font-style:italic;flex:1}
-  .transcript-text.speaking{color:var(--text);font-style:normal}
-  .call-timer{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--accent);letter-spacing:.05em}
-
-  /* NOTES */
-  .note-item{background:var(--card);border:1px solid var(--border2);border-radius:6px;padding:10px;margin-bottom:6px;font-size:12px;color:var(--text);line-height:1.5}
-  .note-time{font-size:10px;color:var(--muted);margin-bottom:3px;font-family:'JetBrains Mono',monospace}
-
-  /* SCROLLBAR */
-  ::-webkit-scrollbar{width:4px}
-  ::-webkit-scrollbar-track{background:transparent}
-  ::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px}
-
-  /* GLOW EFFECTS */
-  .glow-green{box-shadow:0 0 20px rgba(63,185,80,.15)}
-  .glow-blue{box-shadow:0 0 20px rgba(88,166,255,.15)}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0f1117;--panel:#1a1d2e;--border:#2d3748;--text:#e2e8f0;
+  --muted:#718096;--accent:#63b3ed;--green:#48bb78;--red:#fc8181;
+  --yellow:#f6ad55;--purple:#b794f4;--orange:#fbd38d;--card:#1e2235;
+  --card2:#252840;--glow-blue:rgba(99,179,237,.18);--glow-green:rgba(72,187,120,.18);
+}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);height:100vh;overflow:hidden;display:flex;flex-direction:column}
+/* TOP BAR */
+.topbar{height:54px;background:linear-gradient(90deg,#1a1d2e 0%,#1e2235 100%);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 20px;gap:14px;flex-shrink:0;box-shadow:0 2px 20px rgba(0,0,0,.4)}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;letter-spacing:.02em;background:linear-gradient(135deg,#63b3ed,#b794f4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.pulse-dot{width:9px;height:9px;border-radius:50%;background:var(--green);animation:pulse 2s infinite;flex-shrink:0}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(72,187,120,.5)}60%{box-shadow:0 0 0 8px rgba(72,187,120,0)}}
+.call-badge{display:none;align-items:center;gap:6px;background:rgba(252,129,129,.12);border:1px solid rgba(252,129,129,.35);color:var(--red);padding:4px 12px;border-radius:20px;font-size:11px;font-weight:700;animation:flash 1.2s infinite}
+.call-badge.active{display:flex}
+@keyframes flash{0%,100%{opacity:1}50%{opacity:.55}}
+.topbar-right{margin-left:auto;display:flex;align-items:center;gap:10px}
+.svc-pill{display:flex;align-items:center;gap:5px;font-size:11px;color:var(--muted);padding:3px 10px;border:1px solid var(--border);border-radius:20px;transition:border-color .3s}
+.svc-dot{width:6px;height:6px;border-radius:50%;background:var(--muted);transition:background .3s}
+.svc-dot.up{background:var(--green)}
+.svc-dot.down{background:var(--red)}
+.audio-btn{background:rgba(72,187,120,.12);border:1px solid rgba(72,187,120,.3);color:var(--green);padding:5px 13px;border-radius:7px;cursor:pointer;font-size:12px;font-weight:600;transition:all .2s}
+.audio-btn:hover{background:rgba(72,187,120,.22)}
+.audio-btn.off{background:rgba(252,129,129,.1);border-color:rgba(252,129,129,.3);color:var(--red)}
+</style>
+<style>
+/* LAYOUT */
+.layout{display:grid;grid-template-columns:290px 1fr 340px;flex:1;overflow:hidden}
+.panel{background:var(--panel);display:flex;flex-direction:column;overflow:hidden;border-right:1px solid var(--border)}
+.panel:last-child{border-right:none;border-left:1px solid var(--border)}
+.panel-hdr{padding:13px 16px;border-bottom:1px solid var(--border);font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;flex-shrink:0;display:flex;align-items:center;justify-content:space-between}
+.panel-body{flex:1;overflow-y:auto;padding:12px}
+.panel-body::-webkit-scrollbar{width:3px}
+.panel-body::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
+.main{background:var(--bg);display:flex;flex-direction:column;overflow:hidden}
+.main-scroll{flex:1;overflow-y:auto;padding:18px}
+.main-scroll::-webkit-scrollbar{width:4px}
+.main-scroll::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
+/* PATIENT CARDS */
+.pt-card{border:1px solid var(--border);border-radius:10px;padding:13px;margin-bottom:9px;cursor:pointer;transition:all .18s;background:var(--card);position:relative;overflow:hidden}
+.pt-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--glow-blue),transparent);opacity:0;transition:opacity .2s}
+.pt-card:hover::before{opacity:1}
+.pt-card:hover{border-color:var(--accent)}
+.pt-card.active{border-color:var(--accent);background:var(--card2);box-shadow:0 0 0 1px rgba(99,179,237,.2),0 4px 20px rgba(99,179,237,.1)}
+.pt-name{font-size:13px;font-weight:600;margin-bottom:3px;position:relative}
+.pt-meta{font-size:11px;color:var(--muted);margin-bottom:8px;position:relative}
+.pt-tags{display:flex;gap:5px;flex-wrap:wrap;position:relative}
+.tag{font-size:10px;padding:2px 8px;border-radius:4px;font-weight:600;letter-spacing:.02em}
+.tag-blue{background:rgba(99,179,237,.12);color:var(--accent);border:1px solid rgba(99,179,237,.25)}
+.tag-red{background:rgba(252,129,129,.12);color:var(--red);border:1px solid rgba(252,129,129,.25)}
+.tag-green{background:rgba(72,187,120,.12);color:var(--green);border:1px solid rgba(72,187,120,.25)}
+.tag-purple{background:rgba(183,148,244,.12);color:var(--purple);border:1px solid rgba(183,148,244,.25)}
+.pt-script{margin-top:9px;background:rgba(99,179,237,.06);border:1px solid rgba(99,179,237,.15);border-radius:6px;padding:7px 9px;font-size:10px;color:var(--accent);position:relative}
+</style>
+<style>
+/* CENTER EMPTY */
+.center-empty{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;color:var(--muted);text-align:center;padding:40px}
+.center-empty .big-icon{font-size:60px;margin-bottom:16px;opacity:.35}
+.center-empty h2{font-size:17px;font-weight:600;color:var(--text);opacity:.6;margin-bottom:8px}
+.center-empty p{font-size:13px;line-height:1.6}
+/* RECORD HEADER */
+.rec-header{background:linear-gradient(135deg,rgba(99,179,237,.07) 0%,rgba(183,148,244,.07) 100%);border:1px solid rgba(99,179,237,.22);border-radius:12px;padding:18px;margin-bottom:14px;position:relative;overflow:hidden}
+.rec-header::before{content:'';position:absolute;top:-30px;right:-30px;width:120px;height:120px;background:radial-gradient(circle,rgba(99,179,237,.12),transparent);pointer-events:none}
+.rec-name{font-size:21px;font-weight:700;margin-bottom:3px}
+.rec-sub{font-size:12px;color:var(--muted);margin-bottom:12px}
+.rec-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.stat-box{background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:8px;padding:10px;text-align:center}
+.stat-val{font-size:19px;font-weight:700}
+.stat-lbl{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-top:2px}
+.stat-val.red{color:var(--red)}
+.stat-val.green{color:var(--green)}
+.stat-val.blue{color:var(--accent)}
+/* PHONE SCRIPT BANNER */
+.script-banner{background:linear-gradient(90deg,rgba(99,179,237,.1),rgba(183,148,244,.07));border:1px solid rgba(99,179,237,.2);border-radius:8px;padding:11px 14px;margin-bottom:14px;font-size:12px;color:var(--accent);display:flex;align-items:center;gap:10px}
+/* CHEAT SHEET GRID */
+.cheat-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px}
+.cheat-box{background:rgba(0,0,0,.3);border:1px solid var(--border);border-radius:8px;padding:11px}
+.cheat-label{font-size:10px;text-transform:uppercase;letter-spacing:.05em;font-weight:700;margin-bottom:6px}
+.cheat-q{font-size:11px;color:var(--text);line-height:1.6;opacity:.85}
+/* INFO CARDS */
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:14px}
+.info-card{background:var(--card);border:1px solid var(--border);border-radius:9px;padding:13px;transition:border-color .2s}
+.info-title{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;margin-bottom:7px;display:flex;align-items:center;gap:5px}
+.info-body{font-size:12px;color:var(--text);line-height:1.6}
+/* LIVE NOTES */
+.notes-wrap{background:var(--card);border:1px solid var(--border);border-radius:9px;padding:13px;margin-bottom:14px}
+.note-item{background:var(--card2);border-radius:6px;padding:8px 10px;margin-bottom:5px;font-size:12px;line-height:1.5;animation:fadeIn .3s ease}
+.note-ts{font-size:10px;color:var(--muted);margin-bottom:3px;font-family:'JetBrains Mono',monospace}
+/* ACTION BUTTONS */
+.btn-row{display:flex;gap:10px;margin-bottom:6px}
+.btn{flex:1;padding:12px;border-radius:9px;border:none;cursor:pointer;font-size:13px;font-weight:600;transition:all .2s;text-align:center}
+.btn-patient{background:linear-gradient(135deg,#2b6cb0,#1a365d);color:#fff;border:1px solid rgba(99,179,237,.3)}
+.btn-patient:hover{background:linear-gradient(135deg,#3182ce,#2b6cb0);transform:translateY(-1px);box-shadow:0 4px 15px rgba(99,179,237,.2)}
+.btn-insurance{background:linear-gradient(135deg,#553c9a,#322659);color:#fff;border:1px solid rgba(183,148,244,.3)}
+.btn-insurance:hover{background:linear-gradient(135deg,#6b46c1,#553c9a);transform:translateY(-1px);box-shadow:0 4px 15px rgba(183,148,244,.2)}
+</style>
+<style>
+/* LIVE FEED */
+.feed-item{padding:9px 12px;border-radius:7px;margin-bottom:6px;border-left:3px solid transparent;font-size:12px;background:var(--card);line-height:1.55;animation:fadeIn .3s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+.feed-item.fi-transcript{border-color:var(--accent);background:rgba(99,179,237,.05)}
+.feed-item.fi-patient{border-color:var(--green);background:rgba(72,187,120,.05)}
+.feed-item.fi-agent{border-color:var(--purple);background:rgba(183,148,244,.05)}
+.feed-item.fi-insurance{border-color:var(--yellow);background:rgba(246,173,85,.05)}
+.feed-item.fi-error{border-color:var(--red);background:rgba(252,129,129,.05)}
+.feed-item.fi-callback{border-color:var(--orange);background:rgba(251,211,141,.05)}
+.feed-item.fi-system{border-color:#4a5568;background:rgba(255,255,255,.02)}
+.feed-meta{font-size:10px;color:var(--muted);margin-bottom:3px;display:flex;align-items:center;gap:7px}
+.feed-lbl{font-size:9px;font-weight:700;padding:1px 6px;border-radius:3px;text-transform:uppercase;letter-spacing:.05em}
+.lbl-t{background:rgba(99,179,237,.15);color:var(--accent)}
+.lbl-a{background:rgba(183,148,244,.15);color:var(--purple)}
+.lbl-i{background:rgba(246,173,85,.15);color:var(--yellow)}
+.lbl-s{background:rgba(72,187,120,.15);color:var(--green)}
+.lbl-c{background:rgba(251,211,141,.15);color:var(--orange)}
+.lbl-e{background:rgba(252,129,129,.15);color:var(--red)}
+/* INSURANCE CONVO PANEL */
+.ins-idle{text-align:center;padding:30px 16px;color:var(--muted)}
+.ins-idle .ins-icon{font-size:32px;margin-bottom:10px;opacity:.4}
+.ins-msg{border-radius:8px;padding:10px 12px;margin-bottom:7px;font-size:12px;line-height:1.55;animation:fadeIn .3s ease}
+.ins-msg.hospital{background:rgba(99,179,237,.08);border:1px solid rgba(99,179,237,.18);margin-left:10%}
+.ins-msg.insurance{background:rgba(246,173,85,.08);border:1px solid rgba(246,173,85,.18);margin-right:10%}
+.ins-msg.ivr{background:rgba(72,187,120,.06);border:1px solid rgba(72,187,120,.15)}
+.ins-msg-from{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
+.ins-msg.hospital .ins-msg-from{color:var(--accent)}
+.ins-msg.insurance .ins-msg-from{color:var(--yellow)}
+.ins-msg.ivr .ins-msg-from{color:var(--green)}
+.ins-result{background:linear-gradient(135deg,rgba(246,173,85,.08),rgba(251,211,141,.06));border:1px solid rgba(246,173,85,.25);border-radius:9px;padding:13px;margin-top:10px;animation:fadeIn .4s ease}
+.ins-result-title{font-size:10px;font-weight:700;color:var(--yellow);text-transform:uppercase;letter-spacing:.07em;margin-bottom:7px}
+.ins-result-body{font-size:12px;color:var(--text);line-height:1.6}
+.status-badge{display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:20px;font-size:10px;font-weight:700;margin-bottom:8px}
+.sb-denied{background:rgba(252,129,129,.15);color:var(--red);border:1px solid rgba(252,129,129,.3)}
+.sb-paid{background:rgba(72,187,120,.15);color:var(--green);border:1px solid rgba(72,187,120,.3)}
+.sb-pending{background:rgba(246,173,85,.15);color:var(--yellow);border:1px solid rgba(246,173,85,.3)}
+/* BOTTOM BAR */
+.bottombar{height:52px;background:var(--panel);border-top:1px solid var(--border);display:flex;align-items:center;padding:0 18px;gap:14px;flex-shrink:0}
+.waveform{display:flex;align-items:center;gap:2px;height:26px}
+.wave-bar{width:3px;border-radius:2px;background:var(--accent);opacity:.2;animation:wave 1.3s ease-in-out infinite}
+.wave-bar:nth-child(1){height:7px;animation-delay:0s}
+.wave-bar:nth-child(2){height:14px;animation-delay:.12s}
+.wave-bar:nth-child(3){height:22px;animation-delay:.25s}
+.wave-bar:nth-child(4){height:14px;animation-delay:.38s}
+.wave-bar:nth-child(5){height:7px;animation-delay:.51s}
+@keyframes wave{0%,100%{transform:scaleY(.4)}50%{transform:scaleY(1)}}
+.waveform.active .wave-bar{opacity:1}
+.tx-text{font-size:13px;color:var(--muted);font-style:italic;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tx-text.live{color:var(--text);font-style:normal}
+.timer{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--accent);letter-spacing:.06em;display:none}
 </style>
 </head>
 <body>
 
 <!-- TOP BAR -->
 <div class="topbar">
-  <div class="logo">
-    <svg viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="6" fill="rgba(88,166,255,.15)"/><path d="M14 6v4M14 18v4M6 14h4M18 14h4" stroke="#58a6ff" stroke-width="2" stroke-linecap="round"/><circle cx="14" cy="14" r="4" fill="#58a6ff" opacity=".6"/></svg>
-    Hospital Voice AI
-  </div>
-  <span style="color:var(--muted);font-size:13px">Operations Center</span>
+  <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+    <rect width="30" height="30" rx="7" fill="rgba(99,179,237,.15)"/>
+    <path d="M15 6v5M15 19v5M6 15h5M19 15h5" stroke="#63b3ed" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="15" cy="15" r="4" fill="#63b3ed" opacity=".65"/>
+  </svg>
+  <div class="logo">Hospital Voice AI&nbsp;<span style="-webkit-text-fill-color:var(--muted);color:var(--muted);font-weight:400;font-size:13px">Operations Center</span></div>
+  <div class="pulse-dot"></div>
   <div class="call-badge" id="call-badge">
-    <div class="pulse"></div>
-    <span id="call-badge-text">CALL ACTIVE</span>
+    <div class="pulse-dot" style="background:var(--red)"></div>
+    <span>CALL ACTIVE</span>
   </div>
-  <div class="topbar-right" id="service-pills"></div>
-  <button id="audio-btn" onclick="toggleAudio()" style="background:rgba(63,185,80,.15);border:1px solid rgba(63,185,80,.3);color:var(--green);padding:5px 12px;border-radius:6px;cursor:pointer;font-size:12px;font-weight:600;margin-left:12px">🔊 Audio On</button>
+  <div class="topbar-right">
+    <div class="svc-pill"><div class="svc-dot" id="dot-agent"></div>Agent</div>
+    <div class="svc-pill"><div class="svc-dot" id="dot-graph"></div>Graph</div>
+    <div class="svc-pill"><div class="svc-dot" id="dot-insurance"></div>Insurance</div>
+    <div class="svc-pill"><div class="svc-dot" id="dot-voice"></div>Voice</div>
+    <button class="audio-btn" id="audio-btn" onclick="toggleAudio()">🔊 Audio On</button>
+  </div>
 </div>
 
-<!-- LAYOUT -->
+<!-- MAIN LAYOUT -->
 <div class="layout">
 
   <!-- LEFT: DEMO PATIENTS -->
   <div class="panel">
-    <div class="panel-header">Demo Patients</div>
+    <div class="panel-hdr">
+      <span>Demo Patients</span>
+      <span style="color:var(--accent)">2 patients</span>
+    </div>
     <div class="panel-body" id="patient-list"></div>
   </div>
 
-  <!-- CENTER: MAIN -->
+  <!-- CENTER: PATIENT DETAIL -->
   <div class="main">
-    <div class="main-top" id="main-content">
-      <div class="record-empty">
-        <div class="icon">🏥</div>
-        <div style="font-size:16px;font-weight:600;color:var(--text);margin-bottom:8px">Waiting for call...</div>
-        <div style="font-size:13px">Select a demo patient or place a real call to <strong style="color:var(--accent)">+1 (531) 324-5471</strong></div>
-      </div>
-    </div>
-    <div class="main-bottom">
-      <div class="transcript-bar">
-        <div class="waveform" id="waveform">
-          <div class="wave-bar"></div><div class="wave-bar"></div>
-          <div class="wave-bar"></div><div class="wave-bar"></div>
-          <div class="wave-bar"></div>
-        </div>
-        <div class="transcript-text" id="last-transcript">Waiting for speech...</div>
-        <div class="call-timer" id="call-timer" style="display:none">00:00</div>
+    <div class="main-scroll" id="main-content">
+      <div class="center-empty">
+        <div class="big-icon">🏥</div>
+        <h2>Waiting for call…</h2>
+        <p>Select a demo patient from the left panel to view their record, or receive a live call at <strong style="color:var(--accent)">+1 (531) 324-5471</strong></p>
       </div>
     </div>
   </div>
 
   <!-- RIGHT: LIVE FEED + INSURANCE -->
-  <div class="panel" style="border-left:1px solid var(--border)">
-    <div class="panel-header" style="display:flex;justify-content:space-between;align-items:center">
+  <div class="panel" style="flex-direction:column">
+    <div class="panel-hdr">
       <span>Live Event Feed</span>
-      <span id="event-count" style="color:var(--accent);font-size:10px">0 events</span>
+      <span id="evt-count" style="color:var(--accent)">0 events</span>
     </div>
-    <div class="panel-body" id="live-feed" style="padding:8px"></div>
-    <div class="panel-header" style="border-top:1px solid var(--border);border-bottom:1px solid var(--border)">Insurance Agent</div>
-    <div style="flex:1;overflow-y:auto;padding:12px" id="insurance-panel">
-      <div class="ins-status">
-        <div class="icon">🏢</div>
+    <div style="flex:1;overflow-y:auto;padding:8px;min-height:0" id="live-feed"></div>
+    <div class="panel-hdr" style="border-top:1px solid var(--border)">
+      <span>Insurance Conversation</span>
+    </div>
+    <div style="flex:1;overflow-y:auto;padding:12px;min-height:0" id="ins-panel">
+      <div class="ins-idle">
+        <div class="ins-icon">🏢</div>
         <div style="font-size:12px">Insurance agent idle</div>
-        <div style="font-size:11px;margin-top:4px">Will activate when 3-phase resolution starts</div>
+        <div style="font-size:11px;margin-top:5px">Will activate on insurance resolution</div>
       </div>
     </div>
   </div>
 
 </div>
 
-<script>
-const AGENT_URL = 'http://localhost:9001';
-const GRAPH_URL = 'http://localhost:8000';
-const INS_URL   = 'http://localhost:8002';
-const WS_URL    = 'ws://localhost:9001/ws';
+<!-- BOTTOM BAR -->
+<div class="bottombar">
+  <div class="waveform" id="waveform">
+    <div class="wave-bar"></div><div class="wave-bar"></div>
+    <div class="wave-bar"></div><div class="wave-bar"></div>
+    <div class="wave-bar"></div>
+  </div>
+  <div class="tx-text" id="tx-text">Waiting for speech…</div>
+  <div class="timer" id="timer">00:00</div>
+</div>
 
-const DEMO_PATIENTS = [
+<script>
+// ── CONFIG ──────────────────────────────────────────────────────────────────
+var AGENT_URL          = 'http://localhost:9001';
+var GRAPH_URL          = 'http://localhost:8000';
+var INS_URL            = 'http://localhost:8002';
+var WS_URL             = 'ws://localhost:9001/ws';
+var EL_API_KEY         = 'sk_69a730fdec9d50cccb83edd40eb1ebf65d5dd619b45964e1';
+var HOSPITAL_VOICE_ID  = 'nf4MCGNSdM0hxM95ZBQR';
+var INSURANCE_VOICE_ID = 'bfGb7JTLUnZebZRiFYyq';
+
+// ── DEMO PATIENTS ───────────────────────────────────────────────────────────
+var DEMO_PATIENTS = [
   {
     name: 'Ruby Hall',
     insurance: 'Cigna Health',
     dob: '1966-07-06',
     denied: 94,
-    conditions: 14,
-    scenario: 'Claim Denial',
-    details: {
-      claim: 'Ruby Hall, your Encounter for check up claim from 2019-06-05 was denied — prior auth not obtained. Billed: $129.16, covered: $0. Appeal by submitting prior auth to Cigna Health. 94 total denied claims.',
-      cost: 'Ruby Hall, billing with Cigna Health: total billed $14,672.57, covered $2,111.53, your responsibility $12,561.04. 94 denied claims may be adding to balance.',
-      bill: 'Ruby Hall: $14,672.57 billed, Cigna paid $2,111.53, you owe $12,561.04. $2,454.04 from 19 denied claims. We offer payment plans.',
-      prep: 'Do not eat or drink after midnight. Bring ID, insurance card, medication list. Arrange a driver if sedation is used. Arrive 30 min early.',
-      phone_script: 'Say: "Ruby Hall, date of birth July 6, 1966"'
-    }
+    phone_script: 'Say: "Ruby Hall, date of birth July 6, 1966"',
+    claim: 'Ruby Hall, your check up claim from 2019-06-05 was denied — prior auth not obtained. Billed: $129.16, covered: $0. Appeal to Cigna Health. 94 total denied.',
+    cost: 'Total billed $14,672.57, Cigna covered $2,111.53, you owe $12,561.04. 94 denied claims.',
+    bill: '$14,672.57 billed, Cigna paid $2,111.53, you owe $12,561.04. Payment plans available.',
+    prep: 'No food/drink after midnight. Bring ID, insurance card, medications. Arrange driver. Arrive 30 min early.'
   },
   {
     name: 'Elena Garcia',
     insurance: 'Humana',
     dob: '1969-07-16',
     denied: 69,
-    conditions: 9,
-    scenario: 'Cost Estimate',
-    details: {
-      claim: 'Elena Garcia, your Encounter for check up claim from 2019-05-29 was denied — prior auth not obtained. Billed: $129.16, covered: $0. Appeal via Humana prior auth request. 69 total denied claims.',
-      cost: 'Elena Garcia, billing with Humana: total billed $14,724.24, covered $3,367.20, your responsibility $11,357.04. 69 denied claims adding to balance.',
-      bill: 'Elena Garcia: $14,724.24 billed, Humana paid $3,367.20, you owe $11,357.04. Denied claims contributing to balance. Payment plans available.',
-      prep: 'Do not eat or drink after midnight. Bring ID, insurance card, medication list. Arrange a driver if sedation is used. Arrive 30 min early.',
-      phone_script: 'Say: "Elena Garcia, date of birth July 16, 1969"'
-    }
-  },
+    phone_script: 'Say: "Elena Garcia, date of birth July 16, 1969"',
+    claim: 'Elena Garcia, your check up claim from 2019-05-29 was denied — prior auth not obtained. Billed: $129.16, covered: $0. Appeal to Humana. 69 total denied.',
+    cost: 'Total billed $14,724.24, Humana covered $3,367.20, you owe $11,357.04. 69 denied claims.',
+    bill: '$14,724.24 billed, Humana paid $3,367.20, you owe $11,357.04. Payment plans available.',
+    prep: 'No food/drink after midnight. Bring ID, insurance card, medications. Arrange driver. Arrive 30 min early.'
+  }
 ];
 
-let ws = null, eventCount = 0, callTimer = null, callSeconds = 0;
-let activePatient = null, notes = [];
+// ── STATE ───────────────────────────────────────────────────────────────────
+var ws            = null;
+var audioEnabled  = true;
+var audioQueue    = [];
+var isPlaying     = false;
+var eventCount    = 0;
+var timerInt      = null;
+var timerSecs     = 0;
+var activePatient = null;
+var callNotes     = [];
 
-// ── WebSocket ──────────────────────────────────────────────────────────────
-function connectWS() {
-  ws = new WebSocket(WS_URL);
-  ws.onopen  = () => { console.log('WS connected'); };
-  ws.onclose = () => { setTimeout(connectWS, 3000); };
-  ws.onerror = () => { console.warn('WS error'); };
-  ws.onmessage = (e) => {
-    try { handleEvent(JSON.parse(e.data)); } catch(err) { console.error(err); }
-  };
+// ── HELPERS ─────────────────────────────────────────────────────────────────
+function nowStr() {
+  return new Date().toLocaleTimeString('en-US', {hour12: false});
 }
 
-function handleEvent(ev) {
-  eventCount++;
-  document.getElementById('event-count').textContent = eventCount + ' events';
+function fmtTimer(s) {
+  var m = Math.floor(s / 60), sec = s % 60;
+  return (m < 10 ? '0' + m : m) + ':' + (sec < 10 ? '0' + sec : sec);
+}
 
-  const { type, timestamp, data } = ev;
+function sleep(ms) {
+  return new Promise(function(r) { setTimeout(r, ms); });
+}
 
-  switch(type) {
-    case 'call_started':
-      startCallTimer();
-      document.getElementById('call-badge').className = 'call-badge active';
-      addFeed('📞 Inbound call received', 'system', timestamp);
-      break;
+// ── TIMER ───────────────────────────────────────────────────────────────────
+function startTimer() {
+  timerSecs = 0;
+  var el = document.getElementById('timer');
+  el.style.display = 'block';
+  el.textContent = '00:00';
+  if (timerInt) clearInterval(timerInt);
+  timerInt = setInterval(function() {
+    timerSecs++;
+    el.textContent = fmtTimer(timerSecs);
+  }, 1000);
+}
 
-    case 'transcript':
-      document.getElementById('last-transcript').textContent = data.text;
-      document.getElementById('last-transcript').className = 'transcript-text speaking';
-      document.getElementById('waveform').classList.add('active');
-      addFeed(`"${data.text}"`, 'transcript', timestamp, data.state);
-      setTimeout(() => {
-        document.getElementById('waveform').classList.remove('active');
-        document.getElementById('last-transcript').className = 'transcript-text';
-      }, 2000);
-      break;
-
-    case 'searching':
-      addFeed(`🔍 Searching graph for: "${data.query}"`, 'system', timestamp);
-      break;
-
-    case 'patient_identified':
-      addFeed(`✅ Patient identified: ${data.person}`, 'patient_found', timestamp);
-      addNote(`Patient verified: ${data.person}`);
-      break;
-
-    case 'patient_not_found':
-      addFeed('❌ Patient not found in records', 'error', timestamp);
-      break;
-
-    case 'patient_record':
-      renderPatientRecord(data);
-      break;
-
-    case 'tool_called':
-      const intentLabels = {
-        claim_status:'Prior Auth / Claim Denial', cost_estimate:'Out-of-Pocket Estimate',
-        pre_procedure:'Pre-Procedure Prep', bill_explain:'Bill Explanation', general:'General Query'
-      };
-      addFeed(`🔧 Tool: ${intentLabels[data.intent] || data.intent}`, 'system', timestamp);
-      break;
-
-    case 'tool_result':
-      addNote(`${data.intent}: ${data.answer.substring(0,120)}...`);
-      break;
-
-    case 'agent_response':
-      addFeed(data.text.substring(0,120) + (data.text.length > 120 ? '...' : ''), 'agent', timestamp);
-      break;
-
-    case 'insurance_calling':
-      document.getElementById('insurance-panel').innerHTML = '';
-      addInsuranceConvo('System', `📞 Initiating call to Pacific Shield Insurance for ${data.patient_name}...`, 'ivr');
-      addFeed('📞 Initiating 3-Phase Resolution — calling insurance', 'insurance', timestamp);
-      if(audioEnabled) queueAudio('Dialing Pacific Shield Insurance. Please wait.', HOSPITAL_VOICE_ID, 'hospital');
-      break;
-
-    case 'insurance_ivr':
-      addInsuranceConvo('IVR System', data.message, 'ivr');
-      addFeed('🔢 ' + data.message, 'insurance', timestamp);
-      if(audioEnabled) queueAudio(data.message, INSURANCE_VOICE_ID, 'ivr');
-      break;
-
-    case 'insurance_agent_speaks':
-      addInsuranceConvo('Hospital Agent', data.message, 'hospital');
-      addFeed('🏥 Hospital: ' + data.message.substring(0,80), 'system', timestamp);
-      if(audioEnabled) queueAudio(data.message, HOSPITAL_VOICE_ID, 'hospital');
-      break;
-
-    case 'insurance_hold':
-      addInsuranceConvo('IVR System', data.message, 'ivr');
-      addFeed('🎵 ' + data.message, 'insurance', timestamp);
-      if(audioEnabled) queueAudio(data.message, INSURANCE_VOICE_ID, 'ivr');
-      break;
-
-    case 'insurance_connected':
-      addInsuranceConvo('Sarah (Insurance Agent)', data.message, 'insurance');
-      addFeed('☎️ Insurance agent answered', 'insurance', timestamp);
-      if(audioEnabled) queueAudio(data.message, INSURANCE_VOICE_ID, 'insurance');
-      break;
-
-    case 'insurance_response':
-      addInsuranceConvo('Sarah (Insurance Agent)', data.agent_response, 'insurance');
-      addFeed(`✅ Insurance: ${data.summary||data.claim_status}`, 'insurance', timestamp);
-      addNote(`Insurance verdict: ${data.summary||data.claim_status}`);
-      if(audioEnabled && data.agent_response) queueAudio(data.agent_response, INSURANCE_VOICE_ID, 'insurance');
-      break;
-
-    case 'callback_initiated':
-      addFeed(`📱 Calling patient back at ${data.callback_number}`, 'callback', timestamp);
-      addNote(`Callback: ${data.callback_message ? data.callback_message.substring(0,100)+'...' : ''}`);
-      if(audioEnabled) queueAudio('Calling patient back now with the full insurance response.', HOSPITAL_VOICE_ID, 'hospital');
-      break;
-
-    case 'three_phase_queued':
-      addFeed(`🔄 3-Phase resolution queued for ${data.person} — calling insurance now`, 'system', timestamp);
-      addNote(`3-phase triggered: will call insurance then call patient back`);
-      break;
-
-    case 'call_ended':
-      stopCallTimer();
-      document.getElementById('call-badge').className = 'call-badge';
-      addFeed(`📴 Call ended${data.person ? ' — ' + data.person : ''}`, 'system', timestamp);
-      break;
-  }
+function stopTimer() {
+  if (timerInt) { clearInterval(timerInt); timerInt = null; }
+  var el = document.getElementById('timer');
+  if (el) el.style.display = 'none';
 }
 </script>
-
 <script>
-// ── Feed ──────────────────────────────────────────────────────────────────
-function addFeed(text, type, time, sub) {
-  const feed = document.getElementById('live-feed');
-  const labels = {transcript:'lbl-transcript',agent:'lbl-agent',insurance:'lbl-insurance',system:'lbl-system',patient_found:'lbl-system',callback:'lbl-callback',error:'lbl-agent'};
-  const names  = {transcript:'PATIENT',agent:'AGENT',insurance:'INSURANCE',system:'SYSTEM',patient_found:'MATCH',callback:'CALLBACK',error:'ERROR'};
-  const typeClass = {transcript:'transcript',patient_found:'patient_found',agent:'agent',insurance:'insurance',error:'error',callback:'callback'};
-  const div = document.createElement('div');
-  div.className = `feed-item ${typeClass[type] || ''}`;
-  div.innerHTML = `<div class="feed-meta"><span class="feed-label ${labels[type]||'lbl-system'}">${names[type]||type.toUpperCase()}</span><span>${time||''}</span>${sub?`<span style="color:var(--muted)">${sub}</span>`:''}</div>${text}`;
-  feed.prepend(div);
-  if(feed.children.length > 50) feed.removeChild(feed.lastChild);
-}
-
-// ── Notes ─────────────────────────────────────────────────────────────────
-function addNote(text) {
-  notes.push({text, time: new Date().toLocaleTimeString()});
-  const notesEl = document.getElementById('call-notes');
-  if(!notesEl) return;
-  const div = document.createElement('div');
-  div.className = 'note-item';
-  div.innerHTML = `<div class="note-time">${notes[notes.length-1].time}</div>${text}`;
-  notesEl.prepend(div);
-}
-
-// ── Patient Record ─────────────────────────────────────────────────────────
-function renderPatientRecord(data) {
-  const {person, record} = data;
-  const p = DEMO_PATIENTS.find(x => x.name === person) || {};
-  const main = document.getElementById('main-content');
-  main.innerHTML = `
-    <div class="record-header glow-blue">
-      <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
-        <div style="width:44px;height:44px;background:rgba(88,166,255,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px">👤</div>
-        <div>
-          <div class="r-name">${person}</div>
-          <div class="r-meta">${p.insurance||'Unknown'} · DOB: ${p.dob||''} · <span style="color:var(--accent)">${p.phone_script||''}</span></div>
-        </div>
-        <div style="margin-left:auto"><span class="tag tag-green">✓ VERIFIED</span></div>
-      </div>
-      <div style="background:rgba(88,166,255,.06);border:1px solid rgba(88,166,255,.15);border-radius:6px;padding:10px;font-size:12px;color:var(--accent)">
-        📞 <strong>Phone script:</strong> ${p.details?.phone_script || 'Say the patient name and date of birth'}
-      </div>
-    </div>
-
-    <!-- CHEAT SHEET - what to say on the phone -->
-    <div style="background:rgba(63,185,80,.04);border:1px solid rgba(63,185,80,.2);border-radius:8px;padding:14px;margin-bottom:16px">
-      <div style="font-size:11px;color:var(--green);text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:12px">📋 What You Can Ask On The Phone</div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
-        <div style="background:rgba(0,0,0,.3);border-radius:6px;padding:10px">
-          <div style="font-size:10px;color:var(--yellow);text-transform:uppercase;letter-spacing:.04em;margin-bottom:4px">🚫 Claim / Denial</div>
-          <div style="font-size:11px;color:var(--text);line-height:1.5">"Why was my claim denied?"<br>"What's my claim status?"</div>
-        </div>
-        <div style="background:rgba(0,0,0,.3);border-radius:6px;padding:10px">
-          <div style="font-size:10px;color:var(--accent);text-transform:uppercase;letter-spacing:.04em;margin-bottom:4px">💰 Cost</div>
-          <div style="font-size:11px;color:var(--text);line-height:1.5">"How much will I owe?"<br>"What's my out-of-pocket?"</div>
-        </div>
-        <div style="background:rgba(0,0,0,.3);border-radius:6px;padding:10px">
-          <div style="font-size:10px;color:var(--purple);text-transform:uppercase;letter-spacing:.04em;margin-bottom:4px">📋 Pre-Procedure</div>
-          <div style="font-size:11px;color:var(--text);line-height:1.5">"What do I do before my procedure?"<br>"Should I stop my medication?"</div>
-        </div>
-        <div style="background:rgba(0,0,0,.3);border-radius:6px;padding:10px">
-          <div style="font-size:10px;color:var(--orange);text-transform:uppercase;letter-spacing:.04em;margin-bottom:4px">🧾 Bill</div>
-          <div style="font-size:11px;color:var(--text);line-height:1.5">"I got a bill — why do I owe this?"<br>"Explain my statement"</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="info-grid">
-      <div class="info-card">
-        <div class="info-title">🚫 Claim Status</div>
-        <div class="info-body" style="font-size:12px">${p.details?.claim || record.claim_status || 'Loading...'}</div>
-      </div>
-      <div class="info-card">
-        <div class="info-title">💰 Cost Estimate</div>
-        <div class="info-body" style="font-size:12px">${p.details?.cost || record.cost_estimate || 'Loading...'}</div>
-      </div>
-      <div class="info-card">
-        <div class="info-title">📋 Pre-Procedure</div>
-        <div class="info-body" style="font-size:12px">${p.details?.prep || record.pre_procedure || 'Loading...'}</div>
-      </div>
-      <div class="info-card">
-        <div class="info-title">🧾 Bill Explanation</div>
-        <div class="info-body" style="font-size:12px">${p.details?.bill || 'Loading...'}</div>
-      </div>
-    </div>
-
-    <div style="background:var(--card);border:1px solid var(--border2);border-radius:8px;padding:14px">
-      <div class="info-title">📝 Live Call Notes</div>
-      <div id="call-notes" style="margin-top:8px;font-size:12px;color:var(--muted)">Notes will appear here as the call progresses...</div>
-    </div>
-
-    <div style="margin-top:12px;display:flex;gap:10px">
-      <button onclick="triggerThreePhase('${person}')" style="flex:1;background:linear-gradient(135deg,#805ad5,#553c9a);color:#fff;border:none;padding:12px;border-radius:8px;cursor:pointer;font-size:13px;font-weight:600;transition:opacity .2s" onmouseover="this.style.opacity='.85'" onmouseout="this.style.opacity='1'">
-        🔄 Trigger 3-Phase Insurance Resolution
-      </button>
-    </div>
-  `;
-  notes.forEach(n => {
-    const el = document.getElementById('call-notes');
-    if(el) { el.style.color='var(--text)'; const d=document.createElement('div'); d.className='note-item'; d.innerHTML=`<div class="note-time">${n.time}</div>${n.text}`; el.appendChild(d); }
-  });
-}
-
-// ── Insurance Panel ────────────────────────────────────────────────────────
-let insurancePhases = [];
-function renderInsurancePhase(phase, data) {
-  const panel = document.getElementById('insurance-panel');
-  const icons = {calling:'📞',ivr:'🔢',hold:'🎵',connected:'☎️'};
-  const titles = {calling:'Dialing Insurance',ivr:'Navigating IVR',hold:'On Hold',connected:'Agent Answered'};
-  insurancePhases.push({phase, data});
-  panel.innerHTML = insurancePhases.map(p => `
-    <div class="ins-phase">
-      <div class="ins-phase-icon">${icons[p.phase]||'•'}</div>
-      <div style="display:inline;font-weight:600;font-size:12px;color:var(--text)">${titles[p.phase]||p.phase}</div>
-      <div class="ins-phase-body">${p.data.message||''}</div>
-    </div>
-  `).join('') + `<div id="ins-response-area"></div>`;
-}
-
-function renderInsuranceResponse(data) {
-  const statusClass = {DENIED_NO_PA:'badge-denied',PAID:'badge-paid',PENDING_P2P:'badge-pending',PARTIAL:'badge-pending'}[data.claim_status]||'badge-pending';
-  const area = document.getElementById('ins-response-area');
-  if(area) area.innerHTML = `
-    <div class="ins-response">
-      <div class="ins-response-title">Insurance Agent Response</div>
-      <span class="status-badge ${statusClass}">${data.claim_status||'UNKNOWN'}</span>
-      <div class="ins-response-body">${data.agent_response||''}</div>
-    </div>
-  `;
-}
-
-// ── 3-Phase trigger ────────────────────────────────────────────────────────
-async function triggerThreePhase(patientName) {
-  insurancePhases = [];
-  addFeed('🔄 Starting 3-Phase Resolution...', 'system', new Date().toLocaleTimeString());
-  try {
-    await fetch(`${AGENT_URL}/resolve`, {
-      method:'POST', headers:{'Content-Type':'application/json'},
-      body: JSON.stringify({patient_name:patientName, inquiry_type:'claim_status', callback_number:'+15313245471', call_id:'dashboard_'+Date.now()})
-    });
-  } catch(e) { addFeed('Error: ' + e.message, 'error', ''); }
-}
-</script>
-
-<script>
-// ── Demo: simulate patient call ────────────────────────────────────────────
-async function runDemoCall(patientName) {
-  const p = DEMO_PATIENTS.find(x => x.name === patientName);
-  if(!p) return;
-  notes = [];
-  const callId = 'demo_' + Date.now();
-
-  handleEvent({type:'call_started', timestamp:now(), data:{call_id:callId}});
-  await sleep(600);
-
-  // Step 1: identity
-  handleEvent({type:'transcript', timestamp:now(), data:{text:p.name, call_id:callId, state:'verify_identity'}});
-  const r1 = await fetch(`${AGENT_URL}/agent`, {method:'POST',headers:{'Content-Type':'application/json'},
-    body:JSON.stringify({text:p.name, call_id:callId, caller_number:'+15313245471'})});
-  const d1 = await r1.json();
-  handleEvent({type:'agent_response', timestamp:now(), data:{text:d1.response, call_id:callId}});
-  await sleep(1000);
-
-  // Step 2: ask claim question (triggers 3-phase)
-  const q = 'why was my claim denied';
-  handleEvent({type:'transcript', timestamp:now(), data:{text:q, call_id:callId, state:'answering'}});
-  const r2 = await fetch(`${AGENT_URL}/agent`, {method:'POST',headers:{'Content-Type':'application/json'},
-    body:JSON.stringify({text:q, call_id:callId})});
-  const d2 = await r2.json();
-  handleEvent({type:'agent_response', timestamp:now(), data:{text:d2.response, call_id:callId}});
-}
-
-// ── Demo: simulate insurance call (button only) ────────────────────────────
-async function runInsuranceDemo(patientName) {
-  document.getElementById('insurance-panel').innerHTML = '';
-  addFeed('🎬 Starting insurance demo for ' + patientName, 'system', now());
-  try {
-    const r = await fetch(`${AGENT_URL}/resolve`, {
-      method:'POST', headers:{'Content-Type':'application/json'},
-      body: JSON.stringify({
-        patient_name:    patientName,
-        inquiry_type:    'claim_status',
-        callback_number: '+15313245471',
-        call_id:         'ins_demo_' + Date.now()
-      })
-    });
-    const d = await r.json();
-    addFeed('✅ 3-phase queued: ' + d.message, 'system', now());
-  } catch(e) {
-    addFeed('Error: ' + e.message, 'error', now());
-  }
-}
-
-// ── 3-Phase trigger (from patient record button) ───────────────────────────
-async function triggerThreePhase(patientName) {
-  await runInsuranceDemo(patientName);
-}
-  document.querySelectorAll('.patient-card').forEach(c => c.classList.remove('active'));
-  document.getElementById('pc-' + idx).classList.add('active');
-  const p = DEMO_PATIENTS[idx];
-  activePatient = p;
-  notes = [];
-  insurancePhases = [];
-
-  // Just show the patient record — DO NOT trigger any calls or 3-phase
-  const detail = document.getElementById('main-content');
-  detail.innerHTML = `
-    <div class="record-header glow-blue">
-      <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
-        <div style="width:44px;height:48px;background:rgba(88,166,255,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px">👤</div>
-        <div>
-          <div class="r-name">${p.name}</div>
-          <div class="r-meta">${p.insurance} · DOB: ${p.dob} · <span style="color:var(--accent)">${p.details.phone_script}</span></div>
-        </div>
-        <div style="margin-left:auto"><span class="tag tag-blue">READY</span></div>
-      </div>
-      <div style="background:rgba(88,166,255,.06);border:1px solid rgba(88,166,255,.15);border-radius:6px;padding:10px;font-size:12px;color:var(--accent)">
-        📞 <strong>To test:</strong> Call <strong>+1 (531) 324-5471</strong> and say "${p.name}" — or click Demo below
-      </div>
-    </div>
-    <div style="background:rgba(63,185,80,.04);border:1px solid rgba(63,185,80,.2);border-radius:8px;padding:14px;margin-bottom:16px">
-      <div style="font-size:11px;color:var(--green);text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:12px">📋 What You Can Ask On The Phone</div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
-        <div style="background:rgba(0,0,0,.3);border-radius:6px;padding:10px">
-          <div style="font-size:10px;color:var(--yellow);margin-bottom:4px;font-weight:600">🚫 CLAIM / DENIAL</div>
-          <div style="font-size:11px;color:var(--text)">"Why was my claim denied?"</div>
-        </div>
-        <div style="background:rgba(0,0,0,.3);border-radius:6px;padding:10px">
-          <div style="font-size:10px;color:var(--accent);margin-bottom:4px;font-weight:600">💰 COST</div>
-          <div style="font-size:11px;color:var(--text)">"How much will I owe?"</div>
-        </div>
-        <div style="background:rgba(0,0,0,.3);border-radius:6px;padding:10px">
-          <div style="font-size:10px;color:var(--purple);margin-bottom:4px;font-weight:600">📋 PRE-PROCEDURE</div>
-          <div style="font-size:11px;color:var(--text)">"What do I do before my procedure?"</div>
-        </div>
-        <div style="background:rgba(0,0,0,.3);border-radius:6px;padding:10px">
-          <div style="font-size:10px;color:var(--orange);margin-bottom:4px;font-weight:600">🧾 BILL</div>
-          <div style="font-size:11px;color:var(--text)">"Why do I owe this amount?"</div>
-        </div>
-      </div>
-    </div>
-    <div class="info-grid">
-      <div class="info-card"><div class="info-title">🚫 Claim Status</div><div class="info-body" style="font-size:12px">${p.details.claim}</div></div>
-      <div class="info-card"><div class="info-title">💰 Cost Estimate</div><div class="info-body" style="font-size:12px">${p.details.cost}</div></div>
-      <div class="info-card"><div class="info-title">📋 Pre-Procedure</div><div class="info-body" style="font-size:12px">${p.details.prep}</div></div>
-      <div class="info-card"><div class="info-title">🧾 Bill</div><div class="info-body" style="font-size:12px">${p.details.bill}</div></div>
-    </div>
-    <div style="background:var(--card);border:1px solid var(--border2);border-radius:8px;padding:14px;margin-bottom:12px">
-      <div class="info-title">📝 Live Call Notes</div>
-      <div id="call-notes" style="margin-top:8px;font-size:12px;color:var(--muted)">Notes appear here during a live call...</div>
-    </div>
-    <div style="display:flex;gap:10px">
-      <button onclick="runDemoCall('${p.name}')" style="flex:1;background:linear-gradient(135deg,#2d6a4f,#1b4332);color:#fff;border:none;padding:12px;border-radius:8px;cursor:pointer;font-size:13px;font-weight:600">
-        📞 Demo: Simulate Patient Call
-      </button>
-      <button onclick="runInsuranceDemo('${p.name}')" style="flex:1;background:linear-gradient(135deg,#805ad5,#553c9a);color:#fff;border:none;padding:12px;border-radius:8px;cursor:pointer;font-size:13px;font-weight:600">
-        🏢 Demo: Simulate Insurance Call
-      </button>
-    </div>
-  `;
-}
-
-// ── ElevenLabs audio queue (sequential, not overlapping) ──────────────────
-const ELEVENLABS_KEY       = 'sk_69a730fdec9d50cccb83edd40eb1ebf65d5dd619b45964e1';
-const HOSPITAL_VOICE_ID    = 'nf4MCGNSdM0hxM95ZBQR';
-const INSURANCE_VOICE_ID   = 'bfGb7JTLUnZebZRiFYyq';
-let audioQueue = [];
-let audioPlaying = false;
-
-async function queueAudio(text, voiceId, role) {
-  if(!audioEnabled || !text) return;
-  audioQueue.push({text, voiceId, role});
-  if(!audioPlaying) processAudioQueue();
-}
-
-async function processAudioQueue() {
-  if(audioQueue.length === 0) { audioPlaying = false; return; }
-  audioPlaying = true;
-  const {text, voiceId} = audioQueue.shift();
-  try {
-    const r = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`, {
-      method: 'POST',
-      headers: {'xi-api-key': ELEVENLABS_KEY, 'Content-Type': 'application/json'},
-      body: JSON.stringify({
-        text,
-        model_id: 'eleven_turbo_v2',
-        voice_settings: {stability: 0.5, similarity_boost: 0.75, style: 0.2, use_speaker_boost: true}
-      })
-    });
-    if(r.ok) {
-      const blob = await r.blob();
-      const url  = URL.createObjectURL(blob);
-      const audio = new Audio(url);
-      audio.onended = () => { URL.revokeObjectURL(url); processAudioQueue(); };
-      audio.onerror = () => processAudioQueue();
-      await audio.play();
-    } else {
-      processAudioQueue();
-    }
-  } catch(e) {
-    console.error('ElevenLabs audio error:', e);
-    processAudioQueue();
-  }
-}
-
-function stopAllAudio() {
-  audioQueue = [];
-  audioPlaying = false;
-}
-
-let audioEnabled = true;
+// ── AUDIO TOGGLE ─────────────────────────────────────────────────────────────
 function toggleAudio() {
   audioEnabled = !audioEnabled;
-  document.getElementById('audio-btn').textContent = audioEnabled ? '🔊 Audio On' : '🔇 Audio Off';
-  if(!audioEnabled) { stopAllAudio(); }
+  var btn = document.getElementById('audio-btn');
+  if (audioEnabled) {
+    btn.textContent = '🔊 Audio On';
+    btn.className = 'audio-btn';
+  } else {
+    btn.textContent = '🔇 Audio Off';
+    btn.className = 'audio-btn off';
+  }
 }
-// ── Insurance conversation (chat style) ───────────────────────────────────
-function addInsuranceConvo(speaker, text, role) {
-  const panel = document.getElementById('insurance-panel');
-  if(panel.querySelector('.ins-status')) panel.innerHTML = '';
-  const colors = {
-    hospital: {bg:'rgba(88,166,255,.08)',border:'rgba(88,166,255,.2)',label:'var(--accent)',align:'flex-start'},
-    insurance: {bg:'rgba(210,153,34,.08)',border:'rgba(210,153,34,.2)',label:'var(--yellow)',align:'flex-end'},
-    ivr: {bg:'rgba(255,255,255,.03)',border:'rgba(255,255,255,.05)',label:'var(--muted)',align:'center'},
+
+// ── ELEVENLABS AUDIO QUEUE ────────────────────────────────────────────────────
+function queueAudio(text, voiceId) {
+  if (!audioEnabled || !text || text.trim() === '') return;
+  audioQueue.push({ text: text, voiceId: voiceId });
+  if (!isPlaying) playNextAudio();
+}
+
+function playNextAudio() {
+  if (audioQueue.length === 0) { isPlaying = false; return; }
+  isPlaying = true;
+  var item = audioQueue.shift();
+  speakElevenLabs(item.text, item.voiceId, function() { playNextAudio(); });
+}
+
+function speakElevenLabs(text, voiceId, onDone) {
+  var url = 'https://api.elevenlabs.io/v1/text-to-speech/' + voiceId + '/stream';
+  fetch(url, {
+    method: 'POST',
+    headers: { 'xi-api-key': EL_API_KEY, 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      text: text,
+      model_id: 'eleven_turbo_v2',
+      voice_settings: { stability: 0.5, similarity_boost: 0.75 }
+    })
+  })
+  .then(function(res) {
+    if (!res.ok) throw new Error('ElevenLabs ' + res.status);
+    return res.blob();
+  })
+  .then(function(blob) {
+    var burl = URL.createObjectURL(blob);
+    var audio = new Audio(burl);
+    audio.onended = function() { URL.revokeObjectURL(burl); if (onDone) onDone(); };
+    audio.onerror = function() { if (onDone) onDone(); };
+    audio.play().catch(function() { if (onDone) onDone(); });
+  })
+  .catch(function() { if (onDone) onDone(); });
+}
+
+// ── LIVE FEED ─────────────────────────────────────────────────────────────────
+function addFeed(text, type, ts, sub) {
+  eventCount++;
+  document.getElementById('evt-count').textContent = eventCount + ' events';
+  var typeMap = {
+    transcript: { cls: 'fi-transcript', lbl: 'PATIENT',   lblCls: 'lbl-t' },
+    patient:    { cls: 'fi-patient',    lbl: 'MATCH',     lblCls: 'lbl-s' },
+    agent:      { cls: 'fi-agent',      lbl: 'AGENT',     lblCls: 'lbl-a' },
+    insurance:  { cls: 'fi-insurance',  lbl: 'INSURANCE', lblCls: 'lbl-i' },
+    error:      { cls: 'fi-error',      lbl: 'ERROR',     lblCls: 'lbl-e' },
+    callback:   { cls: 'fi-callback',   lbl: 'CALLBACK',  lblCls: 'lbl-c' },
+    system:     { cls: 'fi-system',     lbl: 'SYSTEM',    lblCls: 'lbl-s' }
   };
-  const c = colors[role] || colors.ivr;
-  const div = document.createElement('div');
-  div.style.cssText = `display:flex;justify-content:${c.align};margin-bottom:8px;animation:fadeIn .3s ease`;
-  div.innerHTML = `<div style="max-width:90%;background:${c.bg};border:1px solid ${c.border};border-radius:8px;padding:10px 12px"><div style="font-size:10px;font-weight:600;color:${c.label};margin-bottom:4px;text-transform:uppercase;letter-spacing:.04em">${speaker}</div><div style="font-size:12px;color:var(--text);line-height:1.5">${text}</div></div>`;
+  var m = typeMap[type] || typeMap.system;
+  var div = document.createElement('div');
+  div.className = 'feed-item ' + m.cls;
+  div.innerHTML =
+    '<div class="feed-meta">' +
+      '<span class="feed-lbl ' + m.lblCls + '">' + m.lbl + '</span>' +
+      '<span>' + (ts || nowStr()) + '</span>' +
+      (sub ? '<span style="color:var(--muted)">' + sub + '</span>' : '') +
+    '</div><div>' + text + '</div>';
+  var feed = document.getElementById('live-feed');
+  feed.insertBefore(div, feed.firstChild);
+  if (feed.children.length > 60) feed.removeChild(feed.lastChild);
+}
+</script>
+<script>
+// ── INSURANCE PANEL ───────────────────────────────────────────────────────────
+function addInsMsg(from, text, role) {
+  var panel = document.getElementById('ins-panel');
+  var idle = panel.querySelector('.ins-idle');
+  if (idle) panel.innerHTML = '';
+  var div = document.createElement('div');
+  div.className = 'ins-msg ' + role;
+  div.innerHTML = '<div class="ins-msg-from">' + from + '</div>' + text;
   panel.appendChild(div);
   panel.scrollTop = panel.scrollHeight;
 }
 
-function startCallTimer() {
-  callSeconds = 0;
-  const el = document.getElementById('call-timer');
-  el.style.display = 'block';
-  callTimer = setInterval(() => {
-    callSeconds++;
-    const m = String(Math.floor(callSeconds/60)).padStart(2,'0');
-    const s = String(callSeconds%60).padStart(2,'0');
-    el.textContent = m+':'+s;
-  }, 1000);
-}
-function stopCallTimer() { clearInterval(callTimer); }
-
-// ── Services ──────────────────────────────────────────────────────────────
-const services = [
-  {name:'Graph', url:`${GRAPH_URL}/graph/stats`, check:d=>d.documents+' patients'},
-  {name:'Agent', url:`${AGENT_URL}/health`,      check:d=>d.status},
-  {name:'Insur', url:`${INS_URL}/health`,        check:d=>d.status},
-];
-async function checkServices() {
-  const el = document.getElementById('service-pills');
-  const pills = [];
-  for(const s of services) {
-    try {
-      const r = await fetch(s.url); const d = await r.json();
-      pills.push(`<div class="service-pill"><div class="dot"></div>${s.name}: ${s.check(d)}</div>`);
-    } catch {
-      pills.push(`<div class="service-pill"><div class="dot off"></div>${s.name}: offline</div>`);
-    }
-  }
-  el.innerHTML = pills.join('');
+function showInsResult(claimStatus, agentResponse) {
+  var panel = document.getElementById('ins-panel');
+  var statusCls = 'sb-pending';
+  if (claimStatus && claimStatus.indexOf('DENIED') !== -1) statusCls = 'sb-denied';
+  else if (claimStatus && claimStatus.indexOf('PAID') !== -1) statusCls = 'sb-paid';
+  var div = document.createElement('div');
+  div.className = 'ins-result';
+  div.innerHTML =
+    '<div class="ins-result-title">Insurance Agent Response</div>' +
+    '<span class="status-badge ' + statusCls + '">' + (claimStatus || 'UNKNOWN') + '</span>' +
+    '<div class="ins-result-body">' + (agentResponse || '') + '</div>';
+  panel.appendChild(div);
+  panel.scrollTop = panel.scrollHeight;
 }
 
-// ── Patient list ───────────────────────────────────────────────────────────
+// ── CALL NOTES ────────────────────────────────────────────────────────────────
+function addNote(text) {
+  callNotes.push({ text: text, ts: nowStr() });
+  var el = document.getElementById('call-notes');
+  if (!el) return;
+  el.className = '';
+  var div = document.createElement('div');
+  div.className = 'note-item';
+  div.innerHTML = '<div class="note-ts">' + nowStr() + '</div>' + text;
+  el.insertBefore(div, el.firstChild);
+}
+
+// ── RENDER PATIENT LIST ───────────────────────────────────────────────────────
 function renderPatients() {
-  document.getElementById('patient-list').innerHTML = DEMO_PATIENTS.map((p,i) => `
-    <div class="patient-card" id="pc-${i}" onclick="loadDemoPatient(${i})">
-      <div class="p-name">${p.name}</div>
-      <div class="p-meta">DOB: ${p.dob} · ${p.insurance}</div>
-      <div style="font-size:11px;color:var(--accent);margin-bottom:6px;font-style:italic">${p.details.phone_script}</div>
-      <div class="tags">
-        <span class="tag tag-blue">${p.insurance}</span>
-        <span class="tag tag-red">${p.denied} denied</span>
-        <span class="tag tag-purple">${p.scenario}</span>
-      </div>
-    </div>
-  `).join('') + `
-    <div style="margin-top:16px;padding:12px;background:var(--card);border:1px solid rgba(88,166,255,.2);border-radius:8px">
-      <div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px">📞 Real Phone Call</div>
-      <div style="font-size:14px;color:var(--accent);font-weight:700;margin-bottom:4px">+1 (531) 324-5471</div>
-      <div style="font-size:11px;color:var(--muted)">Call this number — dashboard updates live as you speak</div>
-    </div>
-  `;
+  var list = document.getElementById('patient-list');
+  list.innerHTML = '';
+  DEMO_PATIENTS.forEach(function(p, i) {
+    var card = document.createElement('div');
+    card.className = 'pt-card';
+    card.id = 'ptcard-' + i;
+    card.innerHTML =
+      '<div class="pt-name">' + p.name + '</div>' +
+      '<div class="pt-meta">DOB: ' + p.dob + ' &nbsp;·&nbsp; ' + p.insurance + '</div>' +
+      '<div class="pt-tags">' +
+        '<span class="tag tag-blue">' + p.insurance + '</span>' +
+        '<span class="tag tag-red">' + p.denied + ' denied</span>' +
+      '</div>' +
+      '<div class="pt-script">📞 ' + p.phone_script + '</div>';
+    (function(idx) {
+      card.addEventListener('click', function() { selectPatient(idx); });
+    })(i);
+    list.appendChild(card);
+  });
+}
+</script>
+<script>
+// ── SELECT PATIENT ────────────────────────────────────────────────────────────
+function selectPatient(idx) {
+  document.querySelectorAll('.pt-card').forEach(function(c) { c.classList.remove('active'); });
+  var card = document.getElementById('ptcard-' + idx);
+  if (card) card.classList.add('active');
+  activePatient = DEMO_PATIENTS[idx];
+  callNotes = [];
+  renderCenterPanel(activePatient);
 }
 
-function now() { return new Date().toLocaleTimeString(); }
-function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
-
-// ── Init ──────────────────────────────────────────────────────────────────
-renderPatients();
-checkServices();
-setInterval(checkServices, 15000);
-connectWS();
+// ── RENDER CENTER PANEL ───────────────────────────────────────────────────────
+function renderCenterPanel(p) {
+  var main = document.getElementById('main-content');
+  main.innerHTML =
+    '<div class="rec-header">' +
+      '<div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">' +
+        '<div style="width:46px;height:46px;background:rgba(99,179,237,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0">👤</div>' +
+        '<div>' +
+          '<div class="rec-name">' + p.name + '</div>' +
+          '<div class="rec-sub">' + p.insurance + ' &nbsp;·&nbsp; DOB: ' + p.dob + '</div>' +
+        '</div>' +
+        '<div style="margin-left:auto"><span class="tag tag-green">● RECORD LOADED</span></div>' +
+      '</div>' +
+      '<div class="rec-stats">' +
+        '<div class="stat-box"><div class="stat-val red">' + p.denied + '</div><div class="stat-lbl">Denied Claims</div></div>' +
+        '<div class="stat-box"><div class="stat-val green">$0</div><div class="stat-lbl">Covered (Last Claim)</div></div>' +
+        '<div class="stat-box"><div class="stat-val blue">Prior Auth</div><div class="stat-lbl">Denial Reason</div></div>' +
+      '</div>' +
+    '</div>' +
+    '<div class="script-banner">' +
+      '<span style="font-size:16px">📞</span>' +
+      '<div><strong>Phone Script:</strong> ' + p.phone_script + '</div>' +
+    '</div>' +
+    '<div class="info-grid">' +
+      '<div class="info-card"><div class="info-title"><span>🚫</span> Claim Status</div><div class="info-body">' + p.claim + '</div></div>' +
+      '<div class="info-card"><div class="info-title"><span>💰</span> Cost Estimate</div><div class="info-body">' + p.cost + '</div></div>' +
+      '<div class="info-card"><div class="info-title"><span>📋</span> Pre-Procedure Prep</div><div class="info-body">' + p.prep + '</div></div>' +
+      '<div class="info-card"><div class="info-title"><span>🧾</span> Bill Explanation</div><div class="info-body">' + p.bill + '</div></div>' +
+    '</div>' +
+    '<div class="notes-wrap">' +
+      '<div class="info-title">📝 Live Call Notes</div>' +
+      '<div id="call-notes" style="margin-top:8px;font-size:12px;color:var(--muted);font-style:italic">Notes will appear here as the call progresses…</div>' +
+    '</div>' +
+    '<div class="btn-row">' +
+      '<button class="btn btn-patient" onclick="runDemoCall(\'' + p.name.replace(/'/g, "\\'") + '\')">📞 Demo: Simulate Patient Call</button>' +
+      '<button class="btn btn-insurance" onclick="runInsuranceDemo(\'' + p.name.replace(/'/g, "\\'") + '\')">🏢 Demo: Simulate Insurance Call</button>' +
+    '</div>';
+}
 </script>
+<script>
+// ── DEMO: PATIENT CALL ────────────────────────────────────────────────────────
+// POST name then "why was my claim denied" sequentially to /agent
+function runDemoCall(name) {
+  addFeed('Starting demo patient call for ' + name, 'system');
+  var badge = document.getElementById('call-badge');
+  badge.classList.add('active');
+  document.getElementById('waveform').classList.add('active');
+  startTimer();
+
+  var txEl = document.getElementById('tx-text');
+  txEl.className = 'tx-text live';
+  txEl.textContent = name + ' is calling…';
+
+  fetch(AGENT_URL + '/agent', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ message: name })
+  })
+  .then(function(r) { return r.json().catch(function() { return {}; }); })
+  .then(function(data) {
+    addFeed('Sent patient name: ' + name, 'transcript');
+    addNote('Patient identified: ' + name);
+    if (data && data.response) {
+      addFeed(data.response, 'agent');
+      queueAudio(data.response, HOSPITAL_VOICE_ID);
+    }
+    return sleep(800);
+  })
+  .then(function() {
+    return fetch(AGENT_URL + '/agent', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ message: 'why was my claim denied' })
+    });
+  })
+  .then(function(r) { return r.json().catch(function() { return {}; }); })
+  .then(function(data) {
+    addFeed('Patient asked: why was my claim denied', 'transcript');
+    if (data && data.response) {
+      addFeed(data.response, 'agent');
+      addNote('Agent answered claim denial query');
+      queueAudio(data.response, HOSPITAL_VOICE_ID);
+    }
+  })
+  .catch(function(err) {
+    addFeed('Demo call error: ' + err.message, 'error');
+  });
+}
+
+// ── DEMO: INSURANCE CALL ──────────────────────────────────────────────────────
+// POST to /resolve with patient_name, inquiry_type, callback_number
+function runInsuranceDemo(name) {
+  addFeed('Initiating insurance resolution for ' + name, 'insurance');
+  var panel = document.getElementById('ins-panel');
+  panel.innerHTML = '';
+  addInsMsg('Hospital AI', 'Contacting insurance for ' + name + '…', 'hospital');
+
+  fetch(AGENT_URL + '/resolve', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      patient_name: name,
+      inquiry_type: 'claim_status',
+      callback_number: '+15313245471'
+    })
+  })
+  .then(function(r) { return r.json().catch(function() { return {}; }); })
+  .then(function(data) {
+    addFeed('Insurance resolution request sent for ' + name, 'insurance');
+    if (data && data.response) {
+      addInsMsg('Insurance Agent', data.response, 'insurance');
+      queueAudio(data.response, INSURANCE_VOICE_ID);
+      showInsResult(data.claim_status || 'PENDING', data.response);
+    } else {
+      addInsMsg('System', 'Request submitted. Awaiting insurance callback.', 'ivr');
+    }
+  })
+  .catch(function(err) {
+    addFeed('Insurance demo error: ' + err.message, 'error');
+    addInsMsg('System', 'Could not reach insurance service: ' + err.message, 'ivr');
+  });
+}
+</script>
+<script>
+// ── WEBSOCKET ─────────────────────────────────────────────────────────────────
+function connectWS() {
+  try {
+    ws = new WebSocket(WS_URL);
+  } catch(e) {
+    addFeed('WebSocket unavailable — demo mode only', 'system');
+    return;
+  }
+
+  ws.onopen = function() {
+    addFeed('Connected to voice agent server', 'system');
+    setDot('dot-agent', true);
+  };
+
+  ws.onclose = function() {
+    addFeed('WebSocket disconnected — reconnecting in 5s…', 'system');
+    setDot('dot-agent', false);
+    setTimeout(connectWS, 5000);
+  };
+
+  ws.onerror = function() {
+    // silently ignore — onclose will handle reconnect
+  };
+
+  ws.onmessage = function(evt) {
+    var data;
+    try { data = JSON.parse(evt.data); } catch(e) { return; }
+    handleWsEvent(data);
+  };
+}
+
+function handleWsEvent(data) {
+  var t = data.type || data.event || '';
+  var ts = nowStr();
+
+  if (t === 'call_started') {
+    document.getElementById('call-badge').classList.add('active');
+    document.getElementById('waveform').classList.add('active');
+    startTimer();
+    addFeed('Call started' + (data.caller ? ' from ' + data.caller : ''), 'system', ts);
+
+  } else if (t === 'transcript') {
+    var txt = data.text || data.transcript || '';
+    document.getElementById('tx-text').className = 'tx-text live';
+    document.getElementById('tx-text').textContent = txt;
+    addFeed(txt, 'transcript', ts);
+    queueAudio(txt, HOSPITAL_VOICE_ID);
+
+  } else if (t === 'patient_identified') {
+    var pname = data.name || data.patient_name || '';
+    addFeed('Patient identified: ' + pname, 'patient', ts);
+    addNote('Patient matched: ' + pname);
+    // Auto-select matching demo patient if available
+    for (var i = 0; i < DEMO_PATIENTS.length; i++) {
+      if (DEMO_PATIENTS[i].name.toLowerCase() === pname.toLowerCase()) {
+        selectPatient(i); break;
+      }
+    }
+
+  } else if (t === 'patient_record') {
+    addFeed('Patient record loaded', 'patient', ts);
+    addNote('Record fetched from graph');
+
+  } else if (t === 'agent_response') {
+    var resp = data.text || data.response || '';
+    addFeed(resp, 'agent', ts);
+    addNote('Agent: ' + resp.substring(0, 80) + (resp.length > 80 ? '…' : ''));
+    queueAudio(resp, HOSPITAL_VOICE_ID);
+
+  } else if (t === 'tool_called') {
+    addFeed('Tool called: ' + (data.tool || data.name || ''), 'system', ts);
+
+  } else if (t === 'tool_result') {
+    addFeed('Tool result received', 'system', ts);
+
+  } else if (t === 'insurance_calling') {
+    addFeed('Calling insurance: ' + (data.insurance || ''), 'insurance', ts);
+    addInsMsg('Hospital AI', 'Dialing ' + (data.insurance || 'insurance') + '…', 'hospital');
+
+  } else if (t === 'insurance_ivr') {
+    var ivrText = data.text || data.message || '';
+    addFeed('IVR: ' + ivrText, 'insurance', ts);
+    addInsMsg('IVR System', ivrText, 'ivr');
+    queueAudio(ivrText, INSURANCE_VOICE_ID);
+
+  } else if (t === 'insurance_agent_speaks') {
+    var agentText = data.text || data.message || '';
+    addFeed('Insurance agent: ' + agentText, 'insurance', ts);
+    addInsMsg('Insurance Agent', agentText, 'insurance');
+    queueAudio(agentText, INSURANCE_VOICE_ID);
+
+  } else if (t === 'insurance_hold') {
+    addFeed('On hold with insurance…', 'insurance', ts);
+    addInsMsg('IVR System', 'Please hold, transferring to an agent…', 'ivr');
+
+  } else if (t === 'insurance_connected') {
+    addFeed('Connected to insurance agent', 'insurance', ts);
+    addInsMsg('System', '✅ Connected to live agent', 'ivr');
+
+  } else if (t === 'insurance_response') {
+    var insResp = data.text || data.response || '';
+    var insStatus = data.claim_status || '';
+    addFeed('Insurance responded: ' + insResp.substring(0, 80), 'insurance', ts);
+    addInsMsg('Insurance Agent', insResp, 'insurance');
+    showInsResult(insStatus || 'PENDING', insResp);
+    queueAudio(insResp, INSURANCE_VOICE_ID);
+
+  } else if (t === 'callback_initiated') {
+    addFeed('Callback initiated: ' + (data.number || ''), 'callback', ts);
+    addNote('Callback scheduled: ' + (data.number || ''));
+
+  } else if (t === 'call_ended') {
+    document.getElementById('call-badge').classList.remove('active');
+    document.getElementById('waveform').classList.remove('active');
+    document.getElementById('tx-text').className = 'tx-text';
+    document.getElementById('tx-text').textContent = 'Waiting for speech…';
+    stopTimer();
+    addFeed('Call ended', 'system', ts);
+
+  } else if (t === 'three_phase_queued') {
+    addFeed('Three-phase resolution queued for ' + (data.patient || ''), 'callback', ts);
+
+  } else {
+    addFeed(JSON.stringify(data).substring(0, 120), 'system', ts);
+  }
+}
+</script>
+<script>
+// ── SERVICE HEALTH CHECK ──────────────────────────────────────────────────────
+function setDot(id, up) {
+  var el = document.getElementById(id);
+  if (!el) return;
+  el.className = 'svc-dot ' + (up ? 'up' : 'down');
+}
+
+function checkHealth() {
+  // Graph RAG backend
+  fetch(GRAPH_URL + '/graph/stats', { mode: 'cors' })
+    .then(function(r) { setDot('dot-graph', r.ok); })
+    .catch(function() { setDot('dot-graph', false); });
+
+  // Voice agent
+  fetch(AGENT_URL + '/health', { mode: 'cors' })
+    .then(function(r) { setDot('dot-agent', r.ok); })
+    .catch(function() { setDot('dot-agent', false); });
+
+  // Insurance service
+  fetch(INS_URL + '/health', { mode: 'cors' })
+    .then(function(r) { setDot('dot-insurance', r.ok); })
+    .catch(function() { setDot('dot-insurance', false); });
+
+  // Voice / ElevenLabs (always show as up if key present)
+  setDot('dot-voice', !!EL_API_KEY);
+}
+
+// ── INIT ──────────────────────────────────────────────────────────────────────
+function init() {
+  renderPatients();
+  connectWS();
+  checkHealth();
+  setInterval(checkHealth, 15000);
+  addFeed('Dashboard ready — select a patient or wait for incoming call', 'system');
+}
+
+document.addEventListener('DOMContentLoaded', init);
+</script>
+
 </body>
 </html>
