@@ -80,7 +80,7 @@ def twiml_say(text: str, loop: bool = True) -> str:
     if loop:
         return f"""<?xml version="1.0" encoding="UTF-8"?>
 <Response>
-    <Gather input="speech" action="{gather_action}" timeout="5" speechTimeout="auto" language="en-US">
+    <Gather input="speech" action="{gather_action}" timeout="8" speechTimeout="3" language="en-US">
         <Say voice="Polly.Joanna">{_escape(text)}</Say>
     </Gather>
     <Say voice="Polly.Joanna">I didn't catch that. Could you please repeat?</Say>
@@ -128,7 +128,7 @@ async def incoming_call():
     """Twilio webhook — called when patient dials the hospital number."""
     twiml = """<?xml version="1.0" encoding="UTF-8"?>
 <Response>
-    <Gather input="speech" action="/process-speech" timeout="5" speechTimeout="auto" language="en-US">
+    <Gather input="speech" action="/process-speech" timeout="8" speechTimeout="3" language="en-US">
         <Say voice="Polly.Joanna">
             Hello, thank you for calling. I'm the hospital's automated assistant.
             To get started, please say your full name and date of birth.
@@ -152,7 +152,7 @@ async def process_speech(
     if not SpeechResult.strip():
         twiml = """<?xml version="1.0" encoding="UTF-8"?>
 <Response>
-    <Gather input="speech" action="/process-speech" timeout="5" speechTimeout="auto" language="en-US">
+    <Gather input="speech" action="/process-speech" timeout="8" speechTimeout="3" language="en-US">
         <Say voice="Polly.Joanna">I didn't catch that. Could you please repeat?</Say>
     </Gather>
 </Response>"""

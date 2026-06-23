@@ -138,6 +138,18 @@ def run_smart_query(question_raw: str, graph, llm, entity_nodes) -> dict:
         best_score = max(strong.values())
         strong = {n: s for n, s in strong.items() if best_score - s <= 0.10}
 
+    # Extra filter: if query has 2+ words, require BOTH first and last name to appear
+    q_words_set = set(q_words)
+    if len(q_words) >= 2 and strong:
+        filtered = {}
+        for canon, score in strong.items():
+            parts = canon.split()
+            # At least first name OR last name must be in the query
+            if any(part in q_words_set or any(part in w for w in q_words) for part in parts):
+                filtered[canon] = score
+        if filtered:
+            strong = filtered
+
     # ── No match ──────────────────────────────────────────────────────────
     if not strong and not weak:
         top3 = sorted(name_scores.items(), key=lambda x: -x[1])[:3]

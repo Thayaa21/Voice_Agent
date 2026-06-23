@@ -86,7 +86,6 @@ def _fuzzy_match_person(patient_name: str, graph) -> tuple[str | None, list]:
 
     return best_name, person_map[best_name]
 
-
 def _get_all_entities_for_person(patient_name: str, graph) -> tuple[str | None, list]:
     """
     Get ALL entities (person + conditions + encounters) for a matched patient.
