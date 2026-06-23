@@ -356,6 +356,16 @@ function queueAudio(text, voiceId) {
   if (!isPlaying) playNextAudio();
 }
 
+// Global reference to current audio element so we can stop it
+var currentAudio = null;
+
+function stopAllAudio() {
+  audioQueue = [];
+  isPlaying = false;
+  if (currentAudio) { try { currentAudio.pause(); currentAudio.src = ''; } catch(e) {} currentAudio = null; }
+  if (window.speechSynthesis) window.speechSynthesis.cancel();
+}
+
 function playNextAudio() {
   if (audioQueue.length === 0) { isPlaying = false; return; }
   isPlaying = true;
@@ -382,7 +392,8 @@ function speakElevenLabs(text, voiceId, onDone) {
   .then(function(blob) {
     var burl = URL.createObjectURL(blob);
     var audio = new Audio(burl);
-    audio.onended = function() { URL.revokeObjectURL(burl); if (onDone) onDone(); };
+    currentAudio = audio;
+    audio.onended = function() { currentAudio = null; URL.revokeObjectURL(burl); if (onDone) onDone(); };
     audio.onerror = function() { URL.revokeObjectURL(burl); speakBrowser(text, voiceId, onDone); };
     var playPromise = audio.play();
     if (playPromise !== undefined) {
@@ -758,14 +769,15 @@ function handleWsEvent(data) {
 
   } else if (t === 'insurance_agent_speaks') {
     var agentMsg = data.message || data.text || '';
-    if (!agentMsg) return; // skip empty messages
     var isSpeakerHospital = (data.speaker === 'hospital');
-    var spkName  = isSpeakerHospital ? 'Hospital AI' : 'Insurance Agent';
+    var spkName  = isSpeakerHospital ? 'Hospital Coordinator' : 'Sarah (Insurance)';
     var spkRole  = isSpeakerHospital ? 'hospital' : 'insurance';
     var spkVoice = isSpeakerHospital ? HOSPITAL_VOICE_ID : INSURANCE_VOICE_ID;
-    addFeed(spkName + ': ' + agentMsg.substring(0,80), isSpeakerHospital ? 'system' : 'insurance', ts);
-    addInsMsg(spkName, agentMsg, spkRole);
-    queueAudio(agentMsg, spkVoice);
+    if (agentMsg) {
+      addFeed(spkName + ': ' + agentMsg.substring(0,80), isSpeakerHospital ? 'system' : 'insurance', ts);
+      addInsMsg(spkName, agentMsg, spkRole);
+      queueAudio(agentMsg, spkVoice);
+    }
 
   } else if (t === 'insurance_hold') {
     var holdMsg = data.message || data.text || 'Please hold. Your call is important to us.';
@@ -774,18 +786,23 @@ function handleWsEvent(data) {
     queueAudio(holdMsg, INSURANCE_VOICE_ID);
 
   } else if (t === 'insurance_connected') {
-    var connMsg = data.message || data.text || 'Thank you for holding. This is Pacific Shield Claims.';
-    addFeed('Insurance agent connected', 'insurance', ts);
-    addInsMsg('Insurance Agent (George)', connMsg, 'insurance');
+    var connMsg = data.message || data.text || 'Thank you for holding. This is Sarah from Pacific Shield Insurance. How can I assist you?';
+    addFeed('Sarah (insurance agent) answered', 'insurance', ts);
+    addInsMsg('Sarah (Insurance Agent)', connMsg, 'insurance');
     queueAudio(connMsg, INSURANCE_VOICE_ID);
 
   } else if (t === 'insurance_response') {
     var insResp = data.agent_response || data.message || data.text || data.response || '';
     var insStatus = data.claim_status || 'PENDING';
     addFeed('Insurance verdict: ' + insStatus, 'insurance', ts);
-    if (insResp) addInsMsg('Insurance Agent (George)', insResp, 'insurance');
-    showInsResult(insStatus, insResp);
-    if (insResp) queueAudio(insResp, INSURANCE_VOICE_ID);
+    // Only render if sync call hasn't already shown it
+    var insPanel = document.getElementById('ins-panel');
+    var alreadyShown = insPanel && insPanel.querySelector('.ins-result');
+    if (insResp && !alreadyShown) {
+      addInsMsg('Sarah (Insurance Agent)', insResp, 'insurance');
+      showInsResult(insStatus, insResp);
+      queueAudio(insResp, INSURANCE_VOICE_ID);
+    }
 
   } else if (t === 'callback_initiated') {
     addFeed('Callback initiated: ' + (data.number || ''), 'callback', ts);
