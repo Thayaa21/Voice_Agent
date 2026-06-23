@@ -244,9 +244,9 @@ let activePatient = null, notes = [];
 // ── WebSocket ──────────────────────────────────────────────────────────────
 function connectWS() {
   ws = new WebSocket(WS_URL);
-  ws.onopen  = () => { updateServicePill('Agent WS', true); };
-  ws.onclose = () => { updateServicePill('Agent WS', false); setTimeout(connectWS, 3000); };
-  ws.onerror = () => { updateServicePill('Agent WS', false); };
+  ws.onopen  = () => { console.log('WS connected'); };
+  ws.onclose = () => { setTimeout(connectWS, 3000); };
+  ws.onerror = () => { console.warn('WS error'); };
   ws.onmessage = (e) => {
     try { handleEvent(JSON.parse(e.data)); } catch(err) { console.error(err); }
   };
