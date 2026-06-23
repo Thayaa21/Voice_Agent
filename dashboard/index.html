@@ -470,6 +470,7 @@ function addInsMsg(from, text, role) {
 
 function showInsResult(claimStatus, agentResponse) {
   var panel = document.getElementById('ins-panel');
+  if (!panel) return;
   var statusCls = 'sb-pending';
   if (claimStatus && claimStatus.indexOf('DENIED') !== -1) statusCls = 'sb-denied';
   else if (claimStatus && claimStatus.indexOf('PAID') !== -1) statusCls = 'sb-paid';
@@ -729,10 +730,10 @@ function handleWsEvent(data) {
 
   } else if (t === 'insurance_calling') {
     addFeed('Calling insurance', 'insurance', ts);
-    document.getElementById('ins-panel').innerHTML = '';
-    var callingMsg = data.message || 'Dialing Pacific Shield Insurance...';
-    addInsMsg('Hospital AI', callingMsg, 'hospital');
-    queueAudio(callingMsg, HOSPITAL_VOICE_ID);
+    var insPanel = document.getElementById('ins-panel');
+    if (insPanel) insPanel.innerHTML = '';
+    addInsMsg('Hospital AI', data.message || 'Dialing Pacific Shield Insurance...', 'hospital');
+    queueAudio(data.message || 'Dialing Pacific Shield Insurance.', HOSPITAL_VOICE_ID);
 
   } else if (t === 'insurance_ivr') {
     var ivrText = data.message || data.text || 'Welcome to Pacific Shield Insurance...';
