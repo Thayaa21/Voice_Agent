@@ -28,11 +28,13 @@ TWILIO_FROM   = os.getenv("TWILIO_PHONE_NUMBER", "")
 OPENAI_KEY    = os.getenv("OPENAI_API_KEY", "")
 OPENAI_MODEL  = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
 
+logger.info("Orchestrator OPENAI_KEY loaded: %s", "YES" if OPENAI_KEY else "NO")
+
 
 async def _llm(system: str, user: str, temperature: float = 0.8) -> str:
     """Call OpenAI to generate natural conversational text."""
     if not OPENAI_KEY:
-        return user  # fallback
+        return ""  # empty so caller's `or` fallback triggers
     try:
         from openai import AsyncOpenAI
         client = AsyncOpenAI(api_key=OPENAI_KEY)
@@ -46,7 +48,7 @@ async def _llm(system: str, user: str, temperature: float = 0.8) -> str:
         return r.choices[0].message.content.strip()
     except Exception as e:
         logger.error("LLM failed: %s", e)
-        return user
+        return ""  # empty so caller's `or` fallback triggers
 
 
 async def run_three_phase(
