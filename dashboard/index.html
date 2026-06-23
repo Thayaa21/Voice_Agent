@@ -674,9 +674,8 @@ function runInsuranceDemo(name) {
       var status  = data.claim_status || 'DENIED_NO_PA';
       if (insResp && !insResultShown) {
         // WS missed it — show the final insurance message and result card
-        addInsMsg('George (Insurance)', insResp, 'insurance');
+        queueBubble('George (Insurance)', insResp, 'insurance', INSURANCE_VOICE_ID);
         showInsResult(status, insResp);
-        queueAudio(insResp, INSURANCE_VOICE_ID);
       }
       if (data.callback_message) {
         addFeed('✅ Resolution complete. Patient callback initiated.', 'callback');
@@ -742,19 +741,29 @@ function handleWsEvent(data) {
     queueAudio(txt, HOSPITAL_VOICE_ID);
 
   } else if (t === 'patient_identified') {
-    var pname = data.name || data.patient_name || '';
+    var pname = data.name || data.patient_name || data.person || '';
     addFeed('Patient identified: ' + pname, 'patient', ts);
     addNote('Patient matched: ' + pname);
+    currentInsurancePatient = pname; // store for insurance question
     // Auto-select matching demo patient if available
+    var found = false;
     for (var i = 0; i < DEMO_PATIENTS.length; i++) {
       if (DEMO_PATIENTS[i].name.toLowerCase() === pname.toLowerCase()) {
-        selectPatient(i); break;
+        selectPatient(i); found = true; break;
       }
+    }
+    // If not a demo patient, still show their live data on the main panel
+    if (!found && pname) {
+      showLivePatient(pname);
     }
 
   } else if (t === 'patient_record') {
+    var prPerson = data.person || '';
+    var prRecord = data.record || {};
     addFeed('Patient record loaded', 'patient', ts);
     addNote('Record fetched from graph');
+    // Update the center panel with live record data if we have it
+    if (prPerson && prRecord) updateLiveRecord(prPerson, prRecord);
 
   } else if (t === 'agent_response') {
     var resp = data.text || data.response || '';
@@ -770,67 +779,55 @@ function handleWsEvent(data) {
 
   } else if (t === 'insurance_calling') {
     addFeed('Calling insurance', 'insurance', ts);
-    insResultShown = false;  // reset so this new call can render its result
+    insResultShown = false;
+    bubbleQueue = []; bubbleRendering = false; // reset bubble queue for new call
+    if (data.patient_name) currentInsurancePatient = data.patient_name;
     var insPanel = document.getElementById('ins-panel');
     if (insPanel) insPanel.innerHTML = '';
-    addInsMsg('Hospital AI', data.message || 'Dialing Pacific Shield Insurance...', 'hospital');
-    queueAudio(data.message || 'Dialing Pacific Shield Insurance.', HOSPITAL_VOICE_ID);
+    queueBubble('Sarah (Hospital)', data.message || 'Dialing Pacific Shield Insurance...', 'hospital', HOSPITAL_VOICE_ID);
 
   } else if (t === 'insurance_ivr') {
     var ivrText = data.message || data.text || 'Welcome to Pacific Shield Insurance...';
     addFeed('IVR: ' + ivrText.substring(0,60), 'insurance', ts);
-    addInsMsg('IVR System', ivrText, 'ivr');
-    queueAudio(ivrText, INSURANCE_VOICE_ID);
+    queueBubble('IVR System', ivrText, 'ivr', INSURANCE_VOICE_ID);
 
   } else if (t === 'insurance_agent_speaks') {
     var agentMsg = data.message || data.text || '';
     var isSpeakerHospital = (data.speaker === 'hospital');
-    // Hospital = Sarah (female voice), Insurance = George (male voice)
     var spkName  = isSpeakerHospital ? 'Sarah (Hospital)' : 'George (Insurance)';
     var spkRole  = isSpeakerHospital ? 'hospital' : 'insurance';
     var spkVoice = isSpeakerHospital ? HOSPITAL_VOICE_ID : INSURANCE_VOICE_ID;
     if (agentMsg) {
       addFeed(spkName + ': ' + agentMsg.substring(0,80), isSpeakerHospital ? 'system' : 'insurance', ts);
-      addInsMsg(spkName, agentMsg, spkRole);
-      queueAudio(agentMsg, spkVoice);
+      queueBubble(spkName, agentMsg, spkRole, spkVoice);
     }
 
   } else if (t === 'insurance_hold') {
     var holdMsg = data.message || data.text || 'Please hold. Your call is important to us.';
     addFeed('On hold...', 'insurance', ts);
-    addInsMsg('IVR System', holdMsg, 'ivr');
-    queueAudio(holdMsg, INSURANCE_VOICE_ID);
+    queueBubble('IVR System', holdMsg, 'ivr', INSURANCE_VOICE_ID);
 
   } else if (t === 'insurance_connected') {
     var connMsg = data.message || data.text || 'Thank you for holding. This is George from Pacific Shield Insurance. How can I assist you?';
     addFeed('George (insurance) answered', 'insurance', ts);
-    addInsMsg('George (Insurance)', connMsg, 'insurance');
-    queueAudio(connMsg, INSURANCE_VOICE_ID);
-    // After George answers, show Sarah asking the question (hospital coordinator)
-    // This ensures it always appears even if WS event is missed
+    queueBubble('George (Insurance)', connMsg, 'insurance', INSURANCE_VOICE_ID);
+    // After George answers, Sarah asks the question
+    var patName = currentInsurancePatient || 'the patient';
+    var sarahQ = 'Hi George, I\'m calling about a prior authorization denial for patient ' + patName + '. Can you confirm the denial reason code, the appeal deadline, and if a Peer-to-Peer review is available?';
     setTimeout(function() {
       var panel = document.getElementById('ins-panel');
       if (panel && !panel.querySelector('.sarah-question')) {
-        var q = currentInsurancePatient
-          ? 'Hi George, I\'m calling about a prior authorization denial for patient ' + currentInsurancePatient + '. Can you confirm the denial reason code, the appeal deadline, and if a Peer-to-Peer review is available?'
-          : 'I\'m calling about a prior authorization denial. Can you confirm the denial reason code, appeal deadline, and Peer-to-Peer review availability?';
-        var div = document.createElement('div');
-        div.className = 'ins-msg hospital sarah-question';
-        div.innerHTML = '<div class="ins-msg-from">Sarah (Hospital)</div>' + q;
-        panel.appendChild(div);
-        panel.scrollTop = panel.scrollHeight;
-        queueAudio(q, HOSPITAL_VOICE_ID);
+        queueBubble('Sarah (Hospital)', sarahQ, 'hospital sarah-question', HOSPITAL_VOICE_ID);
       }
-    }, 1500);
+    }, Math.max(2000, connMsg.length * 75) + 500);
 
   } else if (t === 'insurance_response') {
     var insResp = data.agent_response || data.message || data.text || data.response || '';
     var insStatus = data.claim_status || 'PENDING';
     addFeed('George responds: ' + insStatus, 'insurance', ts);
     if (insResp && !insResultShown) {
-      addInsMsg('George (Insurance)', insResp, 'insurance');
+      queueBubble('George (Insurance)', insResp, 'insurance', INSURANCE_VOICE_ID);
       showInsResult(insStatus, insResp);
-      queueAudio(insResp, INSURANCE_VOICE_ID);
     }
 
   } else if (t === 'callback_initiated') {
@@ -893,7 +890,60 @@ function enableAudioAndStart() {
   } catch(e) {}
 }
 
-// ── INIT ──────────────────────────────────────────────────────────────────────
+// ── Live patient display (for real phone calls) ───────────────────────────
+function showLivePatient(name) {
+  var main = document.getElementById('main-content');
+  if (!main) return;
+  main.innerHTML =
+    '<div class="rec-header glow-blue">' +
+      '<div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">' +
+        '<div style="width:46px;height:46px;background:rgba(88,166,255,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0">📞</div>' +
+        '<div>' +
+          '<div class="rec-name">' + name + '</div>' +
+          '<div class="rec-sub">Live call in progress — loading record...</div>' +
+        '</div>' +
+        '<div style="margin-left:auto"><span class="tag tag-green">● LIVE CALL</span></div>' +
+      '</div>' +
+    '</div>' +
+    '<div id="live-record-data" style="color:var(--muted);font-size:13px;padding:20px;text-align:center">Fetching patient data from graph...</div>' +
+    '<div style="background:var(--card);border:1px solid var(--border2);border-radius:8px;padding:14px;margin-top:12px">' +
+      '<div class="info-title">📝 Live Call Notes</div>' +
+      '<div id="call-notes" style="margin-top:8px;font-size:12px;color:var(--muted)">Notes appear as call progresses...</div>' +
+    '</div>';
+}
+
+function updateLiveRecord(person, record) {
+  var el = document.getElementById('live-record-data');
+  if (!el) return;
+  el.innerHTML =
+    '<div class="info-grid">' +
+      '<div class="info-card"><div class="info-title">🚫 Claim Status</div><div class="info-body" style="font-size:12px">' + (record.claim_status || 'Loading...') + '</div></div>' +
+      '<div class="info-card"><div class="info-title">💰 Cost</div><div class="info-body" style="font-size:12px">' + (record.cost_estimate || 'Loading...') + '</div></div>' +
+      '<div class="info-card" style="grid-column:span 2"><div class="info-title">📋 Pre-Procedure</div><div class="info-body" style="font-size:12px">' + (record.pre_procedure || 'Loading...') + '</div></div>' +
+    '</div>';
+}
+
+// ── Chat timing: reveal bubbles in sync with audio ────────────────────────
+var bubbleQueue = [];
+var bubbleRendering = false;
+
+function queueBubble(from, text, role, voiceId) {
+  if (!text || !text.trim()) return;
+  bubbleQueue.push({from: from, text: text, role: role, voiceId: voiceId});
+  if (!bubbleRendering) processBubbleQueue();
+}
+
+function processBubbleQueue() {
+  if (bubbleQueue.length === 0) { bubbleRendering = false; return; }
+  bubbleRendering = true;
+  var item = bubbleQueue.shift();
+  addInsMsg(item.from, item.text, item.role);
+  // estimate duration: ~75ms per character
+  var estMs = Math.max(2000, item.text.length * 75);
+  queueAudio(item.text, item.voiceId);
+  setTimeout(processBubbleQueue, estMs);
+}
+
 function init() {
   renderPatients();
   connectWS();
