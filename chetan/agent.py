@@ -347,21 +347,61 @@ async def agent_endpoint(req: AgentRequest):
     return AgentResponse(**result)
 
 
-@app.get("/health")
-def health():
+@app.websocket("/ws")
+async def websocket_endpoint(websocket: WebSocket):
     return {"status": "ok", "service": "hospital-agent", "port": 9001,
             "active_sessions": len(sessions)}
 
 
-@app.websocket("/ws")
-async def websocket_endpoint(websocket: WebSocket):
+@app.post("/tts")
+async def tts_endpoint(body: dict):
+    """
+    Proxy endpoint for ElevenLabs TTS.
+    Called by the dashboard instead of calling ElevenLabs directly,
+    avoiding browser CORS issues.
+    """
+    text     = body.get("text", "")
+    voice_id = body.get("voice_id", os.getenv("ELEVENLABS_HOSPITAL_VOICE_ID", "EXAVITQu4vr4xnSDxMaL"))
+    el_key   = os.getenv("ELEVENLABS_API_KEY", "")
+
+    if not text or not el_key:
+        raise HTTPException(400, "Missing text or API key")
+
+    try:
+        async with httpx.AsyncClient(timeout=30.0) as client:
+            r = await client.post(
+                f"https://api.elevenlabs.io/v1/text-to-speech/{voice_id}",
+                headers={
+                    "xi-api-key":   el_key,
+                    "Content-Type": "application/json",
+                    "Accept":       "audio/mpeg",
+                },
+                json={
+                    "text":     text,
+                    "model_id": "eleven_multilingual_v2",
+                    "voice_settings": {"stability": 0.5, "similarity_boost": 0.75},
+                }
+            )
+            if r.status_code != 200:
+                raise HTTPException(r.status_code, f"ElevenLabs error: {r.text[:200]}")
+
+            from fastapi.responses import Response as FastResponse
+            return FastResponse(
+                content=r.content,
+                media_type="audio/mpeg",
+                headers={"Cache-Control": "no-cache"},
+            )
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(500, str(e))
     """WebSocket endpoint for live dashboard."""
     await websocket.accept()
     await register(websocket)
 
 
-@app.delete("/sessions/{call_id}")
-def clear_session(call_id: str):
+@app.get("/health")
+def health():
     sessions.pop(call_id, None)
     return {"cleared": call_id}
 
