@@ -524,7 +524,7 @@ function runDemoCall(name) {
   fetch(AGENT_URL + '/agent', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ message: name })
+    body: JSON.stringify({ text: name, call_id: 'demo_' + Date.now(), caller_number: '+15313245471' })
   })
   .then(function(r) { return r.json().catch(function() { return {}; }); })
   .then(function(data) {
@@ -534,13 +534,14 @@ function runDemoCall(name) {
       addFeed(data.response, 'agent');
       queueAudio(data.response, HOSPITAL_VOICE_ID);
     }
-    return sleep(800);
+    return sleep(800).then(function() { return data; });
   })
-  .then(function() {
+  .then(function(d1) {
+    var cid = 'demo_' + Date.now();
     return fetch(AGENT_URL + '/agent', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ message: 'why was my claim denied' })
+      body: JSON.stringify({ text: 'why was my claim denied', call_id: cid })
     });
   })
   .then(function(r) { return r.json().catch(function() { return {}; }); })
@@ -571,7 +572,8 @@ function runInsuranceDemo(name) {
     body: JSON.stringify({
       patient_name: name,
       inquiry_type: 'claim_status',
-      callback_number: '+15313245471'
+      callback_number: '+15313245471',
+      call_id: 'ins_demo_' + Date.now()
     })
   })
   .then(function(r) { return r.json().catch(function() { return {}; }); })
@@ -669,7 +671,9 @@ function handleWsEvent(data) {
 
   } else if (t === 'insurance_calling') {
     addFeed('Calling insurance: ' + (data.insurance || ''), 'insurance', ts);
-    addInsMsg('Hospital AI', 'Dialing ' + (data.insurance || 'insurance') + '…', 'hospital');
+    document.getElementById('ins-panel').innerHTML = '';
+    addInsMsg('Hospital AI', 'Dialing Pacific Shield Insurance…', 'hospital');
+    queueAudio('Dialing Pacific Shield Insurance. Please wait.', HOSPITAL_VOICE_ID);
 
   } else if (t === 'insurance_ivr') {
     var ivrText = data.text || data.message || '';
@@ -679,23 +683,27 @@ function handleWsEvent(data) {
 
   } else if (t === 'insurance_agent_speaks') {
     var agentText = data.text || data.message || '';
-    addFeed('Insurance agent: ' + agentText, 'insurance', ts);
-    addInsMsg('Insurance Agent', agentText, 'insurance');
-    queueAudio(agentText, INSURANCE_VOICE_ID);
+    addFeed('Hospital AI: ' + agentText.substring(0,80), 'system', ts);
+    addInsMsg('Hospital AI', agentText, 'hospital');
+    queueAudio(agentText, HOSPITAL_VOICE_ID);
 
   } else if (t === 'insurance_hold') {
+    var holdText = data.text || data.message || 'Please hold…';
     addFeed('On hold with insurance…', 'insurance', ts);
-    addInsMsg('IVR System', 'Please hold, transferring to an agent…', 'ivr');
+    addInsMsg('IVR System', holdText, 'ivr');
+    queueAudio(holdText, INSURANCE_VOICE_ID);
 
   } else if (t === 'insurance_connected') {
+    var connText = data.text || data.message || 'Insurance agent answered.';
     addFeed('Connected to insurance agent', 'insurance', ts);
-    addInsMsg('System', '✅ Connected to live agent', 'ivr');
+    addInsMsg('Insurance Agent (Sarah)', connText, 'insurance');
+    queueAudio(connText, INSURANCE_VOICE_ID);
 
   } else if (t === 'insurance_response') {
-    var insResp = data.text || data.response || '';
+    var insResp = data.text || data.response || data.agent_response || '';
     var insStatus = data.claim_status || '';
     addFeed('Insurance responded: ' + insResp.substring(0, 80), 'insurance', ts);
-    addInsMsg('Insurance Agent', insResp, 'insurance');
+    addInsMsg('Insurance Agent (Sarah)', insResp, 'insurance');
     showInsResult(insStatus || 'PENDING', insResp);
     queueAudio(insResp, INSURANCE_VOICE_ID);
 
