@@ -310,35 +310,43 @@ function handleEvent(ev) {
       break;
 
     case 'insurance_calling':
-      renderInsurancePhase('calling', data);
+      // Clear insurance panel for fresh conversation
+      document.getElementById('insurance-panel').innerHTML = '';
+      addInsuranceConvo('System', `📞 Initiating call to Pacific Shield Insurance for ${data.patient_name}...`, 'ivr');
       addFeed('📞 Initiating 3-Phase Resolution — calling insurance', 'insurance', timestamp);
       if(audioEnabled) speak('Dialing Pacific Shield Insurance. Please wait.', hospitalVoice, 0.95);
       break;
 
     case 'insurance_ivr':
-      renderInsurancePhase('ivr', data);
-      addFeed(data.message, 'insurance', timestamp);
-      if(audioEnabled) setTimeout(() => speak('For claims, press 1. For prior authorization, press 2.', insuranceVoice, 0.9, 0.95), 1500);
+      addInsuranceConvo('IVR System', data.message, 'ivr');
+      addFeed('🔢 ' + data.message, 'insurance', timestamp);
+      if(audioEnabled) setTimeout(() => speak(data.message, insuranceVoice, 0.85, 0.88), 500);
+      break;
+
+    case 'insurance_agent_speaks':
+      addInsuranceConvo('Hospital Agent', data.message, 'hospital');
+      addFeed('🏥 Hospital: ' + data.message.substring(0,80), 'system', timestamp);
+      if(audioEnabled) setTimeout(() => speak(data.message, hospitalVoice, 1.0, 1.05), 300);
       break;
 
     case 'insurance_hold':
-      renderInsurancePhase('hold', data);
-      addFeed(data.message, 'insurance', timestamp);
-      if(audioEnabled) setTimeout(() => speak('Thank you for calling Pacific Shield Insurance. All agents are currently assisting other customers. Your call is important to us. Please hold.', insuranceVoice, 0.85, 0.9), 1000);
+      addInsuranceConvo('IVR System', data.message, 'ivr');
+      addFeed('🎵 ' + data.message, 'insurance', timestamp);
+      if(audioEnabled) setTimeout(() => speak(data.message, insuranceVoice, 0.82, 0.85), 500);
       break;
 
     case 'insurance_connected':
-      renderInsurancePhase('connected', data);
-      addFeed(data.message, 'insurance', timestamp);
-      if(audioEnabled) setTimeout(() => speak('Thank you for holding. This is Pacific Shield Insurance, claims department. My name is Sarah. How can I assist you today?', insuranceVoice, 0.9, 0.95), 500);
+      addInsuranceConvo('Sarah (Insurance Agent)', data.message, 'insurance');
+      addFeed('☎️ Insurance agent answered', 'insurance', timestamp);
+      if(audioEnabled) setTimeout(() => speak(data.message, insuranceVoice, 0.92, 0.95), 300);
       break;
 
     case 'insurance_response':
-      renderInsuranceResponse(data);
-      addFeed(`✅ Insurance response received: ${data.claim_status}`, 'insurance', timestamp);
-      addNote(`Insurance: ${data.summary || data.claim_status}`);
+      addInsuranceConvo('Sarah (Insurance Agent)', data.agent_response, 'insurance');
+      addFeed(`✅ Insurance: ${data.summary||data.claim_status}`, 'insurance', timestamp);
+      addNote(`Insurance verdict: ${data.summary||data.claim_status}`);
       if(audioEnabled && data.agent_response) {
-        setTimeout(() => speak(data.agent_response, insuranceVoice, 0.9, 0.95), 1000);
+        setTimeout(() => speak(data.agent_response, insuranceVoice, 0.9, 0.93), 300);
       }
       break;
 
@@ -576,6 +584,23 @@ function toggleAudio() {
   document.getElementById('audio-btn').textContent = audioEnabled ? '🔊 Audio On' : '🔇 Audio Off';
   if (!audioEnabled) synth.cancel();
 }
+// ── Insurance conversation (chat style) ───────────────────────────────────
+function addInsuranceConvo(speaker, text, role) {
+  const panel = document.getElementById('insurance-panel');
+  if(panel.querySelector('.ins-status')) panel.innerHTML = '';
+  const colors = {
+    hospital: {bg:'rgba(88,166,255,.08)',border:'rgba(88,166,255,.2)',label:'var(--accent)',align:'flex-start'},
+    insurance: {bg:'rgba(210,153,34,.08)',border:'rgba(210,153,34,.2)',label:'var(--yellow)',align:'flex-end'},
+    ivr: {bg:'rgba(255,255,255,.03)',border:'rgba(255,255,255,.05)',label:'var(--muted)',align:'center'},
+  };
+  const c = colors[role] || colors.ivr;
+  const div = document.createElement('div');
+  div.style.cssText = `display:flex;justify-content:${c.align};margin-bottom:8px;animation:fadeIn .3s ease`;
+  div.innerHTML = `<div style="max-width:90%;background:${c.bg};border:1px solid ${c.border};border-radius:8px;padding:10px 12px"><div style="font-size:10px;font-weight:600;color:${c.label};margin-bottom:4px;text-transform:uppercase;letter-spacing:.04em">${speaker}</div><div style="font-size:12px;color:var(--text);line-height:1.5">${text}</div></div>`;
+  panel.appendChild(div);
+  panel.scrollTop = panel.scrollHeight;
+}
+
 function startCallTimer() {
   callSeconds = 0;
   const el = document.getElementById('call-timer');
